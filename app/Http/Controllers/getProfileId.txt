@@ -1,0 +1,72 @@
+public function getfirstProfileId($analytics)
+    {
+        $accounts = $analytics->management_accounts->listManagementAccounts();
+
+        if (count($accounts->getItems()) > 0) {
+            $item = $accounts->getItems();
+
+            foreach ($item as $items) {
+                // echo $value->name;
+            // dd("hello");
+
+                $firstAccountId = $items->id;
+                $firstAccountName = $items->name;
+                $properties = $analytics->management_webproperties
+                    ->listManagementWebproperties($firstAccountId);
+                // dd($properties);
+                // dd($properties->getItems());
+                if (count($properties->getItems()) > 0) {
+                    $dev = $properties->getItems();
+                    foreach($dev as $devs){
+                    $firstPropertyId = $devs->id;
+                    $firstPropertyName =$devs->name;
+                    // Get the list of views (profiles) for the authorized user.
+                    $profiles = $analytics->management_profiles
+                    ->listManagementProfiles($firstAccountId, $firstPropertyId);
+                }
+            // exit;
+                if (count($profiles->getItems()) > 0) {
+                    // dd($items);
+                    $items = $profiles->getItems();
+                    $profileInfo = [];
+
+                    foreach($items as $item){
+
+                        $profileName = $item->name;
+                        $profileId = $item->id;
+
+                        $profileInfo = ['profile id' => $profileId, 'profile name' => $profileName, 'property name' => $firstPropertyName, 'account name' => $firstAccountName];
+                        print_r($profileInfo);
+                    }
+                } else {
+                    throw new Exception('No views (profiles) found for this user.');
+                }
+            } else {
+                throw new Exception('No properties found for this user.');
+            }
+        }
+        // exit;
+        } else {
+            throw new Exception('No accounts found for this user.');
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.bounteous.com/insights/2013/01/22/mozscape-api-application-tutorial/
+
+
+https://moz.com/help/links-api/making-calls/links
+https://www.kvcodes.com/2014/04/check-google-backlinks-website-using-php-code/
+http://gh-export.us/backlinks_checker/
+https://www.expertsphp.com/tool/alexa-rank-checker.php?siteinfo=www.brandshark.in
+https://ahrefs.com/backlink-checker
