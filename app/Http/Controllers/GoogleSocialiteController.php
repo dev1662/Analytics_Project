@@ -58,7 +58,7 @@ class GoogleSocialiteController extends Controller
 
         return  response()->json([$analytics]);
     }
-    public function getReport()
+   public function getReport()
     {
         $req = Request();
         // dd($req->all());
@@ -90,30 +90,34 @@ class GoogleSocialiteController extends Controller
             $global_rank = (int) $xml->SD[1]->POPULARITY->attributes()->TEXT;
             $localRank = (int) $xml->SD[1]->COUNTRY->attributes()->RANK;
 
-            $data = [
-                "new users" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:newUsers')->getRows()[0][0],
-                "users" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:users')->getRows()[0][0],
-                "number of keyword" => count($ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:sessions', ['dimensions' => 'ga:keyword', 'sort' => 'ga:sessions'])->getRows()),
-                "referral" =>  $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:users', ['dimensions' => 'ga:source'])->getRows(),
-                "bounceRate" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:bounceRate')->getRows()[0][0],
 
-                "users from organic searches" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:users', ['dimensions' => 'ga:source', 'filters' => 'ga:medium==organic', 'metrics' => 'ga:users'])->totalsForAllResults['ga:users'],
-                "social" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:socialInteractions, ga:uniqueSocialInteractions,ga:socialInteractionsPerSession')->getRows()[0][0],
-                "clicks" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:adClicks')->getRows()[0][0],
-                "Impressions" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:impressions')->totalsForAllResults['ga:impressions'],
-                "paid search google" => $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-23', '2022-03-02', 'ga:users', ['dimensions' => 'ga:source', 'filters' => 'ga:medium==cpa,ga:medium==cpc,ga:medium==cpm,ga:medium==cpp,ga:medium==cpv,ga:medium==ppc'])->totalsForAllResults['ga:users'],
-                "website Global Rank" => $global_rank,
-                "webiste local Rank" => $localRank,
-                // "backLinks" => $linksto
+            $data =  $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-26', '2022-03-05', 'ga:newUsers,ga:users,ga:bounceRate,ga:adClicks,ga:impressions')->totalsForAllResults;
+                $traffic_chanels = $ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-26', '2022-03-05', 'ga:users', ['dimensions'=> 'ga:channelGrouping', 'sort' => '-ga:users'])->getRows();
+            $data2 = [
+
+                "number of keyword" => count($ana->data_ga->get('ga:' . $req->profile_id . '', '2022-02-26', '2022-03-05', 'ga:sessions', ['dimensions' => 'ga:keyword', 'sort' => 'ga:sessions'])),
+                "new Users" => (int) $data['ga:newUsers'],
+                "users" => (int)$data['ga:users'],
+                "bounceRate" => (int)$data['ga:bounceRate'],
+                "clicks" => (int)$data['ga:adClicks'],
+                "impressions" => (int)$data['ga:impressions'],
+                "paid Search" => (int)$traffic_chanels[0][1],
+                "Display Search" => (int)$traffic_chanels[1][1],
+                "organic Search" => (int)$traffic_chanels[2][1],
+                "Direct Users" => (int)$traffic_chanels[3][1],
+                "Social Search" => (int)$traffic_chanels[4][1],
+                "Referral " => (int)$traffic_chanels[5][1],
+                "local Rank" => (int)$localRank,
+                "global Rank" => (int)$global_rank
+
+
+
             ];
 
-            dd($data);
-            // } else {
-            //     dd('No backlinks');
-            // }
+            dd($data2);
+        
         }
     }
-
 
 
 
