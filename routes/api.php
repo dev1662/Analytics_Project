@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PriorityController;
+use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\UsersController;
 use App\Http\Resources\CommentResource;
 use App\Models\Comment;
@@ -104,3 +105,6 @@ Route::post('turncate', function () {
 
 
 });
+
+Route::post('auth/google', [SocialiteController::class, 'social']);
+Route::get('callback/google', [SocialiteController::class, 'handleCallback']);

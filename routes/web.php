@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PriorityController;
+use App\Http\Controllers\SocialiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,5 +24,8 @@ Route::get('{any}', function () {
     return view('app');
  })->where('any', '.*');
 
+
+ Route::get('auth/google', [SocialiteController::class, 'social']);
+Route::get('callback/google', [SocialiteController::class, 'handleCallback']);
 
 

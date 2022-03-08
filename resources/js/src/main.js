@@ -5,6 +5,8 @@ import store from "@/core/services/store";
 import ApiService from "@/core/services/api.service";
 import MockService from "@/core/mock/mock.service";
 import { VERIFY_AUTH } from "@/core/services/store/auth.module";
+import VueSocialauth from 'vue-social-auth';
+import GAuth from 'vue-google-oauth2';
 import { RESET_LAYOUT_CONFIG } from "@/core/services/store/config.module";
 // import {stores} from './store/store';
 Vue.config.productionTip = false;
@@ -33,6 +35,26 @@ const Toast = Swal.mixin({
     }
 });
 window.Toast = Toast;
+
+
+Vue.use(VueSocialauth, {
+    providers: {
+        google: {
+            clientId: '642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',
+            client_secret: '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',
+            redirectUri: 'http://localhost:8000/callback/google'
+        }
+    }
+});
+const auth = {
+    clientId: '642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',
+    // client_secret: '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',
+    scope: 'profile email',
+    prompt: 'consent',
+    fetch_basic_profile:true,
+    // redirectUri: 'http://localhost:8000/callback/google'
+};
+Vue.use(GAuth, auth);
 // Vue 3rd party plugins
 import i18n from "@/core/plugins/vue-i18n";
 import vuetify from "@/core/plugins/vuetify";

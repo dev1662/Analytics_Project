@@ -115,7 +115,7 @@
                 >
                   Sign In
                 </button>
-                <button
+                <button @click="getaccessToken('google')"
                   type="button"
                   class="btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg"
                 >
@@ -538,6 +538,29 @@ export default {
     });
   },
   methods: {
+      async getaccessToken(provider){
+          const google = await this.$gAuth.signIn();
+          if(google != ''){
+              console.log("response", google);
+              console.log("ID", google.getId());
+              console.log("Basic Profile", google.getBasicProfile());
+              console.log("Auth Response" , google.getAuthResponse());
+          }
+        //    console.log("user2 ", google);
+        // let self = this;
+        // this.$auth.authenticate(provider).then(res => {
+        //     self.socialLogin(provider,res);
+        // })
+      },
+      socialLogin(provider,res){
+          const obj = {
+              "provider":provider,
+              "response" : res
+          };
+          ApiService.post("http://localhost:8000/api/auth/google", obj).then(res=> {
+              console.log(res.data);
+          })
+      },
     showForm(form) {
       this.state = form;
       var form_name = "kt_login_" + form + "_form";
