@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[77],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=script&lang=js& ***!
   \****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -11,12 +11,31 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/view/content/CodePreview.vue */ "./resources/js/src/view/content/CodePreview.vue");
 /* harmony import */ var _core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/core/services/store/breadcrumbs.module */ "./resources/js/src/core/services/store/breadcrumbs.module.js");
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -379,45 +398,51 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   data: function data() {
     return {
       code1: {
-        html: "<div class=\"text-center\">\n  <v-chip\n    class=\"ma-2\"\n  >\n    Default\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"primary\"\n  >\n    Primary\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"secondary\"\n  >\n    Secondary\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"red\"\n    text-color=\"white\"\n  >\n    Red Chip\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"green\"\n    text-color=\"white\"\n  >\n    Green Chip\n  </v-chip>\n</div>"
+        html: "<v-card\n  class=\"mx-auto\"\n  max-width=\"344\"\n  outlined\n>\n  <v-list-item three-line>\n    <v-list-item-content>\n      <div class=\"overline mb-4\">OVERLINE</div>\n      <v-list-item-title class=\"headline mb-1\">Headline 5</v-list-item-title>\n      <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>\n    </v-list-item-content>\n\n    <v-list-item-avatar\n      tile\n      size=\"80\"\n      color=\"grey\"\n    ></v-list-item-avatar>\n  </v-list-item>\n\n  <v-card-actions>\n    <v-btn text>Button</v-btn>\n    <v-btn text>Button</v-btn>\n  </v-card-actions>\n</v-card>"
       },
       code2: {
-        html: "<div class=\"text-center\">\n  <v-chip\n    class=\"ma-2\"\n    color=\"indigo\"\n    text-color=\"white\"\n  >\n    <v-avatar left>\n      <v-icon>mdi-account-circle</v-icon>\n    </v-avatar>\n    Ranee\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"orange\"\n    text-color=\"white\"\n  >\n    Premium\n    <v-icon right>mdi-star</v-icon>\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"primary\"\n    text-color=\"white\"\n  >\n    1 Year\n    <v-icon right>mdi-cake-variant</v-icon>\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"green\"\n    text-color=\"white\"\n  >\n    <v-avatar\n      left\n      class=\"green darken-4\"\n    >\n      1\n    </v-avatar>\n    Years\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    close\n    color=\"teal\"\n    text-color=\"white\"\n    @click:close=\"close\"\n  >\n    <v-avatar left>\n      <v-icon>mdi-checkbox-marked-circle</v-icon>\n    </v-avatar>\n    Confirmed\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    close\n    color=\"teal\"\n    text-color=\"white\"\n    close-icon=\"mdi-delete\"\n    @click:close=\"close\"\n  >\n    <v-avatar left>\n      <v-icon>mdi-checkbox-marked-circle</v-icon>\n    </v-avatar>\n    Confirmed\n  </v-chip>\n</div>",
-        js: "export default {\n  methods: {\n    close () {\n      alert('Chip close clicked')\n    },\n  },\n}"
+        html: "<v-card class=\"d-inline-block mx-auto\">\n  <v-container>\n    <v-row justify=\"space-between\">\n      <v-col cols=\"auto\">\n        <v-img\n          height=\"200\"\n          width=\"200\"\n          src=\"media/stock-600x600/img-1.jpg\"\n        ></v-img>\n      </v-col>\n\n      <v-col\n        cols=\"auto\"\n        class=\"text-center pl-0\"\n      >\n        <v-row\n          class=\"flex-column ma-0 fill-height\"\n          justify=\"center\"\n        >\n          <v-col class=\"px-0\">\n            <v-btn icon>\n              <v-icon>mdi-heart</v-icon>\n            </v-btn>\n          </v-col>\n\n          <v-col class=\"px-0\">\n            <v-btn icon>\n              <v-icon>mdi-bookmark</v-icon>\n            </v-btn>\n          </v-col>\n\n          <v-col class=\"px-0\">\n            <v-btn icon>\n              <v-icon>mdi-share-variant</v-icon>\n            </v-btn>\n          </v-col>\n        </v-row>\n      </v-col>\n    </v-row>\n  </v-container>\n</v-card>"
       },
       code3: {
-        html: " <div class=\"text-center\">\n  <v-chip\n    class=\"ma-2\"\n    color=\"success\"\n    outlined\n  >\n    <v-icon left>mdi-server-plus</v-icon>\n    Server Status\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"primary\"\n    outlined\n    pill\n  >\n    User Account\n    <v-icon right>mdi-account-outline</v-icon>\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"deep-purple accent-4\"\n    outlined\n  >\n    <v-icon left>mdi-wrench</v-icon>\n    Update Settings\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    close\n    color=\"indigo darken-3\"\n    outlined\n  >\n    <v-icon left>mdi-fire</v-icon>\n    New Posts Available\n  </v-chip>\n</div>"
+        html: "<v-card\n  class=\"mx-auto\"\n  max-width=\"344\"\n>\n  <v-card-text>\n    <div>Word of the Day</div>\n    <p class=\"display-1 text--primary\">\n      be\u2022nev\u2022o\u2022lent\n    </p>\n    <p>adjective</p>\n    <div class=\"text--primary\">\n      well meaning and kindly.<br>\n      \"a benevolent smile\"\n    </div>\n  </v-card-text>\n  <v-card-actions>\n    <v-btn\n      text\n      color=\"deep-purple accent-4\"\n    >\n      Learn More\n    </v-btn>\n  </v-card-actions>\n</v-card>"
       },
       code4: {
-        html: " <div class=\"text-center\">\n  <v-chip\n    class=\"ma-2\"\n    label\n  >\n    Label\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"pink\"\n    label\n    text-color=\"white\"\n  >\n    <v-icon left>mdi-label</v-icon>\n    Tags\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    color=\"primary\"\n    label\n  >\n    <v-icon left>mdi-account-circle-outline</v-icon>\n    Sean Paul\n  </v-chip>\n\n  <v-chip\n    class=\"ma-2\"\n    close\n    color=\"cyan\"\n    label\n    text-color=\"white\"\n  >\n    <v-icon left>mdi-twitter</v-icon>\n    New Tweets\n  </v-chip>\n</div>"
+        html: "<v-card\n  class=\"mx-auto\"\n  max-width=\"400\"\n>\n  <v-img\n    class=\"white--text align-end\"\n    height=\"200px\"\n    src=\"media/stock-600x600/img-1.jpg\"\n  >\n    <v-card-title>Top 10 Australian beaches</v-card-title>\n  </v-img>\n\n  <v-card-subtitle class=\"pb-0\">Number 10</v-card-subtitle>\n\n  <v-card-text class=\"text--primary\">\n    <div>Whitehaven Beach</div>\n\n    <div>Whitsunday Island, Whitsunday Islands</div>\n  </v-card-text>\n\n  <v-card-actions>\n    <v-btn\n      color=\"orange\"\n      text\n    >\n      Share\n    </v-btn>\n\n    <v-btn\n      color=\"orange\"\n      text\n    >\n      Explore\n    </v-btn>\n  </v-card-actions>\n</v-card>"
       },
       code5: {
-        html: "<v-card\n    class=\"mx-auto\"\n    max-width=\"500\"\n  >\n    <v-toolbar\n      flat\n      color=\"transparent\"\n    >\n      <v-app-bar-nav-icon></v-app-bar-nav-icon>\n      <v-toolbar-title>Photo Info</v-toolbar-title>\n      <v-spacer></v-spacer>\n      <v-btn\n        icon\n        @click=\"$refs.search.focus()\"\n      >\n        <v-icon>mdi-magnify</v-icon>\n      </v-btn>\n    </v-toolbar>\n\n    <v-container class=\"py-0\">\n      <v-row\n        align=\"center\"\n        justify=\"start\"\n      >\n        <v-col\n          v-for=\"(selection, i) in selections\"\n          :key=\"selection.text\"\n          class=\"shrink\"\n        >\n          <v-chip\n            :disabled=\"loading\"\n            close\n            @click:close=\"selected.splice(i, 1)\"\n          >\n            <v-icon\n              left\n              v-text=\"selection.icon\"\n            ></v-icon>\n            {{ selection.text }}\n          </v-chip>\n        </v-col>\n\n        <v-col v-if=\"!allSelected\" cols=\"12\">\n          <v-text-field\n            ref=\"search\"\n            v-model=\"search\"\n            full-width\n            hide-details\n            label=\"Search\"\n            single-line\n          ></v-text-field>\n        </v-col>\n      </v-row>\n    </v-container>\n\n    <v-divider v-if=\"!allSelected\"></v-divider>\n\n    <v-list>\n      <template v-for=\"(item, i) in categories\">\n        <v-list-item\n          v-if=\"!selected.includes(i)\"\n          :key=\"i\"\n          :disabled=\"loading\"\n          @click=\"selected.push(i)\"\n        >\n          <v-list-item-avatar>\n            <v-icon\n              :disabled=\"loading\"\n              v-text=\"item.icon\"\n            ></v-icon>\n          </v-list-item-avatar>\n          <v-list-item-title v-text=\"item.text\"></v-list-item-title>\n        </v-list-item>\n      </template>\n    </v-list>\n\n    <v-divider></v-divider>\n\n    <v-card-actions>\n      <v-spacer></v-spacer>\n      <v-btn\n        :disabled=\"!selected.length\"\n        :loading=\"loading\"\n        color=\"purple\"\n        text\n        @click=\"next\"\n      >Next</v-btn>\n    </v-card-actions>\n  </v-card>",
-        js: " export default {\n  data: () => ({\n    items: [\n      {\n        text: 'Nature',\n        icon: 'mdi-nature',\n      },\n      {\n        text: 'Nightlife',\n        icon: 'mdi-glass-wine',\n      },\n      {\n        text: 'November',\n        icon: 'mdi-calendar-range',\n      },\n      {\n        text: 'Portland',\n        icon: 'mdi-map-marker',\n      },\n      {\n        text: 'Biking',\n        icon: 'mdi-bike',\n      },\n    ],\n    loading: false,\n    search: '',\n    selected: [],\n  }),\n\n  computed: {\n    allSelected () {\n      return this.selected.length === this.items.length\n    },\n    categories () {\n      const search = this.search.toLowerCase()\n\n      if (!search) return this.items\n\n      return this.items.filter(item => {\n        const text = item.text.toLowerCase()\n\n        return text.indexOf(search) > -1\n      })\n    },\n    selections () {\n      const selections = []\n\n      for (const selection of this.selected) {\n        selections.push(this.items[selection])\n      }\n\n      return selections\n    },\n  },\n\n  watch: {\n    selected () {\n      this.search = ''\n    },\n  },\n\n  methods: {\n    next () {\n      this.loading = true\n\n      setTimeout(() => {\n        this.search = ''\n        this.selected = []\n        this.loading = false\n      }, 2000)\n    },\n  },\n}",
-        items: [{
-          text: "Nature",
-          icon: "mdi-nature"
+        html: "<v-card\n  class=\"mx-auto\"\n  max-width=\"500\"\n>\n  <v-system-bar\n    color=\"indigo darken-2\"\n    dark\n  >\n    <v-spacer></v-spacer>\n\n    <v-icon>mdi-window-minimize</v-icon>\n\n    <v-icon>mdi-window-maximize</v-icon>\n\n    <v-icon>mdi-close</v-icon>\n  </v-system-bar>\n\n  <v-toolbar\n    color=\"indigo\"\n    dark\n  >\n    <v-app-bar-nav-icon></v-app-bar-nav-icon>\n\n    <v-toolbar-title>Discover</v-toolbar-title>\n\n    <v-spacer></v-spacer>\n\n    <v-btn icon>\n      <v-icon>mdi-magnify</v-icon>\n    </v-btn>\n  </v-toolbar>\n\n  <v-container fluid>\n    <v-row dense>\n      <v-col\n        v-for=\"card in cards\"\n        :key=\"card.title\"\n        :cols=\"card.flex\"\n      >\n        <v-card>\n          <v-img\n            :src=\"card.src\"\n            class=\"white--text align-end\"\n            gradient=\"to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)\"\n            height=\"200px\"\n          >\n            <v-card-title v-text=\"card.title\"></v-card-title>\n          </v-img>\n\n          <v-card-actions>\n            <v-spacer></v-spacer>\n\n            <v-btn icon>\n              <v-icon>mdi-heart</v-icon>\n            </v-btn>\n\n            <v-btn icon>\n              <v-icon>mdi-bookmark</v-icon>\n            </v-btn>\n\n            <v-btn icon>\n              <v-icon>mdi-share-variant</v-icon>\n            </v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-col>\n    </v-row>\n  </v-container>\n</v-card>",
+        js: "export default {\n  data: () => ({\n    cards: [\n      {\n        title: \"Pre-fab homes\",\n        src: \"media/stock-600x600/img-15.jpg\",\n        flex: 12\n      },\n      {\n        title: \"Favorite road trips\",\n        src: \"media/stock-600x600/img-2.jpg\",\n        flex: 6\n      },\n      {\n        title: \"Best airlines\",\n        src: \"media/stock-600x600/img-3.jpg\",\n        flex: 6\n      }\n    ]\n  }),\n}",
+        cards: [{
+          title: "Pre-fab homes",
+          src: "media/stock-600x600/img-15.jpg",
+          flex: 12
         }, {
-          text: "Nightlife",
-          icon: "mdi-glass-wine"
+          title: "Favorite road trips",
+          src: "media/stock-600x600/img-2.jpg",
+          flex: 6
         }, {
-          text: "November",
-          icon: "mdi-calendar-range"
-        }, {
-          text: "Portland",
-          icon: "mdi-map-marker"
-        }, {
-          text: "Biking",
-          icon: "mdi-bike"
-        }],
-        loading: false,
-        search: ""
+          title: "Best airlines",
+          src: "media/stock-600x600/img-3.jpg",
+          flex: 6
+        }]
       },
-      selected: [],
       code6: {
-        html: "<v-card\n    max-width=\"400\"\n    class=\"mx-auto\"\n  >\n    <v-system-bar></v-system-bar>\n\n    <v-row\n      class=\"px-6 py-3\"\n      align=\"center\"\n    >\n      <span class=\"mr-4\">To</span>\n      <v-menu\n        v-model=\"menu\"\n        bottom\n        right\n        transition=\"scale-transition\"\n        origin=\"top left\"\n      >\n        <template v-slot:activator=\"{ on }\">\n          <v-chip\n            pill\n            v-on=\"on\"\n          >\n            <v-avatar left>\n              <v-img src=\"media/users/100_11.jpg\"></v-img>\n            </v-avatar>\n            Sean Paul\n          </v-chip>\n        </template>\n        <v-card width=\"300\">\n          <v-list dark>\n            <v-list-item>\n              <v-list-item-avatar>\n                <v-img src=\"media/users/100_11.jpg\"></v-img>\n              </v-list-item-avatar>\n              <v-list-item-content>\n                <v-list-item-title>Sean Paul</v-list-item-title>\n                <v-list-item-subtitle>support@keenthemes.com</v-list-item-subtitle>\n              </v-list-item-content>\n              <v-list-item-action>\n                <v-btn\n                  icon\n                  @click=\"menu = false\"\n                >\n                  <v-icon>mdi-close-circle</v-icon>\n                </v-btn>\n              </v-list-item-action>\n            </v-list-item>\n          </v-list>\n          <v-list>\n            <v-list-item @click=\"() => {}\">\n              <v-list-item-action>\n                <v-icon>mdi-briefcase</v-icon>\n              </v-list-item-action>\n              <v-list-item-subtitle>support@keenthemes.com</v-list-item-subtitle>\n            </v-list-item>\n          </v-list>\n        </v-card>\n      </v-menu>\n    </v-row>\n\n    <v-divider></v-divider>\n\n    <v-text-field\n      full-width\n      value=\"Re: Vacation Request\"\n      label=\"Subject\"\n      single-line\n    ></v-text-field>\n\n    <v-textarea\n      full-width\n      single-line\n      label=\"Message\"\n    ></v-textarea>\n  </v-card>",
-        js: "export default {\n    data: () => ({\n      menu: false,\n    }),\n  }",
-        menu: false
+        html: "<v-card\n  max-width=\"400\"\n  class=\"mx-auto\"\n>\n  <v-system-bar\n    color=\"pink darken-2\"\n    dark\n  >\n    <v-spacer></v-spacer>\n\n    <v-icon>mdi-window-minimize</v-icon>\n\n    <v-icon>mdi-window-maximize</v-icon>\n\n    <v-icon>mdi-close</v-icon>\n  </v-system-bar>\n\n  <v-app-bar\n    dark\n    color=\"pink\"\n  >\n    <v-app-bar-nav-icon></v-app-bar-nav-icon>\n\n    <v-toolbar-title>My Music</v-toolbar-title>\n\n    <v-spacer></v-spacer>\n\n    <v-btn icon>\n      <v-icon>mdi-magnify</v-icon>\n    </v-btn>\n  </v-app-bar>\n\n  <v-container>\n    <v-row dense>\n      <v-col cols=\"12\">\n        <v-card\n          color=\"#385F73\"\n          dark\n        >\n          <v-card-title class=\"headline\">Unlimited music now</v-card-title>\n\n          <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>\n\n          <v-card-actions>\n            <v-btn text>Listen Now</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-col>\n\n      <v-col\n        v-for=\"(item, i) in items\"\n        :key=\"i\"\n        cols=\"12\"\n      >\n        <v-card\n          :color=\"item.color\"\n          dark\n        >\n          <div class=\"d-flex flex-no-wrap justify-space-between\">\n            <div>\n              <v-card-title\n                class=\"headline\"\n                v-text=\"item.title\"\n              ></v-card-title>\n\n              <v-card-subtitle v-text=\"item.artist\"></v-card-subtitle>\n            </div>\n\n            <v-avatar\n              class=\"ma-3\"\n              size=\"125\"\n              tile\n            >\n              <v-img :src=\"item.src\"></v-img>\n            </v-avatar>\n          </div>\n        </v-card>\n      </v-col>\n    </v-row>\n  </v-container>\n</v-card>",
+        js: " export default {\n  data: () => ({\n    items: [\n      {\n        color: '#1F7087',\n        src: 'media/stock-600x600/img-16.jpg',\n        title: 'Supermodel',\n        artist: 'Foster the People',\n      },\n      {\n        color: '#952175',\n        src: 'media/stock-600x600/img-17.jpg',\n        title: 'Halcyon Days',\n        artist: 'Ellie Goulding',\n      },\n    ],\n  }),\n}",
+        items: [{
+          color: "#1F7087",
+          src: "media/stock-600x600/img-16.jpg",
+          title: "Supermodel",
+          artist: "Foster the People"
+        }, {
+          color: "#952175",
+          src: "media/stock-600x600/img-17.jpg",
+          title: "Halcyon Days",
+          artist: "Ellie Goulding"
+        }]
+      },
+      code7: {
+        html: " <v-card\n  class=\"mx-auto\"\n  color=\"#26c6da\"\n  dark\n  max-width=\"400\"\n>\n  <v-card-title>\n    <v-icon\n      large\n      left\n    >\n      mdi-twitter\n    </v-icon>\n    <span class=\"title font-weight-light\">Twitter</span>\n  </v-card-title>\n\n  <v-card-text class=\"headline font-weight-bold\">\n    \"Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.\"\n  </v-card-text>\n\n  <v-card-actions>\n    <v-list-item class=\"grow\">\n      <v-list-item-avatar color=\"grey darken-3\">\n        <v-img\n          class=\"elevation-6\"\n          src=\"https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light\"\n        ></v-img>\n      </v-list-item-avatar>\n\n      <v-list-item-content>\n        <v-list-item-title>Evan You</v-list-item-title>\n      </v-list-item-content>\n\n      <v-row\n        align=\"center\"\n        justify=\"end\"\n      >\n        <v-icon class=\"mr-1\">mdi-heart</v-icon>\n        <span class=\"subheading mr-2\">256</span>\n        <span class=\"mr-1\">\xB7</span>\n        <v-icon class=\"mr-1\">mdi-share-variant</v-icon>\n        <span class=\"subheading\">45</span>\n      </v-row>\n    </v-list-item>\n  </v-card-actions>\n</v-card>"
       }
     };
   },
@@ -429,71 +454,16 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       title: "Vuetify",
       route: "alerts"
     }, {
-      title: "Chips"
+      title: "Cards"
     }]);
-  },
-  computed: {
-    // code 5
-    allSelected: function allSelected() {
-      return this.selected.length === this.code5.items.length;
-    },
-    categories: function categories() {
-      var search = this.code5.search.toLowerCase();
-      if (!search) return this.code5.items;
-      return this.code5.items.filter(function (item) {
-        var text = item.text.toLowerCase();
-        return text.indexOf(search) > -1;
-      });
-    },
-    selections: function selections() {
-      var selections = [];
-
-      var _iterator = _createForOfIteratorHelper(this.selected),
-          _step;
-
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var selection = _step.value;
-          selections.push(this.code5.items[selection]);
-        }
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
-
-      return selections;
-    }
-  },
-  watch: {
-    selected: function selected() {
-      this.code5.search = "";
-    }
-  },
-  methods: {
-    // code 2
-    close: function close() {
-      alert("Chip close clicked");
-    },
-    // code 5
-    next: function next() {
-      var _this = this;
-
-      this.code5.loading = true;
-      setTimeout(function () {
-        _this.code5.search = "";
-        _this.selected = [];
-        _this.code5.loading = false;
-      }, 2000);
-    }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=template&id=36dd4acc&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=template&id=55f1e354&":
 /*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=template&id=36dd4acc& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=template&id=55f1e354& ***!
   \********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -531,22 +501,18 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Chips")]),
+            _c("b", [_vm._v("Cards")]),
             _vm._v(" The "),
-            _c("code", [_vm._v("v-chip")]),
+            _c("code", [_vm._v("v-card")]),
             _vm._v(
-              " component is used to convey small\n      pieces of information. Using the "
-            ),
-            _c("code", [_vm._v("close")]),
-            _vm._v(
-              " property, the chip\n      becomes interactive, allowing user interaction.\n      "
+              " component is a versatile component\n      that can be used for anything from a panel to a static image. The card\n      component has numerous helper components to make markup as easy as\n      possible. Components that have no listed options use Vue's functional\n      component option for faster rendering and serve as markup sugar to make\n      building easier.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://vuetifyjs.com/en/components/chips",
+                  href: "https://vuetifyjs.com/en/components/cards",
                   target: "_blank",
                 },
               },
@@ -562,60 +528,64 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Colored" },
+              attrs: { title: "Outlined cards" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Any color from the Material Design palette can be used to change a\n            chips color.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "div",
-                        { staticClass: "text-center" },
+                        "v-card",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "344", outlined: "" },
+                        },
                         [
-                          _c("v-chip", { staticClass: "ma-2" }, [
-                            _vm._v("\n              Default\n            "),
-                          ]),
-                          _vm._v(" "),
                           _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "primary" },
-                            },
-                            [_vm._v("\n              Primary\n            ")]
+                            "v-list-item",
+                            { attrs: { "three-line": "" } },
+                            [
+                              _c(
+                                "v-list-item-content",
+                                [
+                                  _c("div", { staticClass: "overline mb-4" }, [
+                                    _vm._v("OVERLINE"),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-title",
+                                    { staticClass: "headline mb-1" },
+                                    [_vm._v("Headline 5")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-list-item-subtitle", [
+                                    _vm._v(
+                                      "Greyhound divisely hello coldly\n                  fonwderfully"
+                                    ),
+                                  ]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("v-list-item-avatar", {
+                                attrs: { tile: "", size: "80", color: "grey" },
+                              }),
+                            ],
+                            1
                           ),
                           _vm._v(" "),
                           _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "secondary" },
-                            },
-                            [_vm._v("\n              Secondary\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "red", "text-color": "white" },
-                            },
-                            [_vm._v("\n              Red Chip\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "green", "text-color": "white" },
-                            },
-                            [_vm._v("\n              Green Chip\n            ")]
+                            "v-card-actions",
+                            [
+                              _c("v-btn", { attrs: { text: "" } }, [
+                                _vm._v("Button"),
+                              ]),
+                              _vm._v(" "),
+                              _c("v-btn", { attrs: { text: "" } }, [
+                                _vm._v("Button"),
+                              ]),
+                            ],
+                            1
                           ),
                         ],
                         1
@@ -639,96 +609,61 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Outlined" },
+              attrs: { title: "Information card" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Outlined chips inherit their border color from the current text\n            color.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "div",
-                        { staticClass: "text-center" },
+                        "v-card",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "344" },
+                        },
                         [
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "success", outlined: "" },
-                            },
-                            [
-                              _c("v-icon", { attrs: { left: "" } }, [
-                                _vm._v("mdi-server-plus"),
-                              ]),
+                          _c("v-card-text", [
+                            _c("div", [_vm._v("Word of the Day")]),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "display-1 text--primary" },
+                              [
+                                _vm._v(
+                                  "\n                be•nev•o•lent\n              "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("adjective")]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "text--primary" }, [
                               _vm._v(
-                                "\n              Server Status\n            "
+                                "\n                well meaning and kindly."
                               ),
-                            ],
-                            1
-                          ),
+                              _c("br"),
+                              _vm._v(
+                                '\n                "a benevolent smile"\n              '
+                              ),
+                            ]),
+                          ]),
                           _vm._v(" "),
                           _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: {
-                                color: "primary",
-                                outlined: "",
-                                pill: "",
-                              },
-                            },
+                            "v-card-actions",
                             [
-                              _vm._v(
-                                "\n              User Account\n              "
-                              ),
-                              _c("v-icon", { attrs: { right: "" } }, [
-                                _vm._v("mdi-account-outline"),
-                              ]),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: {
-                                color: "deep-purple accent-4",
-                                outlined: "",
-                              },
-                            },
-                            [
-                              _c("v-icon", { attrs: { left: "" } }, [
-                                _vm._v("mdi-wrench"),
-                              ]),
-                              _vm._v(
-                                "\n              Update Settings\n            "
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: {
-                                close: "",
-                                color: "indigo darken-3",
-                                outlined: "",
-                              },
-                            },
-                            [
-                              _c("v-icon", { attrs: { left: "" } }, [
-                                _vm._v("mdi-fire"),
-                              ]),
-                              _vm._v(
-                                "\n              New Posts Available\n            "
+                              _c(
+                                "v-btn",
+                                {
+                                  attrs: {
+                                    text: "",
+                                    color: "deep-purple accent-4",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Learn More\n              "
+                                  ),
+                                ]
                               ),
                             ],
                             1
@@ -755,7 +690,7 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Custom lists" },
+              attrs: { title: "Grids" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -763,28 +698,39 @@ var render = function () {
                     return [
                       _c(
                         "v-card",
-                        { attrs: { "max-width": "500" } },
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "500" },
+                        },
                         [
                           _c(
+                            "v-system-bar",
+                            { attrs: { color: "indigo darken-2", dark: "" } },
+                            [
+                              _c("v-spacer"),
+                              _vm._v(" "),
+                              _c("v-icon", [_vm._v("mdi-window-minimize")]),
+                              _vm._v(" "),
+                              _c("v-icon", [_vm._v("mdi-window-maximize")]),
+                              _vm._v(" "),
+                              _c("v-icon", [_vm._v("mdi-close")]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
                             "v-toolbar",
-                            { attrs: { flat: "", color: "transparent" } },
+                            { attrs: { color: "indigo", dark: "" } },
                             [
                               _c("v-app-bar-nav-icon"),
                               _vm._v(" "),
-                              _c("v-toolbar-title", [_vm._v("Photo Info")]),
+                              _c("v-toolbar-title", [_vm._v("Discover")]),
                               _vm._v(" "),
                               _c("v-spacer"),
                               _vm._v(" "),
                               _c(
                                 "v-btn",
-                                {
-                                  attrs: { icon: "" },
-                                  on: {
-                                    click: function ($event) {
-                                      return _vm.$refs.search.focus()
-                                    },
-                                  },
-                                },
+                                { attrs: { icon: "" } },
                                 [_c("v-icon", [_vm._v("mdi-magnify")])],
                                 1
                               ),
@@ -794,133 +740,39 @@ var render = function () {
                           _vm._v(" "),
                           _c(
                             "v-container",
-                            { staticClass: "py-0" },
+                            { attrs: { fluid: "" } },
                             [
                               _c(
                                 "v-row",
-                                {
-                                  attrs: { align: "center", justify: "start" },
-                                },
-                                [
-                                  _vm._l(
-                                    _vm.code5.selections,
-                                    function (selection, i) {
-                                      return _c(
-                                        "v-col",
-                                        {
-                                          key: selection.text,
-                                          staticClass: "shrink",
-                                        },
+                                { attrs: { dense: "" } },
+                                _vm._l(_vm.code5.cards, function (card) {
+                                  return _c(
+                                    "v-col",
+                                    {
+                                      key: card.title,
+                                      attrs: { cols: card.flex },
+                                    },
+                                    [
+                                      _c(
+                                        "v-card",
                                         [
                                           _c(
-                                            "v-chip",
+                                            "v-img",
                                             {
+                                              staticClass:
+                                                "white--text align-end",
                                               attrs: {
-                                                disabled: _vm.loading,
-                                                close: "",
-                                              },
-                                              on: {
-                                                "click:close": function (
-                                                  $event
-                                                ) {
-                                                  return _vm.selected.splice(
-                                                    i,
-                                                    1
-                                                  )
-                                                },
+                                                src: card.src,
+                                                gradient:
+                                                  "to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)",
+                                                height: "200px",
                                               },
                                             },
                                             [
-                                              _c("v-icon", {
-                                                attrs: { left: "" },
+                                              _c("v-card-title", {
                                                 domProps: {
                                                   textContent: _vm._s(
-                                                    selection.icon
-                                                  ),
-                                                },
-                                              }),
-                                              _vm._v(
-                                                "\n                    " +
-                                                  _vm._s(selection.text) +
-                                                  "\n                  "
-                                              ),
-                                            ],
-                                            1
-                                          ),
-                                        ],
-                                        1
-                                      )
-                                    }
-                                  ),
-                                  _vm._v(" "),
-                                  !_vm.allSelected
-                                    ? _c(
-                                        "v-col",
-                                        { attrs: { cols: "12" } },
-                                        [
-                                          _c("v-text-field", {
-                                            ref: "search",
-                                            attrs: {
-                                              "full-width": "",
-                                              "hide-details": "",
-                                              label: "Search",
-                                              "single-line": "",
-                                            },
-                                            model: {
-                                              value: _vm.code5.search,
-                                              callback: function ($$v) {
-                                                _vm.$set(
-                                                  _vm.code5,
-                                                  "search",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "code5.search",
-                                            },
-                                          }),
-                                        ],
-                                        1
-                                      )
-                                    : _vm._e(),
-                                ],
-                                2
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          !_vm.allSelected ? _c("v-divider") : _vm._e(),
-                          _vm._v(" "),
-                          _c(
-                            "v-list",
-                            [
-                              _vm._l(_vm.categories, function (item, i) {
-                                return [
-                                  !_vm.selected.includes(i)
-                                    ? _c(
-                                        "v-list-item",
-                                        {
-                                          key: i,
-                                          attrs: {
-                                            disabled: _vm.code5.loading,
-                                          },
-                                          on: {
-                                            click: function ($event) {
-                                              return _vm.selected.push(i)
-                                            },
-                                          },
-                                        },
-                                        [
-                                          _c(
-                                            "v-list-item-avatar",
-                                            [
-                                              _c("v-icon", {
-                                                attrs: {
-                                                  disabled: _vm.code5.loading,
-                                                },
-                                                domProps: {
-                                                  textContent: _vm._s(
-                                                    item.icon
+                                                    card.title
                                                   ),
                                                 },
                                               }),
@@ -928,40 +780,54 @@ var render = function () {
                                             1
                                           ),
                                           _vm._v(" "),
-                                          _c("v-list-item-title", {
-                                            domProps: {
-                                              textContent: _vm._s(item.text),
-                                            },
-                                          }),
+                                          _c(
+                                            "v-card-actions",
+                                            [
+                                              _c("v-spacer"),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-btn",
+                                                { attrs: { icon: "" } },
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("mdi-heart"),
+                                                  ]),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-btn",
+                                                { attrs: { icon: "" } },
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("mdi-bookmark"),
+                                                  ]),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-btn",
+                                                { attrs: { icon: "" } },
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("mdi-share-variant"),
+                                                  ]),
+                                                ],
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
                                         ],
                                         1
-                                      )
-                                    : _vm._e(),
-                                ]
-                              }),
-                            ],
-                            2
-                          ),
-                          _vm._v(" "),
-                          _c("v-divider"),
-                          _vm._v(" "),
-                          _c(
-                            "v-card-actions",
-                            [
-                              _c("v-spacer"),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                {
-                                  attrs: {
-                                    disabled: !_vm.selected.length,
-                                    loading: _vm.code5.loading,
-                                    color: "purple",
-                                    text: "",
-                                  },
-                                  on: { click: _vm.next },
-                                },
-                                [_vm._v("Next")]
+                                      ),
+                                    ],
+                                    1
+                                  )
+                                }),
+                                1
                               ),
                             ],
                             1
@@ -997,6 +863,159 @@ var render = function () {
                 },
               ]),
             }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Twitter card" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("\n            The "),
+                        _c("code", [_vm._v("v-card")]),
+                        _vm._v(
+                          " component has multiple children components\n            that help you build complex examples without having to worry about\n            spacing. This example is comprised of the\n            "
+                        ),
+                        _c("code", [_vm._v("v-card-title")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("v-card-text")]),
+                        _vm._v(" and\n            "),
+                        _c("code", [_vm._v("v-card-actions")]),
+                        _vm._v(" components.\n          "),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: {
+                            color: "#26c6da",
+                            dark: "",
+                            "max-width": "400",
+                          },
+                        },
+                        [
+                          _c(
+                            "v-card-title",
+                            [
+                              _c("v-icon", { attrs: { large: "", left: "" } }, [
+                                _vm._v(
+                                  "\n                mdi-twitter\n              "
+                                ),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                { staticClass: "title font-weight-light" },
+                                [_vm._v("Twitter")]
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-card-text",
+                            { staticClass: "headline font-weight-bold" },
+                            [
+                              _vm._v(
+                                '\n              "Turns out semicolon-less style is easier and safer in TS\n              because most gotcha edge cases are type invalid as well."\n            '
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-card-actions",
+                            [
+                              _c(
+                                "v-list-item",
+                                { staticClass: "grow" },
+                                [
+                                  _c(
+                                    "v-list-item-avatar",
+                                    { attrs: { color: "grey darken-3" } },
+                                    [
+                                      _c("v-img", {
+                                        staticClass: "elevation-6",
+                                        attrs: {
+                                          src: "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light",
+                                        },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item-content",
+                                    [
+                                      _c("v-list-item-title", [
+                                        _vm._v("Evan You"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-row",
+                                    {
+                                      attrs: {
+                                        align: "center",
+                                        justify: "end",
+                                      },
+                                    },
+                                    [
+                                      _c("v-icon", { staticClass: "mr-1" }, [
+                                        _vm._v("mdi-heart"),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        { staticClass: "subheading mr-2" },
+                                        [_vm._v("256")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("span", { staticClass: "mr-1" }, [
+                                        _vm._v("·"),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("v-icon", { staticClass: "mr-1" }, [
+                                        _vm._v("mdi-share-variant"),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        { staticClass: "subheading" },
+                                        [_vm._v("45")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code7.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
           ],
           1
         ),
@@ -1006,144 +1025,115 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Icon" },
+              attrs: { title: "Intermediate" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Chips can use text or any icon available in the Material Icons\n            font library.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "div",
-                        { staticClass: "text-center" },
+                        "v-card",
+                        { staticClass: "d-inline-block mx-auto" },
                         [
                           _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "indigo", "text-color": "white" },
-                            },
+                            "v-container",
                             [
                               _c(
-                                "v-avatar",
-                                { attrs: { left: "" } },
-                                [_c("v-icon", [_vm._v("mdi-account-circle")])],
-                                1
-                              ),
-                              _vm._v("\n              Ranee\n            "),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "orange", "text-color": "white" },
-                            },
-                            [
-                              _vm._v("\n              Premium\n              "),
-                              _c("v-icon", { attrs: { right: "" } }, [
-                                _vm._v("mdi-star"),
-                              ]),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: {
-                                color: "primary",
-                                "text-color": "white",
-                              },
-                            },
-                            [
-                              _vm._v("\n              1 Year\n              "),
-                              _c("v-icon", { attrs: { right: "" } }, [
-                                _vm._v("mdi-cake-variant"),
-                              ]),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "green", "text-color": "white" },
-                            },
-                            [
-                              _c(
-                                "v-avatar",
-                                {
-                                  staticClass: "green darken-4",
-                                  attrs: { left: "" },
-                                },
-                                [_vm._v("\n                1\n              ")]
-                              ),
-                              _vm._v("\n              Years\n            "),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: {
-                                close: "",
-                                color: "teal",
-                                "text-color": "white",
-                              },
-                              on: { "click:close": _vm.close },
-                            },
-                            [
-                              _c(
-                                "v-avatar",
-                                { attrs: { left: "" } },
+                                "v-row",
+                                { attrs: { justify: "space-between" } },
                                 [
-                                  _c("v-icon", [
-                                    _vm._v("mdi-checkbox-marked-circle"),
-                                  ]),
+                                  _c(
+                                    "v-col",
+                                    { attrs: { cols: "auto" } },
+                                    [
+                                      _c("v-img", {
+                                        attrs: {
+                                          height: "200",
+                                          width: "200",
+                                          src: "media/stock-600x600/img-1.jpg",
+                                        },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-col",
+                                    {
+                                      staticClass: "text-center pl-0",
+                                      attrs: { cols: "auto" },
+                                    },
+                                    [
+                                      _c(
+                                        "v-row",
+                                        {
+                                          staticClass:
+                                            "flex-column ma-0 fill-height",
+                                          attrs: { justify: "center" },
+                                        },
+                                        [
+                                          _c(
+                                            "v-col",
+                                            { staticClass: "px-0" },
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                { attrs: { icon: "" } },
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("mdi-heart"),
+                                                  ]),
+                                                ],
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-col",
+                                            { staticClass: "px-0" },
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                { attrs: { icon: "" } },
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("mdi-bookmark"),
+                                                  ]),
+                                                ],
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-col",
+                                            { staticClass: "px-0" },
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                { attrs: { icon: "" } },
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("mdi-share-variant"),
+                                                  ]),
+                                                ],
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
                                 ],
                                 1
                               ),
-                              _vm._v("\n              Confirmed\n            "),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: {
-                                close: "",
-                                color: "teal",
-                                "text-color": "white",
-                                "close-icon": "mdi-delete",
-                              },
-                              on: { "click:close": _vm.close },
-                            },
-                            [
-                              _c(
-                                "v-avatar",
-                                { attrs: { left: "" } },
-                                [
-                                  _c("v-icon", [
-                                    _vm._v("mdi-checkbox-marked-circle"),
-                                  ]),
-                                ],
-                                1
-                              ),
-                              _vm._v("\n              Confirmed\n            "),
                             ],
                             1
                           ),
@@ -1165,88 +1155,73 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Label" },
+              attrs: { title: "Media with text" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c(
-                        "div",
-                        { staticClass: "text-center" },
+                        "v-card",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "400" },
+                        },
                         [
                           _c(
-                            "v-chip",
-                            { staticClass: "ma-2", attrs: { label: "" } },
-                            [_vm._v("\n              Label\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-chip",
+                            "v-img",
                             {
-                              staticClass: "ma-2",
+                              staticClass: "white--text align-end",
                               attrs: {
-                                color: "pink",
-                                label: "",
-                                "text-color": "white",
+                                height: "200px",
+                                src: "media/stock-600x600/img-18.jpg",
                               },
                             },
                             [
-                              _c("v-icon", { attrs: { left: "" } }, [
-                                _vm._v("mdi-label"),
+                              _c("v-card-title", [
+                                _vm._v("Top 10 Australian beaches"),
                               ]),
-                              _vm._v("\n              Tags\n            "),
                             ],
                             1
                           ),
                           _vm._v(" "),
-                          _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: { color: "primary", label: "" },
-                            },
-                            [
-                              _c("v-icon", { attrs: { left: "" } }, [
-                                _vm._v("mdi-account-circle-outline"),
-                              ]),
-                              _vm._v("\n              Sean Paul\n            "),
-                            ],
-                            1
-                          ),
+                          _c("v-card-subtitle", { staticClass: "pb-0" }, [
+                            _vm._v("Number 10"),
+                          ]),
+                          _vm._v(" "),
+                          _c("v-card-text", { staticClass: "text--primary" }, [
+                            _c("div", [_vm._v("Whitehaven Beach")]),
+                            _vm._v(" "),
+                            _c("div", [
+                              _vm._v("Whitsunday Island, Whitsunday Islands"),
+                            ]),
+                          ]),
                           _vm._v(" "),
                           _c(
-                            "v-chip",
-                            {
-                              staticClass: "ma-2",
-                              attrs: {
-                                close: "",
-                                color: "cyan",
-                                label: "",
-                                "text-color": "white",
-                              },
-                            },
+                            "v-card-actions",
                             [
-                              _c("v-icon", { attrs: { left: "" } }, [
-                                _vm._v("mdi-twitter"),
-                              ]),
-                              _vm._v(
-                                "\n              New Tweets\n            "
+                              _c(
+                                "v-btn",
+                                { attrs: { color: "orange", text: "" } },
+                                [
+                                  _vm._v(
+                                    "\n                Share\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                { attrs: { color: "orange", text: "" } },
+                                [
+                                  _vm._v(
+                                    "\n                Explore\n              "
+                                  ),
+                                ]
                               ),
                             ],
                             1
@@ -1273,175 +1248,105 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Expandable" },
+              attrs: { title: "Horizontal Cards" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _vm._v("\n            Using "),
+                        _c("code", [_vm._v("v-flex")]),
+                        _vm._v(
+                          ", you can create customized horizontal\n            cards. Use the "
+                        ),
+                        _c("code", [_vm._v("contain")]),
+                        _vm._v(" property to shrink the\n            "),
+                        _c("code", [_vm._v("v-img")]),
+                        _vm._v(
+                          " to fit inside the container, instead of\n            covering.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "v-card",
-                        { attrs: { "max-width": "400" } },
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "400" },
+                        },
                         [
-                          _c("v-system-bar"),
+                          _c(
+                            "v-system-bar",
+                            { attrs: { color: "pink darken-2", dark: "" } },
+                            [
+                              _c("v-spacer"),
+                              _vm._v(" "),
+                              _c("v-icon", [_vm._v("mdi-window-minimize")]),
+                              _vm._v(" "),
+                              _c("v-icon", [_vm._v("mdi-window-maximize")]),
+                              _vm._v(" "),
+                              _c("v-icon", [_vm._v("mdi-close")]),
+                            ],
+                            1
+                          ),
                           _vm._v(" "),
                           _c(
-                            "v-row",
-                            {
-                              staticClass: "px-6 py-3",
-                              attrs: { align: "center" },
-                            },
+                            "v-app-bar",
+                            { attrs: { dark: "", color: "pink" } },
                             [
-                              _c("span", { staticClass: "mr-4" }, [
-                                _vm._v("To"),
-                              ]),
+                              _c("v-app-bar-nav-icon"),
+                              _vm._v(" "),
+                              _c("v-toolbar-title", [_vm._v("My Music")]),
+                              _vm._v(" "),
+                              _c("v-spacer"),
                               _vm._v(" "),
                               _c(
-                                "v-menu",
-                                {
-                                  attrs: {
-                                    bottom: "",
-                                    right: "",
-                                    transition: "scale-transition",
-                                    origin: "top left",
-                                  },
-                                  scopedSlots: _vm._u([
-                                    {
-                                      key: "activator",
-                                      fn: function (ref) {
-                                        var on = ref.on
-                                        return [
-                                          _c(
-                                            "v-chip",
-                                            _vm._g({ attrs: { pill: "" } }, on),
-                                            [
-                                              _c(
-                                                "v-avatar",
-                                                { attrs: { left: "" } },
-                                                [
-                                                  _c("v-img", {
-                                                    attrs: {
-                                                      src: "media/users/100_11.jpg",
-                                                    },
-                                                  }),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(
-                                                "\n                    Sean Paul\n                  "
-                                              ),
-                                            ],
-                                            1
-                                          ),
-                                        ]
-                                      },
-                                    },
-                                  ]),
-                                  model: {
-                                    value: _vm.code6.menu,
-                                    callback: function ($$v) {
-                                      _vm.$set(_vm.code6, "menu", $$v)
-                                    },
-                                    expression: "code6.menu",
-                                  },
-                                },
+                                "v-btn",
+                                { attrs: { icon: "" } },
+                                [_c("v-icon", [_vm._v("mdi-magnify")])],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-container",
+                            [
+                              _c(
+                                "v-row",
+                                { attrs: { dense: "" } },
                                 [
-                                  _vm._v(" "),
                                   _c(
-                                    "v-card",
-                                    { attrs: { width: "300" } },
+                                    "v-col",
+                                    { attrs: { cols: "12" } },
                                     [
                                       _c(
-                                        "v-list",
-                                        { attrs: { dark: "" } },
+                                        "v-card",
+                                        {
+                                          attrs: { color: "#385F73", dark: "" },
+                                        },
                                         [
                                           _c(
-                                            "v-list-item",
-                                            [
-                                              _c(
-                                                "v-list-item-avatar",
-                                                [
-                                                  _c("v-img", {
-                                                    attrs: {
-                                                      src: "media/users/100_11.jpg",
-                                                    },
-                                                  }),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-list-item-content",
-                                                [
-                                                  _c("v-list-item-title", [
-                                                    _vm._v("Sean Paul"),
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("v-list-item-subtitle", [
-                                                    _vm._v(
-                                                      "support@keenthemes.com"
-                                                    ),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-list-item-action",
-                                                [
-                                                  _c(
-                                                    "v-btn",
-                                                    {
-                                                      attrs: { icon: "" },
-                                                      on: {
-                                                        click: function (
-                                                          $event
-                                                        ) {
-                                                          _vm.menu = false
-                                                        },
-                                                      },
-                                                    },
-                                                    [
-                                                      _c("v-icon", [
-                                                        _vm._v(
-                                                          "mdi-close-circle"
-                                                        ),
-                                                      ]),
-                                                    ],
-                                                    1
-                                                  ),
-                                                ],
-                                                1
-                                              ),
-                                            ],
-                                            1
+                                            "v-card-title",
+                                            { staticClass: "headline" },
+                                            [_vm._v("Unlimited music now")]
                                           ),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-list",
-                                        [
+                                          _vm._v(" "),
+                                          _c("v-card-subtitle", [
+                                            _vm._v(
+                                              "Listen to your favorite artists and albums whenever and\n                      wherever, online and offline."
+                                            ),
+                                          ]),
+                                          _vm._v(" "),
                                           _c(
-                                            "v-list-item",
-                                            { on: { click: function () {} } },
+                                            "v-card-actions",
                                             [
                                               _c(
-                                                "v-list-item-action",
-                                                [
-                                                  _c("v-icon", [
-                                                    _vm._v("mdi-briefcase"),
-                                                  ]),
-                                                ],
-                                                1
+                                                "v-btn",
+                                                { attrs: { text: "" } },
+                                                [_vm._v("Listen Now")]
                                               ),
-                                              _vm._v(" "),
-                                              _c("v-list-item-subtitle", [
-                                                _vm._v(
-                                                  "support@keenthemes.com"
-                                                ),
-                                              ]),
                                             ],
                                             1
                                           ),
@@ -1451,31 +1356,82 @@ var render = function () {
                                     ],
                                     1
                                   ),
+                                  _vm._v(" "),
+                                  _vm._l(_vm.code6.items, function (item, i) {
+                                    return _c(
+                                      "v-col",
+                                      { key: i, attrs: { cols: "12" } },
+                                      [
+                                        _c(
+                                          "v-card",
+                                          {
+                                            attrs: {
+                                              color: item.color,
+                                              dark: "",
+                                            },
+                                          },
+                                          [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "d-flex flex-no-wrap justify-space-between",
+                                              },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  [
+                                                    _c("v-card-title", {
+                                                      staticClass: "headline",
+                                                      domProps: {
+                                                        textContent: _vm._s(
+                                                          item.title
+                                                        ),
+                                                      },
+                                                    }),
+                                                    _vm._v(" "),
+                                                    _c("v-card-subtitle", {
+                                                      domProps: {
+                                                        textContent: _vm._s(
+                                                          item.artist
+                                                        ),
+                                                      },
+                                                    }),
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-avatar",
+                                                  {
+                                                    staticClass: "ma-3",
+                                                    attrs: {
+                                                      size: "125",
+                                                      tile: "",
+                                                    },
+                                                  },
+                                                  [
+                                                    _c("v-img", {
+                                                      attrs: { src: item.src },
+                                                    }),
+                                                  ],
+                                                  1
+                                                ),
+                                              ],
+                                              1
+                                            ),
+                                          ]
+                                        ),
+                                      ],
+                                      1
+                                    )
+                                  }),
                                 ],
-                                1
+                                2
                               ),
                             ],
                             1
                           ),
-                          _vm._v(" "),
-                          _c("v-divider"),
-                          _vm._v(" "),
-                          _c("v-text-field", {
-                            attrs: {
-                              "full-width": "",
-                              value: "Re: Vacation Request",
-                              label: "Subject",
-                              "single-line": "",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("v-textarea", {
-                            attrs: {
-                              "full-width": "",
-                              "single-line": "",
-                              label: "Message",
-                            },
-                          }),
                         ],
                         1
                       ),
@@ -1522,17 +1478,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Chips.vue":
+/***/ "./resources/js/src/view/pages/vuetify/Cards.vue":
 /*!*******************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Chips.vue ***!
+  !*** ./resources/js/src/view/pages/vuetify/Cards.vue ***!
   \*******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Chips_vue_vue_type_template_id_36dd4acc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Chips.vue?vue&type=template&id=36dd4acc& */ "./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=template&id=36dd4acc&");
-/* harmony import */ var _Chips_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Chips.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Cards_vue_vue_type_template_id_55f1e354___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Cards.vue?vue&type=template&id=55f1e354& */ "./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=template&id=55f1e354&");
+/* harmony import */ var _Cards_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Cards.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1542,9 +1498,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Chips_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Chips_vue_vue_type_template_id_36dd4acc___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Chips_vue_vue_type_template_id_36dd4acc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Cards_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Cards_vue_vue_type_template_id_55f1e354___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Cards_vue_vue_type_template_id_55f1e354___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1554,38 +1510,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vuetify/Chips.vue"
+component.options.__file = "resources/js/src/view/pages/vuetify/Cards.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=script&lang=js&":
 /*!********************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=script&lang=js& ***!
   \********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Chips_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Chips.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Chips_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cards_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Cards.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cards_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=template&id=36dd4acc&":
+/***/ "./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=template&id=55f1e354&":
 /*!**************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=template&id=36dd4acc& ***!
+  !*** ./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=template&id=55f1e354& ***!
   \**************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Chips_vue_vue_type_template_id_36dd4acc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Chips.vue?vue&type=template&id=36dd4acc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Chips.vue?vue&type=template&id=36dd4acc&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Chips_vue_vue_type_template_id_36dd4acc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cards_vue_vue_type_template_id_55f1e354___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Cards.vue?vue&type=template&id=55f1e354& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Cards.vue?vue&type=template&id=55f1e354&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cards_vue_vue_type_template_id_55f1e354___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Chips_vue_vue_type_template_id_36dd4acc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cards_vue_vue_type_template_id_55f1e354___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

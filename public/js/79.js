@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[79],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11,18 +11,355 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/view/content/CodePreview.vue */ "./resources/js/src/view/content/CodePreview.vue");
 /* harmony import */ var _core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/core/services/store/breadcrumbs.module */ "./resources/js/src/core/services/store/breadcrumbs.module.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -502,37 +839,73 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   data: function data() {
     return {
       code1: {
-        html: "<v-card>\n  <v-toolbar flat color=\"primary\" dark>\n    <v-toolbar-title>User Profile</v-toolbar-title>\n  </v-toolbar>\n  <v-tabs vertical>\n    <v-tab>\n      <v-icon left>mdi-account</v-icon>\n      Option 1\n    </v-tab>\n    <v-tab>\n      <v-icon left>mdi-lock</v-icon>\n      Option 2\n    </v-tab>\n    <v-tab>\n      <v-icon left>mdi-access-point</v-icon>\n      Option 3\n    </v-tab>\n\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          <p>\n            Sed aliquam ultrices mauris. Donec posuere vulputate arcu. Morbi ac felis. Etiam feugiat lorem non metus. Sed a libero.\n          </p>\n\n          <p>\n            Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Aliquam lobortis. Aliquam lobortis. Suspendisse non nisl sit amet velit hendrerit rutrum.\n          </p>\n\n          <p class=\"mb-0\">\n            Phasellus dolor. Fusce neque. Fusce fermentum odio nec arcu. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Phasellus blandit leo ut odio.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          <p>\n            Morbi nec metus. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Nunc sed turpis.\n          </p>\n\n          <p>\n            Suspendisse feugiat. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. In hac habitasse platea dictumst. Fusce ac felis sit amet ligula pharetra condimentum.\n          </p>\n\n          <p>\n            Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Nam commodo suscipit quam. In consectetuer turpis ut velit. Sed cursus turpis vitae tortor. Aliquam eu nunc.\n          </p>\n\n          <p>\n            Etiam ut purus mattis mauris sodales aliquam. Ut varius tincidunt libero. Aenean viverra rhoncus pede. Duis leo. Fusce fermentum odio nec arcu.\n          </p>\n\n          <p class=\"mb-0\">\n            Donec venenatis vulputate lorem. Aenean viverra rhoncus pede. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Fusce commodo aliquam arcu. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          <p>\n            Fusce a quam. Phasellus nec sem in justo pellentesque facilisis. Nam eget dui. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.\n          </p>\n\n          <p class=\"mb-0\">\n            Cras sagittis. Phasellus nec sem in justo pellentesque facilisis. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nam at tortor in tellus interdum sagittis.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs>\n</v-card>"
+        html: " <v-row justify=\"center\">\n  <v-btn\n    color=\"primary\"\n    dark\n    @click.stop=\"dialog = true\"\n  >\n    Open Dialog\n  </v-btn>\n\n  <v-dialog\n    v-model=\"dialog\"\n    max-width=\"290\"\n  >\n    <v-card>\n      <v-card-title class=\"headline\">Use Google's location service?</v-card-title>\n\n      <v-card-text>\n        Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.\n      </v-card-text>\n\n      <v-card-actions>\n        <v-spacer></v-spacer>\n\n        <v-btn\n          color=\"green darken-1\"\n          text\n          @click=\"dialog = false\"\n        >\n          Disagree\n        </v-btn>\n\n        <v-btn\n          color=\"green darken-1\"\n          text\n          @click=\"dialog = false\"\n        >\n          Agree\n        </v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</v-row>",
+        js: "export default {\n  data () {\n    return {\n      dialog: false,\n    }\n  },\n}",
+        dialog: false
       },
       code2: {
-        html: "<v-card>\n  <v-tabs\n    v-model=\"tab\"\n    background-color=\"deep-purple accent-4\"\n    centered\n    dark\n    icons-and-text\n  >\n    <v-tabs-slider></v-tabs-slider>\n\n    <v-tab href=\"#tab-1\">\n      Recents\n      <v-icon>mdi-phone</v-icon>\n    </v-tab>\n\n    <v-tab href=\"#tab-2\">\n      Favorites\n      <v-icon>mdi-heart</v-icon>\n    </v-tab>\n\n    <v-tab href=\"#tab-3\">\n      Nearby\n      <v-icon>mdi-account-box</v-icon>\n    </v-tab>\n  </v-tabs>\n\n  <v-tabs-items v-model=\"tab\">\n    <v-tab-item\n      v-for=\"i in 3\"\n      :key=\"i\"\n      :value=\"'tab-' + i\"\n    >\n      <v-card flat>\n        <v-card-text>{{ text }}</v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
-        js: "export default {\n    data () {\n      return {\n        tab: null,\n        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n      }\n    },\n  }",
-        tab: null,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        html: "<v-row justify=\"center\">\n  <v-dialog v-model=\"dialog\" scrollable max-width=\"300px\">\n    <template v-slot:activator=\"{ on }\">\n      <v-btn color=\"primary\" dark v-on=\"on\">Open Dialog</v-btn>\n    </template>\n    <v-card>\n      <v-card-title>Select Country</v-card-title>\n      <v-divider></v-divider>\n      <v-card-text style=\"height: 300px;\">\n        <v-radio-group v-model=\"dialogm1\" column>\n          <v-radio label=\"Bahamas, The\" value=\"bahamas\"></v-radio>\n          <v-radio label=\"Bahrain\" value=\"bahrain\"></v-radio>\n          <v-radio label=\"Bangladesh\" value=\"bangladesh\"></v-radio>\n          <v-radio label=\"Barbados\" value=\"barbados\"></v-radio>\n          <v-radio label=\"Belarus\" value=\"belarus\"></v-radio>\n          <v-radio label=\"Belgium\" value=\"belgium\"></v-radio>\n          <v-radio label=\"Belize\" value=\"belize\"></v-radio>\n          <v-radio label=\"Benin\" value=\"benin\"></v-radio>\n          <v-radio label=\"Bhutan\" value=\"bhutan\"></v-radio>\n          <v-radio label=\"Bolivia\" value=\"bolivia\"></v-radio>\n          <v-radio label=\"Bosnia and Herzegovina\" value=\"bosnia\"></v-radio>\n          <v-radio label=\"Botswana\" value=\"botswana\"></v-radio>\n          <v-radio label=\"Brazil\" value=\"brazil\"></v-radio>\n          <v-radio label=\"Brunei\" value=\"brunei\"></v-radio>\n          <v-radio label=\"Bulgaria\" value=\"bulgaria\"></v-radio>\n          <v-radio label=\"Burkina Faso\" value=\"burkina\"></v-radio>\n          <v-radio label=\"Burma\" value=\"burma\"></v-radio>\n          <v-radio label=\"Burundi\" value=\"burundi\"></v-radio>\n        </v-radio-group>\n      </v-card-text>\n      <v-divider></v-divider>\n      <v-card-actions>\n        <v-btn color=\"blue darken-1\" text @click=\"dialog = false\">Close</v-btn>\n        <v-btn color=\"blue darken-1\" text @click=\"dialog = false\">Save</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</v-row>",
+        js: "export default {\n  data () {\n    return {\n      dialogm1: '',\n      dialog: false,\n    }\n  },\n}",
+        dialogm1: "",
+        dialog: false
       },
       code3: {
-        html: "<v-card>\n  <v-tabs\n    background-color=\"white\"\n    color=\"deep-purple accent-4\"\n    right\n  >\n    <v-tab>Landscape</v-tab>\n    <v-tab>City</v-tab>\n    <v-tab>Abstract</v-tab>\n\n    <v-tab-item\n      v-for=\"n in 3\"\n      :key=\"n\"\n    >\n      <v-container fluid>\n        <v-row>\n          <v-col\n            v-for=\"i in 6\"\n            :key=\"i\"\n            cols=\"12\"\n            md=\"4\"\n          >\n            <v-img\n              :src=\"`https://picsum.photos/500/300?image=${i * n * 5 + 10}`\"\n              :lazy-src=\"`https://picsum.photos/10/6?image=${i * n * 5 + 10}`\"\n              aspect-ratio=\"1\"\n            ></v-img>\n          </v-col>\n        </v-row>\n      </v-container>\n    </v-tab-item>\n  </v-tabs>\n</v-card>"
+        html: "<v-row justify=\"center\">\n  <v-dialog v-model=\"dialog\" width=\"600px\">\n    <template v-slot:activator=\"{ on }\">\n      <v-btn color=\"primary\" dark v-on=\"on\">Open Dialog</v-btn>\n    </template>\n    <v-card>\n      <v-card-title>\n        <span class=\"headline\">Use Google's location service?</span>\n      </v-card-title>\n        <v-card-text\n          >Lorem ipsum dolor sit amet, semper quis, sapien id natoque\n          elit. Nostra urna at, magna at neque sed sed ante imperdiet,\n          dolor mauris cursus velit, velit non, sem nec. Volutpat sem\n          ridiculus placerat leo, augue in, duis erat proin\n          condimentum in a eget, sed fermentum sed vestibulum varius\n          ac, vestibulum volutpat orci ut elit eget tortor. Ultrices\n          nascetur nulla gravida ante arcu. Pharetra rhoncus morbi\n          ipsum, nunc tempor debitis, ipsum pellentesque, vitae id\n          quam ut mauris dui tempor, aptent non. Quisque turpis.\n          Phasellus quis lectus luctus orci eget rhoncus. Amet donec\n          vestibulum mattis commodo, nulla aliquet, nibh praesent,\n          elementum nulla. Sit lacus pharetra tempus magna neque\n          pellentesque, nulla vel erat. Justo ex quisque nulla\n          accusamus venenatis, sed quis. Nibh phasellus gravida metus\n          in, fusce aenean ut erat commodo eros. Ut turpis, dui\n          integer, nonummy pede placeat nec in sit leo. Faucibus\n          porttitor illo taciti odio, amet viverra scelerisque quis\n          quis et tortor, curabitur morbi a. Enim tempor at, rutrum\n          elit condimentum, amet rutrum vitae tempor torquent nunc.\n          Praesent vestibulum integer maxime felis. Neque aenean quia\n          vitae nostra, tempus elit enim id dui, at egestas pulvinar.\n          Integer libero vestibulum, quis blandit scelerisque mattis\n          fermentum nulla, tortor donec vestibulum dolor amet eget,\n          elit nullam. Aliquam leo phasellus aliquam curabitur metus\n          a, nulla justo mattis duis interdum vel, mollis vitae et id,\n          vestibulum erat ridiculus sit pulvinar justo sed. Vehicula\n          convallis, et nulla wisi, amet vestibulum risus, quam ac\n          egestas. Et vitae, nulla gravida erat scelerisque nullam\n          nunc pellentesque, a dictumst cras augue, purus imperdiet\n          non. Varius montes cursus varius vel tortor, nec leo a qui,\n          magni cras, velit vel consectetuer lobortis vel. Nibh erat\n          et wisi felis leo porttitor, sapien nibh sapien pede mi, sed\n          eget porttitor, repellendus arcu ac quis. Luctus vulputate\n          aut est sem magna, placerat accumsan nunc vestibulum ipsum\n          ac auctor, maecenas lorem in ut nec mauris tortor, doloribus\n          varius sem tortor vestibulum mollis, eleifend tortor felis\n          tempus lacus eu eu. Eleifend vel eu, nullam maecenas mauris\n          nec nunc euismod, tortor porta ridiculus potenti, massa\n          tristique nam magna, et wisi placerat et erat ante. Eget\n          pede erat in facilisis, fermentum venenatis sodales. Ac\n          tortor sociis et non animi tristique, rhoncus malesuada, ut\n          arcu volutpat scelerisque sollicitudin, elit curabitur dui\n          pede purus dolor, integer aenean risus taciti nulla eleifend\n          accumsan. At pulvinar diam parturient, interdum mi velit\n          aliquet et a. Arcu at ac placerat eget justo semper, purus\n          sociis curabitur mi ipsum consequat ut, mollis vestibulum,\n          est ante ornare lacus sem. Neque magna mauris, commodo\n          quisque, praesent semper suscipit lobortis nam. Justo\n          malesuada cursus ac nunc litora nunc. Tellus ac, in lobortis\n          nunc, montes lectus purus fermentum. Ac sit wisi. Sodales\n          aliquam, sed vestibulum nullam arcu sit risus arcu, id\n          luctus vitae lorem nibh, integer nec nullam class cursus mi,\n          purus arcu lectus. Vel ante suscipit volutpat potenti mattis\n          sed, wisi eu placerat aliquam erat, lectus morbi lobortis at\n          assumenda. Consequat neque purus ipsum voluptas odio, netus\n          vestibulum ut nec, suspendisse pellentesque nec enim in.\n          Wisi dictum sed semper a, ipsum erat tellus habitasse est,\n          erat sem ornare, vitae quisque ultricies. Dui sed blandit.\n          Tempor et faucibus justo sed luctus, nec vitae vitae. Nunc\n          nibh pede, ipsum vestibulum aenean leo ante ultricies, nam\n          cras quis sed penatibus amet. In mauris a. Integer metus\n          mauris tortor, et rutrum vestibulum ultricies, ut phasellus\n          in ullamcorper ut mollit, eu justo. Cursus pretium\n          venenatis. Cras pellentesque vel sodales accumsan aenean.\n          Feugiat metus sit nec in aliquet amet, porttitor pretium\n          vulputate massa. Consequat ipsum luctus quisque adipiscing\n          libero. Wisi sollicitudin. Eget vitae ac lobortis, lorem\n          natoque vestibulum et, aliquet faucibus at morbi nibh, vel\n          condimentum. Massa unde orci sed id sed, odio donec congue\n          nec praesent amet. Hymenaeos velit lacus, quis vivamus\n          libero tempus duis, eu nisi eu, ipsum at accumsan pede justo\n          morbi donec, massa et libero sit risus neque tortor. Ut sed\n          sed etiam hendrerit dapibus, quis metus suspendisse nibh.\n          Fringilla tempor felis augue magna. Cum arcu a, id vitae.\n          Pellentesque pharetra in cras sociis adipiscing est. Nibh\n          nec mattis at maecenas, nisl orci aliquam nulla justo\n          egestas venenatis, elementum duis vel porta eros, massa\n          vitae, eligendi imperdiet amet. Nec neque luctus suscipit,\n          justo sem praesent, ut nisl quisque, volutpat torquent wisi\n          tellus aliquam reprehenderit, curabitur cras at quis massa\n          porttitor mauris. Eros sed ultrices. Amet dignissim justo\n          urna feugiat mauris litora, etiam accumsan, lobortis a orci\n          suspendisse. Semper ac mauris, varius bibendum pretium, orci\n          urna nunc ullamcorper auctor, saepe sem integer quam, at\n          feugiat egestas duis. Urna ligula ante. Leo elementum\n          nonummy. Sagittis mauris est in ipsum, nulla amet non justo,\n          proin id potenti platea posuere sit ut, nunc sit erat\n          bibendum. Nibh id auctor, ab nulla vivamus ultrices, posuere\n          morbi nunc tellus gravida vivamus. Mauris nec, facilisi quam\n          fermentum, ut mauris integer, orci tellus tempus diam ut in\n          pellentesque. Wisi faucibus tempor et odio leo diam,\n          eleifend quis integer curabitur sit scelerisque ac, mauris\n          consequat luctus quam penatibus fringilla dis, vitae lacus\n          in, est eu ac tempus. Consectetuer amet ipsum amet dui, sed\n          blandit id sed. Tellus integer, dignissim id pede sodales\n          quis, felis dolorem id mauris orci, orci tempus ut. Nullam\n          hymenaeos. Curabitur in a, tortor ut praesent placerat\n          tincidunt interdum, ac dignissim metus nonummy hendrerit\n          wisi, etiam ut. Semper praesent integer fusce, tortor\n          suspendisse, augue ligula orci ante asperiores ullamcorper.\n          In sit per mi sed sed, mi vestibulum mus nam, morbi mauris\n          neque vitae aliquam proin senectus. Ac amet arcu mollis ante\n          congue elementum, inceptos eget optio quam pellentesque quis\n          lobortis, sollicitudin sed vestibulum sollicitudin, lectus\n          parturient nullam, leo orci ligula ultrices. At tincidunt\n          enim, suspendisse est sit sem ac. Amet tellus molestie est\n          purus magna augue, non etiam et in wisi id. Non commodo,\n          metus lorem facilisi lobortis ac velit, montes neque sed\n          risus consectetuer fringilla dolor. Quam justo et integer\n          aliquam, cursus nulla enim orci, nam cursus adipiscing,\n          integer torquent non, fringilla per maecenas. Libero ipsum\n          sed tellus purus et. Duis molestie placerat erat donec ut.\n          Dolor enim erat massa faucibus ultrices in, ante ultricies\n          orci lacus, libero consectetuer mauris magna feugiat neque\n          dapibus, donec pretium et. Aptent dui, aliquam et et amet\n          nostra ligula. Augue curabitur duis dui volutpat, tempus sed\n          ut pede donec. Interdum luctus, lectus nulla aenean elit, id\n          sit magna, vulputate ultrices pellentesque vel id fermentum\n          morbi. Tortor et. Adipiscing augue lorem cum non lacus,\n          rutrum sodales laoreet duis tortor, modi placerat facilisis\n          et malesuada eros ipsum, vehicula tempus. Ac vivamus amet\n          non aliquam venenatis lectus, sociosqu adipiscing consequat\n          nec arcu odio. Blandit orci nec nec, posuere in pretium,\n          enim ut, consectetuer nullam urna, risus vel. Nullam odio\n          vehicula massa sed, etiam sociis mauris, lacus ullamcorper,\n          libero imperdiet non sodales placerat justo vehicula. Nec\n          morbi imperdiet. Fermentum sem libero iaculis bibendum et\n          eros, eget maecenas non nunc, ad pellentesque. Ut nec diam\n          elementum interdum. Elementum vitae tellus lacus vitae,\n          ipsum phasellus, corporis vehicula in ac sed massa vivamus,\n          rutrum elit, ultricies metus volutpat. Semper wisi et,\n          sollicitudin nunc vestibulum, cursus accumsan nunc pede\n          tempus mi ipsum, ligula sed. Non condimentum ac dolor sit.\n          Mollis eu aliquam, vel mattis mollis massa ut dolor ante,\n          tempus lacinia arcu. Urna vestibulum lorem, nulla fermentum,\n          iaculis ut congue ac vivamus. Nam libero orci, pulvinar\n          nulla, enim pellentesque consectetuer leo, feugiat rhoncus\n          rhoncus vel. Magna sociosqu donec, dictum cursus ullamcorper\n          viverra. Ultricies quis orci lorem, suspendisse ut\n          vestibulum integer, purus sed lorem pulvinar habitasse\n          turpis. +</v-card-text\n        >\n      <v-card-actions>\n        <v-spacer></v-spacer>\n        <v-btn color=\"green darken-1\" text @click=\"dialog = false\">Disagree</v-btn>\n        <v-btn color=\"green darken-1\" text @click=\"dialog = false\">Agree</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</v-row>",
+        js: "export default {\n  data () {\n    return {\n      dialog: false,\n    }\n  },\n}",
+        dialog: false
       },
       code4: {
-        html: "<v-card>\n  <v-toolbar\n    color=\"cyan\"\n    dark\n    flat\n  >\n    <v-app-bar-nav-icon></v-app-bar-nav-icon>\n\n    <v-toolbar-title>Page title</v-toolbar-title>\n\n    <v-spacer></v-spacer>\n\n    <v-btn icon>\n      <v-icon>mdi-magnify</v-icon>\n    </v-btn>\n\n    <v-btn icon>\n      <v-icon>mdi-dots-vertical</v-icon>\n    </v-btn>\n\n    <template v-slot:extension>\n      <v-tabs\n        v-model=\"model\"\n        centered\n        slider-color=\"yellow\"\n      >\n        <v-tab\n          v-for=\"i in 3\"\n          :key=\"i\"\n          :href=\"`#tab-${i}`\"\n        >\n          Item {{ i }}\n        </v-tab>\n      </v-tabs>\n    </template>\n  </v-toolbar>\n\n  <v-tabs-items v-model=\"model\">\n    <v-tab-item\n      v-for=\"i in 3\"\n      :key=\"i\"\n      :value=\"`tab-${i}`\"\n    >\n      <v-card flat>\n        <v-card-text v-text=\"text\"></v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
-        js: "export default {\n  data () {\n    return {\n      model: 'tab-2',\n      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n    }\n  },\n}",
-        model: "tab-2",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        html: "<v-row justify=\"center\">\n  <v-dialog v-model=\"dialog\" persistent max-width=\"600px\">\n    <template v-slot:activator=\"{ on }\">\n      <v-btn color=\"primary\" dark v-on=\"on\">Open Dialog</v-btn>\n    </template>\n    <v-card>\n      <v-card-title>\n        <span class=\"headline\">User Profile</span>\n      </v-card-title>\n      <v-card-text>\n        <v-container>\n          <v-row>\n            <v-col cols=\"12\" sm=\"6\" md=\"4\">\n              <v-text-field label=\"Legal first name*\" required></v-text-field>\n            </v-col>\n            <v-col cols=\"12\" sm=\"6\" md=\"4\">\n              <v-text-field label=\"Legal middle name\" hint=\"example of helper text only on focus\"></v-text-field>\n            </v-col>\n            <v-col cols=\"12\" sm=\"6\" md=\"4\">\n              <v-text-field\n                label=\"Legal last name*\"\n                hint=\"example of persistent helper text\"\n                persistent-hint\n                required\n              ></v-text-field>\n            </v-col>\n            <v-col cols=\"12\">\n              <v-text-field label=\"Email*\" required></v-text-field>\n            </v-col>\n            <v-col cols=\"12\">\n              <v-text-field label=\"Password*\" type=\"password\" required></v-text-field>\n            </v-col>\n            <v-col cols=\"12\" sm=\"6\">\n              <v-select\n                :items=\"['0-17', '18-29', '30-54', '54+']\"\n                label=\"Age*\"\n                required\n              ></v-select>\n            </v-col>\n            <v-col cols=\"12\" sm=\"6\">\n              <v-autocomplete\n                :items=\"['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']\"\n                label=\"Interests\"\n                multiple\n              ></v-autocomplete>\n            </v-col>\n          </v-row>\n        </v-container>\n        <small>*indicates required field</small>\n      </v-card-text>\n      <v-card-actions>\n        <v-spacer></v-spacer>\n        <v-btn color=\"blue darken-1\" text @click=\"dialog = false\">Close</v-btn>\n        <v-btn color=\"blue darken-1\" text @click=\"dialog = false\">Save</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</v-row>",
+        js: "export default {\n  data: () => ({\n    dialog: false,\n  }),\n}",
+        dialog: false
       },
       code5: {
-        html: "<v-card>\n  <v-toolbar\n    color=\"purple\"\n    dark\n    flat\n    prominent\n  >\n    <v-text-field\n      append-icon=\"mic\"\n      class=\"mx-4\"\n      flat\n      hide-details\n      label=\"Search\"\n      prepend-inner-icon=\"search\"\n      solo-inverted\n    ></v-text-field>\n\n    <template v-slot:extension>\n      <v-tabs\n        v-model=\"tabs\"\n        centered\n      >\n        <v-tab\n          v-for=\"n in 3\"\n          :key=\"n\"\n        >\n          Item {{ n }}\n        </v-tab>\n      </v-tabs>\n    </template>\n  </v-toolbar>\n\n  <v-tabs-items v-model=\"tabs\">\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-title class=\"headline\">An awesome title</v-card-title>\n        <v-card-text>\n          <p>\n            Duis lobortis massa imperdiet quam. Donec vitae orci sed dolor rutrum auctor. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Praesent congue erat at massa.\n          </p>\n\n          <p>\n            Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Etiam sit amet orci eget eros faucibus tincidunt. Donec sodales sagittis magna.\n          </p>\n\n          <p class=\"mb-0\">\n            Ut leo. Suspendisse potenti. Duis vel nibh at velit scelerisque suscipit. Fusce pharetra convallis urna.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-title class=\"headline\">An even better title</v-card-title>\n        <v-card-text>\n          <p>\n            Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed hendrerit. Maecenas malesuada. Vestibulum ullamcorper mauris at ligula. Proin faucibus arcu quis ante.\n          </p>\n\n          <p class=\"mb-0\">\n            Etiam vitae tortor. Curabitur ullamcorper ultricies nisi. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Aliquam lobortis. Suspendisse potenti.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
-        js: "export default {\n  data () {\n    return {\n      tabs: null,\n      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n    }\n  },\n}",
-        tabs: null,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        html: "<div class=\"text-center\">\n  <v-btn\n    :disabled=\"dialog\"\n    :loading=\"dialog\"\n    class=\"white--text\"\n    color=\"purple darken-2\"\n    @click=\"dialog = true\"\n  >\n    Start loading\n  </v-btn>\n  <v-dialog\n    v-model=\"dialog\"\n    hide-overlay\n    persistent\n    width=\"300\"\n  >\n    <v-card\n      color=\"primary\"\n      dark\n    >\n      <v-card-text>\n        Please stand by\n        <v-progress-linear\n          indeterminate\n          color=\"white\"\n          class=\"mb-0\"\n        ></v-progress-linear>\n      </v-card-text>\n    </v-card>\n  </v-dialog>\n</div>",
+        js: "export default {\n  data () {\n    return {\n      dialog: false,\n    }\n  },\n\n  watch: {\n    dialog (val) {\n      if (!val) return\n\n      setTimeout(() => (this.dialog = false), 4000)\n    },\n  },\n}"
       },
+      code5Dialog: false,
       code6: {
-        html: "<v-card>\n  <v-toolbar\n    color=\"deep-purple accent-4\"\n    dark\n    flat\n  >\n    <v-app-bar-nav-icon></v-app-bar-nav-icon>\n\n    <v-toolbar-title>Page title</v-toolbar-title>\n\n    <v-spacer></v-spacer>\n\n    <v-btn icon>\n      <v-icon>mdi-magnify</v-icon>\n    </v-btn>\n\n    <v-btn icon>\n      <v-icon>mdi-dots-vertical</v-icon>\n    </v-btn>\n\n    <template v-slot:extension>\n      <v-tabs\n        v-model=\"currentItem\"\n        fixed-tabs\n        slider-color=\"white\"\n      >\n        <v-tab\n          v-for=\"item in items\"\n          :key=\"item\"\n          :href=\"'#tab-' + item\"\n        >\n          {{ item }}\n        </v-tab>\n\n        <v-menu\n          v-if=\"more.length\"\n          bottom\n          left\n        >\n          <template v-slot:activator=\"{ on }\">\n            <v-btn\n              text\n              class=\"align-self-center mr-4\"\n              v-on=\"on\"\n            >\n              more\n              <v-icon right>mdi-menu-down</v-icon>\n            </v-btn>\n          </template>\n\n          <v-list class=\"grey lighten-3\">\n            <v-list-item\n              v-for=\"item in more\"\n              :key=\"item\"\n              @click=\"addItem(item)\"\n            >\n              {{ item }}\n            </v-list-item>\n          </v-list>\n        </v-menu>\n      </v-tabs>\n    </template>\n  </v-toolbar>\n\n  <v-tabs-items v-model=\"currentItem\">\n    <v-tab-item\n      v-for=\"item in items.concat(more)\"\n      :key=\"item\"\n      :value=\"'tab-' + item\"\n    >\n      <v-card flat>\n        <v-card-text>\n          <h2>{{ item }}</h2>\n          {{ text }}\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
-        js: "export default {\n  data: () => ({\n    currentItem: 'tab-Web',\n    items: [\n      'Web', 'Shopping', 'Videos', 'Images',\n    ],\n    more: [\n      'News', 'Maps', 'Books', 'Flights', 'Apps',\n    ],\n    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n  }),\n\n  methods: {\n    addItem (item) {\n      const removed = this.items.splice(0, 1)\n      this.items.push(\n        ...this.more.splice(this.more.indexOf(item), 1)\n      )\n      this.more.push(...removed)\n      this.$nextTick(() => { this.currentItem = 'tab-' + item })\n    },\n  },\n}"
+        html: "<v-row justify=\"center\">\n  <v-dialog v-model=\"dialog\" fullscreen hide-overlay transition=\"dialog-bottom-transition\">\n    <template v-slot:activator=\"{ on }\">\n      <v-btn color=\"primary\" dark v-on=\"on\">Open Dialog</v-btn>\n    </template>\n    <v-card>\n      <v-toolbar dark color=\"primary\">\n        <v-btn icon dark @click=\"dialog = false\">\n          <v-icon>mdi-close</v-icon>\n        </v-btn>\n        <v-toolbar-title>Settings</v-toolbar-title>\n        <v-spacer></v-spacer>\n        <v-toolbar-items>\n          <v-btn dark text @click=\"dialog = false\">Save</v-btn>\n        </v-toolbar-items>\n      </v-toolbar>\n      <v-list three-line subheader>\n        <v-subheader>User Controls</v-subheader>\n        <v-list-item>\n          <v-list-item-content>\n            <v-list-item-title>Content filtering</v-list-item-title>\n            <v-list-item-subtitle>Set the content filtering level to restrict apps that can be downloaded</v-list-item-subtitle>\n          </v-list-item-content>\n        </v-list-item>\n        <v-list-item>\n          <v-list-item-content>\n            <v-list-item-title>Password</v-list-item-title>\n            <v-list-item-subtitle>Require password for purchase or use password to restrict purchase</v-list-item-subtitle>\n          </v-list-item-content>\n        </v-list-item>\n      </v-list>\n      <v-divider></v-divider>\n      <v-list three-line subheader>\n        <v-subheader>General</v-subheader>\n        <v-list-item>\n          <v-list-item-action>\n            <v-checkbox v-model=\"notifications\"></v-checkbox>\n          </v-list-item-action>\n          <v-list-item-content>\n            <v-list-item-title>Notifications</v-list-item-title>\n            <v-list-item-subtitle>Notify me about updates to apps or games that I downloaded</v-list-item-subtitle>\n          </v-list-item-content>\n        </v-list-item>\n        <v-list-item>\n          <v-list-item-action>\n            <v-checkbox v-model=\"sound\"></v-checkbox>\n          </v-list-item-action>\n          <v-list-item-content>\n            <v-list-item-title>Sound</v-list-item-title>\n            <v-list-item-subtitle>Auto-update apps at any time. Data charges may apply</v-list-item-subtitle>\n          </v-list-item-content>\n        </v-list-item>\n        <v-list-item>\n          <v-list-item-action>\n            <v-checkbox v-model=\"widgets\"></v-checkbox>\n          </v-list-item-action>\n          <v-list-item-content>\n            <v-list-item-title>Auto-add widgets</v-list-item-title>\n            <v-list-item-subtitle>Automatically add home screen widgets</v-list-item-subtitle>\n          </v-list-item-content>\n        </v-list-item>\n      </v-list>\n    </v-card>\n  </v-dialog>\n</v-row>",
+        js: "export default {\n  data () {\n    return {\n      dialog: false,\n      notifications: false,\n      sound: true,\n      widgets: false,\n    }\n  },\n}",
+        dialog: false,
+        notifications: false,
+        sound: true,
+        widgets: false
       },
-      currentItem: "tab-Web",
-      items: ["Web", "Shopping", "Videos", "Images"],
-      more: ["News", "Maps", "Books", "Flights", "Apps"],
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      code7: {
+        html: "<div>\n  <v-row\n    justify=\"center\"\n  >\n    <v-btn\n      color=\"primary\"\n      class=\"ma-2\"\n      dark\n      @click=\"dialog = true\"\n    >\n      Open Dialog 1\n    </v-btn>\n    <v-btn\n      color=\"primary\"\n      class=\"ma-2\"\n      dark\n      @click=\"dialog2 = true\"\n    >\n      Open Dialog 2\n    </v-btn>\n    <v-btn\n      color=\"primary\"\n      class=\"ma-2\"\n      dark\n      @click=\"dialog3 = true\"\n    >\n      Open Dialog 3\n    </v-btn>\n    <v-menu\n      bottom\n      offset-y\n    >\n      <template v-slot:activator=\"{ on }\">\n        <v-btn\n          class=\"ma-2\"\n          v-on=\"on\"\n        >A Menu</v-btn>\n      </template>\n      <v-list>\n        <v-list-item\n          v-for=\"(item, i) in items\"\n          :key=\"i\"\n          @click=\"() => {}\"\n        >\n          <v-list-item-title>{{ item.title }}</v-list-item-title>\n        </v-list-item>\n      </v-list>\n    </v-menu>\n    <v-dialog\n      v-model=\"dialog\"\n      fullscreen\n      hide-overlay\n      transition=\"dialog-bottom-transition\"\n      scrollable\n    >\n      <v-card tile>\n        <v-toolbar\n          flat\n          dark\n          color=\"primary\"\n        >\n          <v-btn\n            icon\n            dark\n            @click=\"dialog = false\"\n          >\n            <v-icon>mdi-close</v-icon>\n          </v-btn>\n          <v-toolbar-title>Settings</v-toolbar-title>\n          <v-spacer></v-spacer>\n          <v-toolbar-items>\n            <v-btn\n              dark\n              text\n              @click=\"dialog = false\"\n            >\n              Save\n            </v-btn>\n          </v-toolbar-items>\n          <v-menu\n            bottom\n            right\n            offset-y\n          >\n            <template v-slot:activator=\"{ on }\">\n              <v-btn\n                dark\n                icon\n                v-on=\"on\"\n              >\n                <v-icon>mdi-dots-vertical</v-icon>\n              </v-btn>\n            </template>\n            <v-list>\n              <v-list-item\n                v-for=\"(item, i) in items\"\n                :key=\"i\"\n                @click=\"() => {}\"\n              >\n                <v-list-item-title>{{ item.title }}</v-list-item-title>\n              </v-list-item>\n            </v-list>\n          </v-menu>\n        </v-toolbar>\n        <v-card-text>\n          <v-btn\n            color=\"primary\"\n            dark\n            class=\"ma-2\"\n            @click=\"dialog2 = !dialog2\"\n          >\n            Open Dialog 2\n          </v-btn>\n          <v-tooltip right>\n            <template v-slot:activator=\"{ on }\">\n              <v-btn\n                class=\"ma-2\"\n                v-on=\"on\"\n              >Tool Tip Activator</v-btn>\n            </template>\n            Tool Tip\n          </v-tooltip>\n          <v-list\n            three-line\n            subheader\n          >\n            <v-subheader>User Controls</v-subheader>\n            <v-list-item>\n              <v-list-item-content>\n                <v-list-item-title>Content filtering</v-list-item-title>\n                <v-list-item-subtitle>Set the content filtering level to restrict apps that can be downloaded</v-list-item-subtitle>\n              </v-list-item-content>\n            </v-list-item>\n            <v-list-item>\n              <v-list-item-content>\n                <v-list-item-title>Password</v-list-item-title>\n                <v-list-item-subtitle>Require password for purchase or use password to restrict purchase</v-list-item-subtitle>\n              </v-list-item-content>\n            </v-list-item>\n          </v-list>\n          <v-divider></v-divider>\n          <v-list\n            three-line\n            subheader\n          >\n            <v-subheader>General</v-subheader>\n            <v-list-item>\n              <v-list-item-action>\n                <v-checkbox v-model=\"notifications\"></v-checkbox>\n              </v-list-item-action>\n              <v-list-item-content>\n                <v-list-item-title>Notifications</v-list-item-title>\n                <v-list-item-subtitle>Notify me about updates to apps or games that I downloaded</v-list-item-subtitle>\n              </v-list-item-content>\n            </v-list-item>\n            <v-list-item>\n              <v-list-item-action>\n                <v-checkbox v-model=\"sound\"></v-checkbox>\n              </v-list-item-action>\n              <v-list-item-content>\n                <v-list-item-title>Sound</v-list-item-title>\n                <v-list-item-subtitle>Auto-update apps at any time. Data charges may apply</v-list-item-subtitle>\n              </v-list-item-content>\n            </v-list-item>\n            <v-list-item>\n              <v-list-item-action>\n                <v-checkbox v-model=\"widgets\"></v-checkbox>\n              </v-list-item-action>\n              <v-list-item-content>\n                <v-list-item-title>Auto-add widgets</v-list-item-title>\n                <v-list-item-subtitle>Automatically add home screen widgets</v-list-item-subtitle>\n              </v-list-item-content>\n            </v-list-item>\n          </v-list>\n        </v-card-text>\n\n        <div style=\"flex: 1 1 auto;\"></div>\n      </v-card>\n    </v-dialog>\n\n    <v-dialog\n      v-model=\"dialog2\"\n      max-width=\"500px\"\n    >\n      <v-card>\n        <v-card-title>\n          Dialog 2\n        </v-card-title>\n        <v-card-text>\n          <v-btn\n            color=\"primary\"\n            dark\n            @click=\"dialog3 = !dialog3\"\n          >\n            Open Dialog 3\n          </v-btn>\n          <v-select\n            :items=\"select\"\n            label=\"A Select List\"\n            item-value=\"text\"\n          ></v-select>\n        </v-card-text>\n        <v-card-actions>\n          <v-btn\n            color=\"primary\"\n            text\n            @click=\"dialog2 = false\"\n          >\n            Close\n          </v-btn>\n        </v-card-actions>\n      </v-card>\n    </v-dialog>\n    <v-dialog\n      v-model=\"dialog3\"\n      max-width=\"500px\"\n    >\n      <v-card>\n        <v-card-title>\n          <span>Dialog 3</span>\n          <v-spacer></v-spacer>\n          <v-menu\n            bottom\n            left\n          >\n            <template v-slot:activator=\"{ on }\">\n              <v-btn\n                icon\n                v-on=\"on\"\n              >\n                <v-icon>mdi-dots-vertical</v-icon>\n              </v-btn>\n            </template>\n            <v-list>\n              <v-list-item\n                v-for=\"(item, i) in items\"\n                :key=\"i\"\n                @click=\"() => {}\"\n              >\n                <v-list-item-title>{{ item.title }}</v-list-item-title>\n              </v-list-item>\n            </v-list>\n          </v-menu>\n        </v-card-title>\n        <v-card-actions>\n          <v-btn\n            color=\"primary\"\n            text\n            @click=\"dialog3 = false\"\n          >\n            Close\n          </v-btn>\n        </v-card-actions>\n      </v-card>\n    </v-dialog>\n  </v-row>\n</div>",
+        js: "export default {\n  data () {\n    return {\n      dialog: false,\n      dialog2: false,\n      dialog3: false,\n      notifications: false,\n      sound: true,\n      widgets: false,\n      items: [\n        {\n          title: 'Click Me',\n        },\n        {\n          title: 'Click Me',\n        },\n        {\n          title: 'Click Me',\n        },\n        {\n          title: 'Click Me 2',\n        },\n      ],\n      select: [\n        { text: 'State 1' },\n        { text: 'State 2' },\n        { text: 'State 3' },\n        { text: 'State 4' },\n        { text: 'State 5' },\n        { text: 'State 6' },\n        { text: 'State 7' },\n      ],\n    }\n  },\n}",
+        dialog: false,
+        dialog2: false,
+        dialog3: false,
+        notifications: false,
+        sound: true,
+        widgets: false,
+        items: [{
+          title: "Click Me"
+        }, {
+          title: "Click Me"
+        }, {
+          title: "Click Me"
+        }, {
+          title: "Click Me 2"
+        }],
+        select: [{
+          text: "State 1"
+        }, {
+          text: "State 2"
+        }, {
+          text: "State 3"
+        }, {
+          text: "State 4"
+        }, {
+          text: "State 5"
+        }, {
+          text: "State 6"
+        }, {
+          text: "State 7"
+        }]
+      }
     };
   },
   components: {
@@ -543,34 +916,27 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       title: "Vuetify",
       route: "alerts"
     }, {
-      title: "Tabs"
+      title: "Dialog"
     }]);
   },
-  methods: {
-    addItem: function addItem(item) {
-      var _this$items,
-          _this$more,
-          _this = this;
+  watch: {
+    code5Dialog: function code5Dialog(val) {
+      var _this = this;
 
-      var removed = this.items.splice(0, 1);
-
-      (_this$items = this.items).push.apply(_this$items, _toConsumableArray(this.more.splice(this.more.indexOf(item), 1)));
-
-      (_this$more = this.more).push.apply(_this$more, _toConsumableArray(removed));
-
-      this.$nextTick(function () {
-        _this.currentItem = "tab-" + item;
-      });
+      if (!val) return;
+      setTimeout(function () {
+        return _this.code5Dialog = false;
+      }, 4000);
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&":
-/*!*******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a& ***!
-  \*******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=template&id=1fb4a965&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=template&id=1fb4a965& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -607,18 +973,18 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Tabs")]),
+            _c("b", [_vm._v("Dialog")]),
             _vm._v(" The "),
-            _c("code", [_vm._v("v-tabs")]),
+            _c("code", [_vm._v("v-dialog")]),
             _vm._v(
-              " component is used for hiding content\n      behind a selectable item. This can also be used as a pseudo-navigation\n      for a page, where the tabs are links and the tab-items are the content.\n      "
+              " component inform users about a\n      specific task and may contain critical information, require decisions,\n      or involve multiple tasks. Use dialogs sparingly because they are\n      interruptive.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://vuetifyjs.com/en/components/tabs",
+                  href: "https://vuetifyjs.com/en/components/alerts",
                   target: "_blank",
                 },
               },
@@ -634,173 +1000,106 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Vertical Tabs" },
+              attrs: { title: "Without activator" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Tabs can be toggled to stack its "
-                        ),
-                        _c("code", [_vm._v("v-tab")]),
-                        _vm._v(
-                          " components\n            vertically.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "v-card",
+                        "v-row",
+                        { attrs: { justify: "center" } },
                         [
                           _c(
-                            "v-toolbar",
-                            { attrs: { flat: "", color: "primary", dark: "" } },
-                            [_c("v-toolbar-title", [_vm._v("User Profile")])],
-                            1
+                            "v-btn",
+                            {
+                              attrs: { color: "primary", dark: "" },
+                              on: {
+                                click: function ($event) {
+                                  $event.stopPropagation()
+                                  _vm.code1.dialog = true
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              Open Dialog\n            "
+                              ),
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
-                            "v-tabs",
-                            { attrs: { vertical: "" } },
+                            "v-dialog",
+                            {
+                              attrs: { "max-width": "290" },
+                              model: {
+                                value: _vm.code1.dialog,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code1, "dialog", $$v)
+                                },
+                                expression: "code1.dialog",
+                              },
+                            },
                             [
                               _c(
-                                "v-tab",
-                                [
-                                  _c("v-icon", { attrs: { left: "" } }, [
-                                    _vm._v("mdi-account"),
-                                  ]),
-                                  _vm._v(
-                                    "\n                Option 1\n              "
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab",
-                                [
-                                  _c("v-icon", { attrs: { left: "" } }, [
-                                    _vm._v("mdi-lock"),
-                                  ]),
-                                  _vm._v(
-                                    "\n                Option 2\n              "
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab",
-                                [
-                                  _c("v-icon", { attrs: { left: "" } }, [
-                                    _vm._v("mdi-access-point"),
-                                  ]),
-                                  _vm._v(
-                                    "\n                Option 3\n              "
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab-item",
+                                "v-card",
                                 [
                                   _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c("v-card-text", [
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Sed aliquam ultrices mauris. Donec posuere vulputate\n                      arcu. Morbi ac felis. Etiam feugiat lorem non metus. Sed\n                      a libero.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Nam ipsum risus, rutrum vitae, vestibulum eu, molestie\n                      vel, lacus. Aenean tellus metus, bibendum sed, posuere\n                      ac, mattis non, nunc. Aliquam lobortis. Aliquam\n                      lobortis. Suspendisse non nisl sit amet velit hendrerit\n                      rutrum.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            "\n                      Phasellus dolor. Fusce neque. Fusce fermentum odio nec\n                      arcu. Pellentesque libero tortor, tincidunt et,\n                      tincidunt eget, semper nec, quam. Phasellus blandit leo\n                      ut odio.\n                    "
-                                          ),
-                                        ]),
-                                      ]),
-                                    ],
-                                    1
+                                    "v-card-title",
+                                    { staticClass: "headline" },
+                                    [_vm._v("Use Google's location service?")]
                                   ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab-item",
-                                [
+                                  _vm._v(" "),
+                                  _c("v-card-text", [
+                                    _vm._v(
+                                      "\n                  Let Google help apps determine location. This means sending\n                  anonymous location data to Google, even when no apps are\n                  running.\n                "
+                                    ),
+                                  ]),
+                                  _vm._v(" "),
                                   _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
+                                    "v-card-actions",
                                     [
-                                      _c("v-card-text", [
-                                        _c("p", [
+                                      _c("v-spacer"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "green darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code1.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [
                                           _vm._v(
-                                            "\n                      Morbi nec metus. Suspendisse faucibus, nunc et\n                      pellentesque egestas, lacus ante convallis tellus, vitae\n                      iaculis lacus elit id tortor. Sed mollis, eros et\n                      ultrices tempus, mauris ipsum aliquam libero, non\n                      adipiscing dolor urna a orci. Curabitur ligula sapien,\n                      tincidunt non, euismod vitae, posuere imperdiet, leo.\n                      Nunc sed turpis.\n                    "
+                                            "\n                    Disagree\n                  "
                                           ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", [
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "green darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code1.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [
                                           _vm._v(
-                                            "\n                      Suspendisse feugiat. Suspendisse faucibus, nunc et\n                      pellentesque egestas, lacus ante convallis tellus, vitae\n                      iaculis lacus elit id tortor. Proin viverra, ligula sit\n                      amet ultrices semper, ligula arcu tristique sapien, a\n                      accumsan nisi mauris ac eros. In hac habitasse platea\n                      dictumst. Fusce ac felis sit amet ligula pharetra\n                      condimentum.\n                    "
+                                            "\n                    Agree\n                  "
                                           ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Sed consequat, leo eget bibendum sodales, augue velit\n                      cursus nunc, quis gravida magna mi a libero. Nam commodo\n                      suscipit quam. In consectetuer turpis ut velit. Sed\n                      cursus turpis vitae tortor. Aliquam eu nunc.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Etiam ut purus mattis mauris sodales aliquam. Ut varius\n                      tincidunt libero. Aenean viverra rhoncus pede. Duis leo.\n                      Fusce fermentum odio nec arcu.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            "\n                      Donec venenatis vulputate lorem. Aenean viverra rhoncus\n                      pede. In dui magna, posuere eget, vestibulum et, tempor\n                      auctor, justo. Fusce commodo aliquam arcu. Suspendisse\n                      enim turpis, dictum sed, iaculis a, condimentum nec,\n                      nisi.\n                    "
-                                          ),
-                                        ]),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab-item",
-                                [
-                                  _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c("v-card-text", [
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Fusce a quam. Phasellus nec sem in justo pellentesque\n                      facilisis. Nam eget dui. Proin viverra, ligula sit amet\n                      ultrices semper, ligula arcu tristique sapien, a\n                      accumsan nisi mauris ac eros. In dui magna, posuere\n                      eget, vestibulum et, tempor auctor, justo.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            "\n                      Cras sagittis. Phasellus nec sem in justo pellentesque\n                      facilisis. Proin sapien ipsum, porta a, auctor quis,\n                      euismod ut, mi. Donec quam felis, ultricies nec,\n                      pellentesque eu, pretium quis, sem. Nam at tortor in\n                      tellus interdum sagittis.\n                    "
-                                          ),
-                                        ]),
-                                      ]),
+                                        ]
+                                      ),
                                     ],
                                     1
                                   ),
@@ -828,86 +1127,127 @@ var render = function () {
                   },
                   proxy: true,
                 },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Right aligned tabs" },
+              attrs: { title: "Scrollable" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v("The "),
-                        _c("strong", [_vm._v("right")]),
-                        _vm._v(" prop aligns the tabs to the right."),
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "v-card",
+                        "v-row",
+                        { attrs: { justify: "center" } },
                         [
                           _c(
-                            "v-tabs",
+                            "v-dialog",
                             {
-                              attrs: {
-                                "background-color": "white",
-                                color: "deep-purple accent-4",
-                                right: "",
+                              attrs: { width: "600px" },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "activator",
+                                  fn: function (ref) {
+                                    var on = ref.on
+                                    return [
+                                      _c(
+                                        "v-btn",
+                                        _vm._g(
+                                          {
+                                            attrs: {
+                                              color: "primary",
+                                              dark: "",
+                                            },
+                                          },
+                                          on
+                                        ),
+                                        [_vm._v("Open Dialog")]
+                                      ),
+                                    ]
+                                  },
+                                },
+                              ]),
+                              model: {
+                                value: _vm.code3.dialog,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code3, "dialog", $$v)
+                                },
+                                expression: "code3.dialog",
                               },
                             },
                             [
-                              _c("v-tab", [_vm._v("Landscape")]),
                               _vm._v(" "),
-                              _c("v-tab", [_vm._v("City")]),
-                              _vm._v(" "),
-                              _c("v-tab", [_vm._v("Abstract")]),
-                              _vm._v(" "),
-                              _vm._l(3, function (n) {
-                                return _c(
-                                  "v-tab-item",
-                                  { key: n },
-                                  [
-                                    _c(
-                                      "v-container",
-                                      { attrs: { fluid: "" } },
-                                      [
-                                        _c(
-                                          "v-row",
-                                          _vm._l(6, function (i) {
-                                            return _c(
-                                              "v-col",
-                                              {
-                                                key: i,
-                                                attrs: { cols: "12", md: "4" },
-                                              },
-                                              [
-                                                _c("v-img", {
-                                                  attrs: {
-                                                    src:
-                                                      "https://picsum.photos/500/300?image=" +
-                                                      (i * n * 5 + 10),
-                                                    "lazy-src":
-                                                      "https://picsum.photos/10/6?image=" +
-                                                      (i * n * 5 + 10),
-                                                    "aspect-ratio": "1",
-                                                  },
-                                                }),
-                                              ],
-                                              1
-                                            )
-                                          }),
-                                          1
-                                        ),
-                                      ],
-                                      1
+                              _c(
+                                "v-card",
+                                [
+                                  _c("v-card-title", [
+                                    _c("span", { staticClass: "headline" }, [
+                                      _vm._v("Use Google's location service?"),
+                                    ]),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("v-card-text", [
+                                    _vm._v(
+                                      "Lorem ipsum dolor sit amet, semper quis, sapien id natoque\n                  elit. Nostra urna at, magna at neque sed sed ante imperdiet,\n                  dolor mauris cursus velit, velit non, sem nec. Volutpat sem\n                  ridiculus placerat leo, augue in, duis erat proin\n                  condimentum in a eget, sed fermentum sed vestibulum varius\n                  ac, vestibulum volutpat orci ut elit eget tortor. Ultrices\n                  nascetur nulla gravida ante arcu. Pharetra rhoncus morbi\n                  ipsum, nunc tempor debitis, ipsum pellentesque, vitae id\n                  quam ut mauris dui tempor, aptent non. Quisque turpis.\n                  Phasellus quis lectus luctus orci eget rhoncus. Amet donec\n                  vestibulum mattis commodo, nulla aliquet, nibh praesent,\n                  elementum nulla. Sit lacus pharetra tempus magna neque\n                  pellentesque, nulla vel erat. Justo ex quisque nulla\n                  accusamus venenatis, sed quis. Nibh phasellus gravida metus\n                  in, fusce aenean ut erat commodo eros. Ut turpis, dui\n                  integer, nonummy pede placeat nec in sit leo. Faucibus\n                  porttitor illo taciti odio, amet viverra scelerisque quis\n                  quis et tortor, curabitur morbi a. Enim tempor at, rutrum\n                  elit condimentum, amet rutrum vitae tempor torquent nunc.\n                  Praesent vestibulum integer maxime felis. Neque aenean quia\n                  vitae nostra, tempus elit enim id dui, at egestas pulvinar.\n                  Integer libero vestibulum, quis blandit scelerisque mattis\n                  fermentum nulla, tortor donec vestibulum dolor amet eget,\n                  elit nullam. Aliquam leo phasellus aliquam curabitur metus\n                  a, nulla justo mattis duis interdum vel, mollis vitae et id,\n                  vestibulum erat ridiculus sit pulvinar justo sed. Vehicula\n                  convallis, et nulla wisi, amet vestibulum risus, quam ac\n                  egestas. Et vitae, nulla gravida erat scelerisque nullam\n                  nunc pellentesque, a dictumst cras augue, purus imperdiet\n                  non. Varius montes cursus varius vel tortor, nec leo a qui,\n                  magni cras, velit vel consectetuer lobortis vel. Nibh erat\n                  et wisi felis leo porttitor, sapien nibh sapien pede mi, sed\n                  eget porttitor, repellendus arcu ac quis. Luctus vulputate\n                  aut est sem magna, placerat accumsan nunc vestibulum ipsum\n                  ac auctor, maecenas lorem in ut nec mauris tortor, doloribus\n                  varius sem tortor vestibulum mollis, eleifend tortor felis\n                  tempus lacus eu eu. Eleifend vel eu, nullam maecenas mauris\n                  nec nunc euismod, tortor porta ridiculus potenti, massa\n                  tristique nam magna, et wisi placerat et erat ante. Eget\n                  pede erat in facilisis, fermentum venenatis sodales. Ac\n                  tortor sociis et non animi tristique, rhoncus malesuada, ut\n                  arcu volutpat scelerisque sollicitudin, elit curabitur dui\n                  pede purus dolor, integer aenean risus taciti nulla eleifend\n                  accumsan. At pulvinar diam parturient, interdum mi velit\n                  aliquet et a. Arcu at ac placerat eget justo semper, purus\n                  sociis curabitur mi ipsum consequat ut, mollis vestibulum,\n                  est ante ornare lacus sem. Neque magna mauris, commodo\n                  quisque, praesent semper suscipit lobortis nam. Justo\n                  malesuada cursus ac nunc litora nunc. Tellus ac, in lobortis\n                  nunc, montes lectus purus fermentum. Ac sit wisi. Sodales\n                  aliquam, sed vestibulum nullam arcu sit risus arcu, id\n                  luctus vitae lorem nibh, integer nec nullam class cursus mi,\n                  purus arcu lectus. Vel ante suscipit volutpat potenti mattis\n                  sed, wisi eu placerat aliquam erat, lectus morbi lobortis at\n                  assumenda. Consequat neque purus ipsum voluptas odio, netus\n                  vestibulum ut nec, suspendisse pellentesque nec enim in.\n                  Wisi dictum sed semper a, ipsum erat tellus habitasse est,\n                  erat sem ornare, vitae quisque ultricies. Dui sed blandit.\n                  Tempor et faucibus justo sed luctus, nec vitae vitae. Nunc\n                  nibh pede, ipsum vestibulum aenean leo ante ultricies, nam\n                  cras quis sed penatibus amet. In mauris a. Integer metus\n                  mauris tortor, et rutrum vestibulum ultricies, ut phasellus\n                  in ullamcorper ut mollit, eu justo. Cursus pretium\n                  venenatis. Cras pellentesque vel sodales accumsan aenean.\n                  Feugiat metus sit nec in aliquet amet, porttitor pretium\n                  vulputate massa. Consequat ipsum luctus quisque adipiscing\n                  libero. Wisi sollicitudin. Eget vitae ac lobortis, lorem\n                  natoque vestibulum et, aliquet faucibus at morbi nibh, vel\n                  condimentum. Massa unde orci sed id sed, odio donec congue\n                  nec praesent amet. Hymenaeos velit lacus, quis vivamus\n                  libero tempus duis, eu nisi eu, ipsum at accumsan pede justo\n                  morbi donec, massa et libero sit risus neque tortor. Ut sed\n                  sed etiam hendrerit dapibus, quis metus suspendisse nibh.\n                  Fringilla tempor felis augue magna. Cum arcu a, id vitae.\n                  Pellentesque pharetra in cras sociis adipiscing est. Nibh\n                  nec mattis at maecenas, nisl orci aliquam nulla justo\n                  egestas venenatis, elementum duis vel porta eros, massa\n                  vitae, eligendi imperdiet amet. Nec neque luctus suscipit,\n                  justo sem praesent, ut nisl quisque, volutpat torquent wisi\n                  tellus aliquam reprehenderit, curabitur cras at quis massa\n                  porttitor mauris. Eros sed ultrices. Amet dignissim justo\n                  urna feugiat mauris litora, etiam accumsan, lobortis a orci\n                  suspendisse. Semper ac mauris, varius bibendum pretium, orci\n                  urna nunc ullamcorper auctor, saepe sem integer quam, at\n                  feugiat egestas duis. Urna ligula ante. Leo elementum\n                  nonummy. Sagittis mauris est in ipsum, nulla amet non justo,\n                  proin id potenti platea posuere sit ut, nunc sit erat\n                  bibendum. Nibh id auctor, ab nulla vivamus ultrices, posuere\n                  morbi nunc tellus gravida vivamus. Mauris nec, facilisi quam\n                  fermentum, ut mauris integer, orci tellus tempus diam ut in\n                  pellentesque. Wisi faucibus tempor et odio leo diam,\n                  eleifend quis integer curabitur sit scelerisque ac, mauris\n                  consequat luctus quam penatibus fringilla dis, vitae lacus\n                  in, est eu ac tempus. Consectetuer amet ipsum amet dui, sed\n                  blandit id sed. Tellus integer, dignissim id pede sodales\n                  quis, felis dolorem id mauris orci, orci tempus ut. Nullam\n                  hymenaeos. Curabitur in a, tortor ut praesent placerat\n                  tincidunt interdum, ac dignissim metus nonummy hendrerit\n                  wisi, etiam ut. Semper praesent integer fusce, tortor\n                  suspendisse, augue ligula orci ante asperiores ullamcorper.\n                  In sit per mi sed sed, mi vestibulum mus nam, morbi mauris\n                  neque vitae aliquam proin senectus. Ac amet arcu mollis ante\n                  congue elementum, inceptos eget optio quam pellentesque quis\n                  lobortis, sollicitudin sed vestibulum sollicitudin, lectus\n                  parturient nullam, leo orci ligula ultrices. At tincidunt\n                  enim, suspendisse est sit sem ac. Amet tellus molestie est\n                  purus magna augue, non etiam et in wisi id. Non commodo,\n                  metus lorem facilisi lobortis ac velit, montes neque sed\n                  risus consectetuer fringilla dolor. Quam justo et integer\n                  aliquam, cursus nulla enim orci, nam cursus adipiscing,\n                  integer torquent non, fringilla per maecenas. Libero ipsum\n                  sed tellus purus et. Duis molestie placerat erat donec ut.\n                  Dolor enim erat massa faucibus ultrices in, ante ultricies\n                  orci lacus, libero consectetuer mauris magna feugiat neque\n                  dapibus, donec pretium et. Aptent dui, aliquam et et amet\n                  nostra ligula. Augue curabitur duis dui volutpat, tempus sed\n                  ut pede donec. Interdum luctus, lectus nulla aenean elit, id\n                  sit magna, vulputate ultrices pellentesque vel id fermentum\n                  morbi. Tortor et. Adipiscing augue lorem cum non lacus,\n                  rutrum sodales laoreet duis tortor, modi placerat facilisis\n                  et malesuada eros ipsum, vehicula tempus. Ac vivamus amet\n                  non aliquam venenatis lectus, sociosqu adipiscing consequat\n                  nec arcu odio. Blandit orci nec nec, posuere in pretium,\n                  enim ut, consectetuer nullam urna, risus vel. Nullam odio\n                  vehicula massa sed, etiam sociis mauris, lacus ullamcorper,\n                  libero imperdiet non sodales placerat justo vehicula. Nec\n                  morbi imperdiet. Fermentum sem libero iaculis bibendum et\n                  eros, eget maecenas non nunc, ad pellentesque. Ut nec diam\n                  elementum interdum. Elementum vitae tellus lacus vitae,\n                  ipsum phasellus, corporis vehicula in ac sed massa vivamus,\n                  rutrum elit, ultricies metus volutpat. Semper wisi et,\n                  sollicitudin nunc vestibulum, cursus accumsan nunc pede\n                  tempus mi ipsum, ligula sed. Non condimentum ac dolor sit.\n                  Mollis eu aliquam, vel mattis mollis massa ut dolor ante,\n                  tempus lacinia arcu. Urna vestibulum lorem, nulla fermentum,\n                  iaculis ut congue ac vivamus. Nam libero orci, pulvinar\n                  nulla, enim pellentesque consectetuer leo, feugiat rhoncus\n                  rhoncus vel. Magna sociosqu donec, dictum cursus ullamcorper\n                  viverra. Ultricies quis orci lorem, suspendisse ut\n                  vestibulum integer, purus sed lorem pulvinar habitasse\n                  turpis. +"
                                     ),
-                                  ],
-                                  1
-                                )
-                              }),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-card-actions",
+                                    [
+                                      _c("v-spacer"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "green darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code3.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Disagree")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "green darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code3.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Agree")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
                             ],
-                            2
+                            1
                           ),
                         ],
                         1
@@ -927,411 +1267,12 @@ var render = function () {
                   },
                   proxy: true,
                 },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "With menu" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            You can use a menu to hold additional tabs, swapping them out on\n            the fly.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-card",
-                        [
-                          _c(
-                            "v-toolbar",
-                            {
-                              attrs: {
-                                color: "deep-purple accent-4",
-                                dark: "",
-                                flat: "",
-                              },
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "extension",
-                                  fn: function () {
-                                    return [
-                                      _c(
-                                        "v-tabs",
-                                        {
-                                          attrs: {
-                                            "fixed-tabs": "",
-                                            "slider-color": "white",
-                                          },
-                                          model: {
-                                            value: _vm.currentItem,
-                                            callback: function ($$v) {
-                                              _vm.currentItem = $$v
-                                            },
-                                            expression: "currentItem",
-                                          },
-                                        },
-                                        [
-                                          _vm._l(_vm.items, function (item) {
-                                            return _c(
-                                              "v-tab",
-                                              {
-                                                key: item,
-                                                attrs: { href: "#tab-" + item },
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                    " +
-                                                    _vm._s(item) +
-                                                    "\n                  "
-                                                ),
-                                              ]
-                                            )
-                                          }),
-                                          _vm._v(" "),
-                                          _vm.more.length
-                                            ? _c(
-                                                "v-menu",
-                                                {
-                                                  attrs: {
-                                                    bottom: "",
-                                                    left: "",
-                                                  },
-                                                  scopedSlots: _vm._u(
-                                                    [
-                                                      {
-                                                        key: "activator",
-                                                        fn: function (ref) {
-                                                          var on = ref.on
-                                                          return [
-                                                            _c(
-                                                              "v-btn",
-                                                              _vm._g(
-                                                                {
-                                                                  staticClass:
-                                                                    "align-self-center mr-4",
-                                                                  attrs: {
-                                                                    text: "",
-                                                                  },
-                                                                },
-                                                                on
-                                                              ),
-                                                              [
-                                                                _vm._v(
-                                                                  "\n                        more\n                        "
-                                                                ),
-                                                                _c(
-                                                                  "v-icon",
-                                                                  {
-                                                                    attrs: {
-                                                                      right: "",
-                                                                    },
-                                                                  },
-                                                                  [
-                                                                    _vm._v(
-                                                                      "mdi-menu-down"
-                                                                    ),
-                                                                  ]
-                                                                ),
-                                                              ],
-                                                              1
-                                                            ),
-                                                          ]
-                                                        },
-                                                      },
-                                                    ],
-                                                    null,
-                                                    false,
-                                                    2908075644
-                                                  ),
-                                                },
-                                                [
-                                                  _vm._v(" "),
-                                                  _c(
-                                                    "v-list",
-                                                    {
-                                                      staticClass:
-                                                        "grey lighten-3",
-                                                    },
-                                                    _vm._l(
-                                                      _vm.more,
-                                                      function (item) {
-                                                        return _c(
-                                                          "v-list-item",
-                                                          {
-                                                            key: item,
-                                                            on: {
-                                                              click: function (
-                                                                $event
-                                                              ) {
-                                                                return _vm.addItem(
-                                                                  item
-                                                                )
-                                                              },
-                                                            },
-                                                          },
-                                                          [
-                                                            _vm._v(
-                                                              "\n                        " +
-                                                                _vm._s(item) +
-                                                                "\n                      "
-                                                            ),
-                                                          ]
-                                                        )
-                                                      }
-                                                    ),
-                                                    1
-                                                  ),
-                                                ],
-                                                1
-                                              )
-                                            : _vm._e(),
-                                        ],
-                                        2
-                                      ),
-                                    ]
-                                  },
-                                  proxy: true,
-                                },
-                              ]),
-                            },
-                            [
-                              _c("v-app-bar-nav-icon"),
-                              _vm._v(" "),
-                              _c("v-toolbar-title", [_vm._v("Page title")]),
-                              _vm._v(" "),
-                              _c("v-spacer"),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                { attrs: { icon: "" } },
-                                [_c("v-icon", [_vm._v("mdi-magnify")])],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                { attrs: { icon: "" } },
-                                [_c("v-icon", [_vm._v("mdi-dots-vertical")])],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-tabs-items",
-                            {
-                              model: {
-                                value: _vm.currentItem,
-                                callback: function ($$v) {
-                                  _vm.currentItem = $$v
-                                },
-                                expression: "currentItem",
-                              },
-                            },
-                            _vm._l(_vm.items.concat(_vm.more), function (item) {
-                              return _c(
-                                "v-tab-item",
-                                { key: item, attrs: { value: "tab-" + item } },
-                                [
-                                  _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c("v-card-text", [
-                                        _c("h2", [_vm._v(_vm._s(item))]),
-                                        _vm._v(
-                                          "\n                    " +
-                                            _vm._s(_vm.text) +
-                                            "\n                  "
-                                        ),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              )
-                            }),
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
                 {
                   key: "js",
                   fn: function () {
                     return [
                       _vm._v(
-                        "\n          " + _vm._s(_vm.code6.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
-            _c("KTCodePreview", {
-              attrs: { title: "Icons and text" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _c("code", [_vm._v("v-tab")]),
-                        _vm._v(
-                          "'s can contain icons as well as text. This\n            increases the "
-                        ),
-                        _c("code", [_vm._v("v-tabs")]),
-                        _vm._v(" height to 72px.\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-card",
-                        [
-                          _c(
-                            "v-tabs",
-                            {
-                              attrs: {
-                                "background-color": "deep-purple accent-4",
-                                centered: "",
-                                dark: "",
-                                "icons-and-text": "",
-                              },
-                              model: {
-                                value: _vm.code2.tab,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code2, "tab", $$v)
-                                },
-                                expression: "code2.tab",
-                              },
-                            },
-                            [
-                              _c("v-tabs-slider"),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab",
-                                { attrs: { href: "#tab-1" } },
-                                [
-                                  _vm._v(
-                                    "\n                Recents\n                "
-                                  ),
-                                  _c("v-icon", [_vm._v("mdi-phone")]),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab",
-                                { attrs: { href: "#tab-2" } },
-                                [
-                                  _vm._v(
-                                    "\n                Favorites\n                "
-                                  ),
-                                  _c("v-icon", [_vm._v("mdi-heart")]),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab",
-                                { attrs: { href: "#tab-3" } },
-                                [
-                                  _vm._v(
-                                    "\n                Nearby\n                "
-                                  ),
-                                  _c("v-icon", [_vm._v("mdi-account-box")]),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-tabs-items",
-                            {
-                              model: {
-                                value: _vm.code2.tab,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code2, "tab", $$v)
-                                },
-                                expression: "code2.tab",
-                              },
-                            },
-                            _vm._l(3, function (i) {
-                              return _c(
-                                "v-tab-item",
-                                { key: i, attrs: { value: "tab-" + i } },
-                                [
-                                  _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c("v-card-text", [
-                                        _vm._v(_vm._s(_vm.code2.text)),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              )
-                            }),
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
+                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
                       ),
                     ]
                   },
@@ -1341,340 +1282,80 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Content" },
+              attrs: { title: "Loader" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            It is common to put "),
-                        _c("code", [_vm._v("v-tabs")]),
-                        _vm._v(" inside the\n            "),
-                        _c("strong", [_vm._v("extension")]),
-                        _vm._v(" slot of "),
-                        _c("code", [_vm._v("v-toolbar")]),
-                        _vm._v(". Using\n            "),
-                        _c("code", [_vm._v("v-toolbar")]),
-                        _vm._v("'s "),
-                        _c("strong", [_vm._v("tabs")]),
+                        _vm._v("\n            The "),
+                        _c("code", [_vm._v("v-dialog")]),
                         _vm._v(
-                          " prop auto adjusts\n            its height to 48px to match "
+                          " component makes it easy to create a\n            customized loading experience for your application.\n          "
                         ),
-                        _c("code", [_vm._v("v-tabs")]),
-                        _vm._v(".\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-card",
+                        "div",
+                        { staticClass: "text-center" },
                         [
                           _c(
-                            "v-toolbar",
+                            "v-btn",
                             {
-                              attrs: { color: "cyan", dark: "", flat: "" },
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "extension",
-                                  fn: function () {
-                                    return [
-                                      _c(
-                                        "v-tabs",
-                                        {
-                                          attrs: {
-                                            centered: "",
-                                            "slider-color": "yellow",
-                                          },
-                                          model: {
-                                            value: _vm.code4.model,
-                                            callback: function ($$v) {
-                                              _vm.$set(_vm.code4, "model", $$v)
-                                            },
-                                            expression: "code4.model",
-                                          },
-                                        },
-                                        _vm._l(3, function (i) {
-                                          return _c(
-                                            "v-tab",
-                                            {
-                                              key: i,
-                                              attrs: { href: "#tab-" + i },
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                    Item " +
-                                                  _vm._s(i) +
-                                                  "\n                  "
-                                              ),
-                                            ]
-                                          )
-                                        }),
-                                        1
-                                      ),
-                                    ]
-                                  },
-                                  proxy: true,
+                              staticClass: "white--text",
+                              attrs: {
+                                disabled: _vm.code5Dialog,
+                                loading: _vm.code5Dialog,
+                                color: "purple darken-2",
+                              },
+                              on: {
+                                click: function ($event) {
+                                  _vm.code5Dialog = true
                                 },
-                              ]),
+                              },
                             },
                             [
-                              _c("v-app-bar-nav-icon"),
-                              _vm._v(" "),
-                              _c("v-toolbar-title", [_vm._v("Page title")]),
-                              _vm._v(" "),
-                              _c("v-spacer"),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                { attrs: { icon: "" } },
-                                [_c("v-icon", [_vm._v("mdi-magnify")])],
-                                1
+                              _vm._v(
+                                "\n              Start loading\n            "
                               ),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                { attrs: { icon: "" } },
-                                [_c("v-icon", [_vm._v("mdi-dots-vertical")])],
-                                1
-                              ),
-                            ],
-                            1
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
-                            "v-tabs-items",
+                            "v-dialog",
                             {
+                              attrs: {
+                                "hide-overlay": "",
+                                persistent: "",
+                                width: "300",
+                              },
                               model: {
-                                value: _vm.code4.model,
+                                value: _vm.code5Dialog,
                                 callback: function ($$v) {
-                                  _vm.$set(_vm.code4, "model", $$v)
+                                  _vm.code5Dialog = $$v
                                 },
-                                expression: "code4.model",
+                                expression: "code5Dialog",
                               },
                             },
-                            _vm._l(3, function (i) {
-                              return _c(
-                                "v-tab-item",
-                                { key: i, attrs: { value: "tab-" + i } },
+                            [
+                              _c(
+                                "v-card",
+                                { attrs: { color: "primary", dark: "" } },
                                 [
                                   _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
+                                    "v-card-text",
                                     [
-                                      _c("v-card-text", {
-                                        domProps: {
-                                          textContent: _vm._s(_vm.code4.text),
+                                      _vm._v(
+                                        "\n                  Please stand by\n                  "
+                                      ),
+                                      _c("v-progress-linear", {
+                                        staticClass: "mb-0",
+                                        attrs: {
+                                          indeterminate: "",
+                                          color: "white",
                                         },
                                       }),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              )
-                            }),
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "With search" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v("\n            When changing your "),
-                        _c("code", [_vm._v("v-tab-item")]),
-                        _vm._v(
-                          ", the content area will\n            smoothly scale to the new size.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-card",
-                        [
-                          _c(
-                            "v-toolbar",
-                            {
-                              attrs: {
-                                color: "purple",
-                                dark: "",
-                                flat: "",
-                                prominent: "",
-                              },
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "extension",
-                                  fn: function () {
-                                    return [
-                                      _c(
-                                        "v-tabs",
-                                        {
-                                          attrs: { centered: "" },
-                                          model: {
-                                            value: _vm.code4.tabs,
-                                            callback: function ($$v) {
-                                              _vm.$set(_vm.code4, "tabs", $$v)
-                                            },
-                                            expression: "code4.tabs",
-                                          },
-                                        },
-                                        _vm._l(3, function (n) {
-                                          return _c("v-tab", { key: n }, [
-                                            _vm._v(" Item " + _vm._s(n) + " "),
-                                          ])
-                                        }),
-                                        1
-                                      ),
-                                    ]
-                                  },
-                                  proxy: true,
-                                },
-                              ]),
-                            },
-                            [
-                              _c("v-text-field", {
-                                staticClass: "mx-4",
-                                attrs: {
-                                  "append-icon": "mic",
-                                  flat: "",
-                                  "hide-details": "",
-                                  label: "Search",
-                                  "prepend-inner-icon": "search",
-                                  "solo-inverted": "",
-                                },
-                              }),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-tabs-items",
-                            {
-                              model: {
-                                value: _vm.code4.tabs,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code4, "tabs", $$v)
-                                },
-                                expression: "code4.tabs",
-                              },
-                            },
-                            [
-                              _c(
-                                "v-tab-item",
-                                [
-                                  _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c("v-card-text", [
-                                        _vm._v(
-                                          "\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n                    sed do eiusmod tempor incididunt ut labore et dolore magna\n                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n                    ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                  "
-                                        ),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab-item",
-                                [
-                                  _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c(
-                                        "v-card-title",
-                                        { staticClass: "headline" },
-                                        [_vm._v("An awesome title")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("v-card-text", [
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Duis lobortis massa imperdiet quam. Donec vitae orci sed\n                      dolor rutrum auctor. Vestibulum facilisis, purus nec\n                      pulvinar iaculis, ligula mi congue nunc, vitae euismod\n                      ligula urna in dolor. Praesent congue erat at massa.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Aenean posuere, tortor sed cursus feugiat, nunc augue\n                      blandit nunc, eu sollicitudin urna dolor sagittis lacus.\n                      Pellentesque egestas, neque sit amet convallis pulvinar,\n                      justo nulla eleifend augue, ac auctor orci leo non est.\n                      Etiam sit amet orci eget eros faucibus tincidunt. Donec\n                      sodales sagittis magna.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            "\n                      Ut leo. Suspendisse potenti. Duis vel nibh at velit\n                      scelerisque suscipit. Fusce pharetra convallis urna.\n                    "
-                                          ),
-                                        ]),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tab-item",
-                                [
-                                  _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c(
-                                        "v-card-title",
-                                        { staticClass: "headline" },
-                                        [_vm._v("An even better title")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("v-card-text", [
-                                        _c("p", [
-                                          _vm._v(
-                                            "\n                      Maecenas ullamcorper, dui et placerat feugiat, eros pede\n                      varius nisi, condimentum viverra felis nunc et lorem.\n                      Sed hendrerit. Maecenas malesuada. Vestibulum\n                      ullamcorper mauris at ligula. Proin faucibus arcu quis\n                      ante.\n                    "
-                                          ),
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("p", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            "\n                      Etiam vitae tortor. Curabitur ullamcorper ultricies\n                      nisi. Sed magna purus, fermentum eu, tincidunt eu,\n                      varius ut, felis. Aliquam lobortis. Suspendisse potenti.\n                    "
-                                          ),
-                                        ]),
-                                      ]),
                                     ],
                                     1
                                   ),
@@ -1715,6 +1396,1793 @@ var render = function () {
                 },
               ]),
             }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Nested dialogs" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "Dialogs can be nested: you can open one dialog from another."
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "v-row",
+                            { attrs: { justify: "center" } },
+                            [
+                              _c(
+                                "v-btn",
+                                {
+                                  staticClass: "ma-2",
+                                  attrs: { color: "primary", dark: "" },
+                                  on: {
+                                    click: function ($event) {
+                                      _vm.code7.dialog = true
+                                    },
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Open Dialog 1\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  staticClass: "ma-2",
+                                  attrs: { color: "primary", dark: "" },
+                                  on: {
+                                    click: function ($event) {
+                                      _vm.code7.dialog2 = true
+                                    },
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Open Dialog 2\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  staticClass: "ma-2",
+                                  attrs: { color: "primary", dark: "" },
+                                  on: {
+                                    click: function ($event) {
+                                      _vm.code7.dialog3 = true
+                                    },
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Open Dialog 3\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-menu",
+                                {
+                                  attrs: { bottom: "", "offset-y": "" },
+                                  scopedSlots: _vm._u([
+                                    {
+                                      key: "activator",
+                                      fn: function (ref) {
+                                        var on = ref.on
+                                        return [
+                                          _c(
+                                            "v-btn",
+                                            _vm._g({ staticClass: "ma-2" }, on),
+                                            [_vm._v("A Menu")]
+                                          ),
+                                        ]
+                                      },
+                                    },
+                                  ]),
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list",
+                                    _vm._l(_vm.code7.items, function (item, i) {
+                                      return _c(
+                                        "v-list-item",
+                                        {
+                                          key: i,
+                                          on: { click: function () {} },
+                                        },
+                                        [
+                                          _c("v-list-item-title", [
+                                            _vm._v(_vm._s(item.title)),
+                                          ]),
+                                        ],
+                                        1
+                                      )
+                                    }),
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-dialog",
+                                {
+                                  attrs: {
+                                    fullscreen: "",
+                                    "hide-overlay": "",
+                                    transition: "dialog-bottom-transition",
+                                    scrollable: "",
+                                  },
+                                  model: {
+                                    value: _vm.code7.dialog,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code7, "dialog", $$v)
+                                    },
+                                    expression: "code7.dialog",
+                                  },
+                                },
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { tile: "" } },
+                                    [
+                                      _c(
+                                        "v-toolbar",
+                                        {
+                                          attrs: {
+                                            flat: "",
+                                            dark: "",
+                                            color: "primary",
+                                          },
+                                        },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: { icon: "", dark: "" },
+                                              on: {
+                                                click: function ($event) {
+                                                  _vm.code7.dialog = false
+                                                },
+                                              },
+                                            },
+                                            [
+                                              _c("v-icon", [
+                                                _vm._v("mdi-close"),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("v-toolbar-title", [
+                                            _vm._v("Settings"),
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("v-spacer"),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-toolbar-items",
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                {
+                                                  attrs: { dark: "", text: "" },
+                                                  on: {
+                                                    click: function ($event) {
+                                                      _vm.code7.dialog = false
+                                                    },
+                                                  },
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                        Save\n                      "
+                                                  ),
+                                                ]
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-menu",
+                                            {
+                                              attrs: {
+                                                bottom: "",
+                                                right: "",
+                                                "offset-y": "",
+                                              },
+                                              scopedSlots: _vm._u([
+                                                {
+                                                  key: "activator",
+                                                  fn: function (ref) {
+                                                    var on = ref.on
+                                                    return [
+                                                      _c(
+                                                        "v-btn",
+                                                        _vm._g(
+                                                          {
+                                                            attrs: {
+                                                              dark: "",
+                                                              icon: "",
+                                                            },
+                                                          },
+                                                          on
+                                                        ),
+                                                        [
+                                                          _c("v-icon", [
+                                                            _vm._v(
+                                                              "mdi-dots-vertical"
+                                                            ),
+                                                          ]),
+                                                        ],
+                                                        1
+                                                      ),
+                                                    ]
+                                                  },
+                                                },
+                                              ]),
+                                            },
+                                            [
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list",
+                                                _vm._l(
+                                                  _vm.code7.items,
+                                                  function (item, i) {
+                                                    return _c(
+                                                      "v-list-item",
+                                                      {
+                                                        key: i,
+                                                        on: {
+                                                          click: function () {},
+                                                        },
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "v-list-item-title",
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(item.title)
+                                                            ),
+                                                          ]
+                                                        ),
+                                                      ],
+                                                      1
+                                                    )
+                                                  }
+                                                ),
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-card-text",
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              staticClass: "ma-2",
+                                              attrs: {
+                                                color: "primary",
+                                                dark: "",
+                                              },
+                                              on: {
+                                                click: function ($event) {
+                                                  _vm.code7.dialog2 =
+                                                    !_vm.code7.dialog2
+                                                },
+                                              },
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                      Open Dialog 2\n                    "
+                                              ),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-tooltip",
+                                            {
+                                              attrs: { right: "" },
+                                              scopedSlots: _vm._u([
+                                                {
+                                                  key: "activator",
+                                                  fn: function (ref) {
+                                                    var on = ref.on
+                                                    return [
+                                                      _c(
+                                                        "v-btn",
+                                                        _vm._g(
+                                                          {
+                                                            staticClass: "ma-2",
+                                                          },
+                                                          on
+                                                        ),
+                                                        [
+                                                          _vm._v(
+                                                            "Tool Tip Activator"
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  },
+                                                },
+                                              ]),
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                      Tool Tip\n                    "
+                                              ),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-list",
+                                            {
+                                              attrs: {
+                                                "three-line": "",
+                                                subheader: "",
+                                              },
+                                            },
+                                            [
+                                              _c("v-subheader", [
+                                                _vm._v("User Controls"),
+                                              ]),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list-item",
+                                                [
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _vm._v(
+                                                          "Content filtering"
+                                                        ),
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-list-item-subtitle",
+                                                        [
+                                                          _vm._v(
+                                                            "Set the content filtering level to restrict apps\n                            that can be downloaded"
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ],
+                                                    1
+                                                  ),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list-item",
+                                                [
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _vm._v("Password"),
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-list-item-subtitle",
+                                                        [
+                                                          _vm._v(
+                                                            "Require password for purchase or use password to\n                            restrict purchase"
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ],
+                                                    1
+                                                  ),
+                                                ],
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("v-divider"),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-list",
+                                            {
+                                              attrs: {
+                                                "three-line": "",
+                                                subheader: "",
+                                              },
+                                            },
+                                            [
+                                              _c("v-subheader", [
+                                                _vm._v("General"),
+                                              ]),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list-item",
+                                                [
+                                                  _c(
+                                                    "v-list-item-action",
+                                                    [
+                                                      _c("v-checkbox", {
+                                                        model: {
+                                                          value:
+                                                            _vm.code7
+                                                              .notifications,
+                                                          callback: function (
+                                                            $$v
+                                                          ) {
+                                                            _vm.$set(
+                                                              _vm.code7,
+                                                              "notifications",
+                                                              $$v
+                                                            )
+                                                          },
+                                                          expression:
+                                                            "code7.notifications",
+                                                        },
+                                                      }),
+                                                    ],
+                                                    1
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _vm._v("Notifications"),
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-list-item-subtitle",
+                                                        [
+                                                          _vm._v(
+                                                            "Notify me about updates to apps or games that I\n                            downloaded"
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ],
+                                                    1
+                                                  ),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list-item",
+                                                [
+                                                  _c(
+                                                    "v-list-item-action",
+                                                    [
+                                                      _c("v-checkbox", {
+                                                        model: {
+                                                          value:
+                                                            _vm.code7.sound,
+                                                          callback: function (
+                                                            $$v
+                                                          ) {
+                                                            _vm.$set(
+                                                              _vm.code7,
+                                                              "sound",
+                                                              $$v
+                                                            )
+                                                          },
+                                                          expression:
+                                                            "code7.sound",
+                                                        },
+                                                      }),
+                                                    ],
+                                                    1
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _vm._v("Sound"),
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-list-item-subtitle",
+                                                        [
+                                                          _vm._v(
+                                                            "Auto-update apps at any time. Data charges may\n                            apply"
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ],
+                                                    1
+                                                  ),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list-item",
+                                                [
+                                                  _c(
+                                                    "v-list-item-action",
+                                                    [
+                                                      _c("v-checkbox", {
+                                                        model: {
+                                                          value:
+                                                            _vm.code7.widgets,
+                                                          callback: function (
+                                                            $$v
+                                                          ) {
+                                                            _vm.$set(
+                                                              _vm.code7,
+                                                              "widgets",
+                                                              $$v
+                                                            )
+                                                          },
+                                                          expression:
+                                                            "code7.widgets",
+                                                        },
+                                                      }),
+                                                    ],
+                                                    1
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _vm._v(
+                                                          "Auto-add widgets"
+                                                        ),
+                                                      ]),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-list-item-subtitle",
+                                                        [
+                                                          _vm._v(
+                                                            "Automatically add home screen\n                            widgets"
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ],
+                                                    1
+                                                  ),
+                                                ],
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c("div", {
+                                        staticStyle: { flex: "1 1 auto" },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-dialog",
+                                {
+                                  attrs: { "max-width": "500px" },
+                                  model: {
+                                    value: _vm.code7.dialog2,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code7, "dialog2", $$v)
+                                    },
+                                    expression: "code7.dialog2",
+                                  },
+                                },
+                                [
+                                  _c(
+                                    "v-card",
+                                    [
+                                      _c("v-card-title", [
+                                        _vm._v(
+                                          "\n                    Dialog 2\n                  "
+                                        ),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-card-text",
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: {
+                                                color: "primary",
+                                                dark: "",
+                                              },
+                                              on: {
+                                                click: function ($event) {
+                                                  _vm.code7.dialog3 =
+                                                    !_vm.code7.dialog3
+                                                },
+                                              },
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                      Open Dialog 3\n                    "
+                                              ),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c("v-select", {
+                                            attrs: {
+                                              items: _vm.code7.select,
+                                              label: "A Select List",
+                                              "item-value": "text",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-card-actions",
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: {
+                                                color: "primary",
+                                                text: "",
+                                              },
+                                              on: {
+                                                click: function ($event) {
+                                                  _vm.code7.dialog2 = false
+                                                },
+                                              },
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                      Close\n                    "
+                                              ),
+                                            ]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-dialog",
+                                {
+                                  attrs: { "max-width": "500px" },
+                                  model: {
+                                    value: _vm.code7.dialog3,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code7, "dialog3", $$v)
+                                    },
+                                    expression: "code7.dialog3",
+                                  },
+                                },
+                                [
+                                  _c(
+                                    "v-card",
+                                    [
+                                      _c(
+                                        "v-card-title",
+                                        [
+                                          _c("span", [_vm._v("Dialog 3")]),
+                                          _vm._v(" "),
+                                          _c("v-spacer"),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-menu",
+                                            {
+                                              attrs: { bottom: "", left: "" },
+                                              scopedSlots: _vm._u([
+                                                {
+                                                  key: "activator",
+                                                  fn: function (ref) {
+                                                    var on = ref.on
+                                                    return [
+                                                      _c(
+                                                        "v-btn",
+                                                        _vm._g(
+                                                          {
+                                                            attrs: { icon: "" },
+                                                          },
+                                                          on
+                                                        ),
+                                                        [
+                                                          _c("v-icon", [
+                                                            _vm._v(
+                                                              "mdi-dots-vertical"
+                                                            ),
+                                                          ]),
+                                                        ],
+                                                        1
+                                                      ),
+                                                    ]
+                                                  },
+                                                },
+                                              ]),
+                                            },
+                                            [
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list",
+                                                _vm._l(
+                                                  _vm.code7.items,
+                                                  function (item, i) {
+                                                    return _c(
+                                                      "v-list-item",
+                                                      {
+                                                        key: i,
+                                                        on: {
+                                                          click: function () {},
+                                                        },
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "v-list-item-title",
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(item.title)
+                                                            ),
+                                                          ]
+                                                        ),
+                                                      ],
+                                                      1
+                                                    )
+                                                  }
+                                                ),
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-card-actions",
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: {
+                                                color: "primary",
+                                                text: "",
+                                              },
+                                              on: {
+                                                click: function ($event) {
+                                                  _vm.code7.dialog3 = false
+                                                },
+                                              },
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                      Close\n                    "
+                                              ),
+                                            ]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code7.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code7.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("KTCodePreview", {
+              attrs: { title: "Scrollable" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("Example of a dialog with scrollable content."),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-row",
+                        { attrs: { justify: "center" } },
+                        [
+                          _c(
+                            "v-dialog",
+                            {
+                              attrs: { scrollable: "", "max-width": "300px" },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "activator",
+                                  fn: function (ref) {
+                                    var on = ref.on
+                                    return [
+                                      _c(
+                                        "v-btn",
+                                        _vm._g(
+                                          {
+                                            attrs: {
+                                              color: "primary",
+                                              dark: "",
+                                            },
+                                          },
+                                          on
+                                        ),
+                                        [_vm._v("Open Dialog")]
+                                      ),
+                                    ]
+                                  },
+                                },
+                              ]),
+                              model: {
+                                value: _vm.code2.dialog,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code2, "dialog", $$v)
+                                },
+                                expression: "code2.dialog",
+                              },
+                            },
+                            [
+                              _vm._v(" "),
+                              _c(
+                                "v-card",
+                                [
+                                  _c("v-card-title", [
+                                    _vm._v("Select Country"),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("v-divider"),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-card-text",
+                                    { staticStyle: { height: "300px" } },
+                                    [
+                                      _c(
+                                        "v-radio-group",
+                                        {
+                                          attrs: { column: "" },
+                                          model: {
+                                            value: _vm.code2.dialogm1,
+                                            callback: function ($$v) {
+                                              _vm.$set(
+                                                _vm.code2,
+                                                "dialogm1",
+                                                $$v
+                                              )
+                                            },
+                                            expression: "code2.dialogm1",
+                                          },
+                                        },
+                                        [
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Bahamas, The",
+                                              value: "bahamas",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Bahrain",
+                                              value: "bahrain",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Bangladesh",
+                                              value: "bangladesh",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Barbados",
+                                              value: "barbados",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Belarus",
+                                              value: "belarus",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Belgium",
+                                              value: "belgium",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Belize",
+                                              value: "belize",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Benin",
+                                              value: "benin",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Bhutan",
+                                              value: "bhutan",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Bolivia",
+                                              value: "bolivia",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Bosnia and Herzegovina",
+                                              value: "bosnia",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Botswana",
+                                              value: "botswana",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Brazil",
+                                              value: "brazil",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Brunei",
+                                              value: "brunei",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Bulgaria",
+                                              value: "bulgaria",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Burkina Faso",
+                                              value: "burkina",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Burma",
+                                              value: "burma",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-radio", {
+                                            attrs: {
+                                              label: "Burundi",
+                                              value: "burundi",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-divider"),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-card-actions",
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "blue darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code2.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Close")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "blue darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code2.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Save")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Form" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("Just a simple example of a form in a dialog."),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-row",
+                        { attrs: { justify: "center" } },
+                        [
+                          _c(
+                            "v-dialog",
+                            {
+                              attrs: { persistent: "", "max-width": "600px" },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "activator",
+                                  fn: function (ref) {
+                                    var on = ref.on
+                                    return [
+                                      _c(
+                                        "v-btn",
+                                        _vm._g(
+                                          {
+                                            attrs: {
+                                              color: "primary",
+                                              dark: "",
+                                            },
+                                          },
+                                          on
+                                        ),
+                                        [_vm._v("Open Dialog")]
+                                      ),
+                                    ]
+                                  },
+                                },
+                              ]),
+                              model: {
+                                value: _vm.code4.dialog,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code4, "dialog", $$v)
+                                },
+                                expression: "code4.dialog",
+                              },
+                            },
+                            [
+                              _vm._v(" "),
+                              _c(
+                                "v-card",
+                                [
+                                  _c("v-card-title", [
+                                    _c("span", { staticClass: "headline" }, [
+                                      _vm._v("User Profile"),
+                                    ]),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-card-text",
+                                    [
+                                      _c(
+                                        "v-container",
+                                        [
+                                          _c(
+                                            "v-row",
+                                            [
+                                              _c(
+                                                "v-col",
+                                                {
+                                                  attrs: {
+                                                    cols: "12",
+                                                    sm: "6",
+                                                    md: "4",
+                                                  },
+                                                },
+                                                [
+                                                  _c("v-text-field", {
+                                                    attrs: {
+                                                      label:
+                                                        "Legal first name*",
+                                                      required: "",
+                                                    },
+                                                  }),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-col",
+                                                {
+                                                  attrs: {
+                                                    cols: "12",
+                                                    sm: "6",
+                                                    md: "4",
+                                                  },
+                                                },
+                                                [
+                                                  _c("v-text-field", {
+                                                    attrs: {
+                                                      label:
+                                                        "Legal middle name",
+                                                      hint: "example of helper text only on focus",
+                                                    },
+                                                  }),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-col",
+                                                {
+                                                  attrs: {
+                                                    cols: "12",
+                                                    sm: "6",
+                                                    md: "4",
+                                                  },
+                                                },
+                                                [
+                                                  _c("v-text-field", {
+                                                    attrs: {
+                                                      label: "Legal last name*",
+                                                      hint: "example of persistent helper text",
+                                                      "persistent-hint": "",
+                                                      required: "",
+                                                    },
+                                                  }),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-col",
+                                                { attrs: { cols: "12" } },
+                                                [
+                                                  _c("v-text-field", {
+                                                    attrs: {
+                                                      label: "Email*",
+                                                      required: "",
+                                                    },
+                                                  }),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-col",
+                                                { attrs: { cols: "12" } },
+                                                [
+                                                  _c("v-text-field", {
+                                                    attrs: {
+                                                      label: "Password*",
+                                                      type: "password",
+                                                      required: "",
+                                                    },
+                                                  }),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-col",
+                                                {
+                                                  attrs: {
+                                                    cols: "12",
+                                                    sm: "6",
+                                                  },
+                                                },
+                                                [
+                                                  _c("v-select", {
+                                                    attrs: {
+                                                      items: [
+                                                        "0-17",
+                                                        "18-29",
+                                                        "30-54",
+                                                        "54+",
+                                                      ],
+                                                      label: "Age*",
+                                                      required: "",
+                                                    },
+                                                  }),
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-col",
+                                                {
+                                                  attrs: {
+                                                    cols: "12",
+                                                    sm: "6",
+                                                  },
+                                                },
+                                                [
+                                                  _c("v-autocomplete", {
+                                                    attrs: {
+                                                      items: [
+                                                        "Skiing",
+                                                        "Ice hockey",
+                                                        "Soccer",
+                                                        "Basketball",
+                                                        "Hockey",
+                                                        "Reading",
+                                                        "Writing",
+                                                        "Coding",
+                                                        "Basejump",
+                                                      ],
+                                                      label: "Interests",
+                                                      multiple: "",
+                                                    },
+                                                  }),
+                                                ],
+                                                1
+                                              ),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c("small", [
+                                        _vm._v("*indicates required field"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-card-actions",
+                                    [
+                                      _c("v-spacer"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "blue darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code4.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Close")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "blue darken-1",
+                                            text: "",
+                                          },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code4.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [_vm._v("Save")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Fullscreen" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Due to limited space, full-screen dialogs may be more appropriate\n            for mobile devices than dialogs used on devices with larger\n            screens.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-row",
+                        { attrs: { justify: "center" } },
+                        [
+                          _c(
+                            "v-dialog",
+                            {
+                              attrs: {
+                                fullscreen: "",
+                                "hide-overlay": "",
+                                transition: "dialog-bottom-transition",
+                              },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "activator",
+                                  fn: function (ref) {
+                                    var on = ref.on
+                                    return [
+                                      _c(
+                                        "v-btn",
+                                        _vm._g(
+                                          {
+                                            attrs: {
+                                              color: "primary",
+                                              dark: "",
+                                            },
+                                          },
+                                          on
+                                        ),
+                                        [_vm._v("Open Dialog")]
+                                      ),
+                                    ]
+                                  },
+                                },
+                              ]),
+                              model: {
+                                value: _vm.code6.dialog,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code6, "dialog", $$v)
+                                },
+                                expression: "code6.dialog",
+                              },
+                            },
+                            [
+                              _vm._v(" "),
+                              _c(
+                                "v-card",
+                                [
+                                  _c(
+                                    "v-toolbar",
+                                    { attrs: { dark: "", color: "primary" } },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: { icon: "", dark: "" },
+                                          on: {
+                                            click: function ($event) {
+                                              _vm.code6.dialog = false
+                                            },
+                                          },
+                                        },
+                                        [_c("v-icon", [_vm._v("mdi-close")])],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-toolbar-title", [
+                                        _vm._v("Settings"),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("v-spacer"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-toolbar-items",
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: { dark: "", text: "" },
+                                              on: {
+                                                click: function ($event) {
+                                                  _vm.code6.dialog = false
+                                                },
+                                              },
+                                            },
+                                            [_vm._v("Save")]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list",
+                                    {
+                                      attrs: {
+                                        "three-line": "",
+                                        subheader: "",
+                                      },
+                                    },
+                                    [
+                                      _c("v-subheader", [
+                                        _vm._v("User Controls"),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-list-item",
+                                        [
+                                          _c(
+                                            "v-list-item-content",
+                                            [
+                                              _c("v-list-item-title", [
+                                                _vm._v("Content filtering"),
+                                              ]),
+                                              _vm._v(" "),
+                                              _c("v-list-item-subtitle", [
+                                                _vm._v(
+                                                  "Set the content filtering level to restrict apps that\n                        can be downloaded"
+                                                ),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-list-item",
+                                        [
+                                          _c(
+                                            "v-list-item-content",
+                                            [
+                                              _c("v-list-item-title", [
+                                                _vm._v("Password"),
+                                              ]),
+                                              _vm._v(" "),
+                                              _c("v-list-item-subtitle", [
+                                                _vm._v(
+                                                  "Require password for purchase or use password to\n                        restrict purchase"
+                                                ),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-divider"),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list",
+                                    {
+                                      attrs: {
+                                        "three-line": "",
+                                        subheader: "",
+                                      },
+                                    },
+                                    [
+                                      _c("v-subheader", [_vm._v("General")]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-list-item",
+                                        [
+                                          _c(
+                                            "v-list-item-action",
+                                            [
+                                              _c("v-checkbox", {
+                                                model: {
+                                                  value:
+                                                    _vm.code6.notifications,
+                                                  callback: function ($$v) {
+                                                    _vm.$set(
+                                                      _vm.code6,
+                                                      "notifications",
+                                                      $$v
+                                                    )
+                                                  },
+                                                  expression:
+                                                    "code6.notifications",
+                                                },
+                                              }),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-list-item-content",
+                                            [
+                                              _c("v-list-item-title", [
+                                                _vm._v("Notifications"),
+                                              ]),
+                                              _vm._v(" "),
+                                              _c("v-list-item-subtitle", [
+                                                _vm._v(
+                                                  "Notify me about updates to apps or games that I\n                        downloaded"
+                                                ),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-list-item",
+                                        [
+                                          _c(
+                                            "v-list-item-action",
+                                            [
+                                              _c("v-checkbox", {
+                                                model: {
+                                                  value: _vm.code6.sound,
+                                                  callback: function ($$v) {
+                                                    _vm.$set(
+                                                      _vm.code6,
+                                                      "sound",
+                                                      $$v
+                                                    )
+                                                  },
+                                                  expression: "code6.sound",
+                                                },
+                                              }),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-list-item-content",
+                                            [
+                                              _c("v-list-item-title", [
+                                                _vm._v("Sound"),
+                                              ]),
+                                              _vm._v(" "),
+                                              _c("v-list-item-subtitle", [
+                                                _vm._v(
+                                                  "Auto-update apps at any time. Data charges may\n                        apply"
+                                                ),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-list-item",
+                                        [
+                                          _c(
+                                            "v-list-item-action",
+                                            [
+                                              _c("v-checkbox", {
+                                                model: {
+                                                  value: _vm.code6.widgets,
+                                                  callback: function ($$v) {
+                                                    _vm.$set(
+                                                      _vm.code6,
+                                                      "widgets",
+                                                      $$v
+                                                    )
+                                                  },
+                                                  expression: "code6.widgets",
+                                                },
+                                              }),
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-list-item-content",
+                                            [
+                                              _c("v-list-item-title", [
+                                                _vm._v("Auto-add widgets"),
+                                              ]),
+                                              _vm._v(" "),
+                                              _c("v-list-item-subtitle", [
+                                                _vm._v(
+                                                  "Automatically add home screen\n                        widgets"
+                                                ),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code6.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
           ],
           1
         ),
@@ -1730,17 +3198,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Tabs.vue":
-/*!******************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Tabs.vue ***!
-  \******************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Dialog.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Dialog.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tabs.vue?vue&type=template&id=9d9b1c4a& */ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&");
-/* harmony import */ var _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tabs.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Dialog_vue_vue_type_template_id_1fb4a965___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dialog.vue?vue&type=template&id=1fb4a965& */ "./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=template&id=1fb4a965&");
+/* harmony import */ var _Dialog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dialog.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1750,9 +3218,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Dialog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Dialog_vue_vue_type_template_id_1fb4a965___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Dialog_vue_vue_type_template_id_1fb4a965___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1762,38 +3230,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vuetify/Tabs.vue"
+component.options.__file = "resources/js/src/view/pages/vuetify/Dialog.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dialog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Dialog.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dialog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=template&id=1fb4a965&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=template&id=1fb4a965& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=template&id=9d9b1c4a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dialog_vue_vue_type_template_id_1fb4a965___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Dialog.vue?vue&type=template&id=1fb4a965& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Dialog.vue?vue&type=template&id=1fb4a965&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dialog_vue_vue_type_template_id_1fb4a965___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dialog_vue_vue_type_template_id_1fb4a965___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

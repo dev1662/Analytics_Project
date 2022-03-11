@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[67],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -217,75 +217,157 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<div>\n  <b-tabs content-class=\"mt-3\">\n    <b-tab title=\"First\" active><p>I'm the first tab</p></b-tab>\n    <b-tab title=\"Second\"><p>I'm the second tab</p></b-tab>\n    <b-tab title=\"Disabled\" disabled><p>I'm a disabled tab!</p></b-tab>\n  </b-tabs>\n</div>"
+        html: "<div>\n    <b-table striped hover :items=\"items\"></b-table>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        items: [\n          { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },\n          { age: 21, first_name: 'Larsen', last_name: 'Shaw' },\n          { age: 89, first_name: 'Geneva', last_name: 'Wilson' },\n          { age: 38, first_name: 'Jami', last_name: 'Carney' }\n        ]\n      }\n    }\n  }",
+        items: [{
+          age: 40,
+          first_name: "Dickerson",
+          last_name: "Macdonald"
+        }, {
+          age: 21,
+          first_name: "Larsen",
+          last_name: "Shaw"
+        }, {
+          age: 89,
+          first_name: "Geneva",
+          last_name: "Wilson"
+        }, {
+          age: 38,
+          first_name: "Jami",
+          last_name: "Carney"
+        }]
       },
       code2: {
-        html: "<div>\n  <b-card no-body>\n    <b-tabs card>\n      <b-tab no-body title=\"Picture 1\">\n        <b-card-img bottom src=\"https://picsum.photos/600/200/?image=21\"></b-card-img>\n        <b-card-footer>Picture 1 footer</b-card-footer>\n      </b-tab>\n\n      <b-tab no-body title=\"Picture 2\">\n        <b-card-img bottom src=\"https://picsum.photos/600/200/?image=25\"></b-card-img>\n        <b-card-footer>Picture 2 footer</b-card-footer>\n      </b-tab>\n\n      <b-tab no-body title=\"Picture 3\">\n        <b-card-img bottom src=\"https://picsum.photos/600/200/?image=26\"></b-card-img>\n        <b-card-footer>Picture 3 footer</b-card-footer>\n      </b-tab>\n\n      <b-tab title=\"Text\">\n        <b-card-title>This tab does not have the <code>no-body</code> prop set</b-card-title>\n        <b-card-text>\n          Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum\n          consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex\n          consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt\n          veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua\n          esse irure.\n        </b-card-text>\n      </b-tab>\n    </b-tabs>\n  </b-card>\n</div>"
+        html: "<div>\n    <b-table hover :items=\"items\"></b-table>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        items: [\n          { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },\n          { age: 21, first_name: 'Larsen', last_name: 'Shaw' },\n          {\n            age: 89,\n            first_name: 'Geneva',\n            last_name: 'Wilson',\n            _rowVariant: 'danger'\n          },\n          {\n            age: 40,\n            first_name: 'Thor',\n            last_name: 'MacDonald',\n            _cellVariants: { age: 'info', first_name: 'warning' }\n          },\n          { age: 29, first_name: 'Dick', last_name: 'Dunlap' }\n        ]\n      }\n    }\n  }",
+        items: [{
+          age: 40,
+          first_name: "Dickerson",
+          last_name: "Macdonald"
+        }, {
+          age: 21,
+          first_name: "Larsen",
+          last_name: "Shaw"
+        }, {
+          age: 89,
+          first_name: "Geneva",
+          last_name: "Wilson",
+          _rowVariant: "danger"
+        }, {
+          age: 40,
+          first_name: "Thor",
+          last_name: "MacDonald",
+          _cellVariants: {
+            age: "info",
+            first_name: "warning"
+          }
+        }, {
+          age: 29,
+          first_name: "Dick",
+          last_name: "Dunlap"
+        }]
       },
       code3: {
-        html: "<div>\n  <b-card no-body>\n    <b-tabs pills card>\n      <b-tab title=\"Tab 1\" active><b-card-text>Tab Contents 1</b-card-text></b-tab>\n      <b-tab title=\"Tab 2\"><b-card-text>Tab Contents 2</b-card-text></b-tab>\n    </b-tabs>\n  </b-card>\n</div>"
+        html: "<div>\n    <b-table striped hover :items=\"items\" :fields=\"fields\"></b-table>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        // Note `isActive` is left out and will not appear in the rendered table\n        fields: ['first_name', 'last_name', 'age'],\n        items: [\n          { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },\n          { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },\n          { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },\n          { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' }\n        ]\n      }\n    }\n  }",
+        fields: ["first_name", "last_name", "age"],
+        items: [{
+          isActive: true,
+          age: 40,
+          first_name: "Dickerson",
+          last_name: "Macdonald"
+        }, {
+          isActive: false,
+          age: 21,
+          first_name: "Larsen",
+          last_name: "Shaw"
+        }, {
+          isActive: false,
+          age: 89,
+          first_name: "Geneva",
+          last_name: "Wilson"
+        }, {
+          isActive: true,
+          age: 38,
+          first_name: "Jami",
+          last_name: "Carney"
+        }]
       },
       code4: {
-        html: "<div>\n  <b-tabs content-class=\"mt-3\" fill>\n    <b-tab title=\"First\" active><p>I'm the first tab</p></b-tab>\n    <b-tab title=\"Second\"><p>I'm the second tab</p></b-tab>\n    <b-tab title=\"Very, very long title\"><p>I'm the tab with the very, very long title</p></b-tab>\n    <b-tab title=\"Disabled\" disabled><p>I'm a disabled tab!</p></b-tab>\n  </b-tabs>\n</div>"
+        html: "<div>\n    <b-table striped hover :items=\"items\" :fields=\"fields\"></b-table>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        // Note 'isActive' is left out and will not appear in the rendered table\n        fields: [\n          {\n            key: 'last_name',\n            sortable: true\n          },\n          {\n            key: 'first_name',\n            sortable: false\n          },\n          {\n            key: 'age',\n            label: 'Person age',\n            sortable: true,\n            // Variant applies to the whole column, including the header and footer\n            variant: 'danger'\n          }\n        ],\n        items: [\n          { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },\n          { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },\n          { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },\n          { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' }\n        ]\n      }\n    }\n  }",
+        // Note 'isActive' is left out and will not appear in the rendered table
+        fields: [{
+          key: "last_name",
+          sortable: true
+        }, {
+          key: "first_name",
+          sortable: false
+        }, {
+          key: "age",
+          label: "Person age",
+          sortable: true,
+          // Variant applies to the whole column, including the header and footer
+          variant: "danger"
+        }],
+        items: [{
+          isActive: true,
+          age: 40,
+          first_name: "Dickerson",
+          last_name: "Macdonald"
+        }, {
+          isActive: false,
+          age: 21,
+          first_name: "Larsen",
+          last_name: "Shaw"
+        }, {
+          isActive: false,
+          age: 89,
+          first_name: "Geneva",
+          last_name: "Wilson"
+        }, {
+          isActive: true,
+          age: 38,
+          first_name: "Jami",
+          last_name: "Carney"
+        }]
       },
       code5: {
-        html: "<div>\n  <b-tabs content-class=\"mt-3\" justified>\n    <b-tab title=\"First\" active><p>I'm the first tab</p></b-tab>\n    <b-tab title=\"Second\"><p>I'm the second tab</p></b-tab>\n    <b-tab title=\"Very, very long title\"><p>I'm the tab with the very, very long title</p></b-tab>\n    <b-tab title=\"Disabled\" disabled><p>I'm a disabled tab!</p></b-tab>\n  </b-tabs>\n</div>"
-      },
-      code6: {
-        html: "<div>\n  <b-card no-body>\n    <b-tabs pills card vertical>\n      <b-tab title=\"Tab 1\" active><b-card-text>Tab Contents 1</b-card-text></b-tab>\n      <b-tab title=\"Tab 2\"><b-card-text>Tab Contents 2</b-card-text></b-tab>\n      <b-tab title=\"Tab 3\"><b-card-text>Tab Contents 3</b-card-text></b-tab>\n    </b-tabs>\n  </b-card>\n</div>"
-      },
-      code7: {
-        html: "<div>\n  <b-tabs>\n    <b-tab active>\n      <template v-slot:title>\n        <b-spinner type=\"grow\" small></b-spinner> I'm <i>Custom</i> <strong>Title</strong>\n      </template>\n      <p class=\"p-3\">Tab Contents 1</p>\n    </b-tab>\n\n    <b-tab>\n      <template v-slot:title>\n        <b-spinner type=\"border\" small></b-spinner> Tab 2\n      </template>\n      <p class=\"p-3\">Tab Contents 2</p>\n    </b-tab>\n  </b-tabs>\n</div>"
+        html: "<div>\n    <b-form-group label=\"Table Options\" label-cols-lg=\"2\">\n      <b-form-checkbox v-model=\"striped\" inline>Striped</b-form-checkbox>\n      <b-form-checkbox v-model=\"bordered\" inline>Bordered</b-form-checkbox>\n      <b-form-checkbox v-model=\"borderless\" inline>Borderless</b-form-checkbox>\n      <b-form-checkbox v-model=\"outlined\" inline>Outlined</b-form-checkbox>\n      <b-form-checkbox v-model=\"small\" inline>Small</b-form-checkbox>\n      <b-form-checkbox v-model=\"hover\" inline>Hover</b-form-checkbox>\n      <b-form-checkbox v-model=\"dark\" inline>Dark</b-form-checkbox>\n      <b-form-checkbox v-model=\"fixed\" inline>Fixed</b-form-checkbox>\n      <b-form-checkbox v-model=\"footClone\" inline>Foot Clone</b-form-checkbox>\n      <b-form-checkbox v-model=\"noCollapse\" inline>No border collapse</b-form-checkbox>\n    </b-form-group>\n    <b-form-group label=\"Head Variant\" label-cols-lg=\"2\">\n      <b-form-radio-group v-model=\"headVariant\" class=\"mt-lg-2\">\n        <b-form-radio :value=\"null\" inline>None</b-form-radio>\n        <b-form-radio value=\"light\" inline>Light</b-form-radio>\n        <b-form-radio value=\"dark\" inline>Dark</b-form-radio>\n      </b-form-radio-group>\n    </b-form-group>\n    <b-form-group label=\"Table Variant\" label-for=\"table-style-variant\" label-cols-lg=\"2\">\n      <b-form-select\n        v-model=\"tableVariant\"\n        :options=\"tableVariants\"\n        id=\"table-style-variant\"\n      >\n        <template v-slot:first>\n          <option value=\"\">-- None --</option>\n        </template>\n      </b-form-select>\n    </b-form-group>\n\n    <b-table\n      :striped=\"striped\"\n      :bordered=\"bordered\"\n      :borderless=\"borderless\"\n      :outlined=\"outlined\"\n      :small=\"small\"\n      :hover=\"hover\"\n      :dark=\"dark\"\n      :fixed=\"fixed\"\n      :foot-clone=\"footClone\"\n      :no-border-collapse=\"noCollapse\"\n      :items=\"items\"\n      :fields=\"fields\"\n      :head-variant=\"headVariant\"\n      :table-variant=\"tableVariant\"\n    ></b-table>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        fields: ['first_name', 'last_name', 'age'],\n        items: [\n          { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },\n          { age: 21, first_name: 'Larsen', last_name: 'Shaw' },\n          { age: 89, first_name: 'Geneva', last_name: 'Wilson' }\n        ],\n        tableVariants: [\n          'primary',\n          'secondary',\n          'info',\n          'danger',\n          'warning',\n          'success',\n          'light',\n          'dark'\n        ],\n        striped: false,\n        bordered: false,\n        borderless: false,\n        outlined: false,\n        small: false,\n        hover: false,\n        dark: false,\n        fixed: false,\n        footClone: false,\n        headVariant: null,\n        tableVariant: '',\n        noCollapse: false\n      }\n    }\n  }",
+        fields: ["first_name", "last_name", "age"],
+        items: [{
+          age: 40,
+          first_name: "Dickerson",
+          last_name: "Macdonald"
+        }, {
+          age: 21,
+          first_name: "Larsen",
+          last_name: "Shaw"
+        }, {
+          age: 89,
+          first_name: "Geneva",
+          last_name: "Wilson"
+        }],
+        tableVariants: ["primary", "secondary", "info", "danger", "warning", "success", "light", "dark"],
+        striped: false,
+        bordered: false,
+        borderless: false,
+        outlined: false,
+        small: false,
+        hover: false,
+        dark: false,
+        fixed: false,
+        footClone: false,
+        headVariant: null,
+        tableVariant: "",
+        noCollapse: false
       }
     };
   },
@@ -304,10 +386,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=template&id=655dc14c&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=template&id=655dc14c& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -344,16 +426,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Tabs")]),
+            _c("b", [_vm._v("Tables")]),
             _vm._v(
-              " Create a widget of tabbable panes of local content. The tabs\n      component is built upon navs and cards internally, and provides full\n      keyboard navigation control of the tabs.\n      "
+              " For displaying tabular data, <b-table> supports\n      pagination, filtering, sorting, custom rendering, various style options,\n      events, and asynchronous data. For simple display of tabular data\n      without all the fancy features, BootstrapVue provides two lightweight\n      alternative components <b-table-lite> and <b-table-simple>.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/tabs",
+                  href: "https://bootstrap-vue.js.org/docs/components/table",
                   target: "_blank",
                 },
               },
@@ -366,7 +448,7 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-6" },
+          { staticClass: "col-md-12" },
           [
             _c("KTCodePreview", {
               attrs: { title: "Basic usage" },
@@ -378,28 +460,13 @@ var render = function () {
                       _c(
                         "div",
                         [
-                          _c(
-                            "b-tabs",
-                            { attrs: { "content-class": "mt-3" } },
-                            [
-                              _c(
-                                "b-tab",
-                                { attrs: { title: "First", active: "" } },
-                                [_c("p", [_vm._v("I'm the first tab")])]
-                              ),
-                              _vm._v(" "),
-                              _c("b-tab", { attrs: { title: "Second" } }, [
-                                _c("p", [_vm._v("I'm the second tab")]),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-tab",
-                                { attrs: { title: "Disabled", disabled: "" } },
-                                [_c("p", [_vm._v("I'm a disabled tab!")])]
-                              ),
-                            ],
-                            1
-                          ),
+                          _c("b-table", {
+                            attrs: {
+                              striped: "",
+                              hover: "",
+                              items: _vm.code1.items,
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -418,66 +485,95 @@ var render = function () {
                   },
                   proxy: true,
                 },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Pills variant" },
+              attrs: { title: "Using variants for table cells" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            Tabs use the "),
-                        _c("code", [_vm._v("tabs")]),
-                        _vm._v(" styling by default. Just add\n            "),
-                        _c("code", [_vm._v("pills")]),
-                        _vm._v(" property to "),
-                        _c("code", [_vm._v("<b-tabs>")]),
                         _vm._v(
-                          " for the\n            pill style variant.\n          "
+                          "\n            Record data may also have additional special reserved name keys\n            for colorizing rows and individual cells (variants), and for\n            triggering additional row detail. The supported optional item\n            record modifier properties (make sure your field keys do not\n            conflict with these names):\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
                         [
-                          _c(
-                            "b-card",
-                            { attrs: { "no-body": "" } },
-                            [
-                              _c(
-                                "b-tabs",
-                                { attrs: { pills: "", card: "" } },
-                                [
-                                  _c(
-                                    "b-tab",
-                                    { attrs: { title: "Tab 1", active: "" } },
-                                    [
-                                      _c("b-card-text", [
-                                        _vm._v("Tab Contents 1"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-tab",
-                                    { attrs: { title: "Tab 2" } },
-                                    [
-                                      _c("b-card-text", [
-                                        _vm._v("Tab Contents 2"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
+                          _c("b-table", {
+                            attrs: { hover: "", items: _vm.code2.items },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Fields as a simple array" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Fields can be a simple array, for defining the order of the\n            columns, and which columns to display:\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c("b-table", {
+                            attrs: {
+                              striped: "",
+                              hover: "",
+                              items: _vm.code3.items,
+                              fields: _vm.code3.fields,
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -496,11 +592,22 @@ var render = function () {
                   },
                   proxy: true,
                 },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Fill" },
+              attrs: { title: "Fields as an array of objects" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -508,51 +615,21 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            To proportionately fill all available space with your tab\n            controls, set the "
-                        ),
-                        _c("code", [_vm._v("fill")]),
-                        _vm._v(
-                          " prop. Notice that all\n            horizontal space is occupied, but not every control has the same\n            width.\n          "
+                          "\n            Fields can be a an array of objects, providing additional control\n            over the fields (such as sorting, formatting, etc). Only columns\n            (keys) that appear in the fields array will be shown:\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
                         [
-                          _c(
-                            "b-tabs",
-                            { attrs: { "content-class": "mt-3", fill: "" } },
-                            [
-                              _c(
-                                "b-tab",
-                                { attrs: { title: "First", active: "" } },
-                                [_c("p", [_vm._v("I'm the first tab")])]
-                              ),
-                              _vm._v(" "),
-                              _c("b-tab", { attrs: { title: "Second" } }, [
-                                _c("p", [_vm._v("I'm the second tab")]),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-tab",
-                                { attrs: { title: "Very, very long title" } },
-                                [
-                                  _c("p", [
-                                    _vm._v(
-                                      "I'm the tab with the very, very long title"
-                                    ),
-                                  ]),
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-tab",
-                                { attrs: { title: "Disabled", disabled: "" } },
-                                [_c("p", [_vm._v("I'm a disabled tab!")])]
-                              ),
-                            ],
-                            1
-                          ),
+                          _c("b-table", {
+                            attrs: {
+                              striped: "",
+                              hover: "",
+                              items: _vm.code4.items,
+                              fields: _vm.code4.fields,
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -571,34 +648,38 @@ var render = function () {
                   },
                   proxy: true,
                 },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
               ]),
             }),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
+            _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Justified" },
+              attrs: { title: "Table style options" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            Table style options "),
+                        _c("code", [_vm._v("fixed")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("stacked")]),
+                        _vm._v(",\n            "),
+                        _c("code", [_vm._v("caption-top")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("no-border-collapse")]),
                         _vm._v(
-                          "\n            For equal-width controls, use the "
-                        ),
-                        _c("code", [_vm._v("justified")]),
-                        _vm._v(
-                          " prop\n            instead. All horizontal space will be occupied by the controls,\n            but unlike using "
-                        ),
-                        _c("code", [_vm._v("fill")]),
-                        _vm._v(
-                          " above, every control will be\n            the same width.\n          "
+                          ", sticky\n            headers, sticky columns, and the table sorting feature, all\n            require BootstrapVue's custom CSS.\n          "
                         ),
                       ]),
                       _vm._v(" "),
@@ -606,41 +687,311 @@ var render = function () {
                         "div",
                         [
                           _c(
-                            "b-tabs",
+                            "b-form-group",
                             {
-                              attrs: { "content-class": "mt-3", justified: "" },
+                              attrs: {
+                                label: "Table Options",
+                                "label-cols-lg": "2",
+                              },
                             },
                             [
                               _c(
-                                "b-tab",
-                                { attrs: { title: "First", active: "" } },
-                                [_c("p", [_vm._v("I'm the first tab")])]
-                              ),
-                              _vm._v(" "),
-                              _c("b-tab", { attrs: { title: "Second" } }, [
-                                _c("p", [_vm._v("I'm the second tab")]),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-tab",
-                                { attrs: { title: "Very, very long title" } },
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.striped,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "striped", $$v)
+                                    },
+                                    expression: "code5.striped",
+                                  },
+                                },
                                 [
-                                  _c("p", [
-                                    _vm._v(
-                                      "I'm the tab with the very, very long title"
-                                    ),
-                                  ]),
+                                  _vm._v(
+                                    "\n                Striped\n              "
+                                  ),
                                 ]
                               ),
                               _vm._v(" "),
                               _c(
-                                "b-tab",
-                                { attrs: { title: "Disabled", disabled: "" } },
-                                [_c("p", [_vm._v("I'm a disabled tab!")])]
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.bordered,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "bordered", $$v)
+                                    },
+                                    expression: "code5.bordered",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Bordered\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.borderless,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "borderless", $$v)
+                                    },
+                                    expression: "code5.borderless",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Borderless\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.outlined,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "outlined", $$v)
+                                    },
+                                    expression: "code5.outlined",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Outlined\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.small,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "small", $$v)
+                                    },
+                                    expression: "code5.small",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Small\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.hover,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "hover", $$v)
+                                    },
+                                    expression: "code5.hover",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Hover\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.dark,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "dark", $$v)
+                                    },
+                                    expression: "code5.dark",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Dark\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.fixed,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "fixed", $$v)
+                                    },
+                                    expression: "code5.fixed",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Fixed\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.footClone,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "footClone", $$v)
+                                    },
+                                    expression: "code5.footClone",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Foot Clone\n              "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-form-checkbox",
+                                {
+                                  attrs: { inline: "" },
+                                  model: {
+                                    value: _vm.code5.noCollapse,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "noCollapse", $$v)
+                                    },
+                                    expression: "code5.noCollapse",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                No border collapse\n              "
+                                  ),
+                                ]
                               ),
                             ],
                             1
                           ),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                label: "Head Variant",
+                                "label-cols-lg": "2",
+                              },
+                            },
+                            [
+                              _c(
+                                "b-form-radio-group",
+                                {
+                                  staticClass: "mt-lg-2",
+                                  model: {
+                                    value: _vm.code5.headVariant,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code5, "headVariant", $$v)
+                                    },
+                                    expression: "code5.headVariant",
+                                  },
+                                },
+                                [
+                                  _c(
+                                    "b-form-radio",
+                                    { attrs: { value: null, inline: "" } },
+                                    [_vm._v("None")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-radio",
+                                    { attrs: { value: "light", inline: "" } },
+                                    [_vm._v("Light")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-radio",
+                                    { attrs: { value: "dark", inline: "" } },
+                                    [_vm._v("Dark")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                label: "Table Variant",
+                                "label-for": "table-style-variant",
+                                "label-cols-lg": "2",
+                              },
+                            },
+                            [
+                              _c("b-form-select", {
+                                attrs: {
+                                  options: _vm.code5.tableVariants,
+                                  id: "table-style-variant",
+                                },
+                                scopedSlots: _vm._u([
+                                  {
+                                    key: "first",
+                                    fn: function () {
+                                      return [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("-- None --"),
+                                        ]),
+                                      ]
+                                    },
+                                    proxy: true,
+                                  },
+                                ]),
+                                model: {
+                                  value: _vm.code5.tableVariant,
+                                  callback: function ($$v) {
+                                    _vm.$set(_vm.code5, "tableVariant", $$v)
+                                  },
+                                  expression: "code5.tableVariant",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("b-table", {
+                            attrs: {
+                              striped: _vm.code5.striped,
+                              bordered: _vm.code5.bordered,
+                              borderless: _vm.code5.borderless,
+                              outlined: _vm.code5.outlined,
+                              small: _vm.code5.small,
+                              hover: _vm.code5.hover,
+                              dark: _vm.code5.dark,
+                              fixed: _vm.code5.fixed,
+                              "foot-clone": _vm.code5.footClone,
+                              "no-border-collapse": _vm.code5.noCollapse,
+                              items: _vm.code5.items,
+                              fields: _vm.code5.fields,
+                              "head-variant": _vm.code5.headVariant,
+                              "table-variant": _vm.code5.tableVariant,
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -659,359 +1010,12 @@ var render = function () {
                   },
                   proxy: true,
                 },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Vertical tabs" },
-              scopedSlots: _vm._u([
                 {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Have the tab controls placed on the lefthand side by setting the\n            "
-                        ),
-                        _c("code", [_vm._v("vertical")]),
-                        _vm._v(" prop to "),
-                        _c("code", [_vm._v("true")]),
-                        _vm._v(
-                          ". Vertical tabs\n            work with or without "
-                        ),
-                        _c("code", [_vm._v("card")]),
-                        _vm._v(" mode enabled.\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        [
-                          _c(
-                            "b-card",
-                            { attrs: { "no-body": "" } },
-                            [
-                              _c(
-                                "b-tabs",
-                                {
-                                  attrs: { pills: "", card: "", vertical: "" },
-                                },
-                                [
-                                  _c(
-                                    "b-tab",
-                                    { attrs: { title: "Tab 1", active: "" } },
-                                    [
-                                      _c("b-card-text", [
-                                        _vm._v("Tab Contents 1"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-tab",
-                                    { attrs: { title: "Tab 2" } },
-                                    [
-                                      _c("b-card-text", [
-                                        _vm._v("Tab Contents 2"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-tab",
-                                    { attrs: { title: "Tab 3" } },
-                                    [
-                                      _c("b-card-text", [
-                                        _vm._v("Tab Contents 3"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
+                  key: "js",
                   fn: function () {
                     return [
                       _vm._v(
-                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Add custom content to tab title" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            If you want to add custom content to tab title, like HTML code,\n            icons, or another non-interactive Vue component, this possible by\n            using "
-                        ),
-                        _c("code", [_vm._v("title")]),
-                        _vm._v(" slot of "),
-                        _c("code", [_vm._v("<b-tab>")]),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        [
-                          _c(
-                            "b-tabs",
-                            [
-                              _c(
-                                "b-tab",
-                                {
-                                  attrs: { active: "" },
-                                  scopedSlots: _vm._u([
-                                    {
-                                      key: "title",
-                                      fn: function () {
-                                        return [
-                                          _c("b-spinner", {
-                                            attrs: { type: "grow", small: "" },
-                                          }),
-                                          _vm._v(" I'm "),
-                                          _c("i", [_vm._v("Custom")]),
-                                          _vm._v(" "),
-                                          _c("strong", [_vm._v("Title")]),
-                                        ]
-                                      },
-                                      proxy: true,
-                                    },
-                                  ]),
-                                },
-                                [
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "p-3" }, [
-                                    _vm._v("Tab Contents 1"),
-                                  ]),
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-tab",
-                                {
-                                  scopedSlots: _vm._u([
-                                    {
-                                      key: "title",
-                                      fn: function () {
-                                        return [
-                                          _c("b-spinner", {
-                                            attrs: {
-                                              type: "border",
-                                              small: "",
-                                            },
-                                          }),
-                                          _vm._v(" Tab 2\n                "),
-                                        ]
-                                      },
-                                      proxy: true,
-                                    },
-                                  ]),
-                                },
-                                [
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "p-3" }, [
-                                    _vm._v("Tab Contents 2"),
-                                  ]),
-                                ]
-                              ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code7.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-12" },
-          [
-            _c("KTCodePreview", {
-              attrs: { title: "Cards integration" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Tabs support integrating with Bootstrap cards. Just add the card\n            property to "
-                        ),
-                        _c("code", [_vm._v("<b-tabs>")]),
-                        _vm._v(" and place it inside a\n            "),
-                        _c("code", [_vm._v("<b-card>")]),
-                        _vm._v(
-                          " component. Note that you should add\n            the "
-                        ),
-                        _c("code", [_vm._v("no-body")]),
-                        _vm._v(" prop on the\n            "),
-                        _c("code", [_vm._v("<b-card>")]),
-                        _vm._v(
-                          " component in order to properly\n            decorate the card header and remove the extra padding introduced\n            by "
-                        ),
-                        _c("code", [_vm._v("card-body")]),
-                        _vm._v(".\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        [
-                          _c(
-                            "b-card",
-                            { attrs: { "no-body": "" } },
-                            [
-                              _c(
-                                "b-tabs",
-                                { attrs: { card: "" } },
-                                [
-                                  _c(
-                                    "b-tab",
-                                    {
-                                      attrs: {
-                                        "no-body": "",
-                                        title: "Picture 1",
-                                      },
-                                    },
-                                    [
-                                      _c("b-card-img", {
-                                        attrs: {
-                                          bottom: "",
-                                          src: "https://picsum.photos/600/200/?image=21",
-                                        },
-                                      }),
-                                      _vm._v(" "),
-                                      _c("b-card-footer", [
-                                        _vm._v("Picture 1 footer"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-tab",
-                                    {
-                                      attrs: {
-                                        "no-body": "",
-                                        title: "Picture 2",
-                                      },
-                                    },
-                                    [
-                                      _c("b-card-img", {
-                                        attrs: {
-                                          bottom: "",
-                                          src: "https://picsum.photos/600/200/?image=25",
-                                        },
-                                      }),
-                                      _vm._v(" "),
-                                      _c("b-card-footer", [
-                                        _vm._v("Picture 2 footer"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-tab",
-                                    {
-                                      attrs: {
-                                        "no-body": "",
-                                        title: "Picture 3",
-                                      },
-                                    },
-                                    [
-                                      _c("b-card-img", {
-                                        attrs: {
-                                          bottom: "",
-                                          src: "https://picsum.photos/600/200/?image=26",
-                                        },
-                                      }),
-                                      _vm._v(" "),
-                                      _c("b-card-footer", [
-                                        _vm._v("Picture 3 footer"),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-tab",
-                                    { attrs: { title: "Text" } },
-                                    [
-                                      _c("b-card-title", [
-                                        _vm._v(
-                                          "\n                    This tab does not have the "
-                                        ),
-                                        _c("code", [_vm._v("no-body")]),
-                                        _vm._v(" prop set\n                  "),
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("b-card-text", [
-                                        _vm._v(
-                                          "\n                    Quis magna Lorem anim amet ipsum do mollit sit cillum\n                    voluptate ex nulla tempor. Laborum consequat non elit enim\n                    exercitation cillum aliqua consequat id aliqua. Esse ex\n                    consectetur mollit voluptate est in duis laboris ad sit\n                    ipsum anim Lorem. Incididunt veniam velit elit elit veniam\n                    Lorem aliqua quis ullamco deserunt sit enim elit aliqua\n                    esse irure.\n                  "
-                                        ),
-                                      ]),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
+                        "\n          " + _vm._s(_vm.code5.js) + "\n        "
                       ),
                     ]
                   },
@@ -1034,17 +1038,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue":
-/*!************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Tabs.vue ***!
-  \************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Table.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Table.vue ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tabs.vue?vue&type=template&id=c8e13ebc& */ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&");
-/* harmony import */ var _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tabs.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Table_vue_vue_type_template_id_655dc14c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Table.vue?vue&type=template&id=655dc14c& */ "./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=template&id=655dc14c&");
+/* harmony import */ var _Table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Table.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1054,9 +1058,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Table_vue_vue_type_template_id_655dc14c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Table_vue_vue_type_template_id_655dc14c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1066,38 +1070,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Tabs.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Table.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Table.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=template&id=655dc14c&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=template&id=655dc14c& ***!
+  \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=template&id=c8e13ebc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Table_vue_vue_type_template_id_655dc14c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Table.vue?vue&type=template&id=655dc14c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Table.vue?vue&type=template&id=655dc14c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Table_vue_vue_type_template_id_655dc14c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Table_vue_vue_type_template_id_655dc14c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

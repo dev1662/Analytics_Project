@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[46],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -134,17 +134,195 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      html1: "<div>\n    <!-- Styled -->\n    <b-form-file\n      v-model=\"file\"\n      :state=\"Boolean(file)\"\n      placeholder=\"Choose a file or drop it here...\"\n      drop-placeholder=\"Drop file here...\"\n    ></b-form-file>\n    <div class=\"mt-3\">Selected file: {{ file ? file.name : '' }}</div>\n\n    <!-- Plain mode -->\n    <b-form-file v-model=\"file2\" class=\"mt-3\" plain></b-form-file>\n    <div class=\"mt-3\">Selected file: {{ file2 ? file2.name : '' }}</div>\n  </div>",
-      js1: "export default {\n    data() {\n      return {\n        file: null,\n        file2: null\n      }\n    }",
-      file: null,
-      file2: null,
-      html2: "<div>\n  <b-form-group label=\"Small:\" label-for=\"file-small\" label-cols-sm=\"2\" label-size=\"sm\">\n    <b-form-file id=\"file-small\" size=\"sm\"></b-form-file>\n  </b-form-group>\n\n  <b-form-group label=\"Default:\" label-for=\"file-default\" label-cols-sm=\"2\">\n    <b-form-file id=\"file-default\"></b-form-file>\n  </b-form-group>\n\n  <b-form-group label=\"Large:\" label-for=\"file-large\" label-cols-sm=\"2\" label-size=\"lg\">\n    <b-form-file id=\"file-large\" size=\"lg\"></b-form-file>\n  </b-form-group>\n</div>",
-      html3: "<b-form-file multiple>\n   <template slot=\"file-name\" slot-scope=\"{ names }\">\n     <b-badge variant=\"dark\">{{ names[0] }}</b-badge>\n     <b-badge v-if=\"names.length > 1\" variant=\"dark\" class=\"ml-1\">\n       + {{ names.length - 1 }} More files\n     </b-badge>\n   </template>\n  </b-form-file>"
+      code1: {
+        html: "<div>\n    <b-form-checkbox\n      id=\"checkbox-1\"\n      v-model=\"status\"\n      name=\"checkbox-1\"\n      value=\"accepted\"\n      unchecked-value=\"not_accepted\"\n    >\n      I accept the terms and use\n    </b-form-checkbox>\n\n    <div>State: <strong>{{ status }}</strong></div>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        status: 'not_accepted'\n      }\n    }\n  }"
+      },
+      status: "not_accepted",
+      code2: {
+        html: "<div>\n    <b-form-group label=\"Using options array:\">\n      <b-form-checkbox-group\n        id=\"checkbox-group-1\"\n        v-model=\"selected\"\n        :options=\"options\"\n        name=\"flavour-1\"\n      ></b-form-checkbox-group>\n    </b-form-group>\n\n    <b-form-group label=\"Using sub-components:\">\n      <b-form-checkbox-group id=\"checkbox-group-2\" v-model=\"selected\" name=\"flavour-2\">\n        <b-form-checkbox value=\"orange\">Orange</b-form-checkbox>\n        <b-form-checkbox value=\"apple\">Apple</b-form-checkbox>\n        <b-form-checkbox value=\"pineapple\">Pineapple</b-form-checkbox>\n        <b-form-checkbox value=\"grape\">Grape</b-form-checkbox>\n      </b-form-checkbox-group>\n    </b-form-group>\n\n    <div>Selected: <strong>{{ selected }}</strong></div>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        selected: [], // Must be an array reference!\n        options: [\n          { text: 'Orange', value: 'orange' },\n          { text: 'Apple', value: 'apple' },\n          { text: 'Pineapple', value: 'pineapple' },\n          { text: 'Grape', value: 'grape' }\n        ]\n      }\n    }\n  }",
+        selected1: [],
+        // Must be an array reference!
+        selected2: [],
+        // Must be an array reference!
+        options: [{
+          text: "Orange",
+          value: "orange"
+        }, {
+          text: "Apple",
+          value: "apple"
+        }, {
+          text: "Pineapple",
+          value: "pineapple"
+        }, {
+          text: "Grape",
+          value: "grape"
+        }]
+      },
+      code3: {
+        html: "<div>\n    <b-form-group label=\"Form-checkbox-group inline checkboxes (default)\">\n      <b-form-checkbox-group\n        v-model=\"selected\"\n        :options=\"options\"\n        name=\"flavour-1a\"\n      ></b-form-checkbox-group>\n    </b-form-group>\n\n    <b-form-group label=\"Form-checkbox-group stacked checkboxes\">\n      <b-form-checkbox-group\n        v-model=\"selected\"\n        :options=\"options\"\n        name=\"flavour-2a\"\n        stacked\n      ></b-form-checkbox-group>\n    </b-form-group>\n\n    <b-form-group label=\"Individual stacked checkboxes (default)\">\n      <b-form-checkbox\n        v-for=\"option in options\"\n        v-model=\"selected\"\n        :key=\"option.value\"\n        :value=\"option.value\"\n        name=\"flavour-3a\"\n      >\n        {{ option.text }}\n      </b-form-checkbox>\n    </b-form-group>\n\n    <b-form-group label=\"Individual inline checkboxes\">\n      <b-form-checkbox\n        v-for=\"option in options\"\n        v-model=\"selected\"\n        :key=\"option.value\"\n        :value=\"option.value\"\n        name=\"flavour-4a\"\n        inline\n      >\n        {{ option.text }}\n      </b-form-checkbox>\n    </b-form-group>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        selected: [], // Must be an array reference!\n        options: [\n          { text: 'Orange', value: 'orange' },\n          { text: 'Apple', value: 'apple' },\n          { text: 'Pineapple', value: 'pineapple' },\n          { text: 'Grape', value: 'grape' }\n        ]\n      }\n    }\n  }",
+        selected1: [],
+        // Must be an array reference!
+        selected2: [],
+        // Must be an array reference!
+        selected3: [],
+        // Must be an array reference!
+        selected4: [],
+        // Must be an array reference!
+        options: [{
+          text: "Orange",
+          value: "orange"
+        }, {
+          text: "Apple",
+          value: "apple"
+        }, {
+          text: "Pineapple",
+          value: "pineapple"
+        }, {
+          text: "Grape",
+          value: "grape"
+        }]
+      },
+      code4: {
+        html: "<div>\n  <b-form-checkbox size=\"sm\">Small</b-form-checkbox>\n  <b-form-checkbox>Default</b-form-checkbox>\n  <b-form-checkbox size=\"lg\">Large</b-form-checkbox>\n</div>"
+      },
+      code5: {
+        html: "<div>\n    <b-form-group label=\"Button-group style checkboxes\">\n      <b-form-checkbox-group\n        v-model=\"selected\"\n        :options=\"options\"\n        name=\"buttons-1\"\n        buttons\n      ></b-form-checkbox-group>\n    </b-form-group>\n\n    <b-form-group label=\"Button-group style checkboxes with variant primary and large buttons\">\n      <b-form-checkbox-group\n        v-model=\"selected\"\n        :options=\"options\"\n        buttons\n        button-variant=\"primary\"\n        size=\"lg\"\n        name=\"buttons-2\"\n      ></b-form-checkbox-group>\n    </b-form-group>\n\n    <b-form-group label=\"Stacked (vertical) button-group style checkboxes\">\n      <b-form-checkbox-group\n        v-model=\"selected\"\n        :options=\"options\"\n        stacked\n        buttons\n      ></b-form-checkbox-group>\n    </b-form-group>\n  </div>",
+        js: "\n  export default {\n    data() {\n      return {\n        selected: [], // Must be an array reference!\n        options: [\n          { text: 'Orange', value: 'orange' },\n          { text: 'Apple', value: 'apple' },\n          { text: 'Pineapple', value: 'pineapple' },\n          { text: 'Grape', value: 'grape' }\n        ]\n      }\n    }\n  }",
+        selected1: [],
+        // Must be an array reference!
+        selected2: [],
+        // Must be an array reference!
+        selected3: [],
+        // Must be an array reference!
+        options: [{
+          text: "Orange",
+          value: "orange"
+        }, {
+          text: "Apple",
+          value: "apple"
+        }, {
+          text: "Pineapple",
+          value: "pineapple"
+        }, {
+          text: "Grape",
+          value: "grape"
+        }]
+      }
     };
   },
   components: {
@@ -155,17 +333,17 @@ __webpack_require__.r(__webpack_exports__);
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Form File"
+      title: "Form Checkbox"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=template&id=0fb7ba84&":
-/*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=template&id=0fb7ba84& ***!
-  \*****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=template&id=98caa56a&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=template&id=98caa56a& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -202,16 +380,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Form File Input")]),
+            _c("b", [_vm._v("Form Checkbox Inputs")]),
             _vm._v(
-              " Customized, cross-browser consistent, file input\n      control that supports single file, multiple files, and directory upload\n      (for browsers that support directory mode)\n      "
+              " For cross browser consistency,\n      <b-form-checkbox-group> and <b-form-checkbox> use\n      Bootstrap's custom checkbox input to replace the browser default\n      checkbox input. It is built on top of semantic and accessible markup, so\n      it is a solid replacement for the default checkbox input.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/form-file",
+                  href: "https://bootstrap-vue.js.org/docs/components/form-checkbox",
                   target: "_blank",
                 },
               },
@@ -227,7 +405,7 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Form File Input" },
+              attrs: { title: "Single checkbox" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -236,46 +414,33 @@ var render = function () {
                       _c(
                         "div",
                         [
-                          _c("b-form-file", {
-                            attrs: {
-                              state: Boolean(_vm.file),
-                              placeholder: "Choose a file or drop it here...",
-                              "drop-placeholder": "Drop file here...",
-                            },
-                            model: {
-                              value: _vm.file,
-                              callback: function ($$v) {
-                                _vm.file = $$v
+                          _c(
+                            "b-form-checkbox",
+                            {
+                              attrs: {
+                                id: "checkbox-1",
+                                name: "checkbox-1",
+                                value: "accepted",
+                                "unchecked-value": "not_accepted",
                               },
-                              expression: "file",
+                              model: {
+                                value: _vm.status,
+                                callback: function ($$v) {
+                                  _vm.status = $$v
+                                },
+                                expression: "status",
+                              },
                             },
-                          }),
+                            [
+                              _vm._v(
+                                "\n              I accept the terms and use\n            "
+                              ),
+                            ]
+                          ),
                           _vm._v(" "),
                           _c("div", { staticClass: "mt-3" }, [
-                            _vm._v(
-                              "Selected file: " +
-                                _vm._s(_vm.file ? _vm.file.name : "")
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("b-form-file", {
-                            staticClass: "mt-3",
-                            attrs: { plain: "" },
-                            model: {
-                              value: _vm.file2,
-                              callback: function ($$v) {
-                                _vm.file2 = $$v
-                              },
-                              expression: "file2",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "mt-3" }, [
-                            _vm._v(
-                              "\n              Selected file: " +
-                                _vm._s(_vm.file2 ? _vm.file2.name : "") +
-                                "\n            "
-                            ),
+                            _vm._v("\n              State: "),
+                            _c("strong", [_vm._v(_vm._s(_vm.status))]),
                           ]),
                         ],
                         1
@@ -288,7 +453,9 @@ var render = function () {
                   key: "html",
                   fn: function () {
                     return [
-                      _vm._v("\n          " + _vm._s(_vm.html1) + "\n        "),
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code1.html) + "\n        "
+                      ),
                     ]
                   },
                   proxy: true,
@@ -297,7 +464,9 @@ var render = function () {
                   key: "js",
                   fn: function () {
                     return [
-                      _vm._v("\n          " + _vm._s(_vm.js1) + "\n        "),
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
+                      ),
                     ]
                   },
                   proxy: true,
@@ -306,55 +475,99 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "File name formatting via scoped slot" },
+              attrs: { title: "Multiple choice checkboxes" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Alternatively, you can use the scoped slot\n            "
-                        ),
-                        _c("code", [_vm._v("file-name")]),
-                        _vm._v(
-                          " to render the file names. The scoped slot\n            will receive the following properties:\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("b-form-file", {
-                        attrs: { multiple: "" },
-                        scopedSlots: _vm._u([
-                          {
-                            key: "file-name",
-                            fn: function (ref) {
-                              var names = ref.names
-                              return [
-                                _c("b-badge", { attrs: { variant: "dark" } }, [
-                                  _vm._v(_vm._s(names[0])),
-                                ]),
-                                _vm._v(" "),
-                                names.length > 1
-                                  ? _c(
-                                      "b-badge",
-                                      {
-                                        staticClass: "ml-1",
-                                        attrs: { variant: "dark" },
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                + " +
-                                            _vm._s(names.length - 1) +
-                                            " More files\n              "
-                                        ),
-                                      ]
-                                    )
-                                  : _vm._e(),
-                              ]
-                            },
-                          },
-                        ]),
-                      }),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-form-group",
+                            { attrs: { label: "Using options array:" } },
+                            [
+                              _c("b-form-checkbox-group", {
+                                attrs: {
+                                  id: "checkbox-group-1",
+                                  options: _vm.code2.options,
+                                  name: "flavour-1",
+                                },
+                                model: {
+                                  value: _vm.code2.selected1,
+                                  callback: function ($$v) {
+                                    _vm.$set(_vm.code2, "selected1", $$v)
+                                  },
+                                  expression: "code2.selected1",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "mb-5" }, [
+                            _vm._v("\n              Selected: "),
+                            _c("strong", [_vm._v(_vm._s(_vm.code2.selected1))]),
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-group",
+                            { attrs: { label: "Using sub-components:" } },
+                            [
+                              _c(
+                                "b-form-checkbox-group",
+                                {
+                                  attrs: {
+                                    id: "checkbox-group-2",
+                                    name: "flavour-2",
+                                  },
+                                  model: {
+                                    value: _vm.code2.selected2,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code2, "selected2", $$v)
+                                    },
+                                    expression: "code2.selected2",
+                                  },
+                                },
+                                [
+                                  _c(
+                                    "b-form-checkbox",
+                                    { attrs: { value: "orange" } },
+                                    [_vm._v("Orange")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-checkbox",
+                                    { attrs: { value: "apple" } },
+                                    [_vm._v("Apple")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-checkbox",
+                                    { attrs: { value: "pineapple" } },
+                                    [_vm._v("Pineapple")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-checkbox",
+                                    { attrs: { value: "grape" } },
+                                    [_vm._v("Grape")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", [
+                            _vm._v("\n              Selected: "),
+                            _c("strong", [_vm._v(_vm._s(_vm.code2.selected2))]),
+                          ]),
+                        ],
+                        1
+                      ),
                     ]
                   },
                   proxy: true,
@@ -363,7 +576,196 @@ var render = function () {
                   key: "html",
                   fn: function () {
                     return [
-                      _vm._v("\n          " + _vm._s(_vm.html3) + "\n        "),
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Inline and stacked checkboxes" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _c("code", [_vm._v("<b-form-checkbox-group>")]),
+                        _vm._v(
+                          " components render\n            inline checkboxes by default, while\n            "
+                        ),
+                        _c("code", [_vm._v("<b-form-checkbox>")]),
+                        _vm._v(
+                          " renders block-level (stacked)\n            checkboxes.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                label:
+                                  "Form-checkbox-group inline checkboxes (default)",
+                              },
+                            },
+                            [
+                              _c("b-form-checkbox-group", {
+                                attrs: {
+                                  options: _vm.code3.options,
+                                  name: "flavour-1a",
+                                },
+                                model: {
+                                  value: _vm.code3.selected1,
+                                  callback: function ($$v) {
+                                    _vm.$set(_vm.code3, "selected1", $$v)
+                                  },
+                                  expression: "code3.selected1",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                label: "Form-checkbox-group stacked checkboxes",
+                              },
+                            },
+                            [
+                              _c("b-form-checkbox-group", {
+                                attrs: {
+                                  options: _vm.code3.options,
+                                  name: "flavour-2a",
+                                  stacked: "",
+                                },
+                                model: {
+                                  value: _vm.code3.selected2,
+                                  callback: function ($$v) {
+                                    _vm.$set(_vm.code3, "selected2", $$v)
+                                  },
+                                  expression: "code3.selected2",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                label:
+                                  "Individual stacked checkboxes (default)",
+                              },
+                            },
+                            _vm._l(_vm.code3.options, function (option) {
+                              return _c(
+                                "b-form-checkbox",
+                                {
+                                  key: option.value,
+                                  attrs: {
+                                    value: option.value,
+                                    name: "flavour-3a",
+                                  },
+                                  model: {
+                                    value: _vm.code3.selected3,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code3, "selected3", $$v)
+                                    },
+                                    expression: "code3.selected3",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                " +
+                                      _vm._s(option.text) +
+                                      "\n              "
+                                  ),
+                                ]
+                              )
+                            }),
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: { label: "Individual inline checkboxes" },
+                            },
+                            _vm._l(_vm.code3.options, function (option) {
+                              return _c(
+                                "b-form-checkbox",
+                                {
+                                  key: option.value,
+                                  attrs: {
+                                    value: option.value,
+                                    name: "flavour-4a",
+                                    inline: "",
+                                  },
+                                  model: {
+                                    value: _vm.code3.selected4,
+                                    callback: function ($$v) {
+                                      _vm.$set(_vm.code3, "selected4", $$v)
+                                    },
+                                    expression: "code3.selected4",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                " +
+                                      _vm._s(option.text) +
+                                      "\n              "
+                                  ),
+                                ]
+                              )
+                            }),
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code3.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
+                      ),
                     ]
                   },
                   proxy: true,
@@ -389,34 +791,80 @@ var render = function () {
                         _vm._v("\n            Use the "),
                         _c("code", [_vm._v("size")]),
                         _vm._v(
-                          " prop to control the visual size of the\n            input. The default size is considered "
+                          " prop to control the size of the\n            checkbox. The default size is medium. Supported size values are\n            "
                         ),
-                        _c("code", [_vm._v("md")]),
-                        _vm._v(" (medium).\n            Optional sizes are "),
-                        _c("code", [_vm._v("lg")]),
-                        _vm._v(" (large) and\n            "),
                         _c("code", [_vm._v("sm")]),
-                        _vm._v(
-                          " (small). These sizes line up with the sizes\n            available on other form controls.\n          "
-                        ),
+                        _vm._v(" (small) and "),
+                        _c("code", [_vm._v("lg")]),
+                        _vm._v(" (large).\n          "),
                       ]),
                       _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c("b-form-checkbox", { attrs: { size: "sm" } }, [
+                            _vm._v("Small"),
+                          ]),
+                          _vm._v(" "),
+                          _c("b-form-checkbox", [_vm._v("Default")]),
+                          _vm._v(" "),
+                          _c("b-form-checkbox", { attrs: { size: "lg" } }, [
+                            _vm._v("Large"),
+                          ]),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "code",
+                  fn: function () {
+                    return [
+                      _c("highlight-code", { attrs: { lang: "html" } }, [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(_vm.code4.html) +
+                            "\n          "
+                        ),
+                      ]),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Grouped button style checkboxes" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
                       _c(
                         "div",
                         [
                           _c(
                             "b-form-group",
                             {
-                              attrs: {
-                                label: "Small:",
-                                "label-for": "file-small",
-                                "label-cols-sm": "2",
-                                "label-size": "sm",
-                              },
+                              attrs: { label: "Button-group style checkboxes" },
                             },
                             [
-                              _c("b-form-file", {
-                                attrs: { id: "file-small", size: "sm" },
+                              _c("b-form-checkbox-group", {
+                                attrs: {
+                                  options: _vm.code5.options,
+                                  name: "buttons-1",
+                                  buttons: "",
+                                },
+                                model: {
+                                  value: _vm.code5.selected1,
+                                  callback: function ($$v) {
+                                    _vm.$set(_vm.code5, "selected1", $$v)
+                                  },
+                                  expression: "code5.selected1",
+                                },
                               }),
                             ],
                             1
@@ -426,14 +874,26 @@ var render = function () {
                             "b-form-group",
                             {
                               attrs: {
-                                label: "Default:",
-                                "label-for": "file-default",
-                                "label-cols-sm": "2",
+                                label:
+                                  "Button-group style checkboxes with variant primary and large buttons",
                               },
                             },
                             [
-                              _c("b-form-file", {
-                                attrs: { id: "file-default" },
+                              _c("b-form-checkbox-group", {
+                                attrs: {
+                                  options: _vm.code5.options,
+                                  buttons: "",
+                                  "button-variant": "primary",
+                                  size: "lg",
+                                  name: "buttons-2",
+                                },
+                                model: {
+                                  value: _vm.code5.selected2,
+                                  callback: function ($$v) {
+                                    _vm.$set(_vm.code5, "selected2", $$v)
+                                  },
+                                  expression: "code5.selected2",
+                                },
                               }),
                             ],
                             1
@@ -443,15 +903,24 @@ var render = function () {
                             "b-form-group",
                             {
                               attrs: {
-                                label: "Large:",
-                                "label-for": "file-large",
-                                "label-cols-sm": "2",
-                                "label-size": "lg",
+                                label:
+                                  "Stacked (vertical) button-group style checkboxes",
                               },
                             },
                             [
-                              _c("b-form-file", {
-                                attrs: { id: "file-large", size: "lg" },
+                              _c("b-form-checkbox-group", {
+                                attrs: {
+                                  options: _vm.code5.options,
+                                  stacked: "",
+                                  buttons: "",
+                                },
+                                model: {
+                                  value: _vm.code5.selected3,
+                                  callback: function ($$v) {
+                                    _vm.$set(_vm.code5, "selected3", $$v)
+                                  },
+                                  expression: "code5.selected3",
+                                },
                               }),
                             ],
                             1
@@ -467,7 +936,20 @@ var render = function () {
                   key: "html",
                   fn: function () {
                     return [
-                      _vm._v("\n          " + _vm._s(_vm.html2) + "\n        "),
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code5.js) + "\n        "
+                      ),
                     ]
                   },
                   proxy: true,
@@ -489,17 +971,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormFile.vue":
-/*!****************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormFile.vue ***!
-  \****************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue":
+/*!********************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue ***!
+  \********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _FormFile_vue_vue_type_template_id_0fb7ba84___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormFile.vue?vue&type=template&id=0fb7ba84& */ "./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=template&id=0fb7ba84&");
-/* harmony import */ var _FormFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormFile.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=script&lang=js&");
+/* harmony import */ var _FormCheckbox_vue_vue_type_template_id_98caa56a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormCheckbox.vue?vue&type=template&id=98caa56a& */ "./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=template&id=98caa56a&");
+/* harmony import */ var _FormCheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormCheckbox.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -509,9 +991,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _FormFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _FormFile_vue_vue_type_template_id_0fb7ba84___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _FormFile_vue_vue_type_template_id_0fb7ba84___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _FormCheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FormCheckbox_vue_vue_type_template_id_98caa56a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FormCheckbox_vue_vue_type_template_id_98caa56a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -521,38 +1003,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/FormFile.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormFile.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormCheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormCheckbox.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormCheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=template&id=0fb7ba84&":
-/*!***********************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=template&id=0fb7ba84& ***!
-  \***********************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=template&id=98caa56a&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=template&id=98caa56a& ***!
+  \***************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormFile_vue_vue_type_template_id_0fb7ba84___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormFile.vue?vue&type=template&id=0fb7ba84& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormFile.vue?vue&type=template&id=0fb7ba84&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormFile_vue_vue_type_template_id_0fb7ba84___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormCheckbox_vue_vue_type_template_id_98caa56a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormCheckbox.vue?vue&type=template&id=98caa56a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormCheckbox.vue?vue&type=template&id=98caa56a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormCheckbox_vue_vue_type_template_id_98caa56a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormFile_vue_vue_type_template_id_0fb7ba84___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormCheckbox_vue_vue_type_template_id_98caa56a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[75],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -269,75 +269,318 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-
-/**
- * Possible issue with Calendar
- * https://github.com/vuetifyjs/vuetify/issues/9999
- */
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<v-row>\n  <v-col>\n    <v-sheet height=\"400\">\n      <v-calendar\n        ref=\"calendar\"\n        :now=\"today\"\n        :value=\"today\"\n        :events=\"events\"\n        color=\"primary\"\n        type=\"week\"\n      ></v-calendar>\n    </v-sheet>\n  </v-col>\n</v-row>",
-        js: " export default {\n    data: () => ({\n      today: '2020-01-08',\n      events: [\n        {\n          name: 'Weekly Meeting',\n          start: '2020-01-07 09:00',\n          end: '2020-01-07 10:00',\n        },\n        {\n          name: 'Thomas\\' Birthday',\n          start: '2020-01-10',\n        },\n        {\n          name: 'Mash Potatoes',\n          start: '2020-01-09 12:30',\n          end: '2020-01-09 15:30',\n        },\n      ],\n    }),\n    mounted () {\n      this.$refs.calendar.scrollToTime('08:00')\n    },\n  }",
-        today: "2020-01-08",
-        events: [{
-          name: "Weekly Meeting",
-          start: "2020-01-07 09:00",
-          end: "2020-01-07 10:00"
-        }, {
-          name: "Thomas' Birthday",
-          start: "2020-01-10"
-        }, {
-          name: "Mash Potatoes",
-          start: "2020-01-09 12:30",
-          end: "2020-01-09 15:30"
-        }]
+        html: " <v-row align=\"center\">\n  <v-col class=\"text-center\" cols=\"12\" sm=\"4\">\n    <div class=\"my-2\">\n      <v-btn text small>Normal</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text small color=\"primary\">Primary</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text small color=\"error\">Error</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text small disabled>Disabled</v-btn>\n    </div>\n  </v-col>\n\n  <v-col class=\"text-center\" cols=\"12\" sm=\"4\">\n    <div class=\"my-2\">\n      <v-btn text>Normal</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text color=\"primary\">Primary</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text color=\"error\">Error</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text disabled>Disabled</v-btn>\n    </div>\n  </v-col>\n\n  <v-col class=\"text-center\" cols=\"12\" sm=\"4\">\n    <div class=\"my-2\">\n      <v-btn text large>Normal</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text large color=\"primary\">Primary</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text large color=\"error\">Error</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn text large disabled>Disabled</v-btn>\n    </div>\n  </v-col>\n</v-row>"
       },
       code2: {
-        html: " <v-row>\n  <v-col>\n    <v-sheet height=\"400\">\n      <v-calendar\n        color=\"primary\"\n        type=\"day\"\n      >\n        <template v-slot:day-header=\"{ present }\">\n          <template\n            v-if=\"present\"\n            class=\"text-center\"\n          >\n            Today\n          </template>\n        </template>\n\n        <template v-slot:interval=\"{ hour }\">\n          <div\n            class=\"text-center\"\n          >\n            {{ hour }} o'clock\n          </div>\n        </template>\n      </v-calendar>\n    </v-sheet>\n  </v-col>\n</v-row>"
+        html: "<v-row align=\"center\">\n  <v-col class=\"text-center\" cols=\"12\" sm=\"4\">\n    <div class=\"my-2\">\n      <v-btn small>Normal</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn small color=\"primary\">Primary</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn small color=\"error\">Error</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn small disabled>Disabled</v-btn>\n    </div>\n  </v-col>\n  <v-col class=\"text-center\" cols=\"12\" sm=\"4\">\n    <div class=\"my-2\">\n      <v-btn>Normal</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn color=\"primary\">Primary</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn color=\"error\">Error</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn disabled>Disabled</v-btn>\n    </div>\n  </v-col>\n  <v-col class=\"text-center\" cols=\"12\" sm=\"4\">\n    <div class=\"my-2\">\n      <v-btn large>Normal</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn large color=\"primary\">Primary</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn large color=\"error\">Error</v-btn>\n    </div>\n    <div class=\"my-2\">\n      <v-btn large disabled>Disabled</v-btn>\n    </div>\n  </v-col>\n</v-row>"
       },
       code3: {
-        html: "<v-row>\n  <v-col>\n    <v-sheet height=\"500\">\n      <v-calendar\n        :now=\"today\"\n        :value=\"today\"\n        color=\"primary\"\n      >\n        <template v-slot:day=\"{ present, past, date }\">\n          <v-row\n            class=\"fill-height\"\n          >\n            <template v-if=\"past && tracked[date]\">\n              <v-sheet\n                v-for=\"(percent, i) in tracked[date]\"\n                :key=\"i\"\n                :title=\"category[i]\"\n                :color=\"colors[i]\"\n                :width=\"`${percent}%`\"\n                height=\"100%\"\n                tile\n              ></v-sheet>\n            </template>\n          </v-row>\n        </template>\n      </v-calendar>\n    </v-sheet>\n  </v-col>\n</v-row>",
-        js: " export default {\n  data: () => ({\n    today: '2019-01-10',\n    tracked: {\n      '2019-01-09': [23, 45, 10],\n      '2019-01-08': [10],\n      '2019-01-07': [0, 78, 5],\n      '2019-01-06': [0, 0, 50],\n      '2019-01-05': [0, 10, 23],\n      '2019-01-04': [2, 90],\n      '2019-01-03': [10, 32],\n      '2019-01-02': [80, 10, 10],\n      '2019-01-01': [20, 25, 10],\n    },\n    colors: ['#1867c0', '#fb8c00', '#000000'],\n    category: ['Development', 'Meetings', 'Slacking'],\n  }),\n}",
-        today: "2019-01-10",
-        tracked: {
-          "2019-01-09": [23, 45, 10],
-          "2019-01-08": [10],
-          "2019-01-07": [0, 78, 5],
-          "2019-01-06": [0, 0, 50],
-          "2019-01-05": [0, 10, 23],
-          "2019-01-04": [2, 90],
-          "2019-01-03": [10, 32],
-          "2019-01-02": [80, 10, 10],
-          "2019-01-01": [20, 25, 10]
-        },
-        colors: ["#1867c0", "#fb8c00", "#000000"],
-        category: ["Development", "Meetings", "Slacking"]
+        html: " <v-container id=\"dropdown-example\">\n  <v-row>\n    <v-col cols=\"12\" sm=\"4\">\n      <p>Overflow</p>\n\n      <v-overflow-btn\n        class=\"my-2\"\n        :items=\"dropdown_font\"\n        label=\"Overflow Btn\"\n        target=\"#dropdown-example\"\n      ></v-overflow-btn>\n    </v-col>\n\n    <v-col cols=\"12\" sm=\"4\">\n      <p>Segmented</p>\n\n      <v-overflow-btn\n        class=\"my-2\"\n        :items=\"dropdown_icon\"\n        label=\"Segmented Btn\"\n        segmented\n        target=\"#dropdown-example\"\n      ></v-overflow-btn>\n    </v-col>\n\n    <v-col cols=\"12\" sm=\"4\">\n      <p>Editable</p>\n\n      <v-overflow-btn\n        class=\"my-2\"\n        :items=\"dropdown_edit\"\n        label=\"Editable Btn\"\n        editable\n        item-value=\"text\"\n      ></v-overflow-btn>\n    </v-col>\n  </v-row>\n</v-container>",
+        js: "export default {\n  data: () => ({\n    dropdown_font: ['Arial', 'Calibri', 'Courier', 'Verdana'],\n    dropdown_icon: [\n      { text: 'list', callback: () => console.log('list') },\n      { text: 'favorite', callback: () => console.log('favorite') },\n      { text: 'delete', callback: () => console.log('delete') },\n    ],\n    dropdown_edit: [\n      { text: '100%' },\n      { text: '75%' },\n      { text: '50%' },\n      { text: '25%' },\n      { text: '0%' },\n    ],\n  }),\n}",
+        dropdown_font: ["Arial", "Calibri", "Courier", "Verdana"],
+        dropdown_icon: [{
+          text: "list",
+          callback: function callback() {
+            /*console.log("list")*/
+          }
+        }, {
+          text: "favorite",
+          callback: function callback() {
+            /*console.log("favorite")*/
+          }
+        }, {
+          text: "delete",
+          callback: function callback() {
+            /*console.log("delete")*/
+          }
+        }],
+        dropdown_edit: [{
+          text: "100%"
+        }, {
+          text: "75%"
+        }, {
+          text: "50%"
+        }, {
+          text: "25%"
+        }, {
+          text: "0%"
+        }]
       },
       code4: {
-        html: " <v-row class=\"fill-height\">\n  <v-col>\n    <v-sheet height=\"64\">\n      <v-toolbar flat color=\"white\">\n        <v-btn outlined class=\"mr-4\" color=\"grey darken-2\" @click=\"setToday\">\n          Today\n        </v-btn>\n        <v-btn fab text small color=\"grey darken-2\" @click=\"prev\">\n          <v-icon small>mdi-chevron-left</v-icon>\n        </v-btn>\n        <v-btn fab text small color=\"grey darken-2\" @click=\"next\">\n          <v-icon small>mdi-chevron-right</v-icon>\n        </v-btn>\n        <v-toolbar-title>{{ title }}</v-toolbar-title>\n        <v-spacer></v-spacer>\n        <v-menu bottom right>\n          <template v-slot:activator=\"{ on }\">\n            <v-btn\n              outlined\n              color=\"grey darken-2\"\n              v-on=\"on\"\n            >\n              <span>{{ typeToLabel[type] }}</span>\n              <v-icon right>mdi-menu-down</v-icon>\n            </v-btn>\n          </template>\n          <v-list>\n            <v-list-item @click=\"type = 'day'\">\n              <v-list-item-title>Day</v-list-item-title>\n            </v-list-item>\n            <v-list-item @click=\"type = 'week'\">\n              <v-list-item-title>Week</v-list-item-title>\n            </v-list-item>\n            <v-list-item @click=\"type = 'month'\">\n              <v-list-item-title>Month</v-list-item-title>\n            </v-list-item>\n            <v-list-item @click=\"type = '4day'\">\n              <v-list-item-title>4 days</v-list-item-title>\n            </v-list-item>\n          </v-list>\n        </v-menu>\n      </v-toolbar>\n    </v-sheet>\n    <v-sheet height=\"600\">\n      <v-calendar\n        ref=\"calendar\"\n        v-model=\"focus\"\n        color=\"primary\"\n        :events=\"events\"\n        :event-color=\"getEventColor\"\n        :now=\"today\"\n        :type=\"type\"\n        @click:event=\"showEvent\"\n        @click:more=\"viewDay\"\n        @click:date=\"viewDay\"\n        @change=\"updateRange\"\n      ></v-calendar>\n      <v-menu\n        v-model=\"selectedOpen\"\n        :close-on-content-click=\"false\"\n        :activator=\"selectedElement\"\n        offset-x\n      >\n        <v-card\n          color=\"grey lighten-4\"\n          min-width=\"350px\"\n          flat\n        >\n          <v-toolbar\n            :color=\"selectedEvent.color\"\n            dark\n          >\n            <v-btn icon>\n              <v-icon>mdi-pencil</v-icon>\n            </v-btn>\n            <v-toolbar-title v-html=\"selectedEvent.name\"></v-toolbar-title>\n            <v-spacer></v-spacer>\n            <v-btn icon>\n              <v-icon>mdi-heart</v-icon>\n            </v-btn>\n            <v-btn icon>\n              <v-icon>mdi-dots-vertical</v-icon>\n            </v-btn>\n          </v-toolbar>\n          <v-card-text>\n            <span v-html=\"selectedEvent.details\"></span>\n          </v-card-text>\n          <v-card-actions>\n            <v-btn\n              text\n              color=\"secondary\"\n              @click=\"selectedOpen = false\"\n            >\n              Cancel\n            </v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-menu>\n    </v-sheet>\n  </v-col>\n</v-row>",
-        js: " export default {\n  data: () => ({\n    focus: '',\n    type: 'month',\n    typeToLabel: {\n      month: 'Month',\n      week: 'Week',\n      day: 'Day',\n      '4day': '4 Days',\n    },\n    start: null,\n    end: null,\n    selectedEvent: {},\n    selectedElement: null,\n    selectedOpen: false,\n    events: [],\n    colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],\n    names: ['Meeting', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],\n  }),\n  computed: {\n    title () {\n      const { start, end } = this\n      if (!start || !end) {\n        return ''\n      }\n\n      const startMonth = this.monthFormatter(start)\n      const endMonth = this.monthFormatter(end)\n      const suffixMonth = startMonth === endMonth ? '' : endMonth\n\n      const startYear = start.year\n      const endYear = end.year\n      const suffixYear = startYear === endYear ? '' : endYear\n\n      const startDay = start.day + this.nth(start.day)\n      const endDay = end.day + this.nth(end.day)\n\n      switch (this.type) {\n        case 'month':\n          return `${startMonth} ${startYear}`\n        case 'week':\n        case '4day':\n          return `${startMonth} ${startDay} ${startYear} - ${suffixMonth} ${endDay} ${suffixYear}`\n        case 'day':\n          return `${startMonth} ${startDay} ${startYear}`\n      }\n      return ''\n    },\n    monthFormatter () {\n      return this.$refs.calendar.getFormatter({\n        timeZone: 'UTC', month: 'long',\n      })\n    },\n  },\n  mounted () {\n    this.$refs.calendar.checkChange()\n  },\n  methods: {\n    viewDay ({ date }) {\n      this.focus = date\n      this.type = 'day'\n    },\n    getEventColor (event) {\n      return event.color\n    },\n    setToday () {\n      this.focus = this.today\n    },\n    prev () {\n      this.$refs.calendar.prev()\n    },\n    next () {\n      this.$refs.calendar.next()\n    },\n    showEvent ({ nativeEvent, event }) {\n      const open = () => {\n        this.selectedEvent = event\n        this.selectedElement = nativeEvent.target\n        setTimeout(() => this.selectedOpen = true, 10)\n      }\n\n      if (this.selectedOpen) {\n        this.selectedOpen = false\n        setTimeout(open, 10)\n      } else {\n        open()\n      }\n\n      nativeEvent.stopPropagation()\n    },\n    updateRange ({ start, end }) {\n      const events = []\n\n      const min = new Date(`${start.date}T00:00:00`)\n      const max = new Date(`${end.date}T23:59:59`)\n      const days = (max.getTime() - min.getTime()) / 86400000\n      const eventCount = this.rnd(days, days + 20)\n\n      for (let i = 0; i < eventCount; i++) {\n        const allDay = this.rnd(0, 3) === 0\n        const firstTimestamp = this.rnd(min.getTime(), max.getTime())\n        const first = new Date(firstTimestamp - (firstTimestamp % 900000))\n        const secondTimestamp = this.rnd(2, allDay ? 288 : 8) * 900000\n        const second = new Date(first.getTime() + secondTimestamp)\n\n        events.push({\n          name: this.names[this.rnd(0, this.names.length - 1)],\n          start: this.formatDate(first, !allDay),\n          end: this.formatDate(second, !allDay),\n          color: this.colors[this.rnd(0, this.colors.length - 1)],\n        })\n      }\n\n      this.start = start\n      this.end = end\n      this.events = events\n    },\n    nth (d) {\n      return d > 3 && d < 21\n        ? 'th'\n        : ['th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th'][d % 10]\n    },\n    rnd (a, b) {\n      return Math.floor((b - a + 1) * Math.random()) + a\n    },\n    formatDate (a, withTime) {\n      return withTime\n        ? `${a.getFullYear()}-${a.getMonth() + 1}-${a.getDate()} ${a.getHours()}:${a.getMinutes()}`\n        : `${a.getFullYear()}-${a.getMonth() + 1}-${a.getDate()}`\n    },\n  },\n}"
+        html: "<v-card flat>\n  <v-card-text>\n    <v-container fluid class=\"pa-0\">\n      <v-row>\n        <v-col cols=\"12\">\n          <p>Normal</p>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn text icon color=\"pink\">\n            <v-icon>mdi-heart</v-icon>\n          </v-btn>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn text icon color=\"indigo\">\n            <v-icon>mdi-star</v-icon>\n          </v-btn>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn text icon color=\"green\">\n            <v-icon>mdi-cached</v-icon>\n          </v-btn>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn text icon color=\"deep-orange\">\n            <v-icon>mdi-thumb-up</v-icon>\n          </v-btn>\n        </v-col>\n      </v-row>\n\n      <v-row class=\"mt-12\">\n        <v-col cols=\"12\">\n          <p>Disabled</p>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn icon disabled>\n            <v-icon>mdi-heart</v-icon>\n          </v-btn>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn icon disabled>\n            <v-icon>mdi-star</v-icon>\n          </v-btn>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn icon disabled>\n            <v-icon>mdi-cached</v-icon>\n          </v-btn>\n        </v-col>\n\n        <v-col cols=\"12\" sm=\"3\">\n          <v-btn icon disabled>\n            <v-icon>mdi-thumb-up</v-icon>\n          </v-btn>\n        </v-col>\n      </v-row>\n    </v-container>\n  </v-card-text>\n</v-card>"
       },
-      today: "2020-01-08",
-      focus: "",
-      type: "month",
-      typeToLabel: {
-        month: "Month",
-        week: "Week",
-        day: "Day",
-        "4day": "4 Days"
+      code5: {
+        html: "<div class=\"text-center\">\n  <v-btn class=\"mx-2\" fab dark small color=\"primary\">\n    <v-icon dark>mdi-minus</v-icon>\n  </v-btn>\n\n  <v-btn class=\"mx-2\" fab dark small color=\"pink\">\n    <v-icon dark>mdi-heart</v-icon>\n  </v-btn>\n\n  <v-btn class=\"mx-2\" fab dark color=\"indigo\">\n    <v-icon dark>mdi-plus</v-icon>\n  </v-btn>\n\n  <v-btn class=\"mx-2\" fab dark color=\"teal\">\n    <v-icon dark>mdi-format-list-bulleted-square</v-icon>\n  </v-btn>\n\n  <v-btn class=\"mx-2\" fab dark large color=\"cyan\">\n    <v-icon dark>mdi-pencil</v-icon>\n  </v-btn>\n\n  <v-btn class=\"mx-2\" fab dark large color=\"purple\">\n    <v-icon dark>mdi-android</v-icon>\n  </v-btn>\n</div>"
       },
-      start: null,
-      end: null,
-      selectedEvent: {},
-      selectedElement: null,
-      selectedOpen: false,
-      events: [],
-      colors: ["blue", "indigo", "deep-purple", "cyan", "green", "orange", "grey darken-1"],
-      names: ["Meeting", "Holiday", "PTO", "Travel", "Event", "Birthday", "Conference", "Party"]
+      code6: {
+        html: "<v-container fluid class=\"pa-0\">\n  <v-row align=\"center\">\n    <v-col cols=\"12\" sm=\"6\">\n      <div class=\"text-center\">\n        <div class=\"my-2\">\n          <v-btn x-small color=\"secondary\" dark>Extra small Button</v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn small color=\"primary\" dark>Small Button</v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn color=\"warning\" dark>Normal Button</v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn color=\"error\" dark large>Large Button</v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn x-large color=\"success\" dark>Extra large Button</v-btn>\n        </div>\n      </div>\n    </v-col>\n    <v-col cols=\"12\" sm=\"6\">\n      <div class=\"text-center\">\n        <div class=\"my-2\">\n          <v-btn color=\"secondary\" fab x-small dark>\n            <v-icon>mdi-television</v-icon>\n          </v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn color=\"primary\" fab small dark>\n            <v-icon>mdi-pencil</v-icon>\n          </v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn color=\"warning\" fab dark>\n            <v-icon>mdi-account-circle</v-icon>\n          </v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn color=\"error\" fab large dark>\n            <v-icon>mdi-alarm</v-icon>\n          </v-btn>\n        </div>\n        <div class=\"my-2\">\n          <v-btn color=\"success\" fab x-large dark>\n            <v-icon>mdi-domain</v-icon>\n          </v-btn>\n        </div>\n      </div>\n    </v-col>\n  </v-row>\n</v-container>"
+      },
+      code7: {
+        html: "<div class=\"text-center\">\n  <v-btn class=\"ma-2\" outlined color=\"indigo\">Outlined Button</v-btn>\n  <v-btn class=\"ma-2\" outlined fab color=\"teal\">\n    <v-icon>mdi-format-list-bulleted-square</v-icon>\n  </v-btn>\n  <v-btn class=\"ma-2\" outlined large fab color=\"indigo\">\n    <v-icon>mdi-pencil</v-icon>\n  </v-btn>\n</div>"
+      },
+      code8: {
+        html: "<div class=\"text-center\">\n  <v-btn rounded color=\"primary\" dark>Rounded Button</v-btn>\n</div>"
+      },
+      code9: {
+        html: "<div class=\"text-center\">\n  <v-btn class=\"ma-2\" tile color=\"indigo\" dark>Tile Button</v-btn>\n  <v-btn class=\"ma-2\" tile outlined color=\"success\">\n    <v-icon left>mdi-pencil</v-icon> Edit\n  </v-btn>\n  <v-btn class=\"ma-2\" tile large color=\"teal\" icon>\n    <v-icon>mdi-vuetify</v-icon>\n  </v-btn>\n</div>"
+      },
+      code10: {
+        html: "<div class=\"text-center\">\n  <v-btn\n    class=\"ma-2\"\n    :loading=\"loading\"\n    :disabled=\"loading\"\n    color=\"secondary\"\n    @click=\"loader = 'loading'\"\n  >\n    Accept Terms\n  </v-btn>\n\n  <v-btn\n    :loading=\"loading3\"\n    :disabled=\"loading3\"\n    color=\"blue-grey\"\n    class=\"ma-2 white--text\"\n    @click=\"loader = 'loading3'\"\n  >\n    Upload\n    <v-icon right dark>mdi-cloud-upload</v-icon>\n  </v-btn>\n\n  <v-btn\n    class=\"ma-2\"\n    :loading=\"loading2\"\n    :disabled=\"loading2\"\n    color=\"success\"\n    @click=\"loader = 'loading2'\"\n  >\n    Custom Loader\n    <template v-slot:loader>\n      <span>Loading...</span>\n    </template>\n  </v-btn>\n\n  <v-btn\n    class=\"ma-2\"\n    :loading=\"loading4\"\n    :disabled=\"loading4\"\n    color=\"info\"\n    @click=\"loader = 'loading4'\"\n  >\n    Icon Loader\n    <template v-slot:loader>\n      <span class=\"custom-loader\">\n        <v-icon light>cached</v-icon>\n      </span>\n    </template>\n  </v-btn>\n\n  <v-btn\n    :loading=\"loading5\"\n    :disabled=\"loading5\"\n    color=\"blue-grey\"\n    class=\"ma-2 white--text\"\n    fab\n    @click=\"loader = 'loading5'\"\n  >\n    <v-icon dark>mdi-cloud-upload</v-icon>\n  </v-btn>\n</div>",
+        js: "export default {\n  data () {\n    return {\n      loader: null,\n      loading: false,\n      loading2: false,\n      loading3: false,\n      loading4: false,\n      loading5: false,\n    }\n  },\n  watch: {\n    loader () {\n      const l = this.loader\n      this[l] = !this[l]\n\n      setTimeout(() => (this[l] = false), 3000)\n\n      this.loader = null\n    },\n  },\n}"
+      },
+      loader: null,
+      loading: false,
+      loading2: false,
+      loading3: false,
+      loading4: false,
+      loading5: false
     };
   },
   components: {
@@ -348,136 +591,29 @@ __webpack_require__.r(__webpack_exports__);
       title: "Vuetify",
       route: "alerts"
     }, {
-      title: "Calendars"
+      title: "Buttons"
     }]);
-    this.$refs.calendar.scrollToTime("08:00");
-    this.$refs.calendar2.checkChange();
   },
-  computed: {
-    title: function title() {
-      var start = this.start,
-          end = this.end;
-
-      if (!start || !end) {
-        return "";
-      }
-
-      var startMonth = this.monthFormatter(start);
-      var endMonth = this.monthFormatter(end);
-      var suffixMonth = startMonth === endMonth ? "" : endMonth;
-      var startYear = start.year;
-      var endYear = end.year;
-      var suffixYear = startYear === endYear ? "" : endYear;
-      var startDay = start.day + this.nth(start.day);
-      var endDay = end.day + this.nth(end.day);
-
-      switch (this.type) {
-        case "month":
-          return "".concat(startMonth, " ").concat(startYear);
-
-        case "week":
-        case "4day":
-          return "".concat(startMonth, " ").concat(startDay, " ").concat(startYear, " - ").concat(suffixMonth, " ").concat(endDay, " ").concat(suffixYear);
-
-        case "day":
-          return "".concat(startMonth, " ").concat(startDay, " ").concat(startYear);
-      }
-
-      return "";
-    },
-    monthFormatter: function monthFormatter() {
-      return this.$refs.calendar.getFormatter({
-        timeZone: "UTC",
-        month: "long"
-      });
-    }
-  },
-  methods: {
-    viewDay: function viewDay(_ref) {
-      var date = _ref.date;
-      this.focus = date;
-      this.type = "day";
-    },
-    getEventColor: function getEventColor(event) {
-      return event.color;
-    },
-    setToday: function setToday() {
-      this.focus = this.today;
-    },
-    prev: function prev() {
-      this.$refs.calendar.prev();
-    },
-    next: function next() {
-      this.$refs.calendar.next();
-    },
-    showEvent: function showEvent(_ref2) {
+  watch: {
+    loader: function loader() {
       var _this = this;
 
-      var nativeEvent = _ref2.nativeEvent,
-          event = _ref2.event;
-
-      var open = function open() {
-        _this.selectedEvent = event;
-        _this.selectedElement = nativeEvent.target;
-        setTimeout(function () {
-          return _this.selectedOpen = true;
-        }, 10);
-      };
-
-      if (this.selectedOpen) {
-        this.selectedOpen = false;
-        setTimeout(open, 10);
-      } else {
-        open();
-      }
-
-      nativeEvent.stopPropagation();
-    },
-    updateRange: function updateRange(_ref3) {
-      var start = _ref3.start,
-          end = _ref3.end;
-      var events = [];
-      var min = new Date("".concat(start.date, "T00:00:00"));
-      var max = new Date("".concat(end.date, "T23:59:59"));
-      var days = (max.getTime() - min.getTime()) / 86400000;
-      var eventCount = this.rnd(days, days + 20);
-
-      for (var i = 0; i < eventCount; i++) {
-        var allDay = this.rnd(0, 3) === 0;
-        var firstTimestamp = this.rnd(min.getTime(), max.getTime());
-        var first = new Date(firstTimestamp - firstTimestamp % 900000);
-        var secondTimestamp = this.rnd(2, allDay ? 288 : 8) * 900000;
-        var second = new Date(first.getTime() + secondTimestamp);
-        events.push({
-          name: this.names[this.rnd(0, this.names.length - 1)],
-          start: this.formatDate(first, !allDay),
-          end: this.formatDate(second, !allDay),
-          color: this.colors[this.rnd(0, this.colors.length - 1)]
-        });
-      }
-
-      this.start = start;
-      this.end = end;
-      this.events = events;
-    },
-    nth: function nth(d) {
-      return d > 3 && d < 21 ? "th" : ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"][d % 10];
-    },
-    rnd: function rnd(a, b) {
-      return Math.floor((b - a + 1) * Math.random()) + a;
-    },
-    formatDate: function formatDate(a, withTime) {
-      return withTime ? "".concat(a.getFullYear(), "-").concat(a.getMonth() + 1, "-").concat(a.getDate(), " ").concat(a.getHours(), ":").concat(a.getMinutes()) : "".concat(a.getFullYear(), "-").concat(a.getMonth() + 1, "-").concat(a.getDate());
+      var l = this.loader;
+      this[l] = !this[l];
+      setTimeout(function () {
+        return _this[l] = false;
+      }, 3000);
+      this.loader = null;
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=template&id=3905d530&":
-/*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=template&id=3905d530& ***!
-  \************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=template&id=70439cb4&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=template&id=70439cb4& ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -514,18 +650,18 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Calendars")]),
+            _c("b", [_vm._v("Buttons")]),
             _vm._v(" The "),
-            _c("code", [_vm._v("v-calendar")]),
+            _c("code", [_vm._v("v-btn")]),
             _vm._v(
-              " component is used to\n      display information in a daily, weekly, or monthly view. The daily view\n      has slots for all day or timed elements, and the weekly and monthly view\n      has a slot for each day. Optionally you can pass in an array of events\n      and they will be rendered over the appropriate days and times.\n      "
+              " component replaces the standard\n      html button with a material design theme and a multitude of options. Any\n      color helper class can be used to alter the background or text color.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://vuetifyjs.com/en/components/calendars",
+                  href: "https://vuetifyjs.com/en/components/buttons",
                   target: "_blank",
                 },
               },
@@ -538,10 +674,10 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-12" },
+          { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Weekly" },
+              attrs: { title: "Flat" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -549,37 +685,229 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            This is an example of an event calendar with all-day and timed\n            events with a type of "
+                          "\n            Flat buttons have no box shadow and no background. Only on hover\n            is the container for the button shown.\n          "
                         ),
-                        _c("code", [_vm._v("week")]),
-                        _vm._v(".\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
                         "v-row",
+                        { attrs: { align: "center" } },
                         [
                           _c(
                             "v-col",
+                            {
+                              staticClass: "text-center",
+                              attrs: { cols: "12", sm: "4" },
+                            },
                             [
                               _c(
-                                "v-sheet",
-                                { attrs: { height: "400" } },
+                                "div",
+                                { staticClass: "my-2" },
                                 [
-                                  _c("v-calendar", {
-                                    ref: "calendar",
-                                    attrs: {
-                                      now: _vm.code1.today,
-                                      value: _vm.code1.today,
-                                      events: _vm.code1.events,
-                                      color: "primary",
-                                      type: "week",
-                                    },
-                                  }),
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { text: "", small: "" } },
+                                    [_vm._v("Normal")]
+                                  ),
                                 ],
                                 1
                               ),
-                            ],
-                            1
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        text: "",
+                                        small: "",
+                                        color: "primary",
+                                      },
+                                    },
+                                    [_vm._v("Primary")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        text: "",
+                                        small: "",
+                                        color: "error",
+                                      },
+                                    },
+                                    [_vm._v("Error")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        text: "",
+                                        small: "",
+                                        disabled: "",
+                                      },
+                                    },
+                                    [_vm._v("Disabled")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "text-center",
+                              attrs: { cols: "12", sm: "4" },
+                            },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c("v-btn", { attrs: { text: "" } }, [
+                                    _vm._v("Normal"),
+                                  ]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { text: "", color: "primary" } },
+                                    [_vm._v("Primary")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { text: "", color: "error" } },
+                                    [_vm._v("Error")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { text: "", disabled: "" } },
+                                    [_vm._v("Disabled")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "text-center",
+                              attrs: { cols: "12", sm: "4" },
+                            },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { text: "", large: "" } },
+                                    [_vm._v("Normal")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        text: "",
+                                        large: "",
+                                        color: "primary",
+                                      },
+                                    },
+                                    [_vm._v("Primary")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        text: "",
+                                        large: "",
+                                        color: "error",
+                                      },
+                                    },
+                                    [_vm._v("Error")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      attrs: {
+                                        text: "",
+                                        large: "",
+                                        disabled: "",
+                                      },
+                                    },
+                                    [_vm._v("Disabled")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ]
                           ),
                         ],
                         1
@@ -599,31 +927,11 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
-          ],
-          1
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-12" },
-          [
+            _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Daily" },
+              attrs: { title: "Button Dropdown Variants" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -631,166 +939,68 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            This is an example of calendar with content in each interval slot\n            and a type of "
+                          "Button dropdowns are regular selects with additional styling."
                         ),
-                        _c("code", [_vm._v("day")]),
-                        _vm._v(".\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-row",
+                        "v-container",
+                        { attrs: { id: "dropdown-example" } },
                         [
                           _c(
-                            "v-col",
+                            "v-row",
                             [
                               _c(
-                                "v-sheet",
-                                { attrs: { height: "400" } },
+                                "v-col",
+                                { attrs: { cols: "12", sm: "4" } },
                                 [
-                                  _c("v-calendar", {
-                                    attrs: { color: "primary", type: "day" },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "day-header",
-                                        fn: function (ref) {
-                                          var present = ref.present
-                                          return [
-                                            present
-                                              ? [
-                                                  _vm._v(
-                                                    "\n                      Today\n                    "
-                                                  ),
-                                                ]
-                                              : _vm._e(),
-                                          ]
-                                        },
-                                      },
-                                      {
-                                        key: "interval",
-                                        fn: function (ref) {
-                                          var hour = ref.hour
-                                          return [
-                                            _c(
-                                              "div",
-                                              { staticClass: "text-center" },
-                                              [
-                                                _vm._v(
-                                                  _vm._s(hour) + " o'clock"
-                                                ),
-                                              ]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
+                                  _c("p", [_vm._v("Overflow")]),
+                                  _vm._v(" "),
+                                  _c("v-overflow-btn", {
+                                    staticClass: "my-2",
+                                    attrs: {
+                                      items: _vm.code3.dropdown_font,
+                                      label: "Overflow Btn",
+                                      target: "#dropdown-example",
+                                    },
                                   }),
                                 ],
                                 1
                               ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-          ],
-          1
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-12" },
-          [
-            _c("KTCodePreview", {
-              attrs: { title: "Slots" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Slots allow you to define the content for each day, time interval\n            for the daily views, and various labels.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-row",
-                        [
-                          _c(
-                            "v-col",
-                            [
+                              _vm._v(" "),
                               _c(
-                                "v-sheet",
-                                { attrs: { height: "500" } },
+                                "v-col",
+                                { attrs: { cols: "12", sm: "4" } },
                                 [
-                                  _c("v-calendar", {
+                                  _c("p", [_vm._v("Segmented")]),
+                                  _vm._v(" "),
+                                  _c("v-overflow-btn", {
+                                    staticClass: "my-2",
                                     attrs: {
-                                      now: _vm.code3.today,
-                                      value: _vm.code3.today,
-                                      color: "primary",
+                                      items: _vm.code3.dropdown_icon,
+                                      label: "Segmented Btn",
+                                      segmented: "",
+                                      target: "#dropdown-example",
                                     },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "day",
-                                        fn: function (ref) {
-                                          var present = ref.present
-                                          var past = ref.past
-                                          var date = ref.date
-                                          return [
-                                            _c(
-                                              "v-row",
-                                              { staticClass: "fill-height" },
-                                              [
-                                                past && _vm.code3.tracked[date]
-                                                  ? _vm._l(
-                                                      _vm.code3.tracked[date],
-                                                      function (percent, i) {
-                                                        return _c("v-sheet", {
-                                                          key: i,
-                                                          attrs: {
-                                                            title:
-                                                              _vm.code3
-                                                                .category[i],
-                                                            color:
-                                                              _vm.code3.colors[
-                                                                i
-                                                              ],
-                                                            width:
-                                                              percent + "%",
-                                                            height: "100%",
-                                                            tile: "",
-                                                          },
-                                                        })
-                                                      }
-                                                    )
-                                                  : _vm._e(),
-                                              ],
-                                              2
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "12", sm: "4" } },
+                                [
+                                  _c("p", [_vm._v("Editable")]),
+                                  _vm._v(" "),
+                                  _c("v-overflow-btn", {
+                                    staticClass: "my-2",
+                                    attrs: {
+                                      items: _vm.code3.dropdown_edit,
+                                      label: "Editable Btn",
+                                      editable: "",
+                                      "item-value": "text",
+                                    },
                                   }),
                                 ],
                                 1
@@ -829,18 +1039,9 @@ var render = function () {
                 },
               ]),
             }),
-          ],
-          1
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-12" },
-          [
+            _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Events" },
+              attrs: { title: "Floating" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -848,214 +1049,655 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            This is an example of a planner with additional event handlers and\n            external components controlling the display of the calendar.\n          "
+                          "Floating buttons are rounded and usually contain an icon."
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "text-center" },
+                        [
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "mx-2",
+                              attrs: {
+                                fab: "",
+                                dark: "",
+                                small: "",
+                                color: "primary",
+                              },
+                            },
+                            [
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-minus"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "mx-2",
+                              attrs: {
+                                fab: "",
+                                dark: "",
+                                small: "",
+                                color: "pink",
+                              },
+                            },
+                            [
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-heart"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "mx-2",
+                              attrs: { fab: "", dark: "", color: "indigo" },
+                            },
+                            [
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-plus"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "mx-2",
+                              attrs: { fab: "", dark: "", color: "teal" },
+                            },
+                            [
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-format-list-bulleted-square"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "mx-2",
+                              attrs: {
+                                fab: "",
+                                dark: "",
+                                large: "",
+                                color: "cyan",
+                              },
+                            },
+                            [
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-pencil"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "mx-2",
+                              attrs: {
+                                fab: "",
+                                dark: "",
+                                large: "",
+                                color: "purple",
+                              },
+                            },
+                            [
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-android"),
+                              ]),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Outlined" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c(
+                        "div",
+                        { staticClass: "text-center" },
+                        [
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: { outlined: "", color: "indigo" },
+                            },
+                            [_vm._v("Outlined Button")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: { outlined: "", fab: "", color: "teal" },
+                            },
+                            [
+                              _c("v-icon", [
+                                _vm._v("mdi-format-list-bulleted-square"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: {
+                                outlined: "",
+                                large: "",
+                                fab: "",
+                                color: "indigo",
+                              },
+                            },
+                            [_c("v-icon", [_vm._v("mdi-pencil")])],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code7.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Tile" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c(
+                        "div",
+                        { staticClass: "text-center" },
+                        [
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: { tile: "", color: "indigo", dark: "" },
+                            },
+                            [_vm._v("Tile Button")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: {
+                                tile: "",
+                                outlined: "",
+                                color: "success",
+                              },
+                            },
+                            [
+                              _c("v-icon", { attrs: { left: "" } }, [
+                                _vm._v("mdi-pencil"),
+                              ]),
+                              _vm._v(" Edit\n            "),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: {
+                                tile: "",
+                                large: "",
+                                color: "teal",
+                                icon: "",
+                              },
+                            },
+                            [_c("v-icon", [_vm._v("mdi-vuetify")])],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code9.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Rounded" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c(
+                        "div",
+                        { staticClass: "text-center" },
+                        [
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: {
+                                rounded: "",
+                                color: "primary",
+                                dark: "",
+                              },
+                            },
+                            [_vm._v("Rounded Button")]
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code8.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("KTCodePreview", {
+              attrs: { title: "Raised" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Raised buttons have a box shadow that increases when clicked. This\n            is the default style.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
                         "v-row",
-                        { staticClass: "fill-height" },
+                        { attrs: { align: "center" } },
                         [
                           _c(
                             "v-col",
+                            {
+                              staticClass: "text-center",
+                              attrs: { cols: "12", sm: "4" },
+                            },
                             [
                               _c(
-                                "v-sheet",
-                                { attrs: { height: "64" } },
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c("v-btn", { attrs: { small: "" } }, [
+                                    _vm._v("Normal"),
+                                  ]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
                                 [
                                   _c(
-                                    "v-toolbar",
-                                    { attrs: { flat: "", color: "white" } },
+                                    "v-btn",
+                                    { attrs: { small: "", color: "primary" } },
+                                    [_vm._v("Primary")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { small: "", color: "error" } },
+                                    [_vm._v("Error")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { small: "", disabled: "" } },
+                                    [_vm._v("Disabled")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "text-center",
+                              attrs: { cols: "12", sm: "4" },
+                            },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [_c("v-btn", [_vm._v("Normal")])],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c("v-btn", { attrs: { color: "primary" } }, [
+                                    _vm._v("Primary"),
+                                  ]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c("v-btn", { attrs: { color: "error" } }, [
+                                    _vm._v("Error"),
+                                  ]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c("v-btn", { attrs: { disabled: "" } }, [
+                                    _vm._v("Disabled"),
+                                  ]),
+                                ],
+                                1
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "text-center",
+                              attrs: { cols: "12", sm: "4" },
+                            },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c("v-btn", { attrs: { large: "" } }, [
+                                    _vm._v("Normal"),
+                                  ]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { large: "", color: "primary" } },
+                                    [_vm._v("Primary")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { large: "", color: "error" } },
+                                    [_vm._v("Error")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "my-2" },
+                                [
+                                  _c(
+                                    "v-btn",
+                                    { attrs: { large: "", disabled: "" } },
+                                    [_vm._v("Disabled")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ]
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Icon" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "Icons can be used for the primary content of a button."
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card",
+                        { attrs: { flat: "" } },
+                        [
+                          _c(
+                            "v-card-text",
+                            [
+                              _c(
+                                "v-container",
+                                { staticClass: "pa-0", attrs: { fluid: "" } },
+                                [
+                                  _c(
+                                    "v-row",
                                     [
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          staticClass: "mr-4",
-                                          attrs: {
-                                            outlined: "",
-                                            color: "grey darken-2",
-                                          },
-                                          on: { click: _vm.setToday },
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                    Today\n                  "
-                                          ),
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          attrs: {
-                                            fab: "",
-                                            text: "",
-                                            small: "",
-                                            color: "grey darken-2",
-                                          },
-                                          on: { click: _vm.prev },
-                                        },
-                                        [
-                                          _c(
-                                            "v-icon",
-                                            { attrs: { small: "" } },
-                                            [_vm._v("mdi-chevron-left")]
-                                          ),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          attrs: {
-                                            fab: "",
-                                            text: "",
-                                            small: "",
-                                            color: "grey darken-2",
-                                          },
-                                          on: { click: _vm.next },
-                                        },
-                                        [
-                                          _c(
-                                            "v-icon",
-                                            { attrs: { small: "" } },
-                                            [_vm._v("mdi-chevron-right")]
-                                          ),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c("v-toolbar-title", [
-                                        _vm._v(_vm._s(_vm.title)),
+                                      _c("v-col", { attrs: { cols: "12" } }, [
+                                        _c("p", [_vm._v("Normal")]),
                                       ]),
                                       _vm._v(" "),
-                                      _c("v-spacer"),
-                                      _vm._v(" "),
                                       _c(
-                                        "v-menu",
-                                        {
-                                          attrs: { bottom: "", right: "" },
-                                          scopedSlots: _vm._u([
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
+                                        [
+                                          _c(
+                                            "v-btn",
                                             {
-                                              key: "activator",
-                                              fn: function (ref) {
-                                                var on = ref.on
-                                                return [
-                                                  _c(
-                                                    "v-btn",
-                                                    _vm._g(
-                                                      {
-                                                        attrs: {
-                                                          outlined: "",
-                                                          color:
-                                                            "grey darken-2",
-                                                        },
-                                                      },
-                                                      on
-                                                    ),
-                                                    [
-                                                      _c("span", [
-                                                        _vm._v(
-                                                          _vm._s(
-                                                            _vm.typeToLabel[
-                                                              _vm.type
-                                                            ]
-                                                          )
-                                                        ),
-                                                      ]),
-                                                      _vm._v(" "),
-                                                      _c(
-                                                        "v-icon",
-                                                        {
-                                                          attrs: { right: "" },
-                                                        },
-                                                        [
-                                                          _vm._v(
-                                                            "mdi-menu-down"
-                                                          ),
-                                                        ]
-                                                      ),
-                                                    ],
-                                                    1
-                                                  ),
-                                                ]
+                                              attrs: {
+                                                text: "",
+                                                icon: "",
+                                                color: "pink",
                                               },
                                             },
-                                          ]),
-                                        },
-                                        [
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-list",
                                             [
-                                              _c(
-                                                "v-list-item",
-                                                {
-                                                  on: {
-                                                    click: function ($event) {
-                                                      _vm.type = "day"
-                                                    },
-                                                  },
-                                                },
-                                                [
-                                                  _c("v-list-item-title", [
-                                                    _vm._v("Day"),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-list-item",
-                                                {
-                                                  on: {
-                                                    click: function ($event) {
-                                                      _vm.type = "week"
-                                                    },
-                                                  },
-                                                },
-                                                [
-                                                  _c("v-list-item-title", [
-                                                    _vm._v("Week"),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-list-item",
-                                                {
-                                                  on: {
-                                                    click: function ($event) {
-                                                      _vm.type = "month"
-                                                    },
-                                                  },
-                                                },
-                                                [
-                                                  _c("v-list-item-title", [
-                                                    _vm._v("Month"),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-list-item",
-                                                {
-                                                  on: {
-                                                    click: function ($event) {
-                                                      _vm.type = "4day"
-                                                    },
-                                                  },
-                                                },
-                                                [
-                                                  _c("v-list-item-title", [
-                                                    _vm._v("4 days"),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
+                                              _c("v-icon", [
+                                                _vm._v("mdi-heart"),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: {
+                                                text: "",
+                                                icon: "",
+                                                color: "indigo",
+                                              },
+                                            },
+                                            [
+                                              _c("v-icon", [
+                                                _vm._v("mdi-star"),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: {
+                                                text: "",
+                                                icon: "",
+                                                color: "green",
+                                              },
+                                            },
+                                            [
+                                              _c("v-icon", [
+                                                _vm._v("mdi-cached"),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: {
+                                                text: "",
+                                                icon: "",
+                                                color: "deep-orange",
+                                              },
+                                            },
+                                            [
+                                              _c("v-icon", [
+                                                _vm._v("mdi-thumb-up"),
+                                              ]),
                                             ],
                                             1
                                           ),
@@ -1065,152 +1707,88 @@ var render = function () {
                                     ],
                                     1
                                   ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-sheet",
-                                { attrs: { height: "600" } },
-                                [
-                                  _c("v-calendar", {
-                                    ref: "calendar2",
-                                    attrs: {
-                                      color: "primary",
-                                      events: _vm.events,
-                                      "event-color": _vm.getEventColor,
-                                      now: _vm.today,
-                                      type: _vm.type,
-                                    },
-                                    on: {
-                                      "click:event": _vm.showEvent,
-                                      "click:more": _vm.viewDay,
-                                      "click:date": _vm.viewDay,
-                                      change: _vm.updateRange,
-                                    },
-                                    model: {
-                                      value: _vm.focus,
-                                      callback: function ($$v) {
-                                        _vm.focus = $$v
-                                      },
-                                      expression: "focus",
-                                    },
-                                  }),
                                   _vm._v(" "),
                                   _c(
-                                    "v-menu",
-                                    {
-                                      attrs: {
-                                        "close-on-content-click": false,
-                                        activator: _vm.selectedElement,
-                                        "offset-x": "",
-                                      },
-                                      model: {
-                                        value: _vm.selectedOpen,
-                                        callback: function ($$v) {
-                                          _vm.selectedOpen = $$v
-                                        },
-                                        expression: "selectedOpen",
-                                      },
-                                    },
+                                    "v-row",
+                                    { staticClass: "mt-12" },
                                     [
+                                      _c("v-col", { attrs: { cols: "12" } }, [
+                                        _c("p", [_vm._v("Disabled")]),
+                                      ]),
+                                      _vm._v(" "),
                                       _c(
-                                        "v-card",
-                                        {
-                                          attrs: {
-                                            color: "grey lighten-4",
-                                            "min-width": "350px",
-                                            flat: "",
-                                          },
-                                        },
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
                                         [
                                           _c(
-                                            "v-toolbar",
+                                            "v-btn",
                                             {
-                                              attrs: {
-                                                color: _vm.selectedEvent.color,
-                                                dark: "",
-                                              },
+                                              attrs: { icon: "", disabled: "" },
                                             },
                                             [
-                                              _c(
-                                                "v-btn",
-                                                { attrs: { icon: "" } },
-                                                [
-                                                  _c("v-icon", [
-                                                    _vm._v("mdi-pencil"),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c("v-toolbar-title", {
-                                                domProps: {
-                                                  innerHTML: _vm._s(
-                                                    _vm.selectedEvent.name
-                                                  ),
-                                                },
-                                              }),
-                                              _vm._v(" "),
-                                              _c("v-spacer"),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-btn",
-                                                { attrs: { icon: "" } },
-                                                [
-                                                  _c("v-icon", [
-                                                    _vm._v("mdi-heart"),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "v-btn",
-                                                { attrs: { icon: "" } },
-                                                [
-                                                  _c("v-icon", [
-                                                    _vm._v("mdi-dots-vertical"),
-                                                  ]),
-                                                ],
-                                                1
-                                              ),
+                                              _c("v-icon", [
+                                                _vm._v("mdi-heart"),
+                                              ]),
                                             ],
                                             1
                                           ),
-                                          _vm._v(" "),
-                                          _c("v-card-text", [
-                                            _c("span", {
-                                              domProps: {
-                                                innerHTML: _vm._s(
-                                                  _vm.selectedEvent.details
-                                                ),
-                                              },
-                                            }),
-                                          ]),
-                                          _vm._v(" "),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
+                                        [
                                           _c(
-                                            "v-card-actions",
+                                            "v-btn",
+                                            {
+                                              attrs: { icon: "", disabled: "" },
+                                            },
                                             [
-                                              _c(
-                                                "v-btn",
-                                                {
-                                                  attrs: {
-                                                    text: "",
-                                                    color: "secondary",
-                                                  },
-                                                  on: {
-                                                    click: function ($event) {
-                                                      _vm.selectedOpen = false
-                                                    },
-                                                  },
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                        Cancel\n                      "
-                                                  ),
-                                                ]
-                                              ),
+                                              _c("v-icon", [
+                                                _vm._v("mdi-star"),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: { icon: "", disabled: "" },
+                                            },
+                                            [
+                                              _c("v-icon", [
+                                                _vm._v("mdi-cached"),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "12", sm: "3" } },
+                                        [
+                                          _c(
+                                            "v-btn",
+                                            {
+                                              attrs: { icon: "", disabled: "" },
+                                            },
+                                            [
+                                              _c("v-icon", [
+                                                _vm._v("mdi-thumb-up"),
+                                              ]),
                                             ],
                                             1
                                           ),
@@ -1244,12 +1822,453 @@ var render = function () {
                   },
                   proxy: true,
                 },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Sizing" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Buttons can be given different sizing options to fit a multitude\n            of scenarios.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-container",
+                        { staticClass: "pa-0", attrs: { fluid: "" } },
+                        [
+                          _c(
+                            "v-row",
+                            { attrs: { align: "center" } },
+                            [
+                              _c("v-col", { attrs: { cols: "12", sm: "6" } }, [
+                                _c("div", { staticClass: "text-center" }, [
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            "x-small": "",
+                                            color: "secondary",
+                                            dark: "",
+                                          },
+                                        },
+                                        [_vm._v("Extra small Button")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            small: "",
+                                            color: "primary",
+                                            dark: "",
+                                          },
+                                        },
+                                        [_vm._v("Small Button")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: { color: "warning", dark: "" },
+                                        },
+                                        [_vm._v("Normal Button")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "error",
+                                            dark: "",
+                                            large: "",
+                                          },
+                                        },
+                                        [_vm._v("Large Button")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            "x-large": "",
+                                            color: "success",
+                                            dark: "",
+                                          },
+                                        },
+                                        [_vm._v("Extra large Button")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ]),
+                              ]),
+                              _vm._v(" "),
+                              _c("v-col", { attrs: { cols: "12", sm: "6" } }, [
+                                _c("div", { staticClass: "text-center" }, [
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "secondary",
+                                            fab: "",
+                                            "x-small": "",
+                                            dark: "",
+                                          },
+                                        },
+                                        [
+                                          _c("v-icon", [
+                                            _vm._v("mdi-television"),
+                                          ]),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "primary",
+                                            fab: "",
+                                            small: "",
+                                            dark: "",
+                                          },
+                                        },
+                                        [_c("v-icon", [_vm._v("mdi-pencil")])],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "warning",
+                                            fab: "",
+                                            dark: "",
+                                          },
+                                        },
+                                        [
+                                          _c("v-icon", [
+                                            _vm._v("mdi-account-circle"),
+                                          ]),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "error",
+                                            fab: "",
+                                            large: "",
+                                            dark: "",
+                                          },
+                                        },
+                                        [_c("v-icon", [_vm._v("mdi-alarm")])],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "my-2" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            color: "success",
+                                            fab: "",
+                                            "x-large": "",
+                                            dark: "",
+                                          },
+                                        },
+                                        [_c("v-icon", [_vm._v("mdi-domain")])],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ]),
+                              ]),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Loaders" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Using the loading prop, you can notify a user that there is\n            processing taking place. The default behavior is to use a\n            "
+                        ),
+                        _c("code", [_vm._v("v-progress-circular")]),
+                        _vm._v(
+                          " component but this can be\n            customized.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "text-center" },
+                        [
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: {
+                                loading: _vm.loading,
+                                disabled: _vm.loading,
+                                color: "secondary",
+                              },
+                              on: {
+                                click: function ($event) {
+                                  _vm.loader = "loading"
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              Accept Terms\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2 white--text",
+                              attrs: {
+                                loading: _vm.loading3,
+                                disabled: _vm.loading3,
+                                color: "blue-grey",
+                              },
+                              on: {
+                                click: function ($event) {
+                                  _vm.loader = "loading3"
+                                },
+                              },
+                            },
+                            [
+                              _vm._v("\n              Upload\n              "),
+                              _c("v-icon", { attrs: { right: "", dark: "" } }, [
+                                _vm._v("mdi-cloud-upload"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: {
+                                loading: _vm.loading2,
+                                disabled: _vm.loading2,
+                                color: "success",
+                              },
+                              on: {
+                                click: function ($event) {
+                                  _vm.loader = "loading2"
+                                },
+                              },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "loader",
+                                  fn: function () {
+                                    return [_c("span", [_vm._v("Loading...")])]
+                                  },
+                                  proxy: true,
+                                },
+                              ]),
+                            },
+                            [
+                              _vm._v(
+                                "\n              Custom Loader\n              "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2",
+                              attrs: {
+                                loading: _vm.loading4,
+                                disabled: _vm.loading4,
+                                color: "info",
+                              },
+                              on: {
+                                click: function ($event) {
+                                  _vm.loader = "loading4"
+                                },
+                              },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "loader",
+                                  fn: function () {
+                                    return [
+                                      _c(
+                                        "span",
+                                        { staticClass: "custom-loader" },
+                                        [
+                                          _c(
+                                            "v-icon",
+                                            { attrs: { light: "" } },
+                                            [_vm._v("cached")]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ]
+                                  },
+                                  proxy: true,
+                                },
+                              ]),
+                            },
+                            [
+                              _vm._v(
+                                "\n              Icon Loader\n              "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "ma-2 white--text",
+                              attrs: {
+                                loading: _vm.loading5,
+                                disabled: _vm.loading5,
+                                color: "blue-grey",
+                                fab: "",
+                              },
+                              on: {
+                                click: function ($event) {
+                                  _vm.loader = "loading5"
+                                },
+                              },
+                            },
+                            [
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-cloud-upload"),
+                              ]),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code10.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
                 {
                   key: "js",
                   fn: function () {
                     return [
                       _vm._v(
-                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                        "\n          " + _vm._s(_vm.code10.js) + "\n        "
                       ),
                     ]
                   },
@@ -1272,17 +2291,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Calendars.vue":
-/*!***********************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Calendars.vue ***!
-  \***********************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Buttons.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Buttons.vue ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Calendars_vue_vue_type_template_id_3905d530___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Calendars.vue?vue&type=template&id=3905d530& */ "./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=template&id=3905d530&");
-/* harmony import */ var _Calendars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Calendars.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Buttons_vue_vue_type_template_id_70439cb4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Buttons.vue?vue&type=template&id=70439cb4& */ "./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=template&id=70439cb4&");
+/* harmony import */ var _Buttons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Buttons.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1292,9 +2311,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Calendars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Calendars_vue_vue_type_template_id_3905d530___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Calendars_vue_vue_type_template_id_3905d530___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Buttons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Buttons_vue_vue_type_template_id_70439cb4___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Buttons_vue_vue_type_template_id_70439cb4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1304,38 +2323,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vuetify/Calendars.vue"
+component.options.__file = "resources/js/src/view/pages/vuetify/Buttons.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=script&lang=js&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Calendars.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Buttons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Buttons.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Buttons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=template&id=3905d530&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=template&id=3905d530& ***!
-  \******************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=template&id=70439cb4&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=template&id=70439cb4& ***!
+  \****************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendars_vue_vue_type_template_id_3905d530___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Calendars.vue?vue&type=template&id=3905d530& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Calendars.vue?vue&type=template&id=3905d530&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendars_vue_vue_type_template_id_3905d530___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Buttons_vue_vue_type_template_id_70439cb4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Buttons.vue?vue&type=template&id=70439cb4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Buttons.vue?vue&type=template&id=70439cb4&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Buttons_vue_vue_type_template_id_70439cb4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendars_vue_vue_type_template_id_3905d530___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Buttons_vue_vue_type_template_id_70439cb4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

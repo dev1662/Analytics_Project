@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[73],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -197,26 +197,63 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<v-toolbar>\n  <v-tabs\n    dark\n    background-color=\"primary\"\n    grow\n  >\n    <v-tab>\n      <v-badge\n        color=\"pink\"\n        dot\n      >\n        Item One\n      </v-badge>\n    </v-tab>\n\n    <v-tab>\n      <v-badge\n        color=\"green\"\n        content=\"6\"\n      >\n        Item Two\n      </v-badge>\n    </v-tab>\n\n    <v-tab>\n      <v-badge\n        color=\"deep-purple accent-4\"\n        icon=\"mdi-vuetify\"\n      >\n        Item Three\n      </v-badge>\n    </v-tab>\n  </v-tabs>\n</v-toolbar>"
+        html: "<v-row justify=\"space-around\">\n\n  <v-avatar color=\"indigo\" size=\"36\">\n    <span class=\"white--text headline\">36</span>\n  </v-avatar>\n\n  <v-avatar color=\"teal\" size=\"48\">\n    <span class=\"white--text headline\">48</span>\n  </v-avatar>\n\n  <v-avatar color=\"orange\" size=\"62\">\n    <span class=\"white--text headline\">62</span>\n  </v-avatar>\n\n</v-row>"
       },
       code2: {
-        html: "<div class=\"text-center\">\n  <v-badge\n    :value=\"hover\"\n    color=\"deep-purple accent-4\"\n    content=\"9999+\"\n    left\n    transition=\"slide-x-transition\"\n  >\n    <v-hover v-model=\"hover\">\n      <v-icon\n        color=\"grey lighten-1\"\n        large\n      >\n        mdi-account-circle\n      </v-icon>\n    </v-hover>\n  </v-badge>\n</div>",
-        js: "export default {\n    data: () => ({\n      hover: false,\n    }),\n  }",
-        hover: false
+        html: "<v-row justify=\"space-around\">\n\n  <v-avatar color=\"indigo\">\n    <v-icon dark>mdi-account-circle</v-icon>\n  </v-avatar>\n\n  <v-avatar>\n    <img\n      src=\"media/users/100_4.jpg\"\n      alt=\"Sean\"\n    >\n  </v-avatar>\n\n  <v-avatar color=\"red\">\n    <span class=\"white--text headline\">CJ</span>\n  </v-avatar>\n\n</v-row>"
       },
       code3: {
-        html: " <v-container>\n  <v-row justify=\"space-around\">\n    <div>\n      <v-btn\n        class=\"mx-1\"\n        color=\"primary\"\n        @click=\"messages++\"\n      >\n        Send Message\n      </v-btn>\n\n      <v-btn\n        class=\"mx-1\"\n        color=\"error\"\n        @click=\"messages = 0\"\n      >\n        Clear Notifications\n      </v-btn>\n    </div>\n\n    <v-badge\n      :content=\"messages\"\n      :value=\"messages\"\n      color=\"green\"\n      overlap\n    >\n      <v-icon large>mdi-email</v-icon>\n    </v-badge>\n  </v-row>\n</v-container>",
-        js: "export default {\n    data () {\n      return {\n        messages: 0\n      }\n    },\n  }",
-        messages: 0
+        html: "<v-card\n  class=\"mx-auto\"\n  max-width=\"434\"\n  tile\n>\n  <v-img\n    height=\"100%\"\n    src=\"media/stock-600x400/img-32.jpg\"\n  >\n    <v-row\n      align=\"end\"\n      class=\"fill-height\"\n    >\n      <v-col\n        align-self=\"start\"\n        class=\"pa-0\"\n        cols=\"12\"\n      >\n        <v-avatar\n          class=\"profile\"\n          color=\"grey\"\n          size=\"164\"\n          tile\n        >\n          <v-img src=\"media/users/300_21.jpg\"></v-img>\n        </v-avatar>\n      </v-col>\n      <v-col class=\"py-0\">\n        <v-list-item\n          color=\"rgba(0, 0, 0, .4)\"\n          dark\n        >\n          <v-list-item-content>\n            <v-list-item-title class=\"title\">Sarah Obrien</v-list-item-title>\n            <v-list-item-subtitle>Network Engineer</v-list-item-subtitle>\n          </v-list-item-content>\n        </v-list-item>\n      </v-col>\n    </v-row>\n  </v-img>\n</v-card>"
       },
       code4: {
-        html: "<v-container>\n  <v-row\n    align=\"center\"\n    justify=\"center\"\n  >\n    <v-badge\n      bordered\n      color=\"error\"\n      icon=\"mdi-lock\"\n      overlap\n    >\n      <v-btn\n        class=\"white--text\"\n        color=\"error\"\n        depressed\n      >\n        Lock Account\n      </v-btn>\n    </v-badge>\n\n    <div class=\"mx-3\"></div>\n\n    <v-badge\n      bordered\n      bottom\n      color=\"deep-purple accent-4\"\n      dot\n      offset-x=\"10\"\n      offset-y=\"10\"\n    >\n      <v-avatar size=\"40\">\n        <v-img src=\"media/users/300_2.jpg\"></v-img>\n      </v-avatar>\n    </v-badge>\n\n    <div class=\"mx-3\"></div>\n\n    <v-badge\n      avatar\n      bordered\n      overlap\n    >\n      <template v-slot:badge>\n        <v-avatar>\n          <v-img src=\"media/project-logos/7.png\"></v-img>\n        </v-avatar>\n      </template>\n\n      <v-avatar size=\"40\">\n        <v-img src=\"media/users/100_3.jpg\"></v-img>\n      </v-avatar>\n    </v-badge>\n  </v-row>\n</v-container>"
+        html: "<v-container fluid>\n  <v-row justify=\"center\">\n    <v-subheader>Today</v-subheader>\n\n    <v-expansion-panels popout>\n      <v-expansion-panel\n        v-for=\"(message, i) in messages\"\n        :key=\"i\"\n        hide-actions\n      >\n        <v-expansion-panel-header>\n          <v-row\n            align=\"center\"\n            class=\"spacer\"\n            no-gutters\n          >\n            <v-col\n              cols=\"4\"\n              sm=\"2\"\n              md=\"1\"\n            >\n              <v-avatar\n                size=\"36px\"\n              >\n                <img\n                  v-if=\"message.avatar\"\n                  alt=\"Avatar\"\n                  src=\"https://avatars0.githubusercontent.com/u/9064066?v=4&s=460\"\n                >\n                <v-icon\n                  v-else\n                  :color=\"message.color\"\n                  v-text=\"message.icon\"\n                ></v-icon>\n              </v-avatar>\n            </v-col>\n\n            <v-col\n              class=\"hidden-xs-only\"\n              sm=\"5\"\n              md=\"3\"\n            >\n              <strong v-html=\"message.name\"></strong>\n              <span\n                v-if=\"message.total\"\n                class=\"grey--text\"\n              >\n                &nbsp;({{ message.total }})\n              </span>\n            </v-col>\n\n            <v-col\n              class=\"text-no-wrap\"\n              cols=\"5\"\n              sm=\"3\"\n            >\n              <v-chip\n                v-if=\"message.new\"\n                :color=\"`${message.color} lighten-4`\"\n                class=\"ml-0 mr-2 black--text\"\n                label\n                small\n              >\n                {{ message.new }} new\n              </v-chip>\n              <strong v-html=\"message.title\"></strong>\n            </v-col>\n\n            <v-col\n              v-if=\"message.excerpt\"\n              class=\"grey--text text-truncate hidden-sm-and-down\"\n            >\n              &mdash;\n              {{ message.excerpt }}\n            </v-col>\n          </v-row>\n        </v-expansion-panel-header>\n\n        <v-expansion-panel-content>\n          <v-divider></v-divider>\n          <v-card-text v-text=\"lorem\"></v-card-text>\n        </v-expansion-panel-content>\n      </v-expansion-panel>\n    </v-expansion-panels>\n  </v-row>\n</v-container>",
+        js: "export default {\n    data: () => ({\n      messages: [\n        {\n          avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',\n          name: 'Sean Paul',\n          title: 'Welcome to Vuetify.js!',\n          excerpt: 'Thank you for joining our community...',\n        },\n        {\n          color: 'red',\n          icon: 'people',\n          name: 'Social',\n          new: 1,\n          total: 3,\n          title: 'Twitter',\n        },\n        {\n          color: 'teal',\n          icon: 'local_offer',\n          name: 'Promos',\n          new: 2,\n          total: 4,\n          title: 'Shop your way',\n          exceprt: 'New deals available, Join Today',\n        },\n      ],\n      lorem: 'Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.',\n    }),\n  }",
+        messages: [{
+          avatar: "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
+          name: "Sean Paul",
+          title: "Welcome to Vuetify.js!",
+          excerpt: "Thank you for joining our community..."
+        }, {
+          color: "red",
+          icon: "people",
+          name: "Social",
+          "new": 1,
+          total: 3,
+          title: "Twitter"
+        }, {
+          color: "teal",
+          icon: "local_offer",
+          name: "Promos",
+          "new": 2,
+          total: 4,
+          title: "Shop your way",
+          exceprt: "New deals available, Join Today"
+        }],
+        lorem: "Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum."
       }
     };
   },
@@ -228,17 +265,17 @@ __webpack_require__.r(__webpack_exports__);
       title: "Vuetify",
       route: "alerts"
     }, {
-      title: "Badges"
+      title: "Avatars"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=template&id=98895d66&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=template&id=98895d66& ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=template&id=1e5f7a26&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=template&id=1e5f7a26& ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -275,18 +312,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Badges")]),
-            _vm._v(" The "),
-            _c("code", [_vm._v("v-badge")]),
+            _c("b", [_vm._v("Avatars")]),
             _vm._v(
-              " component superscripts or\n      subscripts an avatar-like icon or text onto content to highlight\n      information to a user or to just draw attention to a specific element.\n      Content within the badge usually contains numbers or icons.\n      "
+              " The v-avatar component is typically used to display\n      circular user profile pictures. This component will allow you to\n      dynamically size and add a border radius of responsive images, icons,\n      and text. A tile variation is available for displaying an avatar without\n      border radius.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://vuetifyjs.com/en/components/badges",
+                  href: "https://vuetifyjs.com/en/components/avatars",
                   target: "_blank",
                 },
               },
@@ -302,85 +337,66 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Tabs" },
+              attrs: { title: "Size" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            The "),
+                        _c("code", [_vm._v("size")]),
                         _vm._v(
-                          "\n            Badges help convey information to the user in a variety of ways.\n          "
+                          " prop allows you to define the height and\n            width of "
                         ),
+                        _c("code", [_vm._v("v-avatar")]),
+                        _vm._v(
+                          ". This prop scales both evenly with\n            an aspect ratio of 1. "
+                        ),
+                        _c("code", [_vm._v("height")]),
+                        _vm._v(" and\n            "),
+                        _c("code", [_vm._v("width")]),
+                        _vm._v(" props will override this prop.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-toolbar",
+                        "v-row",
+                        { attrs: { justify: "space-around" } },
                         [
                           _c(
-                            "v-tabs",
-                            {
-                              attrs: {
-                                dark: "",
-                                "background-color": "primary",
-                                grow: "",
-                              },
-                            },
+                            "v-avatar",
+                            { attrs: { color: "indigo", size: "36" } },
                             [
                               _c(
-                                "v-tab",
-                                [
-                                  _c(
-                                    "v-badge",
-                                    { attrs: { color: "pink", dot: "" } },
-                                    [
-                                      _vm._v(
-                                        "\n                  Item One\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
+                                "span",
+                                { staticClass: "white--text headline" },
+                                [_vm._v("36")]
                               ),
-                              _vm._v(" "),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-avatar",
+                            { attrs: { color: "teal", size: "48" } },
+                            [
                               _c(
-                                "v-tab",
-                                [
-                                  _c(
-                                    "v-badge",
-                                    { attrs: { color: "green", content: "6" } },
-                                    [
-                                      _vm._v(
-                                        "\n                  Item Two\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
+                                "span",
+                                { staticClass: "white--text headline" },
+                                [_vm._v("48")]
                               ),
-                              _vm._v(" "),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-avatar",
+                            { attrs: { color: "orange", size: "62" } },
+                            [
                               _c(
-                                "v-tab",
-                                [
-                                  _c(
-                                    "v-badge",
-                                    {
-                                      attrs: {
-                                        color: "deep-purple accent-4",
-                                        icon: "mdi-vuetify",
-                                      },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Item Three\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
+                                "span",
+                                { staticClass: "white--text headline" },
+                                [_vm._v("62")]
                               ),
-                            ],
-                            1
+                            ]
                           ),
                         ],
                         1
@@ -404,81 +420,110 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Dynamic notifications" },
+              attrs: { title: "Profile Card" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            Using the "),
+                        _c("code", [_vm._v("tile")]),
                         _vm._v(
-                          "\n            You can incorporate badges with dynamic content to make things\n            such as a notification system.\n          "
+                          " prop, we can create a sleek hard-lined\n            profile card.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-container",
+                        "v-card",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { "max-width": "434", tile: "" },
+                        },
                         [
                           _c(
-                            "v-row",
-                            { attrs: { justify: "space-around" } },
+                            "v-img",
+                            {
+                              attrs: {
+                                height: "100%",
+                                src: "media/stock-600x400/img-32.jpg",
+                              },
+                            },
                             [
                               _c(
-                                "div",
+                                "v-row",
+                                {
+                                  staticClass: "fill-height",
+                                  attrs: { align: "end" },
+                                },
                                 [
                                   _c(
-                                    "v-btn",
+                                    "v-col",
                                     {
-                                      staticClass: "mx-1",
-                                      attrs: { color: "primary" },
-                                      on: {
-                                        click: function ($event) {
-                                          _vm.code3.messages++
-                                        },
+                                      staticClass: "pa-0",
+                                      attrs: {
+                                        "align-self": "start",
+                                        cols: "12",
                                       },
                                     },
                                     [
-                                      _vm._v(
-                                        "\n                  Send Message\n                "
+                                      _c(
+                                        "v-avatar",
+                                        {
+                                          staticClass: "profile",
+                                          attrs: {
+                                            color: "grey",
+                                            size: "164",
+                                            tile: "",
+                                          },
+                                        },
+                                        [
+                                          _c("v-img", {
+                                            attrs: {
+                                              src: "media/users/300_21.jpg",
+                                            },
+                                          }),
+                                        ],
+                                        1
                                       ),
-                                    ]
+                                    ],
+                                    1
                                   ),
                                   _vm._v(" "),
                                   _c(
-                                    "v-btn",
-                                    {
-                                      staticClass: "mx-1",
-                                      attrs: { color: "error" },
-                                      on: {
-                                        click: function ($event) {
-                                          _vm.code3.messages = 0
-                                        },
-                                      },
-                                    },
+                                    "v-col",
+                                    { staticClass: "py-0" },
                                     [
-                                      _vm._v(
-                                        "\n                  Clear Notifications\n                "
+                                      _c(
+                                        "v-list-item",
+                                        {
+                                          attrs: {
+                                            color: "rgba(0, 0, 0, .4)",
+                                            dark: "",
+                                          },
+                                        },
+                                        [
+                                          _c(
+                                            "v-list-item-content",
+                                            [
+                                              _c(
+                                                "v-list-item-title",
+                                                { staticClass: "title" },
+                                                [_vm._v("Marcus Obrien")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("v-list-item-subtitle", [
+                                                _vm._v("Network Engineer"),
+                                              ]),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
                                       ),
-                                    ]
+                                    ],
+                                    1
                                   ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-badge",
-                                {
-                                  attrs: {
-                                    content: _vm.code3.messages,
-                                    value: _vm.code3.messages,
-                                    color: "green",
-                                    overlap: "",
-                                  },
-                                },
-                                [
-                                  _c("v-icon", { attrs: { large: "" } }, [
-                                    _vm._v("mdi-email"),
-                                  ]),
                                 ],
                                 1
                               ),
@@ -503,17 +548,6 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
           ],
@@ -525,66 +559,53 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Show-on-hover" },
+              attrs: { title: "Default slot" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            The "),
+                        _c("code", [_vm._v("v-avatar")]),
+                        _vm._v(" default slot will accept the\n            "),
+                        _c("code", [_vm._v("v-icon")]),
                         _vm._v(
-                          "\n            You can do many things with visibility control, for example, show\n            badge on hover.\n          "
+                          " component, an image, or text. Mix and match\n            these with other props to create something unique.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "div",
-                        { staticClass: "text-center" },
+                        "v-row",
+                        { attrs: { justify: "space-around" } },
                         [
                           _c(
-                            "v-badge",
-                            {
-                              attrs: {
-                                value: _vm.code2.hover,
-                                color: "deep-purple accent-4",
-                                content: "9999+",
-                                left: "",
-                                transition: "slide-x-transition",
-                              },
-                            },
+                            "v-avatar",
+                            { attrs: { color: "indigo" } },
                             [
-                              _c(
-                                "v-hover",
-                                {
-                                  model: {
-                                    value: _vm.code2.hover,
-                                    callback: function ($$v) {
-                                      _vm.$set(_vm.code2, "hover", $$v)
-                                    },
-                                    expression: "code2.hover",
-                                  },
-                                },
-                                [
-                                  _c(
-                                    "v-icon",
-                                    {
-                                      attrs: {
-                                        color: "grey lighten-1",
-                                        large: "",
-                                      },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  mdi-account-circle\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
+                              _c("v-icon", { attrs: { dark: "" } }, [
+                                _vm._v("mdi-account-circle"),
+                              ]),
                             ],
                             1
                           ),
+                          _vm._v(" "),
+                          _c("v-avatar", [
+                            _c("img", {
+                              attrs: {
+                                src: "media/users/100_4.jpg",
+                                alt: "Sean",
+                              },
+                            }),
+                          ]),
+                          _vm._v(" "),
+                          _c("v-avatar", { attrs: { color: "red" } }, [
+                            _c(
+                              "span",
+                              { staticClass: "white--text headline" },
+                              [_vm._v("CJ")]
+                            ),
+                          ]),
                         ],
                         1
                       ),
@@ -603,143 +624,226 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Customization options" },
+              attrs: { title: "Advanced usage" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            The "),
-                        _c("code", [_vm._v("v-badge")]),
                         _vm._v(
-                          " component is flexible and can be used in\n            a variety of use-cases over numerous elements. Options to tweak\n            the location are also available through the offset-x and offset-y\n            props.\n          "
+                          "\n            Combining an avatar with other components allows you to build\n            beautiful user interfaces right out of the box.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
                         "v-container",
+                        { attrs: { fluid: "" } },
                         [
                           _c(
                             "v-row",
-                            { attrs: { align: "center", justify: "center" } },
+                            { attrs: { justify: "center" } },
                             [
-                              _c(
-                                "v-badge",
-                                {
-                                  attrs: {
-                                    bordered: "",
-                                    color: "error",
-                                    icon: "mdi-lock",
-                                    overlap: "",
-                                  },
-                                },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      staticClass: "white--text",
-                                      attrs: { color: "error", depressed: "" },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Lock Account\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "mx-3" }),
+                              _c("v-subheader", [_vm._v("Today")]),
                               _vm._v(" "),
                               _c(
-                                "v-badge",
-                                {
-                                  attrs: {
-                                    bordered: "",
-                                    bottom: "",
-                                    color: "deep-purple accent-4",
-                                    dot: "",
-                                    "offset-x": "10",
-                                    "offset-y": "10",
-                                  },
-                                },
-                                [
-                                  _c(
-                                    "v-avatar",
-                                    { attrs: { size: "40" } },
-                                    [
-                                      _c("v-img", {
-                                        attrs: { src: "media/users/300_2.jpg" },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "mx-3" }),
-                              _vm._v(" "),
-                              _c(
-                                "v-badge",
-                                {
-                                  attrs: {
-                                    avatar: "",
-                                    bordered: "",
-                                    overlap: "",
-                                  },
-                                  scopedSlots: _vm._u([
-                                    {
-                                      key: "badge",
-                                      fn: function () {
-                                        return [
-                                          _c(
-                                            "v-avatar",
-                                            [
-                                              _c("v-img", {
+                                "v-expansion-panels",
+                                { attrs: { popout: "" } },
+                                _vm._l(
+                                  _vm.code4.messages,
+                                  function (message, i) {
+                                    return _c(
+                                      "v-expansion-panel",
+                                      { key: i, attrs: { "hide-actions": "" } },
+                                      [
+                                        _c(
+                                          "v-expansion-panel-header",
+                                          [
+                                            _c(
+                                              "v-row",
+                                              {
+                                                staticClass: "spacer",
                                                 attrs: {
-                                                  src: "media/project-logos/7.png",
+                                                  align: "center",
+                                                  "no-gutters": "",
                                                 },
-                                              }),
-                                            ],
-                                            1
-                                          ),
-                                        ]
-                                      },
-                                      proxy: true,
-                                    },
-                                  ]),
-                                },
-                                [
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-avatar",
-                                    { attrs: { size: "40" } },
-                                    [
-                                      _c("v-img", {
-                                        attrs: { src: "media/users/100_3.jpg" },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                ],
+                                              },
+                                              [
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    attrs: {
+                                                      cols: "4",
+                                                      sm: "2",
+                                                      md: "1",
+                                                    },
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "v-avatar",
+                                                      {
+                                                        attrs: { size: "36px" },
+                                                      },
+                                                      [
+                                                        message.avatar
+                                                          ? _c("img", {
+                                                              attrs: {
+                                                                alt: "Avatar",
+                                                                src: "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
+                                                              },
+                                                            })
+                                                          : _c("v-icon", {
+                                                              attrs: {
+                                                                color:
+                                                                  message.color,
+                                                              },
+                                                              domProps: {
+                                                                textContent:
+                                                                  _vm._s(
+                                                                    message.icon
+                                                                  ),
+                                                              },
+                                                            }),
+                                                      ],
+                                                      1
+                                                    ),
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    staticClass:
+                                                      "hidden-xs-only",
+                                                    attrs: { sm: "5", md: "3" },
+                                                  },
+                                                  [
+                                                    _c("strong", {
+                                                      domProps: {
+                                                        innerHTML: _vm._s(
+                                                          message.name
+                                                        ),
+                                                      },
+                                                    }),
+                                                    _vm._v(" "),
+                                                    message.total
+                                                      ? _c(
+                                                          "span",
+                                                          {
+                                                            staticClass:
+                                                              "grey--text",
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "\n                           (" +
+                                                                _vm._s(
+                                                                  message.total
+                                                                ) +
+                                                                ")\n                        "
+                                                            ),
+                                                          ]
+                                                        )
+                                                      : _vm._e(),
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-col",
+                                                  {
+                                                    staticClass: "text-no-wrap",
+                                                    attrs: {
+                                                      cols: "5",
+                                                      sm: "3",
+                                                    },
+                                                  },
+                                                  [
+                                                    message.new
+                                                      ? _c(
+                                                          "v-chip",
+                                                          {
+                                                            staticClass:
+                                                              "ml-0 mr-2 black--text",
+                                                            attrs: {
+                                                              color:
+                                                                message.color +
+                                                                " lighten-4",
+                                                              label: "",
+                                                              small: "",
+                                                            },
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "\n                          " +
+                                                                _vm._s(
+                                                                  message.new
+                                                                ) +
+                                                                " new\n                        "
+                                                            ),
+                                                          ]
+                                                        )
+                                                      : _vm._e(),
+                                                    _vm._v(" "),
+                                                    _c("strong", {
+                                                      domProps: {
+                                                        innerHTML: _vm._s(
+                                                          message.title
+                                                        ),
+                                                      },
+                                                    }),
+                                                  ],
+                                                  1
+                                                ),
+                                                _vm._v(" "),
+                                                message.excerpt
+                                                  ? _c(
+                                                      "v-col",
+                                                      {
+                                                        staticClass:
+                                                          "grey--text text-truncate hidden-sm-and-down",
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                        —\n                        " +
+                                                            _vm._s(
+                                                              message.excerpt
+                                                            ) +
+                                                            "\n                      "
+                                                        ),
+                                                      ]
+                                                    )
+                                                  : _vm._e(),
+                                              ],
+                                              1
+                                            ),
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-expansion-panel-content",
+                                          [
+                                            _c("v-divider"),
+                                            _vm._v(" "),
+                                            _c("v-card-text", {
+                                              domProps: {
+                                                textContent: _vm._s(
+                                                  _vm.code4.lorem
+                                                ),
+                                              },
+                                            }),
+                                          ],
+                                          1
+                                        ),
+                                      ],
+                                      1
+                                    )
+                                  }
+                                ),
                                 1
                               ),
                             ],
@@ -763,6 +867,17 @@ var render = function () {
                   },
                   proxy: true,
                 },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
               ]),
             }),
           ],
@@ -780,17 +895,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Badges.vue":
-/*!********************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Badges.vue ***!
-  \********************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Avatars.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Avatars.vue ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Badges_vue_vue_type_template_id_98895d66___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Badges.vue?vue&type=template&id=98895d66& */ "./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=template&id=98895d66&");
-/* harmony import */ var _Badges_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Badges.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Avatars_vue_vue_type_template_id_1e5f7a26___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Avatars.vue?vue&type=template&id=1e5f7a26& */ "./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=template&id=1e5f7a26&");
+/* harmony import */ var _Avatars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Avatars.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -800,9 +915,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Badges_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Badges_vue_vue_type_template_id_98895d66___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Badges_vue_vue_type_template_id_98895d66___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Avatars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Avatars_vue_vue_type_template_id_1e5f7a26___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Avatars_vue_vue_type_template_id_1e5f7a26___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -812,38 +927,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vuetify/Badges.vue"
+component.options.__file = "resources/js/src/view/pages/vuetify/Avatars.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Badges_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Badges.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Badges_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Avatars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Avatars.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Avatars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=template&id=98895d66&":
-/*!***************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=template&id=98895d66& ***!
-  \***************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=template&id=1e5f7a26&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=template&id=1e5f7a26& ***!
+  \****************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Badges_vue_vue_type_template_id_98895d66___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Badges.vue?vue&type=template&id=98895d66& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Badges.vue?vue&type=template&id=98895d66&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Badges_vue_vue_type_template_id_98895d66___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Avatars_vue_vue_type_template_id_1e5f7a26___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Avatars.vue?vue&type=template&id=1e5f7a26& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Avatars.vue?vue&type=template&id=1e5f7a26&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Avatars_vue_vue_type_template_id_1e5f7a26___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Badges_vue_vue_type_template_id_98895d66___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Avatars_vue_vue_type_template_id_1e5f7a26___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

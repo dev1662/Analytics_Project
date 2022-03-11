@@ -1,18 +1,23 @@
 <template>
   <div class="d-flex flex-column flex-root">
     <div
-      class="login login-1 d-flex flex-column flex-lg-row flex-column-fluid bg-white"
+      class="
+        login login-1
+        d-flex
+        flex-column flex-lg-row flex-column-fluid
+        bg-white
+      "
       :class="{
         'login-signin-on': this.state == 'signin',
         'login-signup-on': this.state == 'signup',
-        'login-forgot-on': this.state == 'forgot'
+        'login-forgot-on': this.state == 'forgot',
       }"
       id="kt_login"
     >
       <!--begin::Aside-->
       <div
         class="login-aside d-flex flex-column flex-row-auto"
-        style="background-color: #F2C98A;"
+        style="background-color: #f2c98a"
       >
         <div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
           <a href="#" class="text-center mb-10">
@@ -24,20 +29,35 @@
           </a>
           <h3
             class="font-weight-bolder text-center font-size-h4 font-size-h1-lg"
-            style="color: #986923;"
+            style="color: #986923"
           >
             Discover Amazing Metronic <br />with great build tools
           </h3>
         </div>
         <div
-          class="aside-img d-flex flex-row-fluid bgi-no-repeat bgi-position-y-bottom bgi-position-x-center"
+          class="
+            aside-img
+            d-flex
+            flex-row-fluid
+            bgi-no-repeat bgi-position-y-bottom bgi-position-x-center
+          "
           :style="{ backgroundImage: `url(${backgroundImage})` }"
         ></div>
       </div>
       <!--begin::Aside-->
       <!--begin::Content-->
       <div
-        class="login-content flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto"
+        class="
+          login-content
+          flex-row-fluid
+          d-flex
+          flex-column
+          justify-content-center
+          position-relative
+          overflow-hidden
+          p-7
+          mx-auto
+        "
       >
         <div class="d-flex flex-column-fluid flex-center">
           <!--begin::Signin-->
@@ -49,7 +69,11 @@
             >
               <div class="pb-13 pt-lg-0 pt-5">
                 <h3
-                  class="font-weight-bolder text-dark font-size-h4 font-size-h1-lg"
+                  class="
+                    font-weight-bolder
+                    text-dark
+                    font-size-h4 font-size-h1-lg
+                  "
                 >
                   Welcome to Login
                 </h3>
@@ -73,7 +97,13 @@
                   label-for="example-input-1"
                 >
                   <input
-                    class="form-control form-control-solid h-auto py-7 px-6 rounded-lg"
+                    class="
+                      form-control form-control-solid
+                      h-auto
+                      py-7
+                      px-6
+                      rounded-lg
+                    "
                     type="text"
                     name="email"
                     ref="email"
@@ -87,7 +117,12 @@
                     >Password</label
                   >
                   <a
-                    class="text-primary font-size-h6 font-weight-bolder text-hover-primary pt-5"
+                    class="
+                      text-primary
+                      font-size-h6 font-weight-bolder
+                      text-hover-primary
+                      pt-5
+                    "
                     id="kt_login_forgot"
                     @click="showForm('forgot')"
                     >Forgot Password ?</a
@@ -99,7 +134,13 @@
                   label-for="example-input-2"
                 >
                   <input
-                    class="form-control form-control-solid h-auto py-7 px-6 rounded-lg"
+                    class="
+                      form-control form-control-solid
+                      h-auto
+                      py-7
+                      px-6
+                      rounded-lg
+                    "
                     type="password"
                     name="password"
                     ref="password"
@@ -111,13 +152,28 @@
               <div class="pb-lg-0 pb-5">
                 <button
                   ref="kt_login_signin_submit"
-                  class="btn btn-primary font-weight-bolder font-size-h6 px-15 py-4 my-3 mr-3"
+                  class="
+                    btn btn-primary
+                    font-weight-bolder font-size-h6
+                    px-15
+                    py-4
+                    my-3
+                    mr-3
+                  "
                 >
                   Sign In
                 </button>
-                <button @click="getaccessToken('google')"
+                <button
+                  @click="getaccessToken('google')"
                   type="button"
-                  class="btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg"
+                  class="
+                    btn btn-light-primary
+                    font-weight-bolder
+                    px-8
+                    py-4
+                    my-3
+                    font-size-lg
+                  "
                 >
                   <span class="svg-icon svg-icon-md">
                     <inline-svg
@@ -138,7 +194,11 @@
             >
               <div class="pb-13 pt-lg-0 pt-5">
                 <h3
-                  class="font-weight-bolder text-dark font-size-h4 font-size-h1-lg"
+                  class="
+                    font-weight-bolder
+                    text-dark
+                    font-size-h4 font-size-h1-lg
+                  "
                 >
                   Sign Up
                 </h3>
@@ -148,7 +208,14 @@
               </div>
               <div class="form-group">
                 <input
-                  class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6"
+                  class="
+                    form-control form-control-solid
+                    h-auto
+                    py-7
+                    px-6
+                    rounded-lg
+                    font-size-h6
+                  "
                   type="text"
                   placeholder="Fullname"
                   name="fullname"
@@ -158,7 +225,14 @@
               </div>
               <div class="form-group">
                 <input
-                  class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6"
+                  class="
+                    form-control form-control-solid
+                    h-auto
+                    py-7
+                    px-6
+                    rounded-lg
+                    font-size-h6
+                  "
                   type="email"
                   placeholder="Email"
                   name="email"
@@ -168,7 +242,14 @@
               </div>
               <div class="form-group">
                 <input
-                  class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6"
+                  class="
+                    form-control form-control-solid
+                    h-auto
+                    py-7
+                    px-6
+                    rounded-lg
+                    font-size-h6
+                  "
                   type="password"
                   placeholder="Password"
                   name="password"
@@ -178,7 +259,14 @@
               </div>
               <div class="form-group">
                 <input
-                  class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6"
+                  class="
+                    form-control form-control-solid
+                    h-auto
+                    py-7
+                    px-6
+                    rounded-lg
+                    font-size-h6
+                  "
                   type="password"
                   placeholder="Confirm password"
                   name="cpassword"
@@ -197,15 +285,28 @@
               <div class="form-group d-flex flex-wrap pb-lg-0 pb-3">
                 <button
                   ref="kt_login_signup_submit"
-                  class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-4"
-                  style="width:150px;"
+                  class="
+                    btn btn-primary
+                    font-weight-bolder font-size-h6
+                    px-8
+                    py-4
+                    my-3
+                    mr-4
+                  "
+                  style="width: 150px"
                 >
                   Submit
                 </button>
                 <button
                   type="button"
                   id="kt_login_signup_cancel"
-                  class="btn btn-light-primary font-weight-bolder font-size-h6 px-8 py-4 my-3"
+                  class="
+                    btn btn-light-primary
+                    font-weight-bolder font-size-h6
+                    px-8
+                    py-4
+                    my-3
+                  "
                   @click="showForm('signin')"
                 >
                   Cancel
@@ -225,7 +326,11 @@
             >
               <div class="pb-13 pt-lg-0 pt-5">
                 <h3
-                  class="font-weight-bolder text-dark font-size-h4 font-size-h1-lg"
+                  class="
+                    font-weight-bolder
+                    text-dark
+                    font-size-h4 font-size-h1-lg
+                  "
                 >
                   Forgotten Password ?
                 </h3>
@@ -235,7 +340,14 @@
               </div>
               <div class="form-group">
                 <input
-                  class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6"
+                  class="
+                    form-control form-control-solid
+                    h-auto
+                    py-7
+                    px-6
+                    rounded-lg
+                    font-size-h6
+                  "
                   type="email"
                   placeholder="Email"
                   name="email"
@@ -246,14 +358,27 @@
                 <button
                   type="button"
                   id="kt_login_forgot_submit"
-                  class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-4"
+                  class="
+                    btn btn-primary
+                    font-weight-bolder font-size-h6
+                    px-8
+                    py-4
+                    my-3
+                    mr-4
+                  "
                 >
                   Submit
                 </button>
                 <button
                   type="button"
                   id="kt_login_forgot_cancel"
-                  class="btn btn-light-primary font-weight-bolder font-size-h6 px-8 py-4 my-3"
+                  class="
+                    btn btn-light-primary
+                    font-weight-bolder font-size-h6
+                    px-8
+                    py-4
+                    my-3
+                  "
                   @click="showForm('signin')"
                 >
                   Cancel
@@ -265,7 +390,12 @@
         </div>
         <!--begin::Content footer-->
         <div
-          class="d-flex justify-content-lg-start justify-content-center align-items-end py-7 py-lg-0"
+          class="
+            d-flex
+            justify-content-lg-start justify-content-center
+            align-items-end
+            py-7 py-lg-0
+          "
         >
           <a href="#" class="text-primary font-weight-bolder font-size-h5"
             >Terms</a
@@ -292,7 +422,7 @@
 <script>
 import formValidation from "@/assets/plugins/formvalidation/dist/es6/core/Core";
 import ApiService from "@/core/services/api.service";
-
+import axios from 'axios';
 // FormValidation plugins
 import Trigger from "@/assets/plugins/formvalidation/dist/es6/plugins/Trigger";
 import Bootstrap from "@/assets/plugins/formvalidation/dist/es6/plugins/Bootstrap";
@@ -311,13 +441,13 @@ export default {
       // Remove this dummy login info
       form: {
         email: "",
-        password: ""
-      }
+        password: "",
+      },
     };
   },
   computed: {
     ...mapState({
-      errors: state => state.auth.errors
+      errors: (state) => state.auth.errors,
     }),
     ...mapGetters(["currentUser"]),
 
@@ -325,9 +455,12 @@ export default {
       return (
         process.env.BASE_URL + "media/svg/illustrations/login-visual-1.svg"
       );
-    }
+    },
   },
-  created(){
+  created() {
+      async () => {
+          await console("hello");
+      }
     //   console.log(this.$store.state.auth);
     //   if(this.$store.state.isAuthenticated == true){
     //       this.$router.push({name: 'dashboard'});
@@ -335,6 +468,8 @@ export default {
     //   }
   },
   mounted() {
+       this.getUsers();
+        
     const signin_form = KTUtil.getById("kt_login_signin_form");
     const signup_form = KTUtil.getById("kt_login_signup_form");
     const forgot_form = KTUtil.getById("kt_login_forgot_form");
@@ -344,23 +479,23 @@ export default {
         email: {
           validators: {
             notEmpty: {
-              message: "Username is required"
-            }
-          }
+              message: "Username is required",
+            },
+          },
         },
         password: {
           validators: {
             notEmpty: {
-              message: "Password is required"
-            }
-          }
-        }
+              message: "Password is required",
+            },
+          },
+        },
       },
       plugins: {
         trigger: new Trigger(),
         submitButton: new SubmitButton(),
-        bootstrap: new Bootstrap()
-      }
+        bootstrap: new Bootstrap(),
+      },
     });
 
     this.fv1 = formValidation(signup_form, {
@@ -368,53 +503,53 @@ export default {
         fullname: {
           validators: {
             notEmpty: {
-              message: "Full name is required"
-            }
-          }
+              message: "Full name is required",
+            },
+          },
         },
         email: {
           validators: {
             notEmpty: {
-              message: "Email is required"
+              message: "Email is required",
             },
             emailAddress: {
-              message: "The value is not a valid email address"
-            }
-          }
+              message: "The value is not a valid email address",
+            },
+          },
         },
         password: {
           validators: {
             notEmpty: {
-              message: "Password is required"
-            }
-          }
+              message: "Password is required",
+            },
+          },
         },
         cpassword: {
           validators: {
             notEmpty: {
-              message: "Confirm password is required"
+              message: "Confirm password is required",
             },
             identical: {
-              compare: function() {
+              compare: function () {
                 return signup_form.querySelector('[name="password"]').value;
               },
-              message: "The password and its confirm are not the same"
-            }
-          }
+              message: "The password and its confirm are not the same",
+            },
+          },
         },
         agree: {
           validators: {
             notEmpty: {
-              message: "You should agree terms and conditions"
-            }
-          }
-        }
+              message: "You should agree terms and conditions",
+            },
+          },
+        },
       },
       plugins: {
         trigger: new Trigger(),
         submitButton: new SubmitButton(),
-        bootstrap: new Bootstrap()
-      }
+        bootstrap: new Bootstrap(),
+      },
     });
 
     this.fv2 = formValidation(forgot_form, {
@@ -422,19 +557,19 @@ export default {
         email: {
           validators: {
             notEmpty: {
-              message: "Email is required"
+              message: "Email is required",
             },
             emailAddress: {
-              message: "The value is not a valid email address"
-            }
-          }
-        }
+              message: "The value is not a valid email address",
+            },
+          },
+        },
       },
       plugins: {
         trigger: new Trigger(),
         submitButton: new SubmitButton(),
-        bootstrap: new Bootstrap()
-      }
+        bootstrap: new Bootstrap(),
+      },
     });
 
     this.fv.on("core.form.valid", () => {
@@ -454,20 +589,20 @@ export default {
         this.$store
           .dispatch(LOGIN, { email, password })
           // go to which page after successfully login
-          .then(() =>
-
-             Toast.fire({
-                        icon: 'success',
-                        title: 'Signed in Successfully'
-                    }),
-          this.$router.push({ name: "dashboard" }),
-          this.$store.state.isAuthenticated = true
+          .then(
+            () =>
+              Toast.fire({
+                icon: "success",
+                title: "Signed in Successfully",
+              }),
+            this.$router.push({ name: "dashboard" }),
+            (this.$store.state.isAuthenticated = true)
           )
           .catch(() => {
-               Toast.fire({
-                        icon: 'warning',
-                        title: 'Invalid email or password'
-                    })
+            Toast.fire({
+              icon: "warning",
+              title: "Invalid email or password",
+            });
           });
 
         submitButton.classList.remove(
@@ -484,7 +619,7 @@ export default {
         text: "Please, provide correct data!",
         icon: "error",
         confirmButtonClass: "btn btn-secondary",
-        heightAuto: false
+        heightAuto: false,
       });
     });
 
@@ -495,9 +630,9 @@ export default {
 
       // clear existing errors
       this.$store.dispatch(LOGOUT, {
-            email,
-             password
-          });
+        email,
+        password,
+      });
 
       // set spinner to submit button
       const submitButton = this.$refs["kt_login_signup_submit"];
@@ -508,15 +643,15 @@ export default {
         // send register request
         this.$store
           .dispatch(REGISTER, {
-              name:name,
+            name: name,
             email: email,
-            password: password
+            password: password,
           })
-          .then(() =>
-          this.$router.push({ name: "dashboard" }),
-          this.$store.state.isAuthenticated = true,
+          .then(
+            () => this.$router.push({ name: "dashboard" }),
+            (this.$store.state.isAuthenticated = true),
 
-        console.log("hello")
+            console.log("hello")
           );
 
         submitButton.classList.remove(
@@ -533,34 +668,119 @@ export default {
         text: "Please, provide correct data!",
         icon: "error",
         confirmButtonClass: "btn btn-secondary",
-        heightAuto: false
+        heightAuto: false,
       });
     });
   },
   methods: {
-      async getaccessToken(provider){
-          const google = await this.$gAuth.signIn();
-          if(google != ''){
-              console.log("response", google);
-              console.log("ID", google.getId());
-              console.log("Basic Profile", google.getBasicProfile());
-              console.log("Auth Response" , google.getAuthResponse());
-          }
-        //    console.log("user2 ", google);
-        // let self = this;
-        // this.$auth.authenticate(provider).then(res => {
-        //     self.socialLogin(provider,res);
-        // })
-      },
-      socialLogin(provider,res){
-          const obj = {
-              "provider":provider,
-              "response" : res
-          };
-          ApiService.post("http://localhost:8000/api/auth/google", obj).then(res=> {
-              console.log(res.data);
-          })
-      },
+    async getaccessToken(provider) {
+
+    // //     gapi.auth2.client({client_id:'642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com', scope:'openid, email,profile'}).then(res => {
+            // const code = gapi.auth2.getAuthInstance().grantOfflineAccess();
+            
+           gapi.load('client:auth2', () => {
+        gapi.client.init({
+                            // discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+
+        }).then(() => {
+            gapi.auth2.getAuthInstance({
+		// client_id: `642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com`,
+
+            }).grantOfflineAccess().then(async (res) => {
+                // var [response,signIn] = await Promise.all([
+                //     this.$http.post('https://accounts.google.com/o/oauth2/token', { code: res.code,client_id:'642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',client_secret:'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',grant_type:'authorization_code', redirect_uri: 'postmessage' }),
+                //     this.$gAuth.signIn()
+                // ])
+                const response = await this.$http.post('https://accounts.google.com/o/oauth2/token', { code: res.code,client_id:'642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',client_secret:'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',grant_type:'authorization_code', redirect_uri: 'postmessage' })
+                if(response.data != ""){
+                    var Time  = new Date();
+                    // const hour = 1;
+                
+                    // async function hello(){
+
+                        const newAccessToken =  this.$http.post('https://accounts.google.com/o/oauth2/token', {refresh_token: response.data.refresh_token,client_id:'642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',client_secret:'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',grant_type:'refresh_token' });
+                    // } 
+                    var addMinutes = Time.getMinutes()+2;
+                    var endTime = Time.getTime()+120000;
+                    var StartTime = Time.getHours() +':' + Time.getMinutes() +":"+ Time.getSeconds();
+                    console.log();
+                    const dataObj = {
+                        "access_token" : response.data.access_token,
+                        "startTime": StartTime,
+                        "endTime":endTime,
+                        "refresh_token": response.data.refresh_token,
+                        // "localTime" : startLocal2
+                    };
+                    ApiService.post("http://localhost:8000/api/signup", dataObj).then(res => {
+                        console.log(res.data);
+                    })
+                    console.log(dataObj);
+
+
+                        // console.log( newAccessToken);
+                    
+                }
+                console.log( response.data);
+                
+            })
+        })
+        });
+
+
+    
+
+    //   const [authcode, google] = await Promise.all([
+    //      this.$gAuth,
+    //      this.$gAuth.signIn(),
+    //   ]);
+    //   console.log("signin", await google);
+      
+    //             const response = await this.$http.post('https://accounts.google.com/o/oauth2/token', { code: await authcode.getAuthCode(),client_id:'642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',client_secret:'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',grant_type:'authorization_code', redirect_uri: 'postmessage' })
+
+    //     console.log(response.data);
+      
+    },
+    getUsers(){
+        ApiService.get("http://localhost:8000/api/users").then(res=> {
+            // if(res.data[0].refresh_token){
+                console.log( res.data.data);
+                for (var index = 0; index <= res.data.data.length; index++) {
+                   var data2 = res.data.data[index];
+                if(data2.refresh_token){
+
+                    this.getNewAccessToken(data2.refresh_token);
+                }
+                    
+                }
+            // }
+
+        })
+    },
+
+    async getNewAccessToken(refresh_token){
+        // if()
+     
+
+            const newAccessToken = await this.$http.post('https://accounts.google.com/o/oauth2/token', {refresh_token: refresh_token,client_id:'642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',client_secret:'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',grant_type:'refresh_token' });
+            console.log(newAccessToken);
+        
+    },
+    compareTime(str1, str2){
+        if(str1 === str2){
+            console.log(0);
+    }
+    var time1 = str1.split(':');
+        console.log((time1[2]));
+    var time2 = str2.split(':');
+    if(eval(time1[0]) > eval(time2[0])){
+        console.log(1);
+    } else if(eval(time1[0]) == eval(time2[0]) || eval(time1[1]) > eval(time2[1]) || eval(time1[2]) > eval(time2[2])) {
+        console.log(1);
+    } else {
+     console.log(-1);
+    }
+},
+
     showForm(form) {
       this.state = form;
       var form_name = "kt_login_" + form + "_form";
@@ -569,7 +789,6 @@ export default {
         "animate__animated animate__backInUp"
       );
     },
-
-  }
+  },
 };
 </script>

@@ -37,21 +37,22 @@ const Toast = Swal.mixin({
 window.Toast = Toast;
 
 
-Vue.use(VueSocialauth, {
-    providers: {
-        google: {
-            clientId: '642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',
-            client_secret: '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',
-            redirectUri: 'http://localhost:8000/callback/google'
-        }
-    }
-});
+// Vue.use(VueSocialauth, {
+//     providers: {
+//         google: {
+//             clientId: '642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',
+//             client_secret: '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',
+//             redirectUri: 'http://localhost:8000/callback/google'
+//         }
+//     }
+// });
 const auth = {
     clientId: '642297796375-bfhrfa0pp3unfnqstio3k32uqvhqbn5v.apps.googleusercontent.com',
     // client_secret: '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',
     scope: 'profile email',
     prompt: 'consent',
-    fetch_basic_profile:true,
+    // response_type:'code',
+    // fetch_basic_profile:true,
     // redirectUri: 'http://localhost:8000/callback/google'
 };
 Vue.use(GAuth, auth);

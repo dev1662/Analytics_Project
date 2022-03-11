@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[61],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -196,154 +196,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<div class=\"overflow-auto\">\n    <b-pagination\n      v-model=\"currentPage\"\n      :total-rows=\"rows\"\n      :per-page=\"perPage\"\n      aria-controls=\"my-table\"\n    ></b-pagination>\n\n    <p class=\"mt-3\">Current Page: {{ currentPage }}</p>\n\n    <b-table\n      id=\"my-table\"\n      :items=\"items\"\n      :per-page=\"perPage\"\n      :current-page=\"currentPage\"\n      small\n    ></b-table>\n  </div>",
-        js: "export default {\n    data() {\n      return {\n        perPage: 3,\n        currentPage: 1,\n        items: [\n          { id: 1, first_name: 'Fred', last_name: 'Flintstone' },\n          { id: 2, first_name: 'Wilma', last_name: 'Flintstone' },\n          { id: 3, first_name: 'Barney', last_name: 'Rubble' },\n          { id: 4, first_name: 'Betty', last_name: 'Rubble' },\n          { id: 5, first_name: 'Pebbles', last_name: 'Flintstone' },\n          { id: 6, first_name: 'Bamm Bamm', last_name: 'Rubble' },\n          { id: 7, first_name: 'The Great', last_name: 'Gazzoo' },\n          { id: 8, first_name: 'Rockhead', last_name: 'Slate' },\n          { id: 9, first_name: 'Pearl', last_name: 'Slaghoople' }\n        ]\n      }\n    },\n    computed: {\n      rows() {\n        return this.items.length\n      }\n    }\n  }",
-        perPage: 3,
-        currentPage: 1,
-        items: [{
-          id: 1,
-          first_name: "Fred",
-          last_name: "Flintstone"
-        }, {
-          id: 2,
-          first_name: "Wilma",
-          last_name: "Flintstone"
-        }, {
-          id: 3,
-          first_name: "Barney",
-          last_name: "Rubble"
-        }, {
-          id: 4,
-          first_name: "Betty",
-          last_name: "Rubble"
-        }, {
-          id: 5,
-          first_name: "Pebbles",
-          last_name: "Flintstone"
-        }, {
-          id: 6,
-          first_name: "Bamm Bamm",
-          last_name: "Rubble"
-        }, {
-          id: 7,
-          first_name: "The Great",
-          last_name: "Gazzoo"
-        }, {
-          id: 8,
-          first_name: "Rockhead",
-          last_name: "Slate"
-        }, {
-          id: 9,
-          first_name: "Pearl",
-          last_name: "Slaghoople"
-        }]
+        html: "<div>\n  <b-navbar toggleable=\"lg\" type=\"dark\" variant=\"info\">\n    <b-navbar-brand href=\"#\">NavBar</b-navbar-brand>\n\n    <b-navbar-toggle target=\"nav-collapse\"></b-navbar-toggle>\n\n    <b-collapse id=\"nav-collapse\" is-nav>\n      <b-navbar-nav>\n        <b-nav-item href=\"#\">Link</b-nav-item>\n        <b-nav-item href=\"#\" disabled>Disabled</b-nav-item>\n      </b-navbar-nav>\n\n      <!-- Right aligned nav items -->\n      <b-navbar-nav class=\"ml-auto\">\n        <b-nav-form>\n          <b-form-input size=\"sm\" class=\"mr-sm-2\" placeholder=\"Search\"></b-form-input>\n          <b-button size=\"sm\" class=\"my-2 my-sm-0\" type=\"submit\">Search</b-button>\n        </b-nav-form>\n\n        <b-nav-item-dropdown text=\"Lang\" right>\n          <b-dropdown-item href=\"#\">EN</b-dropdown-item>\n          <b-dropdown-item href=\"#\">ES</b-dropdown-item>\n          <b-dropdown-item href=\"#\">RU</b-dropdown-item>\n          <b-dropdown-item href=\"#\">FA</b-dropdown-item>\n        </b-nav-item-dropdown>\n\n        <b-nav-item-dropdown right>\n          <!-- Using 'button-content' slot -->\n          <template v-slot:button-content>\n            <em>User</em>\n          </template>\n          <b-dropdown-item href=\"#\">Profile</b-dropdown-item>\n          <b-dropdown-item href=\"#\">Sign Out</b-dropdown-item>\n        </b-nav-item-dropdown>\n      </b-navbar-nav>\n    </b-collapse>\n  </b-navbar>\n</div>"
       },
       code2: {
-        html: "<div class=\"overflow-auto\">\n    <!-- Use text in props -->\n    <b-pagination\n      v-model=\"currentPage\"\n      :total-rows=\"rows\"\n      :per-page=\"perPage\"\n      first-text=\"First\"\n      prev-text=\"Prev\"\n      next-text=\"Next\"\n      last-text=\"Last\"\n    ></b-pagination>\n\n    <!-- Use emojis in props -->\n    <b-pagination\n      v-model=\"currentPage\"\n      :total-rows=\"rows\"\n      :per-page=\"perPage\"\n      first-text=\"\u23EE\"\n      prev-text=\"\u23EA\"\n      next-text=\"\u23E9\"\n      last-text=\"\u23ED\"\n      class=\"mt-4\"\n    ></b-pagination>\n\n    <!-- Use HTML and sub-components in slots -->\n    <b-pagination\n      v-model=\"currentPage\"\n      :total-rows=\"rows\"\n      :per-page=\"perPage\"\n      class=\"mt-4\"\n    >\n      <template v-slot:first-text><span class=\"text-success\">First</span></template>\n      <template v-slot:prev-text><span class=\"text-danger\">Prev</span></template>\n      <template v-slot:next-text><span class=\"text-warning\">Next</span></template>\n      <template v-slot:last-text><span class=\"text-info\">Last</span></template>\n      <template v-slot:ellipsis-text>\n        <b-spinner small type=\"grow\"></b-spinner>\n        <b-spinner small type=\"grow\"></b-spinner>\n        <b-spinner small type=\"grow\"></b-spinner>\n      </template>\n      <template v-slot:page=\"{ page, active }\">\n        <b v-if=\"active\">{{ page }}</b>\n        <i v-else>{{ page }}</i>\n      </template>\n    </b-pagination>\n  </div>",
-        js: "export default {\n    data() {\n      return {\n        rows: 100,\n        perPage: 10,\n        currentPage: 1\n      }\n    }\n  }",
-        rows1: 100,
-        perPage1: 10,
-        currentPage1: 1,
-        rows2: 100,
-        perPage2: 10,
-        currentPage2: 1,
-        rows3: 100,
-        perPage3: 10,
-        currentPage3: 1
+        html: "<div>\n  <b-navbar toggleable=\"sm\" type=\"light\" variant=\"light\">\n    <b-navbar-toggle target=\"nav-text-collapse\"></b-navbar-toggle>\n\n    <b-navbar-brand>BootstrapVue</b-navbar-brand>\n\n    <b-collapse id=\"nav-text-collapse\" is-nav>\n      <b-navbar-nav>\n        <b-nav-text>Navbar text</b-nav-text>\n      </b-navbar-nav>\n    </b-collapse>\n  </b-navbar>\n</div>"
       },
       code3: {
-        html: "<div class=\"overflow-auto\">\n    <div>\n      <h6>Small</h6>\n      <b-pagination v-model=\"currentPage\" :total-rows=\"rows\" size=\"sm\"></b-pagination>\n    </div>\n\n    <div class=\"mt-3\">\n      <h6>Default</h6>\n      <b-pagination v-model=\"currentPage\" :total-rows=\"rows\"></b-pagination>\n    </div>\n\n    <div class=\"mt-3\">\n      <h6>Large</h6>\n      <b-pagination v-model=\"currentPage\" :total-rows=\"rows\" size=\"lg\"></b-pagination>\n    </div>\n  </div>",
-        js: "export default {\n    data() {\n      return {\n        rows: 100,\n        currentPage: 1\n      }\n    }\n  }",
-        rows1: 100,
-        currentPage1: 1,
-        rows2: 100,
-        currentPage2: 1,
-        rows3: 100,
-        currentPage3: 1
+        html: "<div>\n  <b-navbar type=\"dark\" variant=\"dark\">\n    <b-navbar-nav>\n      <b-nav-item href=\"#\">Home</b-nav-item>\n\n      <!-- Navbar dropdowns -->\n      <b-nav-item-dropdown text=\"Lang\" right>\n        <b-dropdown-item href=\"#\">EN</b-dropdown-item>\n        <b-dropdown-item href=\"#\">ES</b-dropdown-item>\n        <b-dropdown-item href=\"#\">RU</b-dropdown-item>\n        <b-dropdown-item href=\"#\">FA</b-dropdown-item>\n      </b-nav-item-dropdown>\n\n      <b-nav-item-dropdown text=\"User\" right>\n        <b-dropdown-item href=\"#\">Account</b-dropdown-item>\n        <b-dropdown-item href=\"#\">Settings</b-dropdown-item>\n      </b-nav-item-dropdown>\n    </b-navbar-nav>\n  </b-navbar>\n</div>"
       },
       code4: {
-        html: "<div class=\"overflow-auto\">\n    <div>\n      <h6>Left alignment (default)</h6>\n      <b-pagination v-model=\"currentPage\" :total-rows=\"rows\"></b-pagination>\n    </div>\n\n    <div class=\"mt-3\">\n      <h6 class=\"text-center\">Center alignment</h6>\n      <b-pagination v-model=\"currentPage\" :total-rows=\"rows\" align=\"center\"></b-pagination>\n    </div>\n\n    <div class=\"mt-3\">\n      <h6 class=\"text-right\">Right (end) alignment</h6>\n      <b-pagination v-model=\"currentPage\" :total-rows=\"rows\" align=\"right\"></b-pagination>\n    </div>\n\n    <div class=\"mt-3\">\n      <h6 class=\"text-center\">Fill alignment</h6>\n      <b-pagination v-model=\"currentPage\" :total-rows=\"rows\" align=\"fill\"></b-pagination>\n    </div>\n  </div>",
-        js: "export default {\n    data() {\n      return {\n        rows: 100,\n        currentPage: 3\n      }\n    }\n  }",
-        rows1: 100,
-        currentPage1: 3,
-        rows2: 100,
-        currentPage2: 3,
-        rows3: 100,
-        currentPage3: 3,
-        rows4: 100,
-        currentPage4: 3
+        html: "<div>\n  <b-navbar type=\"light\" variant=\"light\">\n    <b-nav-form>\n      <b-form-input class=\"mr-sm-2\" placeholder=\"Search\"></b-form-input>\n      <b-button variant=\"outline-success\" class=\"my-2 my-sm-0\" type=\"submit\">Search</b-button>\n    </b-nav-form>\n  </b-navbar>\n</div>"
       },
       code5: {
-        html: "",
-        js: ""
+        html: "<div>\n  <b-nav tabs justified>\n    <b-nav-item active>Active</b-nav-item>\n    <b-nav-item>Link</b-nav-item>\n    <b-nav-item>Link with a long name </b-nav-item>\n    <b-nav-item disabled>Disabled</b-nav-item>\n  </b-nav>\n</div>"
       }
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  computed: {
-    rows: function rows() {
-      return this.code1.items.length;
-    }
-  },
   mounted: function mounted() {
     this.$store.dispatch(_core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__["SET_BREADCRUMB"], [{
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Pagination"
+      title: "Nav",
+      route: "nav"
+    }, {
+      title: "Navbar"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=template&id=2a509dbe&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=template&id=2a509dbe& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=template&id=2c7d7d34&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=template&id=2c7d7d34& ***!
+  \***************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -380,16 +276,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Pagination")]),
+            _c("b", [_vm._v("Navbar")]),
             _vm._v(
-              " The component &lt;b-navbar&gt; is a wrapper\n      that positions branding, navigation, and other elements into a concise\n      header. It's easily extensible and thanks to the\n      &lt;b-collapse&gt; component, it can easily integrate responsive\n      behaviors.\n      "
+              " The component <b-navbar> is a wrapper that positions\n      branding, navigation, and other elements into a concise header. It's\n      easily extensible and thanks to the <b-collapse> component, it can\n      easily integrate responsive behaviors.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/pagination",
+                  href: "https://bootstrap-vue.js.org/docs/components/navbar",
                   target: "_blank",
                 },
               },
@@ -405,61 +301,157 @@ var render = function () {
           { staticClass: "col-md-12" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Pagination" },
+              attrs: { title: "Navbar" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _c("code", [_vm._v("<b-pagination>")]),
-                        _vm._v(
-                          " is a custom input component that\n            provides a current page number input control. The value should be\n            bound via "
-                        ),
-                        _c("code", [_vm._v("v-model")]),
-                        _vm._v(
-                          " in your app. Page numbers are\n            indexed from 1. The number of pages is computed from the provided\n            prop values for "
-                        ),
-                        _c("code", [_vm._v("total-rows")]),
-                        _vm._v(" and "),
-                        _c("code", [_vm._v("per-page")]),
-                        _vm._v(".\n          "),
-                      ]),
-                      _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "overflow-auto" },
                         [
-                          _c("b-pagination", {
-                            attrs: {
-                              "total-rows": _vm.rows,
-                              "per-page": _vm.code1.perPage,
-                              "aria-controls": "my-table",
-                            },
-                            model: {
-                              value: _vm.code1.currentPage,
-                              callback: function ($$v) {
-                                _vm.$set(_vm.code1, "currentPage", $$v)
+                          _c(
+                            "b-navbar",
+                            {
+                              attrs: {
+                                toggleable: "lg",
+                                type: "dark",
+                                variant: "info",
                               },
-                              expression: "code1.currentPage",
                             },
-                          }),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "mt-3" }, [
-                            _vm._v(
-                              "Current Page: " + _vm._s(_vm.code1.currentPage)
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("b-table", {
-                            attrs: {
-                              id: "my-table",
-                              items: _vm.code1.items,
-                              "per-page": _vm.code1.perPage,
-                              "current-page": _vm.code1.currentPage,
-                              small: "",
-                            },
-                          }),
+                            [
+                              _c("b-navbar-brand", { attrs: { href: "#" } }, [
+                                _vm._v("NavBar"),
+                              ]),
+                              _vm._v(" "),
+                              _c("b-navbar-toggle", {
+                                attrs: { target: "nav-collapse" },
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "b-collapse",
+                                { attrs: { id: "nav-collapse", "is-nav": "" } },
+                                [
+                                  _c(
+                                    "b-navbar-nav",
+                                    [
+                                      _c(
+                                        "b-nav-item",
+                                        { attrs: { href: "#" } },
+                                        [_vm._v("Link")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-nav-item",
+                                        { attrs: { href: "#", disabled: "" } },
+                                        [_vm._v("Disabled")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-navbar-nav",
+                                    { staticClass: "ml-auto" },
+                                    [
+                                      _c(
+                                        "b-nav-form",
+                                        [
+                                          _c("b-form-input", {
+                                            staticClass: "mr-sm-2",
+                                            attrs: {
+                                              size: "sm",
+                                              placeholder: "Search",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "b-button",
+                                            {
+                                              staticClass: "my-2 my-sm-0",
+                                              attrs: {
+                                                size: "sm",
+                                                type: "submit",
+                                              },
+                                            },
+                                            [_vm._v("Search")]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-nav-item-dropdown",
+                                        { attrs: { text: "Lang", right: "" } },
+                                        [
+                                          _c(
+                                            "b-dropdown-item",
+                                            { attrs: { href: "#" } },
+                                            [_vm._v("EN")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "b-dropdown-item",
+                                            { attrs: { href: "#" } },
+                                            [_vm._v("ES")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "b-dropdown-item",
+                                            { attrs: { href: "#" } },
+                                            [_vm._v("RU")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "b-dropdown-item",
+                                            { attrs: { href: "#" } },
+                                            [_vm._v("FA")]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-nav-item-dropdown",
+                                        {
+                                          attrs: { right: "" },
+                                          scopedSlots: _vm._u([
+                                            {
+                                              key: "button-content",
+                                              fn: function () {
+                                                return [
+                                                  _c("em", [_vm._v("User")]),
+                                                ]
+                                              },
+                                              proxy: true,
+                                            },
+                                          ]),
+                                        },
+                                        [
+                                          _vm._v(" "),
+                                          _c(
+                                            "b-dropdown-item",
+                                            { attrs: { href: "#" } },
+                                            [_vm._v("Profile")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "b-dropdown-item",
+                                            { attrs: { href: "#" } },
+                                            [_vm._v("Sign Out")]
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
                         ],
                         1
                       ),
@@ -478,163 +470,71 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Button content" },
               scopedSlots: _vm._u([
+                {
+                  key: "title",
+                  fn: function () {
+                    return [_c("code", [_vm._v("<b-nav-text>")])]
+                  },
+                  proxy: true,
+                },
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Navbars may contain bits of text with the help of\n            "
+                        ),
+                        _c("code", [_vm._v("<b-nav-text>")]),
+                        _vm._v(
+                          ". This component adjusts vertical\n            alignment and horizontal spacing for strings of text.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "overflow-auto" },
                         [
-                          _c("b-pagination", {
-                            attrs: {
-                              "total-rows": _vm.code2.rows1,
-                              "per-page": _vm.code2.perPage1,
-                              "first-text": "First",
-                              "prev-text": "Prev",
-                              "next-text": "Next",
-                              "last-text": "Last",
+                          _c(
+                            "b-navbar",
+                            {
+                              attrs: {
+                                toggleable: "sm",
+                                type: "light",
+                                variant: "light",
+                              },
                             },
-                            model: {
-                              value: _vm.code2.currentPage1,
-                              callback: function ($$v) {
-                                _vm.$set(_vm.code2, "currentPage1", $$v)
-                              },
-                              expression: "code2.currentPage1",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("b-pagination", {
-                            staticClass: "mt-4",
-                            attrs: {
-                              "total-rows": _vm.code2.rows2,
-                              "per-page": _vm.code2.perPage2,
-                              "first-text": "⏮",
-                              "prev-text": "⏪",
-                              "next-text": "⏩",
-                              "last-text": "⏭",
-                            },
-                            model: {
-                              value: _vm.code2.currentPage2,
-                              callback: function ($$v) {
-                                _vm.$set(_vm.code2, "currentPage2", $$v)
-                              },
-                              expression: "code2.currentPage2",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("b-pagination", {
-                            staticClass: "mt-4",
-                            attrs: {
-                              "total-rows": _vm.code2.rows3,
-                              "per-page": _vm.code2.perPage3,
-                            },
-                            scopedSlots: _vm._u([
-                              {
-                                key: "first-text",
-                                fn: function () {
-                                  return [
-                                    _c(
-                                      "span",
-                                      { staticClass: "text-success" },
-                                      [_vm._v("First")]
-                                    ),
-                                  ]
+                            [
+                              _c("b-navbar-toggle", {
+                                attrs: { target: "nav-text-collapse" },
+                              }),
+                              _vm._v(" "),
+                              _c("b-navbar-brand", [_vm._v("BootstrapVue")]),
+                              _vm._v(" "),
+                              _c(
+                                "b-collapse",
+                                {
+                                  attrs: {
+                                    id: "nav-text-collapse",
+                                    "is-nav": "",
+                                  },
                                 },
-                                proxy: true,
-                              },
-                              {
-                                key: "prev-text",
-                                fn: function () {
-                                  return [
-                                    _c("span", { staticClass: "text-danger" }, [
-                                      _vm._v("Prev"),
-                                    ]),
-                                  ]
-                                },
-                                proxy: true,
-                              },
-                              {
-                                key: "next-text",
-                                fn: function () {
-                                  return [
-                                    _c(
-                                      "span",
-                                      { staticClass: "text-warning" },
-                                      [_vm._v("Next")]
-                                    ),
-                                  ]
-                                },
-                                proxy: true,
-                              },
-                              {
-                                key: "last-text",
-                                fn: function () {
-                                  return [
-                                    _c("span", { staticClass: "text-info" }, [
-                                      _vm._v("Last"),
-                                    ]),
-                                  ]
-                                },
-                                proxy: true,
-                              },
-                              {
-                                key: "ellipsis-text",
-                                fn: function () {
-                                  return [
-                                    _c("b-spinner", {
-                                      attrs: { small: "", type: "grow" },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("b-spinner", {
-                                      attrs: { small: "", type: "grow" },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("b-spinner", {
-                                      attrs: { small: "", type: "grow" },
-                                    }),
-                                  ]
-                                },
-                                proxy: true,
-                              },
-                              {
-                                key: "page",
-                                fn: function (ref) {
-                                  var page = ref.page
-                                  var active = ref.active
-                                  return [
-                                    active
-                                      ? _c("b", [_vm._v(_vm._s(page))])
-                                      : _c("i", [_vm._v(_vm._s(page))]),
-                                  ]
-                                },
-                              },
-                            ]),
-                            model: {
-                              value: _vm.code2.currentPage3,
-                              callback: function ($$v) {
-                                _vm.$set(_vm.code2, "currentPage3", $$v)
-                              },
-                              expression: "code2.currentPage3",
-                            },
-                          }),
+                                [
+                                  _c(
+                                    "b-navbar-nav",
+                                    [_c("b-nav-text", [_vm._v("Navbar text")])],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
                         ],
                         1
                       ),
@@ -653,93 +553,116 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Button size" },
               scopedSlots: _vm._u([
+                {
+                  key: "title",
+                  fn: function () {
+                    return [_c("code", [_vm._v("<b-nav-item-dropdown>")])]
+                  },
+                  proxy: true,
+                },
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("div", { staticClass: "overflow-auto" }, [
-                        _c(
-                          "div",
-                          [
-                            _c("h6", [_vm._v("Small")]),
-                            _vm._v(" "),
-                            _c("b-pagination", {
-                              attrs: {
-                                "total-rows": _vm.code3.rows1,
-                                size: "sm",
-                              },
-                              model: {
-                                value: _vm.code3.currentPage1,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code3, "currentPage1", $$v)
-                                },
-                                expression: "code3.currentPage1",
-                              },
-                            }),
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mt-3" },
-                          [
-                            _c("h6", [_vm._v("Default")]),
-                            _vm._v(" "),
-                            _c("b-pagination", {
-                              attrs: { "total-rows": _vm.code3.rows2 },
-                              model: {
-                                value: _vm.code3.currentPage2,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code3, "currentPage2", $$v)
-                                },
-                                expression: "code3.currentPage2",
-                              },
-                            }),
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mt-3" },
-                          [
-                            _c("h6", [_vm._v("Large")]),
-                            _vm._v(" "),
-                            _c("b-pagination", {
-                              attrs: {
-                                "total-rows": _vm.code3.rows3,
-                                size: "lg",
-                              },
-                              model: {
-                                value: _vm.code3.currentPage3,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code3, "currentPage3", $$v)
-                                },
-                                expression: "code3.currentPage3",
-                              },
-                            }),
-                          ],
-                          1
-                        ),
-                      ]),
+                      _c(
+                        "p",
+                        [
+                          _vm._v("\n            For "),
+                          _c("code", [_vm._v("<b-nav-item-dropdown>")]),
+                          _vm._v(" usage, see the\n            "),
+                          _c(
+                            "router-link",
+                            { attrs: { to: "/vue-bootstrap/dropdown" } },
+                            [_c("code", [_vm._v("<b-dropdown>")])]
+                          ),
+                          _vm._v(
+                            "\n            docs. Note split dropdowns are not supported in\n            "
+                          ),
+                          _c("code", [_vm._v("<b-navbar>")]),
+                          _vm._v(" and\n            "),
+                          _c("code", [_vm._v("<b-navbar-nav>")]),
+                          _vm._v(".\n          "),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-navbar",
+                            { attrs: { type: "dark", variant: "dark" } },
+                            [
+                              _c(
+                                "b-navbar-nav",
+                                [
+                                  _c("b-nav-item", { attrs: { href: "#" } }, [
+                                    _vm._v("Home"),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-nav-item-dropdown",
+                                    { attrs: { text: "Lang", right: "" } },
+                                    [
+                                      _c(
+                                        "b-dropdown-item",
+                                        { attrs: { href: "#" } },
+                                        [_vm._v("EN")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-dropdown-item",
+                                        { attrs: { href: "#" } },
+                                        [_vm._v("ES")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-dropdown-item",
+                                        { attrs: { href: "#" } },
+                                        [_vm._v("RU")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-dropdown-item",
+                                        { attrs: { href: "#" } },
+                                        [_vm._v("FA")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-nav-item-dropdown",
+                                    { attrs: { text: "User", right: "" } },
+                                    [
+                                      _c(
+                                        "b-dropdown-item",
+                                        { attrs: { href: "#" } },
+                                        [_vm._v("Account")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-dropdown-item",
+                                        { attrs: { href: "#" } },
+                                        [_vm._v("Settings")]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
                     ]
                   },
                   proxy: true,
@@ -755,122 +678,65 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Alignment" },
               scopedSlots: _vm._u([
+                {
+                  key: "title",
+                  fn: function () {
+                    return [_c("code", [_vm._v("<b-nav-form>")])]
+                  },
+                  proxy: true,
+                },
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("div", { staticClass: "overflow-auto" }, [
-                        _c(
-                          "div",
-                          [
-                            _c("h6", [_vm._v("Left alignment (default)")]),
-                            _vm._v(" "),
-                            _c("b-pagination", {
-                              attrs: { "total-rows": _vm.code4.rows1 },
-                              model: {
-                                value: _vm.code4.currentPage1,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code4, "currentPage1", $$v)
-                                },
-                                expression: "code4.currentPage1",
-                              },
-                            }),
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mt-3" },
-                          [
-                            _c("h6", { staticClass: "text-center" }, [
-                              _vm._v("Center alignment"),
-                            ]),
-                            _vm._v(" "),
-                            _c("b-pagination", {
-                              attrs: {
-                                "total-rows": _vm.code4.rows2,
-                                align: "center",
-                              },
-                              model: {
-                                value: _vm.code4.currentPage2,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code4, "currentPage2", $$v)
-                                },
-                                expression: "code4.currentPage2",
-                              },
-                            }),
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mt-3" },
-                          [
-                            _c("h6", { staticClass: "text-right" }, [
-                              _vm._v("Right (end) alignment"),
-                            ]),
-                            _vm._v(" "),
-                            _c("b-pagination", {
-                              attrs: {
-                                "total-rows": _vm.code4.rows3,
-                                align: "right",
-                              },
-                              model: {
-                                value: _vm.code4.currentPage3,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code4, "currentPage3", $$v)
-                                },
-                                expression: "code4.currentPage3",
-                              },
-                            }),
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mt-3" },
-                          [
-                            _c("h6", { staticClass: "text-center" }, [
-                              _vm._v("Fill alignment"),
-                            ]),
-                            _vm._v(" "),
-                            _c("b-pagination", {
-                              attrs: {
-                                "total-rows": _vm.code4.rows4,
-                                align: "fill",
-                              },
-                              model: {
-                                value: _vm.code4.currentPage4,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code4, "currentPage4", $$v)
-                                },
-                                expression: "code4.currentPage4",
-                              },
-                            }),
-                          ],
-                          1
+                      _c("p", [
+                        _vm._v("\n            Use "),
+                        _c("code", [_vm._v("<b-nav-form>")]),
+                        _vm._v(
+                          " to place inline form controls\n            into your navbar.\n          "
                         ),
                       ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-navbar",
+                            { attrs: { type: "light", variant: "light" } },
+                            [
+                              _c(
+                                "b-nav-form",
+                                [
+                                  _c("b-form-input", {
+                                    staticClass: "mr-sm-2",
+                                    attrs: { placeholder: "Search" },
+                                  }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-button",
+                                    {
+                                      staticClass: "my-2 my-sm-0",
+                                      attrs: {
+                                        variant: "outline-success",
+                                        type: "submit",
+                                      },
+                                    },
+                                    [_vm._v("Search")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
                     ]
                   },
                   proxy: true,
@@ -881,17 +747,6 @@ var render = function () {
                     return [
                       _vm._v(
                         "\n          " + _vm._s(_vm.code4.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
                       ),
                     ]
                   },
@@ -914,17 +769,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Pagination.vue":
-/*!******************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Pagination.vue ***!
-  \******************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Navbar.vue":
+/*!**************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Navbar.vue ***!
+  \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Pagination_vue_vue_type_template_id_2a509dbe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Pagination.vue?vue&type=template&id=2a509dbe& */ "./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=template&id=2a509dbe&");
-/* harmony import */ var _Pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Pagination.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Navbar_vue_vue_type_template_id_2c7d7d34___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=2c7d7d34& */ "./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=template&id=2c7d7d34&");
+/* harmony import */ var _Navbar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -934,9 +789,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Pagination_vue_vue_type_template_id_2a509dbe___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Pagination_vue_vue_type_template_id_2a509dbe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Navbar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Navbar_vue_vue_type_template_id_2c7d7d34___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Navbar_vue_vue_type_template_id_2c7d7d34___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -946,38 +801,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Pagination.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Navbar.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Pagination.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Navbar.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=template&id=2a509dbe&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=template&id=2a509dbe& ***!
-  \*************************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=template&id=2c7d7d34&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=template&id=2c7d7d34& ***!
+  \*********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pagination_vue_vue_type_template_id_2a509dbe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Pagination.vue?vue&type=template&id=2a509dbe& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Pagination.vue?vue&type=template&id=2a509dbe&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pagination_vue_vue_type_template_id_2a509dbe___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_2c7d7d34___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Navbar.vue?vue&type=template&id=2c7d7d34& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Navbar.vue?vue&type=template&id=2c7d7d34&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_2c7d7d34___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pagination_vue_vue_type_template_id_2a509dbe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_2c7d7d34___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[69],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -233,56 +233,60 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<div class=\"text-center my-3\">\n  <b-button v-b-tooltip.hover title=\"Tooltip directive content\">\n    Hover Me\n  </b-button>\n\n  <b-button id=\"tooltip-target-1\">\n    Hover Me\n  </b-button>\n  <b-tooltip target=\"tooltip-target-1\" triggers=\"hover\">\n    I am tooltip <b>component</b> content!\n  </b-tooltip>\n</div>"
+        html: "<div class=\"p-3 bg-secondary progress-bar-striped\" style=\"min-height: 170px;\">\n    <b-button class=\"mb-2\" variant=\"primary\" @click=\"$bvToast.show('example-toast')\">\n      Show toast\n    </b-button>\n    <b-toast id=\"example-toast\" title=\"BootstrapVue\" static no-auto-hide>\n      Hello, world! This is a toast message.\n    </b-toast>\n  </div>"
       },
-      show: false,
       code2: {
-        html: "<div>\n  <span id=\"disabled-wrapper\" class=\"d-inline-block\" tabindex=\"0\">\n    <b-button variant=\"primary\" style=\"pointer-events: none;\" disabled>Disabled button</b-button>\n  </span>\n  <b-tooltip target=\"disabled-wrapper\">Disabled tooltip</b-tooltip>\n</div>"
+        html: "<div>\n    <b-button @click=\"makeToast()\">Show Toast</b-button>\n    <b-button @click=\"makeToast(true)\">Show Toast (appended)</b-button>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        toastCount: 0\n      }\n    },\n    methods: {\n      makeToast(append = false) {\n        this.toastCount++\n        this.$bvToast.toast(`This is toast number ".concat(this.toastCount, "`, {\n          title: 'BootstrapVue Toast',\n          autoHideDelay: 5000,\n          appendToast: append\n        })\n      }\n    }\n  }")
       },
+      toastCount: 0,
       code3: {
-        html: "<b-container fluid>\n  <b-row>\n    <b-col md=\"4\" class=\"py-4\">\n      <b-button id=\"button-1\" variant=\"outline-success\">Live chat</b-button>\n    </b-col>\n    <b-col md=\"4\" class=\"py-4\">\n      <b-button id=\"button-2\" variant=\"outline-success\">Html chat</b-button>\n    </b-col>\n    <b-col md=\"4\" class=\"py-4\">\n      <b-button ref=\"button-3\" variant=\"outline-success\">Alternative chat</b-button>\n    </b-col>\n  </b-row>\n\n  <!-- Tooltip title specified via prop title -->\n  <b-tooltip target=\"button-1\" title=\"Online!\"></b-tooltip>\n\n  <!-- HTML title specified via default slot -->\n  <b-tooltip target=\"button-2\" placement=\"bottom\">\n    Hello <strong>World!</strong>\n  </b-tooltip>\n\n  <!-- Tooltip for an element identified by ref -->\n  <b-tooltip :target=\"() => $refs['button-3']\" title=\"Alternative!\"></b-tooltip>\n</b-container>"
+        html: "<div>\n    <b-button @click=\"makeToast()\" class=\"mb-2\">Default</b-button>\n    <b-button variant=\"primary\" @click=\"makeToast('primary')\" class=\"mb-2\">Primary</b-button>\n    <b-button variant=\"secondary\" @click=\"makeToast('secondary')\" class=\"mb-2\">Secondary</b-button>\n    <b-button variant=\"danger\" @click=\"makeToast('danger')\" class=\"mb-2\">Danger</b-button>\n    <b-button variant=\"warning\" @click=\"makeToast('warning')\" class=\"mb-2\">Warning</b-button>\n    <b-button variant=\"success\" @click=\"makeToast('success')\" class=\"mb-2\">Success</b-button>\n    <b-button variant=\"info\" @click=\"makeToast('info')\" class=\"mb-2\">Info</b-button>\n  </div>",
+        js: "export default {\n" + "    methods: {\n" + "      makeToast(variant = null) {\n" + "        this.$bvToast.toast('Toast body content', {\n" + "          title: `Variant ${variant || 'default'}`,\n" + "          variant: variant,\n" + "          solid: true\n" + "        })\n" + "      }\n" + "    }\n" + "  }"
       },
       code4: {
-        html: "<div class=\"text-center\">\n    <div>\n      <b-button id=\"tooltip-button-1\" variant=\"primary\">I have a tooltip</b-button>\n    </div>\n\n    <div class=\"mt-3\">\n      <b-button @click=\"show = !show\">Toggle Tooltip</b-button>\n    </div>\n\n    <b-tooltip :show.sync=\"show\" target=\"tooltip-button-1\" placement=\"top\">\n      Hello <strong>World!</strong>\n    </b-tooltip>\n  </div>",
-        js: "export default {\n    data: {\n      show: true\n    }\n  }"
+        html: "<div>\n    <b-button @click=\"toast('b-toaster-top-right')\" class=\"mb-2\">b-toaster-top-right</b-button>\n    <b-button @click=\"toast('b-toaster-top-left')\" class=\"mb-2\">b-toaster-top-left</b-button>\n    <b-button @click=\"toast('b-toaster-top-center')\" class=\"mb-2\">b-toaster-top-center</b-button>\n    <b-button @click=\"toast('b-toaster-top-full')\" class=\"mb-2\">b-toaster-top-full</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-right', true)\" class=\"mb-2\">b-toaster-bottom-right</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-left', true)\" class=\"mb-2\">b-toaster-bottom-left</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-center', true)\" class=\"mb-2\">b-toaster-bottom-center</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-full', true)\" class=\"mb-2\">b-toaster-bottom-full</b-button>\n  </div>",
+        js: "export default {\n" + "    data() {\n" + "      return {\n" + "        counter: 0\n" + "      }\n" + "    },\n" + "    methods: {\n" + "      toast(toaster, append = false) {\n" + "        this.counter++\n" + "        this.$bvToast.toast(`Toast ${this.counter} body content`, {\n" + "          title: `Toaster ${toaster}`,\n" + "          toaster: toaster,\n" + "          solid: true,\n" + "          appendToast: append\n" + "        })\n" + "      }\n" + "    }\n" + "  }"
       },
-      code5: {
-        html: "<div class=\"d-flex flex-column text-md-center\">\n    <div class=\"p-2\">\n      <b-button id=\"tooltip-button-show-event\" variant=\"primary\">I have a tooltip</b-button>\n    </div>\n\n    <div class=\"p-2\">\n      <b-button class=\"px-1\" @click=\"onOpen\">Open</b-button>\n      <b-button class=\"px-1\" @click=\"onClose\">Close</b-button>\n    </div>\n\n    <b-tooltip ref=\"tooltip\" target=\"tooltip-button-show-event\">\n      Hello <strong>World!</strong>\n    </b-tooltip>\n  </div>",
-        js: "export default {\n    methods: {\n      onOpen() {\n        this.$refs.tooltip.$emit('open')\n      },\n      onClose() {\n        this.$refs.tooltip.$emit('close')\n      }\n    }\n  }"
-      },
-      code6: {
-        html: "<b-container fluid>\n  <b-row>\n    <b-col md=\"6\" class=\"py-4\">\n      <b-button v-b-tooltip title=\"Online!\" variant=\"outline-success\">Live chat</b-button>\n    </b-col>\n\n    <b-col md=\"6\" class=\"py-4\">\n      <b-button\n        v-b-tooltip.html\n        title=\"Hello <strong>World!</strong>\"\n        variant=\"outline-success\"\n      >\n        Html chat\n      </b-button>\n    </b-col>\n  </b-row>\n</b-container>"
-      }
+      counter: 0
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   methods: {
-    onOpen: function onOpen() {
-      this.$refs.tooltip.$emit("open");
+    makeToast: function makeToast() {
+      var append = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+      this.toastCount++;
+      this.$bvToast.toast("This is toast number ".concat(this.toastCount), {
+        title: "BootstrapVue Toast",
+        autoHideDelay: 5000,
+        appendToast: append
+      });
     },
-    onClose: function onClose() {
-      this.$refs.tooltip.$emit("close");
+    toast: function toast(toaster) {
+      var append = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+      this.counter++;
+      this.$bvToast.toast("Toast ".concat(this.counter, " body content"), {
+        title: "Toaster ".concat(toaster),
+        toaster: toaster,
+        solid: true,
+        appendToast: append
+      });
+    },
+    makeToastVariant: function makeToastVariant() {
+      var variant = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+      this.$bvToast.toast("Toast body content", {
+        title: "Variant ".concat(variant || "default"),
+        variant: variant,
+        solid: true
+      });
     }
   },
   mounted: function mounted() {
@@ -293,17 +297,17 @@ __webpack_require__.r(__webpack_exports__);
       title: "Notify",
       route: "popover"
     }, {
-      title: "Tooltip"
+      title: "Toasts"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=template&id=1ebb640f&":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=template&id=1ebb640f& ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250& ***!
+  \***************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -340,16 +344,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Tooltips")]),
+            _c("b", [_vm._v("Toasts")]),
             _vm._v(
-              " Easily add tooltips to elements or components via the\n      <b-tooltip> component or v-b-tooltip directive (preferred method).\n      "
+              " Push notifications to your visitors with a <b-toast>\n      and <b-toaster>, lightweight components which are easily\n      customizable for generating alert messages.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/tooltip",
+                  href: "https://bootstrap-vue.js.org/docs/components/toast",
                   target: "_blank",
                 },
               },
@@ -362,57 +366,60 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-6" },
+          { staticClass: "col-md-12" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Tooltips" },
+              attrs: { title: "Toasts" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Toasts are slightly translucent, too, so they blend over whatever\n            they might appear over. For browsers that support the\n            "
+                        ),
+                        _c("code", [_vm._v("backdrop-filter")]),
+                        _vm._v(
+                          " CSS property, they also attempt to\n            blur the elements under the toast.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "text-center my-3" },
+                        {
+                          staticClass: "p-3 bg-secondary progress-bar-striped",
+                          staticStyle: { "min-height": "170px" },
+                        },
                         [
                           _c(
                             "b-button",
                             {
-                              directives: [
-                                {
-                                  name: "b-tooltip",
-                                  rawName: "v-b-tooltip.hover",
-                                  modifiers: { hover: true },
+                              staticClass: "mb-2",
+                              attrs: { variant: "primary" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.$bvToast.show("example-toast")
                                 },
-                              ],
-                              staticClass: "mr-3",
-                              attrs: { title: "Tooltip directive content" },
+                              },
                             },
-                            [_vm._v("\n              Hover Me\n            ")]
+                            [_vm._v("\n              Show toast\n            ")]
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-button",
+                            "b-toast",
                             {
-                              staticClass: "mr-3",
-                              attrs: { id: "tooltip-target-1" },
-                            },
-                            [_vm._v("\n              Hover Me\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-tooltip",
-                            {
-                              staticClass: "mr-3",
                               attrs: {
-                                target: "tooltip-target-1",
-                                triggers: "hover",
+                                id: "example-toast",
+                                title: "BootstrapVue",
+                                static: "",
+                                "no-auto-hide": "",
                               },
                             },
                             [
-                              _vm._v("\n              I am tooltip "),
-                              _c("b", [_vm._v("component")]),
-                              _vm._v(" content!\n            "),
+                              _vm._v(
+                                "\n              Hello, world! This is a toast message.\n            "
+                              ),
                             ]
                           ),
                         ],
@@ -437,60 +444,57 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Disabled elements" },
+              attrs: { title: "Toasts on demand" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            Elements with the "),
-                        _c("code", [_vm._v("disabled")]),
                         _vm._v(
-                          " attribute aren't\n            interactive, meaning users cannot focus, hover, or click them to\n            trigger a tooltip (or popover). As a workaround, you'll want to\n            trigger the tooltip from a wrapper "
+                          "\n            Generate a dynamic toast from anywhere in your app via the\n            "
                         ),
-                        _c("code", [_vm._v("<div>")]),
-                        _vm._v(" or\n            "),
-                        _c("code", [_vm._v("<span>")]),
+                        _c("code", [_vm._v("this.$bvToast")]),
                         _vm._v(
-                          ", ideally made keyboard-focusable using\n            "
+                          " Vue component instance injection,\n            without the need to place a "
                         ),
-                        _c("code", [_vm._v('tabindex="0"')]),
-                        _vm._v(", and override the\n            "),
-                        _c("code", [_vm._v("pointer-events")]),
-                        _vm._v(" on the disabled element.\n          "),
+                        _c("code", [_vm._v("<b-toast>")]),
+                        _vm._v(
+                          " component\n            in your app.\n          "
+                        ),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
                         [
                           _c(
-                            "span",
+                            "b-button",
                             {
-                              staticClass: "d-inline-block",
-                              attrs: { id: "disabled-wrapper", tabindex: "0" },
-                            },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  staticStyle: { "pointer-events": "none" },
-                                  attrs: { variant: "primary", disabled: "" },
+                              staticClass: "mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToast()
                                 },
-                                [
-                                  _vm._v(
-                                    "\n                Disabled button\n              "
-                                  ),
-                                ]
-                              ),
-                            ],
-                            1
+                              },
+                            },
+                            [_vm._v("\n              Show Toast\n            ")]
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-tooltip",
-                            { attrs: { target: "disabled-wrapper" } },
-                            [_vm._v("Disabled tooltip")]
+                            "b-button",
+                            {
+                              staticClass: "mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToast(true)
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              Show Toast (appended)\n            "
+                              ),
+                            ]
                           ),
                         ],
                         1
@@ -510,125 +514,143 @@ var render = function () {
                   },
                   proxy: true,
                 },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              scopedSlots: _vm._u([
                 {
-                  key: "title",
+                  key: "js",
                   fn: function () {
                     return [
-                      _c("code", [_vm._v("<b-tooltip>")]),
-                      _vm._v(" component usage\n        "),
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
+                      ),
                     ]
                   },
                   proxy: true,
                 },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Variants" },
+              scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            BootstrapVue toasts provide custom CSS to define color variants.\n            Variants follow the standard Bootstrap v4 variant names. If you\n            have custom SCSS defined Bootstrap color theme variants, the toast\n            custom SCSS will automatically create toast variants for you\n            (refer to the\n            "
+                        ),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://bootstrap-vue.js.org/docs/reference/theming",
+                              target: "_blank",
+                            },
+                          },
+                          [_vm._v("\n              Theming\n            ")]
+                        ),
+                        _vm._v("\n            reference section).\n          "),
+                      ]),
+                      _vm._v(" "),
                       _c(
-                        "b-container",
-                        { attrs: { fluid: "" } },
+                        "div",
                         [
                           _c(
-                            "b-row",
-                            [
-                              _c(
-                                "b-col",
-                                { staticClass: "py-4", attrs: { md: "4" } },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      attrs: {
-                                        id: "button-1",
-                                        variant: "outline-success",
-                                      },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Live chat\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { staticClass: "py-4", attrs: { md: "4" } },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      attrs: {
-                                        id: "button-2",
-                                        variant: "outline-success",
-                                      },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Html chat\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { staticClass: "py-4", attrs: { md: "4" } },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      ref: "button-3",
-                                      attrs: { variant: "outline-success" },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Alternative chat\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToastVariant()
+                                },
+                              },
+                            },
+                            [_vm._v("\n              Default\n            ")]
                           ),
-                          _vm._v(" "),
-                          _c("b-tooltip", {
-                            attrs: { target: "button-1", title: "Online!" },
-                          }),
                           _vm._v(" "),
                           _c(
-                            "b-tooltip",
+                            "b-button",
                             {
-                              attrs: {
-                                target: "button-2",
-                                placement: "bottom",
+                              staticClass: "mb-2 mr-3",
+                              attrs: { variant: "primary" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToastVariant("primary")
+                                },
                               },
                             },
-                            [
-                              _vm._v("\n              Hello "),
-                              _c("strong", [_vm._v("World!")]),
-                            ]
+                            [_vm._v("\n              Primary\n            ")]
                           ),
                           _vm._v(" "),
-                          _c("b-tooltip", {
-                            attrs: {
-                              target: function () {
-                                return _vm.$refs["button-3"]
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              attrs: { variant: "secondary" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToastVariant("secondary")
+                                },
                               },
-                              title: "Alternative!",
                             },
-                          }),
+                            [_vm._v("\n              Secondary\n            ")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              attrs: { variant: "danger" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToastVariant("danger")
+                                },
+                              },
+                            },
+                            [_vm._v("\n              Danger\n            ")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              attrs: { variant: "warning" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToastVariant("warning")
+                                },
+                              },
+                            },
+                            [_vm._v("\n              Warning\n            ")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              attrs: { variant: "success" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToastVariant("success")
+                                },
+                              },
+                            },
+                            [_vm._v("\n              Success\n            ")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2",
+                              attrs: { variant: "info" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.makeToastVariant("info")
+                                },
+                              },
+                            },
+                            [_vm._v("\n              Info\n            ")]
+                          ),
                         ],
                         1
                       ),
@@ -647,18 +669,22 @@ var render = function () {
                   },
                   proxy: true,
                 },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
               ]),
             }),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
+            _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Programmatically show and hide tooltip" },
+              attrs: { title: "Toaster target" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -666,79 +692,158 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            You can manually control the visibility of a tooltip via the\n            syncable Boolean "
+                          "\n            The below toasters place the toasts in a stacked (columnar\n            format), fixed within the viewport (meaning they will always be in\n            view regardless of viewport scroll position). If there are more\n            toasts than can fit on the viewport screen, some will be visually\n            hidden offscreen until other toasts are closed/hidden.\n          "
                         ),
-                        _c("code", [_vm._v("show")]),
-                        _vm._v(" prop. Setting it to\n            "),
-                        _c("code", [_vm._v("true")]),
-                        _vm._v(
-                          " will show the tooltip, while setting it to\n            "
-                        ),
-                        _c("code", [_vm._v("false")]),
-                        _vm._v(" will hide the tooltip.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "text-center" },
                         [
                           _c(
-                            "div",
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  attrs: {
-                                    id: "tooltip-button-1",
-                                    variant: "primary",
-                                  },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                I have a tooltip\n              "
-                                  ),
-                                ]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "mt-3" },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  on: {
-                                    click: function ($event) {
-                                      _vm.show = !_vm.show
-                                    },
-                                  },
-                                },
-                                [_vm._v("Toggle Tooltip")]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-tooltip",
+                            "b-button",
                             {
-                              attrs: {
-                                show: _vm.show,
-                                target: "tooltip-button-1",
-                                placement: "top",
-                              },
+                              staticClass: "mb-2 mr-3",
                               on: {
-                                "update:show": function ($event) {
-                                  _vm.show = $event
+                                click: function ($event) {
+                                  return _vm.toast("b-toaster-top-right")
                                 },
                               },
                             },
                             [
-                              _vm._v("\n              Hello "),
-                              _c("strong", [_vm._v("World!")]),
+                              _vm._v(
+                                "\n              b-toaster-top-right\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.toast("b-toaster-top-left")
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              b-toaster-top-left\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.toast("b-toaster-top-center")
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              b-toaster-top-center\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.toast("b-toaster-top-full")
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              b-toaster-top-full\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.toast(
+                                    "b-toaster-bottom-right",
+                                    true
+                                  )
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              b-toaster-bottom-right\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.toast(
+                                    "b-toaster-bottom-left",
+                                    true
+                                  )
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              b-toaster-bottom-left\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2 mr-3",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.toast(
+                                    "b-toaster-bottom-center",
+                                    true
+                                  )
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              b-toaster-bottom-center\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              staticClass: "mb-2",
+                              on: {
+                                click: function ($event) {
+                                  return _vm.toast(
+                                    "b-toaster-bottom-full",
+                                    true
+                                  )
+                                },
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\n              b-toaster-bottom-full\n            "
+                              ),
                             ]
                           ),
                         ],
@@ -759,221 +864,12 @@ var render = function () {
                   },
                   proxy: true,
                 },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Programmatic control" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Programmatic control can also be affected by submitting\n            '"
-                        ),
-                        _c("code", [_vm._v("open")]),
-                        _vm._v("' and '"),
-                        _c("code", [_vm._v("close")]),
-                        _vm._v(
-                          "' events to the tooltip\n            by reference.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "d-flex flex-column text-md-center" },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "p-2" },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  attrs: {
-                                    id: "tooltip-button-show-event",
-                                    variant: "primary",
-                                  },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                I have a tooltip\n              "
-                                  ),
-                                ]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "p-2" },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "px-1 mr-3",
-                                  on: { click: _vm.onOpen },
-                                },
-                                [_vm._v("Open")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "px-1 mr-3",
-                                  on: { click: _vm.onClose },
-                                },
-                                [_vm._v("Close")]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-tooltip",
-                            {
-                              ref: "tooltip",
-                              attrs: { target: "tooltip-button-show-event" },
-                            },
-                            [
-                              _vm._v("\n              Hello "),
-                              _c("strong", [_vm._v("World!")]),
-                            ]
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
                 {
                   key: "js",
                   fn: function () {
                     return [
                       _vm._v(
-                        "\n          " + _vm._s(_vm.code5.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              scopedSlots: _vm._u([
-                {
-                  key: "title",
-                  fn: function () {
-                    return [
-                      _c("code", [_vm._v("v-b-tooltip")]),
-                      _vm._v(" directive usage\n        "),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v("\n            The "),
-                        _c("code", [_vm._v("v-b-tooltip")]),
-                        _vm._v(
-                          " directive makes adding tooltips even\n            easier, without additional placeholder markup:\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "b-container",
-                        { attrs: { fluid: "" } },
-                        [
-                          _c(
-                            "b-row",
-                            [
-                              _c(
-                                "b-col",
-                                { staticClass: "py-4", attrs: { md: "6" } },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      directives: [
-                                        {
-                                          name: "b-tooltip",
-                                          rawName: "v-b-tooltip",
-                                        },
-                                      ],
-                                      attrs: {
-                                        title: "Online!",
-                                        variant: "outline-success",
-                                      },
-                                    },
-                                    [_vm._v("Live chat")]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { staticClass: "py-4", attrs: { md: "6" } },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      directives: [
-                                        {
-                                          name: "b-tooltip",
-                                          rawName: "v-b-tooltip.html",
-                                          modifiers: { html: true },
-                                        },
-                                      ],
-                                      attrs: {
-                                        title: "Hello <strong>World!</strong>",
-                                        variant: "outline-success",
-                                      },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Html chat\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
+                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
                       ),
                     ]
                   },
@@ -996,17 +892,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue":
-/*!***************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue ***!
-  \***************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue":
+/*!**************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Toasts.vue ***!
+  \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Tooltip_vue_vue_type_template_id_1ebb640f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tooltip.vue?vue&type=template&id=1ebb640f& */ "./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=template&id=1ebb640f&");
-/* harmony import */ var _Tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tooltip.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Toasts.vue?vue&type=template&id=203fa250& */ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&");
+/* harmony import */ var _Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Toasts.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1016,9 +912,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Tooltip_vue_vue_type_template_id_1ebb640f___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Tooltip_vue_vue_type_template_id_1ebb640f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1028,38 +924,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Tooltip.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Toasts.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tooltip.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Toasts.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=template&id=1ebb640f&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=template&id=1ebb640f& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250& ***!
+  \*********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_template_id_1ebb640f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tooltip.vue?vue&type=template&id=1ebb640f& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tooltip.vue?vue&type=template&id=1ebb640f&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_template_id_1ebb640f___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Toasts.vue?vue&type=template&id=203fa250& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_template_id_1ebb640f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

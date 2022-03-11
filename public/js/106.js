@@ -7,7 +7,7 @@
 /*! exports provided: default */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\xampp\\htdocs\\vue_laravel\\resources\\js\\src\\view\\pages\\auth\\login_pages\\Login-1.vue: Unexpected token (546:50)\n\n\u001b[0m \u001b[90m 544 |\u001b[39m               console\u001b[33m.\u001b[39mlog(\u001b[32m\"response\"\u001b[39m\u001b[33m,\u001b[39m google)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 545 |\u001b[39m               console\u001b[33m.\u001b[39mlog(\u001b[32m\"ID\"\u001b[39m\u001b[33m,\u001b[39m google\u001b[33m.\u001b[39mgetId())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 546 |\u001b[39m               console\u001b[33m.\u001b[39mlog(\u001b[32m\"Basic Profile\"\u001b[39m\u001b[33m,\u001b[39m google\u001b[33m.\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 547 |\u001b[39m               console\u001b[33m.\u001b[39mlog(\u001b[32m\"Auth Response\"\u001b[39m \u001b[33m,\u001b[39m google\u001b[33m.\u001b[39mgetAuthResponse())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 548 |\u001b[39m           }\u001b[0m\n\u001b[0m \u001b[90m 549 |\u001b[39m         \u001b[90m//    console.log(\"user2 \", google);\u001b[39m\u001b[0m\n    at Parser._raise (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:541:17)\n    at Parser.raiseWithData (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:534:17)\n    at Parser.raise (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:495:17)\n    at Parser.unexpected (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:3580:16)\n    at Parser.parseIdentifierName (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:12902:18)\n    at Parser.parseIdentifier (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:12882:23)\n    at Parser.parseMember (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11646:103)\n    at Parser.parseSubscript (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11633:21)\n    at Parser.parseSubscripts (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11601:19)\n    at Parser.parseExprSubscripts (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11590:17)\n    at Parser.parseUpdate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11564:21)\n    at Parser.parseMaybeUnary (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11539:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11353:61)\n    at Parser.parseExprOps (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11360:23)\n    at Parser.parseMaybeConditional (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11330:23)\n    at Parser.parseMaybeAssign (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11290:21)\n    at C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11248:39\n    at Parser.allowInAnd (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13137:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11248:17)\n    at Parser.parseExprListItem (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:12874:18)\n    at Parser.parseCallExpressionArguments (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11791:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11698:29)\n    at Parser.parseSubscript (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11628:19)\n    at Parser.parseSubscripts (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11601:19)\n    at Parser.parseExprSubscripts (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11590:17)\n    at Parser.parseUpdate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11564:21)\n    at Parser.parseMaybeUnary (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11539:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11353:61)\n    at Parser.parseExprOps (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11360:23)\n    at Parser.parseMaybeConditional (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11330:23)\n    at Parser.parseMaybeAssign (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11290:21)\n    at Parser.parseExpressionBase (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11226:23)\n    at C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11220:39\n    at Parser.allowInAnd (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13131:16)\n    at Parser.parseExpression (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11220:17)\n    at Parser.parseStatementContent (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13485:23)");
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\xampp\\htdocs\\vue_laravel\\resources\\js\\src\\view\\pages\\auth\\login_pages\\Login-1.vue: Unexpected token, expected \",\" (746:50)\n\n\u001b[0m \u001b[90m 744 |\u001b[39m         \u001b[33mApiService\u001b[39m\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m\"http://localhost:8000/api/users\"\u001b[39m)\u001b[33m.\u001b[39mthen(res\u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 745 |\u001b[39m             \u001b[90m// if(res.data[0].refresh_token){\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 746 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mkeys( res\u001b[33m.\u001b[39mdata)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 747 |\u001b[39m                 \u001b[36mfor\u001b[39m (\u001b[36mvar\u001b[39m index \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m index \u001b[33m<\u001b[39m res\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39mlength\u001b[33m;\u001b[39m index\u001b[33m++\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m 748 |\u001b[39m                    \u001b[36mvar\u001b[39m data2 \u001b[33m=\u001b[39m res\u001b[33m.\u001b[39mdata[index]\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 749 |\u001b[39m                 \u001b[36mif\u001b[39m(data2\u001b[33m.\u001b[39mrefresh_token){\u001b[0m\n    at Parser._raise (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:541:17)\n    at Parser.raiseWithData (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:534:17)\n    at Parser.raise (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:495:17)\n    at Parser.unexpected (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:3580:16)\n    at Parser.expect (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:3554:28)\n    at Parser.parseCallExpressionArguments (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11775:14)\n    at Parser.parseCoverCallAndAsyncArrowHead (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11698:29)\n    at Parser.parseSubscript (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11628:19)\n    at Parser.parseSubscripts (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11601:19)\n    at Parser.parseExprSubscripts (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11590:17)\n    at Parser.parseUpdate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11564:21)\n    at Parser.parseMaybeUnary (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11539:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11353:61)\n    at Parser.parseExprOps (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11360:23)\n    at Parser.parseMaybeConditional (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11330:23)\n    at Parser.parseMaybeAssign (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11290:21)\n    at Parser.parseExpressionBase (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11226:23)\n    at C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11220:39\n    at Parser.allowInAnd (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13137:12)\n    at Parser.parseExpression (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11220:17)\n    at Parser.parseStatementContent (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13485:23)\n    at Parser.parseStatement (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13352:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13941:25)\n    at Parser.parseBlockBody (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13932:10)\n    at Parser.parseBlock (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:13916:10)\n    at Parser.parseFunctionBody (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:12786:24)\n    at Parser.parseArrowExpression (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:12758:10)\n    at Parser.parseExprAtom (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:12021:25)\n    at Parser.parseExprSubscripts (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11584:23)\n    at Parser.parseUpdate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11564:21)\n    at Parser.parseMaybeUnary (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11539:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11353:61)\n    at Parser.parseExprOps (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11360:23)\n    at Parser.parseMaybeConditional (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11330:23)\n    at Parser.parseMaybeAssign (C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11290:21)\n    at C:\\xampp\\htdocs\\vue_laravel\\node_modules\\@babel\\parser\\lib\\index.js:11248:39");
 
 /***/ }),
 
@@ -80,7 +80,7 @@ var render = function () {
       "div",
       {
         staticClass:
-          "login login-1 d-flex flex-column flex-lg-row flex-column-fluid bg-white",
+          "\n      login login-1\n      d-flex\n      flex-column flex-lg-row flex-column-fluid\n      bg-white\n    ",
         class: {
           "login-signin-on": this.state == "signin",
           "login-signup-on": this.state == "signup",
@@ -93,14 +93,14 @@ var render = function () {
           "div",
           {
             staticClass: "login-aside d-flex flex-column flex-row-auto",
-            staticStyle: { "background-color": "#F2C98A" },
+            staticStyle: { "background-color": "#f2c98a" },
           },
           [
             _vm._m(0),
             _vm._v(" "),
             _c("div", {
               staticClass:
-                "aside-img d-flex flex-row-fluid bgi-no-repeat bgi-position-y-bottom bgi-position-x-center",
+                "\n          aside-img\n          d-flex\n          flex-row-fluid\n          bgi-no-repeat bgi-position-y-bottom bgi-position-x-center\n        ",
               style: { backgroundImage: "url(" + _vm.backgroundImage + ")" },
             }),
           ]
@@ -110,7 +110,7 @@ var render = function () {
           "div",
           {
             staticClass:
-              "login-content flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto",
+              "\n        login-content\n        flex-row-fluid\n        d-flex\n        flex-column\n        justify-content-center\n        position-relative\n        overflow-hidden\n        p-7\n        mx-auto\n      ",
           },
           [
             _c("div", { staticClass: "d-flex flex-column-fluid flex-center" }, [
@@ -130,7 +130,7 @@ var render = function () {
                         "h3",
                         {
                           staticClass:
-                            "font-weight-bolder text-dark font-size-h4 font-size-h1-lg",
+                            "\n                  font-weight-bolder\n                  text-dark\n                  font-size-h4 font-size-h1-lg\n                ",
                         },
                         [
                           _vm._v(
@@ -195,7 +195,7 @@ var render = function () {
                             ],
                             ref: "email",
                             staticClass:
-                              "form-control form-control-solid h-auto py-7 px-6 rounded-lg",
+                              "\n                    form-control form-control-solid\n                    h-auto\n                    py-7\n                    px-6\n                    rounded-lg\n                  ",
                             attrs: { type: "text", name: "email" },
                             domProps: { value: _vm.form.email },
                             on: {
@@ -229,7 +229,7 @@ var render = function () {
                             "a",
                             {
                               staticClass:
-                                "text-primary font-size-h6 font-weight-bolder text-hover-primary pt-5",
+                                "\n                    text-primary\n                    font-size-h6 font-weight-bolder\n                    text-hover-primary\n                    pt-5\n                  ",
                               attrs: { id: "kt_login_forgot" },
                               on: {
                                 click: function ($event) {
@@ -263,7 +263,7 @@ var render = function () {
                             ],
                             ref: "password",
                             staticClass:
-                              "form-control form-control-solid h-auto py-7 px-6 rounded-lg",
+                              "\n                    form-control form-control-solid\n                    h-auto\n                    py-7\n                    px-6\n                    rounded-lg\n                  ",
                             attrs: {
                               type: "password",
                               name: "password",
@@ -293,7 +293,7 @@ var render = function () {
                         {
                           ref: "kt_login_signin_submit",
                           staticClass:
-                            "btn btn-primary font-weight-bolder font-size-h6 px-15 py-4 my-3 mr-3",
+                            "\n                  btn btn-primary\n                  font-weight-bolder font-size-h6\n                  px-15\n                  py-4\n                  my-3\n                  mr-3\n                ",
                         },
                         [_vm._v("\n                Sign In\n              ")]
                       ),
@@ -302,7 +302,7 @@ var render = function () {
                         "button",
                         {
                           staticClass:
-                            "btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg",
+                            "\n                  btn btn-light-primary\n                  font-weight-bolder\n                  px-8\n                  py-4\n                  my-3\n                  font-size-lg\n                ",
                           attrs: { type: "button" },
                           on: {
                             click: function ($event) {
@@ -348,7 +348,7 @@ var render = function () {
                       _c("input", {
                         ref: "fullname",
                         staticClass:
-                          "form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6",
+                          "\n                  form-control form-control-solid\n                  h-auto\n                  py-7\n                  px-6\n                  rounded-lg\n                  font-size-h6\n                ",
                         attrs: {
                           type: "text",
                           placeholder: "Fullname",
@@ -362,7 +362,7 @@ var render = function () {
                       _c("input", {
                         ref: "remail",
                         staticClass:
-                          "form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6",
+                          "\n                  form-control form-control-solid\n                  h-auto\n                  py-7\n                  px-6\n                  rounded-lg\n                  font-size-h6\n                ",
                         attrs: {
                           type: "email",
                           placeholder: "Email",
@@ -376,7 +376,7 @@ var render = function () {
                       _c("input", {
                         ref: "rpassword",
                         staticClass:
-                          "form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6",
+                          "\n                  form-control form-control-solid\n                  h-auto\n                  py-7\n                  px-6\n                  rounded-lg\n                  font-size-h6\n                ",
                         attrs: {
                           type: "password",
                           placeholder: "Password",
@@ -390,7 +390,7 @@ var render = function () {
                       _c("input", {
                         ref: "cpassword",
                         staticClass:
-                          "form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6",
+                          "\n                  form-control form-control-solid\n                  h-auto\n                  py-7\n                  px-6\n                  rounded-lg\n                  font-size-h6\n                ",
                         attrs: {
                           type: "password",
                           placeholder: "Confirm password",
@@ -413,7 +413,7 @@ var render = function () {
                           {
                             ref: "kt_login_signup_submit",
                             staticClass:
-                              "btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-4",
+                              "\n                  btn btn-primary\n                  font-weight-bolder font-size-h6\n                  px-8\n                  py-4\n                  my-3\n                  mr-4\n                ",
                             staticStyle: { width: "150px" },
                           },
                           [_vm._v("\n                Submit\n              ")]
@@ -423,7 +423,7 @@ var render = function () {
                           "button",
                           {
                             staticClass:
-                              "btn btn-light-primary font-weight-bolder font-size-h6 px-8 py-4 my-3",
+                              "\n                  btn btn-light-primary\n                  font-weight-bolder font-size-h6\n                  px-8\n                  py-4\n                  my-3\n                ",
                             attrs: {
                               type: "button",
                               id: "kt_login_signup_cancel",
@@ -466,7 +466,7 @@ var render = function () {
                           "button",
                           {
                             staticClass:
-                              "btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-4",
+                              "\n                  btn btn-primary\n                  font-weight-bolder font-size-h6\n                  px-8\n                  py-4\n                  my-3\n                  mr-4\n                ",
                             attrs: {
                               type: "button",
                               id: "kt_login_forgot_submit",
@@ -479,7 +479,7 @@ var render = function () {
                           "button",
                           {
                             staticClass:
-                              "btn btn-light-primary font-weight-bolder font-size-h6 px-8 py-4 my-3",
+                              "\n                  btn btn-light-primary\n                  font-weight-bolder font-size-h6\n                  px-8\n                  py-4\n                  my-3\n                ",
                             attrs: {
                               type: "button",
                               id: "kt_login_forgot_cancel",
@@ -547,7 +547,7 @@ var staticRenderFns = [
         "h3",
         {
           staticClass:
-            "font-weight-bolder text-dark font-size-h4 font-size-h1-lg",
+            "\n                  font-weight-bolder\n                  text-dark\n                  font-size-h4 font-size-h1-lg\n                ",
         },
         [_vm._v("\n                Sign Up\n              ")]
       ),
@@ -585,7 +585,7 @@ var staticRenderFns = [
         "h3",
         {
           staticClass:
-            "font-weight-bolder text-dark font-size-h4 font-size-h1-lg",
+            "\n                  font-weight-bolder\n                  text-dark\n                  font-size-h4 font-size-h1-lg\n                ",
         },
         [_vm._v("\n                Forgotten Password ?\n              ")]
       ),
@@ -604,7 +604,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "form-group" }, [
       _c("input", {
         staticClass:
-          "form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6",
+          "\n                  form-control form-control-solid\n                  h-auto\n                  py-7\n                  px-6\n                  rounded-lg\n                  font-size-h6\n                ",
         attrs: {
           type: "email",
           placeholder: "Email",
@@ -622,7 +622,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "d-flex justify-content-lg-start justify-content-center align-items-end py-7 py-lg-0",
+          "\n          d-flex\n          justify-content-lg-start justify-content-center\n          align-items-end\n          py-7 py-lg-0\n        ",
       },
       [
         _c(

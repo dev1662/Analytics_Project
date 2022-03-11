@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[63],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -183,113 +183,99 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
+    var _this = this;
+
     return {
       code1: {
-        html: "<div class=\"text-center my-3\">\n  <b-button v-b-popover.hover.top=\"'I am popover directive content!'\" title=\"Popover Title\">\n    Hover Me\n  </b-button>\n\n  <b-button id=\"popover-target-1\">\n    Hover Me\n  </b-button>\n  <b-popover target=\"popover-target-1\" triggers=\"hover\" placement=\"top\">\n    <template v-slot:title>Popover Title</template>\n    I am popover <b>component</b> content!\n  </b-popover>\n</div>"
+        html: "<div class=\"overflow-auto\">\n    <b-pagination-nav :link-gen=\"linkGen\" :number-of-pages=\"10\" use-router></b-pagination-nav>\n  </div>",
+        js: "export default {\n" + "    methods: {\n" + "      linkGen(pageNum) {\n" + "        return pageNum === 1 ? '?' : `?page=${pageNum}`\n" + "      }\n" + "    }\n" + "  }",
+        linkGen: function linkGen(pageNum) {
+          return pageNum === 1 ? "?" : "?page=".concat(pageNum);
+        }
       },
       code2: {
-        html: "<b-container fluid>\n" + '    <h5 class="my-3">Placement</h5>\n' + "    <b-row>\n" + "      <b-col\n" + '        v-for="placement in placements"\n' + '        :key="placement"\n' + '        md="4"\n' + '        class="py-4 text-center"\n' + "      >\n" + '        <b-button :id="`popover-1-${placement}`" variant="primary">{{ placement }}</b-button>\n' + "        <b-popover\n" + '          :target="`popover-1-${placement}`"\n' + '          :placement="placement"\n' + '          title="Popover!"\n' + '          triggers="hover focus"\n' + '          :content="`Placement ${placement}`"\n' + "        ></b-popover>\n" + "      </b-col>\n" + "    </b-row>\n" + "\n" + '    <h5 class="my-3">Content via properties or slots</h5>\n' + "    <b-row>\n" + '      <b-col md="6" class="py-4 text-center">\n' + '        <b-button id="popover-2" variant="primary">Using properties</b-button>\n' + "        <b-popover\n" + '          target="popover-2"\n' + '          title="Prop Examples"\n' + '          triggers="hover focus"\n' + '          content="Embedding content using properties is easy"\n' + "        ></b-popover>\n" + "      </b-col>\n" + "\n" + '      <b-col md="6" class="py-4 text-center">\n' + '        <b-button id="popover-3" variant="primary">Using slots</b-button>\n' + '        <b-popover target="popover-3" triggers="hover focus">\n' + "          <template v-slot:title>Content via Slots</template>\n" + '          Embedding content <span class="text-danger">using slots</span> affords you\n' + "          <em>greater <strong>control.</strong></em> and basic HTML support.\n" + "        </b-popover>\n" + "      </b-col>\n" + "    </b-row>\n" + "  </b-container>",
-        js: "export default {\n    data() {\n      return {\n        placements: [\n          'topright',\n          'top',\n          'topleft',\n          'bottomright',\n          'bottom',\n          'bottomleft',\n          'righttop',\n          'right',\n          'lefttop',\n          'rightbottom',\n          'left',\n          'leftbottom'\n        ]\n      }\n    }"
+        html: "<div class=\"overflow-auto\">\n    <b-pagination-nav\n      :link-gen=\"linkGen\"\n      :page-gen=\"pageGen\"\n      :number-of-pages=\"links.length\"\n    ></b-pagination-nav>\n  </div>",
+        js: "export default {\n    data() {\n      return {\n        links: ['#foo', '#bar', '#baz', '#faz']\n      }\n    },\n    methods: {\n      linkGen(pageNum) {\n        return this.links[pageNum - 1]\n      },\n      pageGen(pageNum) {\n        return this.links[pageNum - 1].slice(1)\n      }\n    }\n  }",
+        links: ["#foo", "#bar", "#baz", "#faz"],
+        linkGen: function linkGen(pageNum) {
+          return _this.code2.links[pageNum - 1];
+        },
+        pageGen: function pageGen(pageNum) {
+          return _this.code2.links[pageNum - 1].slice(1);
+        }
       },
-      placements: ["topright", "top", "topleft", "bottomright", "bottom", "bottomleft", "righttop", "right", "lefttop", "rightbottom", "left", "leftbottom"],
       code3: {
-        html: "<div class=\"text-center\">\n  <b-button id=\"popover-button-variant\">Button</b-button>\n  <b-popover target=\"popover-button-variant\" variant=\"danger\" triggers=\"focus\">\n    <template v-slot:title>Danger!</template>\n    Danger variant popover\n  </b-popover>\n</div>"
+        html: "<b-pagination-nav :pages=\"pages1\" use-router></b-pagination-nav>\n  <b-pagination-nav :pages=\"pages2\" use-router></b-pagination-nav>\n  <b-pagination-nav :pages=\"pages3\" use-router></b-pagination-nav>",
+        js: "export default {\n  data() {\n    return {\n      // Simple array of strings\n      pages1: ['?page=1', '?page=2', '?page=3'],\n      // Array of objects with string links\n      pages2: [\n        { link: '?page=1', text: 'One' },\n        { link: '?page=2', text: 'Two' },\n        { link: '?page=3', text: 'Three' }\n      ],\n      // Array of objects with router `to` locations\n      pages3: [\n        { link: { query: { page: 1 } }, text: 'Page 1' },\n        { link: { query: { page: 2 } }, text: 'Page 2' },\n        { link: { query: { page: 3 } }, text: 'Page 3' }\n      ]\n    }\n  }\n}",
+        // Simple array of strings
+        pages1: ["?page=1-1", "?page=1-2", "?page=1-3"],
+        // Array of objects with string links
+        pages2: [{
+          link: "?page=2-1",
+          text: "One"
+        }, {
+          link: "?page=2-2",
+          text: "Two"
+        }, {
+          link: "?page=2-3",
+          text: "Three"
+        }],
+        // Array of objects with router `to` locations
+        pages3: [{
+          link: {
+            query: {
+              page: "3-1"
+            }
+          },
+          text: "Page 1"
+        }, {
+          link: {
+            query: {
+              page: "3-2"
+            }
+          },
+          text: "Page 2"
+        }, {
+          link: {
+            query: {
+              page: "3-3"
+            }
+          },
+          text: "Page 3"
+        }]
       },
       code4: {
-        html: "<div class=\"d-flex flex-column text-md-center\">\n    <div class=\"p-2\">\n      <b-button id=\"popover-button-sync\" variant=\"primary\">I have a popover</b-button>\n    </div>\n\n    <div class=\"p-2\">\n      <b-button class=\"px-1\" @click=\"show = !show\">Toggle Popover</b-button>\n\n      <b-popover :show.sync=\"show\" target=\"popover-button-sync\" title=\"Popover\">\n        Hello <strong>World!</strong>\n      </b-popover>\n    </div>\n  </div>",
-        js: "export default {\n    data() {\n      return {\n        show: false\n      }\n    }\n  }"
-      },
-      show: false,
-      code5: {
-        html: "<div class=\"d-flex flex-column text-md-center\">\n    <div class=\"p-2\">\n      <b-button id=\"popover-button-event\" variant=\"primary\">I have a popover</b-button>\n    </div>\n\n    <div class=\"p-2\">\n      <b-button class=\"px-1\" @click=\"onOpen\">Open</b-button>\n      <b-button class=\"px-1\" @click=\"onClose\">Close</b-button>\n    </div>\n\n    <b-popover ref=\"popover\" target=\"popover-button-event\" title=\"Popover\">\n      Hello <strong>World!</strong>\n    </b-popover>\n  </div>",
-        js: "export default {\n    methods: {\n      onOpen() {\n        this.$refs.popover.$emit('open')\n      },\n      onClose() {\n        this.$refs.popover.$emit('close')\n      }\n    }\n  }"
+        html: "<div class=\"overflow-auto\">\n    <!-- Use text in props -->\n    <b-pagination-nav\n      number-of-pages=\"10\"\n      base-url=\"#\"\n      first-text=\"First\"\n      prev-text=\"Prev\"\n      next-text=\"Next\"\n      last-text=\"Last\"\n    ></b-pagination-nav>\n\n    <!-- Use emojis in props -->\n    <b-pagination-nav\n      number-of-pages=\"10\"\n      base-url=\"#\"\n      first-text=\"\u23EE\"\n      prev-text=\"\u23EA\"\n      next-text=\"\u23E9\"\n      last-text=\"\u23ED\"\n      class=\"mt-4\"\n    ></b-pagination-nav>\n\n    <!-- Use HTML and sub-components in slots -->\n    <b-pagination-nav\n      number-of-pages=\"10\"\n      base-url=\"#\"\n      class=\"mt-4\"\n    >\n      <template v-slot:first-text><span class=\"text-success\">First</span></template>\n      <template v-slot:prev-text><span class=\"text-danger\">Prev</span></template>\n      <template v-slot:next-text><span class=\"text-warning\">Next</span></template>\n      <template v-slot:last-text><span class=\"text-info\">Last</span></template>\n      <template v-slot:ellipsis-text>\n        <b-spinner small type=\"grow\"></b-spinner>\n        <b-spinner small type=\"grow\"></b-spinner>\n        <b-spinner small type=\"grow\"></b-spinner>\n      </template>\n      <template v-slot:page=\"{ page, active }\">\n        <b v-if=\"active\">{{ page }}</b>\n        <i v-else>{{ page }}</i>\n      </template>\n    </b-pagination-nav>\n  </div>"
       }
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  methods: {
-    onOpen: function onOpen() {
-      this.$refs.popover.$emit("open");
-    },
-    onClose: function onClose() {
-      this.$refs.popover.$emit("close");
-    }
-  },
+  methods: {},
   mounted: function mounted() {
     this.$store.dispatch(_core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__["SET_BREADCRUMB"], [{
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Notify"
+      title: "Pagination",
+      route: "pagination"
     }, {
-      title: "Popover"
+      title: "Pagination Nav"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=template&id=0bb45c9e&":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=template&id=0bb45c9e& ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=template&id=9765b596&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=template&id=9765b596& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -326,16 +312,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Popover")]),
+            _c("b", [_vm._v("Pagination Navigation")]),
             _vm._v(
-              " The Popover feature, which provides a tooltip-like\n      behavior, can be easily applied to any interactive element via the\n      <b-popover> component or v-b-popover directive.\n      "
+              " Quick first, previous, next, last, and page\n      buttons for navigation based pagination, supporting regular links or\n      router links.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/popover",
+                  href: "https://bootstrap-vue.js.org/docs/components/pagination-nav",
                   target: "_blank",
                 },
               },
@@ -348,68 +334,39 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-6" },
+          { staticClass: "col-md-12" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Popover" },
+              attrs: { title: "Pagination Navigation" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _c("code", [_vm._v("b-pagination-nav")]),
+                        _vm._v(
+                          " will try and auto-detect which page\n            link is active page button based on the current page's URL (via\n            either "
+                        ),
+                        _c("code", [_vm._v("$route")]),
+                        _vm._v(" detection or, if no\n            "),
+                        _c("code", [_vm._v("$router")]),
+                        _vm._v(
+                          " detected, the browser location URL).\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "text-center my-3" },
+                        { staticClass: "overflow-auto" },
                         [
-                          _c(
-                            "b-button",
-                            {
-                              directives: [
-                                {
-                                  name: "b-popover",
-                                  rawName: "v-b-popover.hover.top",
-                                  value: "I am popover directive content!",
-                                  expression:
-                                    "'I am popover directive content!'",
-                                  modifiers: { hover: true, top: true },
-                                },
-                              ],
-                              staticClass: "mr-3",
-                              attrs: { title: "Popover Title" },
+                          _c("b-pagination-nav", {
+                            attrs: {
+                              "link-gen": _vm.code1.linkGen,
+                              "number-of-pages": 10,
+                              "use-router": "",
                             },
-                            [_vm._v("\n              Hover Me\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            { attrs: { id: "popover-target-1" } },
-                            [_vm._v("\n              Hover Me\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-popover",
-                            {
-                              attrs: {
-                                target: "popover-target-1",
-                                triggers: "hover",
-                                placement: "top",
-                              },
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "title",
-                                  fn: function () {
-                                    return [_vm._v("Popover Title")]
-                                  },
-                                  proxy: true,
-                                },
-                              ]),
-                            },
-                            [
-                              _vm._v("\n              I am popover "),
-                              _c("b", [_vm._v("component")]),
-                              _vm._v(" content!\n            "),
-                            ]
-                          ),
+                          }),
                         ],
                         1
                       ),
@@ -428,171 +385,52 @@ var render = function () {
                   },
                   proxy: true,
                 },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              scopedSlots: _vm._u([
                 {
-                  key: "title",
+                  key: "js",
                   fn: function () {
                     return [
-                      _c("code", [_vm._v("<b-popover>")]),
-                      _vm._v(" Component basic usage\n        "),
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
+                      ),
                     ]
                   },
                   proxy: true,
                 },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Page number generation" },
+              scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _vm._v("\n            By default, "),
+                        _c("code", [_vm._v("<b-pagination-nav>")]),
+                        _vm._v(
+                          " renders page\n            numbers (1-N) in the page link buttons. You can override this\n            behaviour by supplying a function reference to the\n            "
+                        ),
+                        _c("code", [_vm._v("page-gen")]),
+                        _vm._v(
+                          " property. The function reference should\n            accept a single argument which is a page number (1-N). The\n            "
+                        ),
+                        _c("code", [_vm._v("page-gen")]),
+                        _vm._v(" function should return a string.\n          "),
+                      ]),
+                      _vm._v(" "),
                       _c(
-                        "b-container",
-                        { attrs: { fluid: "" } },
+                        "div",
+                        { staticClass: "overflow-auto" },
                         [
-                          _c("h5", { staticClass: "my-3" }, [
-                            _vm._v("Placement"),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "b-row",
-                            _vm._l(_vm.placements, function (placement) {
-                              return _c(
-                                "b-col",
-                                {
-                                  key: placement,
-                                  staticClass: "py-4 text-center",
-                                  attrs: { md: "4" },
-                                },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      attrs: {
-                                        id: "popover-1-" + placement,
-                                        variant: "primary",
-                                      },
-                                    },
-                                    [_vm._v(_vm._s(placement))]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("b-popover", {
-                                    attrs: {
-                                      target: "popover-1-" + placement,
-                                      placement: placement,
-                                      title: "Popover!",
-                                      triggers: "hover focus",
-                                      content: "Placement " + placement,
-                                    },
-                                  }),
-                                ],
-                                1
-                              )
-                            }),
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("h5", { staticClass: "my-3" }, [
-                            _vm._v("Content via properties or slots"),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "b-row",
-                            [
-                              _c(
-                                "b-col",
-                                {
-                                  staticClass: "py-4 text-center",
-                                  attrs: { md: "6" },
-                                },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      attrs: {
-                                        id: "popover-2",
-                                        variant: "primary",
-                                      },
-                                    },
-                                    [_vm._v("Using properties")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("b-popover", {
-                                    attrs: {
-                                      target: "popover-2",
-                                      title: "Prop Examples",
-                                      triggers: "hover focus",
-                                      content:
-                                        "Embedding content using properties is easy",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                {
-                                  staticClass: "py-4 text-center",
-                                  attrs: { md: "6" },
-                                },
-                                [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      attrs: {
-                                        id: "popover-3",
-                                        variant: "primary",
-                                      },
-                                    },
-                                    [_vm._v("Using slots")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-popover",
-                                    {
-                                      attrs: {
-                                        target: "popover-3",
-                                        triggers: "hover focus",
-                                      },
-                                      scopedSlots: _vm._u([
-                                        {
-                                          key: "title",
-                                          fn: function () {
-                                            return [_vm._v("Content via Slots")]
-                                          },
-                                          proxy: true,
-                                        },
-                                      ]),
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Embedding content\n                  "
-                                      ),
-                                      _c(
-                                        "span",
-                                        { staticClass: "text-danger" },
-                                        [_vm._v("using slots")]
-                                      ),
-                                      _vm._v(
-                                        " affords you\n                  "
-                                      ),
-                                      _c("em", [
-                                        _vm._v("greater "),
-                                        _c("strong", [_vm._v("control.")]),
-                                      ]),
-                                      _vm._v(
-                                        " and basic HTML\n                  support.\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
+                          _c("b-pagination-nav", {
+                            attrs: {
+                              "link-gen": _vm.code2.linkGen,
+                              "page-gen": _vm.code2.pageGen,
+                              "number-of-pages": _vm.code2.links.length,
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -624,66 +462,37 @@ var render = function () {
                 },
               ]),
             }),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
+            _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Variants and custom class" },
+              attrs: { title: "Providing an array of pages" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            Rather than using "),
+                        _c("code", [_vm._v("number-of-pages")]),
                         _vm._v(
-                          "\n            BootstrapVue's popovers support contextual color variants via our\n            custom CSS, via the "
+                          " to auto generate\n            page links, you can pass an array of links via the pages prop.\n            When the "
                         ),
-                        _c("code", [_vm._v("variant")]),
-                        _vm._v(" prop:\n          "),
+                        _c("code", [_vm._v("pages")]),
+                        _vm._v(
+                          " prop has an array of length 1 or\n            greater, it will be used to generate the page links.\n          "
+                        ),
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "text-center" },
-                        [
-                          _c(
-                            "b-button",
-                            { attrs: { id: "popover-button-variant" } },
-                            [_vm._v("Button")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-popover",
-                            {
-                              attrs: {
-                                target: "popover-button-variant",
-                                variant: "danger",
-                                triggers: "focus",
-                              },
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "title",
-                                  fn: function () {
-                                    return [_vm._v("Danger!")]
-                                  },
-                                  proxy: true,
-                                },
-                              ]),
-                            },
-                            [
-                              _vm._v(
-                                "\n              Danger variant popover\n            "
-                              ),
-                            ]
-                          ),
-                        ],
-                        1
-                      ),
+                      _c("b-pagination-nav", {
+                        attrs: { pages: _vm.code3.pages1, "use-router": "" },
+                      }),
+                      _vm._v(" "),
+                      _c("b-pagination-nav", {
+                        attrs: { pages: _vm.code3.pages2, "use-router": "" },
+                      }),
+                      _vm._v(" "),
+                      _c("b-pagination-nav", {
+                        attrs: { pages: _vm.code3.pages3, "use-router": "" },
+                      }),
                     ]
                   },
                   proxy: true,
@@ -699,114 +508,12 @@ var render = function () {
                   },
                   proxy: true,
                 },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Programmatically show and hide popover" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            You can manually control the visibility of a popover via the\n            syncable Boolean "
-                        ),
-                        _c("code", [_vm._v("show")]),
-                        _vm._v(" prop. Setting it to\n            "),
-                        _c("code", [_vm._v("true")]),
-                        _vm._v(
-                          " will show the popover, while setting it to\n            "
-                        ),
-                        _c("code", [_vm._v("false")]),
-                        _vm._v(" will hide the popover.\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "d-flex flex-column text-md-center" },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "p-2" },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  attrs: {
-                                    id: "popover-button-sync",
-                                    variant: "primary",
-                                  },
-                                },
-                                [_vm._v("I have a popover")]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "p-2" },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "px-1",
-                                  on: {
-                                    click: function ($event) {
-                                      _vm.show = !_vm.show
-                                    },
-                                  },
-                                },
-                                [_vm._v("Toggle Popover")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-popover",
-                                {
-                                  attrs: {
-                                    show: _vm.show,
-                                    target: "popover-button-sync",
-                                    title: "Popover",
-                                  },
-                                  on: {
-                                    "update:show": function ($event) {
-                                      _vm.show = $event
-                                    },
-                                  },
-                                },
-                                [
-                                  _vm._v("\n                Hello "),
-                                  _c("strong", [_vm._v("World!")]),
-                                ]
-                              ),
-                            ],
-                            1
-                          ),
-                        ]
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
                 {
                   key: "js",
                   fn: function () {
                     return [
                       _vm._v(
-                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
                       ),
                     ]
                   },
@@ -816,85 +523,135 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Programmatic control" },
+              attrs: { title: "Button content" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _c("code", [_vm._v("<b-pagination-nav>")]),
                         _vm._v(
-                          "\n            Programmatic control can also be affected by submitting\n            '"
+                          " supports several props/slots\n            that allow you to customize the appearance. All\n            "
                         ),
-                        _c("code", [_vm._v("enable")]),
-                        _vm._v("' and '"),
-                        _c("code", [_vm._v("disable")]),
+                        _c("code", [_vm._v("*-text")]),
                         _vm._v(
-                          "' events to the\n            popover by reference.\n          "
+                          " props are text-only and strip out HTML but you\n            can use their equally named slot counterparts for that.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "d-flex flex-column text-md-center" },
+                        { staticClass: "overflow-auto" },
                         [
-                          _c(
-                            "div",
-                            { staticClass: "p-2" },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  attrs: {
-                                    id: "popover-button-event",
-                                    variant: "primary",
-                                  },
-                                },
-                                [_vm._v("I have a popover")]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "p-2" },
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "px-1 mr-3",
-                                  on: { click: _vm.onOpen },
-                                },
-                                [_vm._v("Open")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "px-1",
-                                  on: { click: _vm.onClose },
-                                },
-                                [_vm._v("Close")]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-popover",
-                            {
-                              ref: "popover",
-                              attrs: {
-                                target: "popover-button-event",
-                                title: "Popover",
-                              },
+                          _c("b-pagination-nav", {
+                            attrs: {
+                              "number-of-pages": "10",
+                              "base-url": "#",
+                              "first-text": "First",
+                              "prev-text": "Prev",
+                              "next-text": "Next",
+                              "last-text": "Last",
                             },
-                            [
-                              _vm._v("\n              Hello "),
-                              _c("strong", [_vm._v("World!")]),
-                            ]
-                          ),
+                          }),
+                          _vm._v(" "),
+                          _c("b-pagination-nav", {
+                            staticClass: "mt-4",
+                            attrs: {
+                              "number-of-pages": "10",
+                              "base-url": "#",
+                              "first-text": "⏮",
+                              "prev-text": "⏪",
+                              "next-text": "⏩",
+                              "last-text": "⏭",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("b-pagination-nav", {
+                            staticClass: "mt-4",
+                            attrs: { "number-of-pages": "10", "base-url": "#" },
+                            scopedSlots: _vm._u([
+                              {
+                                key: "first-text",
+                                fn: function () {
+                                  return [
+                                    _c(
+                                      "span",
+                                      { staticClass: "text-success" },
+                                      [_vm._v("First")]
+                                    ),
+                                  ]
+                                },
+                                proxy: true,
+                              },
+                              {
+                                key: "prev-text",
+                                fn: function () {
+                                  return [
+                                    _c("span", { staticClass: "text-danger" }, [
+                                      _vm._v("Prev"),
+                                    ]),
+                                  ]
+                                },
+                                proxy: true,
+                              },
+                              {
+                                key: "next-text",
+                                fn: function () {
+                                  return [
+                                    _c(
+                                      "span",
+                                      { staticClass: "text-warning" },
+                                      [_vm._v("Next")]
+                                    ),
+                                  ]
+                                },
+                                proxy: true,
+                              },
+                              {
+                                key: "last-text",
+                                fn: function () {
+                                  return [
+                                    _c("span", { staticClass: "text-info" }, [
+                                      _vm._v("Last"),
+                                    ]),
+                                  ]
+                                },
+                                proxy: true,
+                              },
+                              {
+                                key: "ellipsis-text",
+                                fn: function () {
+                                  return [
+                                    _c("b-spinner", {
+                                      attrs: { small: "", type: "grow" },
+                                    }),
+                                    _vm._v(" "),
+                                    _c("b-spinner", {
+                                      attrs: { small: "", type: "grow" },
+                                    }),
+                                    _vm._v(" "),
+                                    _c("b-spinner", {
+                                      attrs: { small: "", type: "grow" },
+                                    }),
+                                  ]
+                                },
+                                proxy: true,
+                              },
+                              {
+                                key: "page",
+                                fn: function (ref) {
+                                  var page = ref.page
+                                  var active = ref.active
+                                  return [
+                                    active
+                                      ? _c("b", [_vm._v(_vm._s(page))])
+                                      : _c("i", [_vm._v(_vm._s(page))]),
+                                  ]
+                                },
+                              },
+                            ]),
+                          }),
                         ],
                         1
                       ),
@@ -907,18 +664,7 @@ var render = function () {
                   fn: function () {
                     return [
                       _vm._v(
-                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code5.js) + "\n        "
+                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
                       ),
                     ]
                   },
@@ -941,17 +687,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Popover.vue":
-/*!***************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Popover.vue ***!
-  \***************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue":
+/*!*********************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Popover_vue_vue_type_template_id_0bb45c9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popover.vue?vue&type=template&id=0bb45c9e& */ "./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=template&id=0bb45c9e&");
-/* harmony import */ var _Popover_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Popover.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=script&lang=js&");
+/* harmony import */ var _PaginationNav_vue_vue_type_template_id_9765b596___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PaginationNav.vue?vue&type=template&id=9765b596& */ "./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=template&id=9765b596&");
+/* harmony import */ var _PaginationNav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PaginationNav.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -961,9 +707,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Popover_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Popover_vue_vue_type_template_id_0bb45c9e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Popover_vue_vue_type_template_id_0bb45c9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _PaginationNav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PaginationNav_vue_vue_type_template_id_9765b596___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PaginationNav_vue_vue_type_template_id_9765b596___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -973,38 +719,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Popover.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Popover_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Popover.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Popover_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PaginationNav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./PaginationNav.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PaginationNav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=template&id=0bb45c9e&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=template&id=0bb45c9e& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=template&id=9765b596&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=template&id=9765b596& ***!
+  \****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popover_vue_vue_type_template_id_0bb45c9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Popover.vue?vue&type=template&id=0bb45c9e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Popover.vue?vue&type=template&id=0bb45c9e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popover_vue_vue_type_template_id_0bb45c9e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PaginationNav_vue_vue_type_template_id_9765b596___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./PaginationNav.vue?vue&type=template&id=9765b596& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/PaginationNav.vue?vue&type=template&id=9765b596&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PaginationNav_vue_vue_type_template_id_9765b596___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popover_vue_vue_type_template_id_0bb45c9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PaginationNav_vue_vue_type_template_id_9765b596___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

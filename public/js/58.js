@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[58],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -194,58 +194,98 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<div>\n  <b-button v-b-modal.modal-1>Launch demo modal</b-button>\n\n  <b-modal id=\"modal-1\" title=\"BootstrapVue\">\n    <p class=\"my-4\">Hello from modal!</p>\n  </b-modal>\n</div>"
+        html: "<div>\n  <b-card>\n    <b-media>\n      <template v-slot:aside>\n        <b-img blank blank-color=\"#ccc\" width=\"64\" alt=\"placeholder\"></b-img>\n      </template>\n\n      <h5 class=\"mt-0\">Media Title</h5>\n      <p>\n        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n      </p>\n      <p>\n        Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque\n        penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n      </p>\n\n      <b-media>\n        <template v-slot:aside>\n          <b-img blank blank-color=\"#ccc\" width=\"64\" alt=\"placeholder\"></b-img>\n        </template>\n\n        <h5 class=\"mt-0\">Nested Media</h5>\n        <p class=\"mb-0\">\n          Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in\n          faucibus.\n        </p>\n      </b-media>\n    </b-media>\n  </b-card>\n</div>"
       },
       code2: {
-        html: "<div>\n  <!-- Using modifiers -->\n  <b-button v-b-modal.my-modal>Show Modal</b-button>\n\n  <!-- Using value -->\n  <b-button v-b-modal=\"'my-modal'\">Show Modal</b-button>\n\n  <!-- The modal -->\n  <b-modal id=\"my-modal\">Hello From My Modal!</b-modal>\n</div>"
+        html: "<div>\n  <b-card>\n    <b-media no-body>\n      <b-media-aside vertical-align=\"center\">\n        <b-img blank blank-color=\"#ccc\" width=\"128\" height=\"256\" alt=\"placeholder\"></b-img>\n      </b-media-aside>\n\n      <b-media-body class=\"ml-3\">\n        <h5 class=\"mt-0\">Media Title</h5>\n        <p>\n          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante\n          sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce\n          condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n        </p>\n        <p class=\"mb-0\">\n          Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis\n          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n        </p>\n\n        <b-media>\n          <template v-slot:aside>\n            <b-img blank blank-color=\"#ccc\" width=\"64\" alt=\"placeholder\"></b-img>\n          </template>\n          <h5 class=\"mt-0\">Nested Media</h5>\n          Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in\n          faucibus.\n        </b-media>\n      </b-media-body>\n    </b-media>\n  </b-card>\n</div>"
       },
       code3: {
-        html: "<div>\n    <b-button id=\"show-btn\" @click=\"showModal\">Open Modal</b-button>\n    <b-button id=\"toggle-btn\" @click=\"toggleModal\">Toggle Modal</b-button>\n\n    <b-modal ref=\"my-modal\" hide-footer title=\"Using Component Methods\">\n      <div class=\"d-block text-center\">\n        <h3>Hello From My Modal!</h3>\n      </div>\n      <b-button class=\"mt-3\" variant=\"outline-danger\" block @click=\"hideModal\">Close Me</b-button>\n      <b-button class=\"mt-2\" variant=\"outline-warning\" block @click=\"toggleModal\">Toggle Me</b-button>\n    </b-modal>\n  </div>",
-        js: "export default {\n    methods: {\n      showModal() {\n        this.$refs['my-modal'].show()\n      },\n      hideModal() {\n        this.$refs['my-modal'].hide()\n      },\n      toggleModal() {\n        // We pass the ID of the button that we want to return focus to\n        // when the modal has hidden\n        this.$refs['my-modal'].toggle('#toggle-btn')\n      }\n    }\n  }"
+        html: "<div>\n  <b-media right-align vertical-align=\"center\">\n    <template v-slot:aside>\n      <b-img blank blank-color=\"#ccc\" width=\"80\" alt=\"placeholder\"></b-img>\n    </template>\n    <h5 class=\"mt-0 mb-1\">Media object</h5>\n    <p class=\"mb-0\">\n      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n      Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac\n      nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n    </p>\n  </b-media>\n</div>"
       },
       code4: {
-        html: "<div>\n    <b-button id=\"show-btn\" @click=\"showModal\">Open Modal</b-button>\n    <b-button id=\"toggle-btn\" @click=\"toggleModal\">Toggle Modal</b-button>\n\n    <b-modal ref=\"my-modal\" hide-footer title=\"Using Component Methods\">\n      <div class=\"d-block text-center\">\n        <h3>Hello From My Modal!</h3>\n      </div>\n      <b-button class=\"mt-3\" variant=\"outline-danger\" block @click=\"hideModal\">Close Me</b-button>\n      <b-button class=\"mt-2\" variant=\"outline-warning\" block @click=\"toggleModal\">Toggle Me</b-button>\n    </b-modal>\n  </div>",
-        js: "export default {\n    methods: {\n      showModal() {\n        this.$refs['my-modal'].show()\n      },\n      hideModal() {\n        this.$refs['my-modal'].hide()\n      },\n      toggleModal() {\n        // We pass the ID of the button that we want to return focus to\n        // when the modal has hidden\n        this.$refs['my-modal'].toggle('#toggle-btn')\n      }\n    }\n  }"
+        html: "<div>\n  <ul class=\"list-unstyled\">\n    <b-media tag=\"li\">\n      <template v-slot:aside>\n        <b-img blank blank-color=\"#abc\" width=\"64\" alt=\"placeholder\"></b-img>\n      </template>\n      <h5 class=\"mt-0 mb-1\">List-based media object</h5>\n      <p class=\"mb-0\">\n        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n      </p>\n    </b-media>\n\n    <b-media tag=\"li\" class=\"my-4\">\n      <template v-slot:aside>\n       <b-img blank blank-color=\"#cba\" width=\"64\" alt=\"placeholder\"></b-img>\n      </template>\n\n      <h5 class=\"mt-0 mb-1\">List-based media object</h5>\n      <p class=\"mb-0\">\n        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n      </p>\n    </b-media>\n\n    <b-media tag=\"li\">\n      <template v-slot:aside>\n        <b-img blank blank-color=\"#bac\" width=\"64\" alt=\"placeholder\"></b-img>\n      </template>\n\n      <h5 class=\"mt-0 mb-1\">List-based media object</h5>\n      <p class=\"mb-0\">\n        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.\n        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc\n        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n      </p>\n    </b-media>\n  </ul>\n</div>"
       }
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  methods: {
-    showModal: function showModal() {
-      this.$refs["my-modal"].show();
-    },
-    hideModal: function hideModal() {
-      this.$refs["my-modal"].hide();
-    },
-    toggleModal: function toggleModal() {
-      // We pass the ID of the button that we want to return focus to
-      // when the modal has hidden
-      this.$refs["my-modal"].toggle("#toggle-btn");
-    }
-  },
   mounted: function mounted() {
     this.$store.dispatch(_core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__["SET_BREADCRUMB"], [{
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Modal"
+      title: "Media"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=template&id=75a7528e&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=template&id=79274f20&":
 /*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=template&id=75a7528e& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=template&id=79274f20& ***!
   \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -283,9 +323,9 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Modals")]),
+            _c("b", [_vm._v("Media")]),
             _vm._v(
-              " Modals are streamlined, but flexible dialog prompts\n      powered by JavaScript and CSS. They support a number of use cases from\n      user notification to completely custom content and feature a handful of\n      helpful sub-components, sizes, variants, accessibility, and more.\n      "
+              " The media object helps build complex and repetitive\n      components where some media is positioned alongside content that doesn't\n      wrap around said media. Plus, it does this with only two required\n      classes thanks to flexbox.\n      "
             ),
             _c(
               "a",
@@ -308,7 +348,7 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Modal" },
+              attrs: { title: "Media" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -318,27 +358,88 @@ var render = function () {
                         "div",
                         [
                           _c(
-                            "b-button",
-                            {
-                              directives: [
-                                {
-                                  name: "b-modal",
-                                  rawName: "v-b-modal.modal-1",
-                                  modifiers: { "modal-1": true },
-                                },
-                              ],
-                            },
-                            [_vm._v("Launch demo modal")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-modal",
-                            { attrs: { id: "modal-1", title: "BootstrapVue" } },
+                            "b-card",
                             [
-                              _c("p", { staticClass: "my-4" }, [
-                                _vm._v("Hello from modal!"),
-                              ]),
-                            ]
+                              _c(
+                                "b-media",
+                                {
+                                  scopedSlots: _vm._u([
+                                    {
+                                      key: "aside",
+                                      fn: function () {
+                                        return [
+                                          _c("b-img", {
+                                            attrs: {
+                                              blank: "",
+                                              "blank-color": "#ccc",
+                                              width: "64",
+                                              alt: "placeholder",
+                                            },
+                                          }),
+                                        ]
+                                      },
+                                      proxy: true,
+                                    },
+                                  ]),
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c("h5", { staticClass: "mt-0" }, [
+                                    _vm._v("Media Title"),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("p", [
+                                    _vm._v(
+                                      "\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus\n                  scelerisque ante sollicitudin. Cras purus odio, vestibulum\n                  in vulputate at, tempus viverra turpis. Fusce condimentum\n                  nunc ac nisi vulputate fringilla. Donec lacinia congue felis\n                  in faucibus.\n                "
+                                    ),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("p", [
+                                    _vm._v(
+                                      "\n                  Donec sed odio dui. Nullam quis risus eget urna mollis\n                  ornare vel eu leo. Cum sociis natoque penatibus et magnis\n                  dis parturient montes, nascetur ridiculus mus.\n                "
+                                    ),
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-media",
+                                    {
+                                      scopedSlots: _vm._u([
+                                        {
+                                          key: "aside",
+                                          fn: function () {
+                                            return [
+                                              _c("b-img", {
+                                                attrs: {
+                                                  blank: "",
+                                                  "blank-color": "#ccc",
+                                                  width: "64",
+                                                  alt: "placeholder",
+                                                },
+                                              }),
+                                            ]
+                                          },
+                                          proxy: true,
+                                        },
+                                      ]),
+                                    },
+                                    [
+                                      _vm._v(" "),
+                                      _c("h5", { staticClass: "mt-0" }, [
+                                        _vm._v("Nested Media"),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "mb-0" }, [
+                                        _vm._v(
+                                          "\n                    Fusce condimentum nunc ac nisi vulputate fringilla. Donec\n                    lacinia congue felis in faucibus.\n                  "
+                                        ),
+                                      ]),
+                                    ]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
                           ),
                         ],
                         1
@@ -362,18 +463,8 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
+              attrs: { title: "No body (with sub-components)" },
               scopedSlots: _vm._u([
-                {
-                  key: "title",
-                  fn: function () {
-                    return [
-                      _vm._v("\n          Using "),
-                      _c("code", [_vm._v("v-b-modal")]),
-                      _vm._v(" directive\n        "),
-                    ]
-                  },
-                  proxy: true,
-                },
                 {
                   key: "preview",
                   fn: function () {
@@ -382,39 +473,90 @@ var render = function () {
                         "div",
                         [
                           _c(
-                            "b-button",
-                            {
-                              directives: [
-                                {
-                                  name: "b-modal",
-                                  rawName: "v-b-modal.my-modal",
-                                  modifiers: { "my-modal": true },
-                                },
-                              ],
-                              staticClass: "mr-3",
-                            },
-                            [_vm._v("Show Modal")]
+                            "b-card",
+                            [
+                              _c(
+                                "b-media",
+                                { attrs: { "no-body": "" } },
+                                [
+                                  _c(
+                                    "b-media-aside",
+                                    { attrs: { "vertical-align": "center" } },
+                                    [
+                                      _c("b-img", {
+                                        attrs: {
+                                          blank: "",
+                                          "blank-color": "#ccc",
+                                          width: "128",
+                                          height: "256",
+                                          alt: "placeholder",
+                                        },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-media-body",
+                                    { staticClass: "ml-3" },
+                                    [
+                                      _c("h5", { staticClass: "mt-0" }, [
+                                        _vm._v("Media Title"),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("p", [
+                                        _vm._v(
+                                          "\n                    Cras sit amet nibh libero, in gravida nulla. Nulla vel\n                    metus scelerisque ante sollicitudin. Cras purus odio,\n                    vestibulum in vulputate at, tempus viverra turpis. Fusce\n                    condimentum nunc ac nisi vulputate fringilla. Donec\n                    lacinia congue felis in faucibus.\n                  "
+                                        ),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "mb-0" }, [
+                                        _vm._v(
+                                          "\n                    Donec sed odio dui. Nullam quis risus eget urna mollis\n                    ornare vel eu leo. Cum sociis natoque penatibus et magnis\n                    dis parturient montes, nascetur ridiculus mus.\n                  "
+                                        ),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-media",
+                                        {
+                                          scopedSlots: _vm._u([
+                                            {
+                                              key: "aside",
+                                              fn: function () {
+                                                return [
+                                                  _c("b-img", {
+                                                    attrs: {
+                                                      blank: "",
+                                                      "blank-color": "#ccc",
+                                                      width: "64",
+                                                      alt: "placeholder",
+                                                    },
+                                                  }),
+                                                ]
+                                              },
+                                              proxy: true,
+                                            },
+                                          ]),
+                                        },
+                                        [
+                                          _vm._v(" "),
+                                          _c("h5", { staticClass: "mt-0" }, [
+                                            _vm._v("Nested Media"),
+                                          ]),
+                                          _vm._v(
+                                            "\n                    Fusce condimentum nunc ac nisi vulputate fringilla. Donec\n                    lacinia congue felis in faucibus.\n                  "
+                                          ),
+                                        ]
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
                           ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              directives: [
-                                {
-                                  name: "b-modal",
-                                  rawName: "v-b-modal",
-                                  value: "my-modal",
-                                  expression: "'my-modal'",
-                                },
-                              ],
-                              staticClass: "mr-3",
-                            },
-                            [_vm._v("\n              Show Modal\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c("b-modal", { attrs: { id: "my-modal" } }, [
-                            _vm._v("Hello From My Modal!"),
-                          ]),
                         ],
                         1
                       ),
@@ -444,122 +586,53 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
+              attrs: { title: "Order" },
               scopedSlots: _vm._u([
-                {
-                  key: "title",
-                  fn: function () {
-                    return [
-                      _vm._v("\n          Using "),
-                      _c("code", [_vm._v("this.$bvModal.show()")]),
-                      _vm._v(" and\n          "),
-                      _c("code", [_vm._v("this.$bvModal.hide()")]),
-                      _vm._v(" instance methods\n        "),
-                    ]
-                  },
-                  proxy: true,
-                },
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v("\n            When "),
-                        _c("code", [_vm._v("BootstrapVue")]),
-                        _vm._v(
-                          " is installed as a plugin, or the\n            "
-                        ),
-                        _c("code", [_vm._v("ModalPlugin")]),
-                        _vm._v(
-                          " plugin is used, BootstrapVue will inject\n            a "
-                        ),
-                        _c("code"),
-                        _vm._v(
-                          " object into every Vue instance (components, apps).\n            "
-                        ),
-                        _c("code", [_vm._v("$bvModal")]),
-                        _vm._v(
-                          " exposes several methods, of which two are\n            for showing and hiding modals:\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
                         "div",
                         [
                           _c(
-                            "b-button",
+                            "b-media",
                             {
-                              staticClass: "mr-3",
-                              attrs: { id: "show-btn" },
-                              on: { click: _vm.showModal },
-                            },
-                            [_vm._v("\n              Open Modal\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mr-3",
-                              attrs: { id: "toggle-btn" },
-                              on: { click: _vm.toggleModal },
-                            },
-                            [
-                              _vm._v(
-                                "\n              Toggle Modal\n            "
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-modal",
-                            {
-                              ref: "my-modal",
                               attrs: {
-                                "hide-footer": "",
-                                title: "Using Component Methods",
+                                "right-align": "",
+                                "vertical-align": "center",
                               },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "aside",
+                                  fn: function () {
+                                    return [
+                                      _c("b-img", {
+                                        attrs: {
+                                          blank: "",
+                                          "blank-color": "#ccc",
+                                          width: "80",
+                                          alt: "placeholder",
+                                        },
+                                      }),
+                                    ]
+                                  },
+                                  proxy: true,
+                                },
+                              ]),
                             },
                             [
-                              _c(
-                                "div",
-                                { staticClass: "d-block text-center" },
-                                [_c("h3", [_vm._v("Hello From My Modal!")])]
-                              ),
                               _vm._v(" "),
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "mt-3",
-                                  attrs: {
-                                    variant: "outline-danger",
-                                    block: "",
-                                  },
-                                  on: { click: _vm.hideModal },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                Close Me\n              "
-                                  ),
-                                ]
-                              ),
+                              _c("h5", { staticClass: "mt-0 mb-1" }, [
+                                _vm._v("Media object"),
+                              ]),
                               _vm._v(" "),
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "mt-2",
-                                  attrs: {
-                                    variant: "outline-warning",
-                                    block: "",
-                                  },
-                                  on: { click: _vm.toggleModal },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                Toggle Me\n              "
-                                  ),
-                                ]
-                              ),
-                            ],
-                            1
+                              _c("p", { staticClass: "mb-0" }, [
+                                _vm._v(
+                                  "\n                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus\n                scelerisque ante sollicitudin. Cras purus odio, vestibulum in\n                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac\n                nisi vulputate fringilla. Donec lacinia congue felis in\n                faucibus.\n              "
+                                ),
+                              ]),
+                            ]
                           ),
                         ],
                         1
@@ -579,135 +652,136 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
+              attrs: { title: "Media list" },
               scopedSlots: _vm._u([
-                {
-                  key: "title",
-                  fn: function () {
-                    return [
-                      _vm._v("\n          Using "),
-                      _c("code", [_vm._v("show()")]),
-                      _vm._v(", "),
-                      _c("code", [_vm._v("hide()")]),
-                      _vm._v(", and\n          "),
-                      _c("code", [_vm._v("toggle()")]),
-                      _vm._v(" component methods\n        "),
-                    ]
-                  },
-                  proxy: true,
-                },
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v("\n            You can access modal using "),
-                        _c("code", [_vm._v("ref")]),
-                        _vm._v(" attribute and then\n            call the "),
-                        _c("code", [_vm._v("show()")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("hide()")]),
-                        _vm._v(" or\n            "),
-                        _c("code", [_vm._v("toggle()")]),
-                        _vm._v(" methods.\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        [
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mr-3",
-                              attrs: { id: "show-btn" },
-                              on: { click: _vm.showModal },
-                            },
-                            [_vm._v("\n              Open Modal\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mr-3",
-                              attrs: { id: "toggle-btn" },
-                              on: { click: _vm.toggleModal },
-                            },
-                            [
-                              _vm._v(
-                                "\n              Toggle Modal\n            "
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-modal",
-                            {
-                              ref: "my-modal",
-                              attrs: {
-                                "hide-footer": "",
-                                title: "Using Component Methods",
+                      _c("div", [
+                        _c(
+                          "ul",
+                          { staticClass: "list-unstyled" },
+                          [
+                            _c(
+                              "b-media",
+                              {
+                                attrs: { tag: "li" },
+                                scopedSlots: _vm._u([
+                                  {
+                                    key: "aside",
+                                    fn: function () {
+                                      return [
+                                        _c("b-img", {
+                                          attrs: {
+                                            blank: "",
+                                            "blank-color": "#abc",
+                                            width: "64",
+                                            alt: "placeholder",
+                                          },
+                                        }),
+                                      ]
+                                    },
+                                    proxy: true,
+                                  },
+                                ]),
                               },
-                            },
-                            [
-                              _c(
-                                "div",
-                                { staticClass: "d-block text-center" },
-                                [_c("h3", [_vm._v("Hello From My Modal!")])]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "mt-3 mr-3",
-                                  attrs: {
-                                    variant: "outline-danger",
-                                    block: "",
-                                  },
-                                  on: { click: _vm.hideModal },
-                                },
-                                [
+                              [
+                                _vm._v(" "),
+                                _c("h5", { staticClass: "mt-0 mb-1" }, [
+                                  _vm._v("List-based media object"),
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "mb-0" }, [
                                   _vm._v(
-                                    "\n                Close Me\n              "
+                                    "\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus\n                  scelerisque ante sollicitudin. Cras purus odio, vestibulum\n                  in vulputate at, tempus viverra turpis. Fusce condimentum\n                  nunc ac nisi vulputate fringilla. Donec lacinia congue felis\n                  in faucibus.\n                "
                                   ),
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "mt-2 mr-3",
-                                  attrs: {
-                                    variant: "outline-warning",
-                                    block: "",
+                                ]),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-media",
+                              {
+                                staticClass: "my-4",
+                                attrs: { tag: "li" },
+                                scopedSlots: _vm._u([
+                                  {
+                                    key: "aside",
+                                    fn: function () {
+                                      return [
+                                        _c("b-img", {
+                                          attrs: {
+                                            blank: "",
+                                            "blank-color": "#cba",
+                                            width: "64",
+                                            alt: "placeholder",
+                                          },
+                                        }),
+                                      ]
+                                    },
+                                    proxy: true,
                                   },
-                                  on: { click: _vm.toggleModal },
-                                },
-                                [
+                                ]),
+                              },
+                              [
+                                _vm._v(" "),
+                                _c("h5", { staticClass: "mt-0 mb-1" }, [
+                                  _vm._v("List-based media object"),
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "mb-0" }, [
                                   _vm._v(
-                                    "\n                Toggle Me\n              "
+                                    "\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus\n                  scelerisque ante sollicitudin. Cras purus odio, vestibulum\n                  in vulputate at, tempus viverra turpis. Fusce condimentum\n                  nunc ac nisi vulputate fringilla. Donec lacinia congue felis\n                  in faucibus.\n                "
                                   ),
-                                ]
-                              ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
+                                ]),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-media",
+                              {
+                                attrs: { tag: "li" },
+                                scopedSlots: _vm._u([
+                                  {
+                                    key: "aside",
+                                    fn: function () {
+                                      return [
+                                        _c("b-img", {
+                                          attrs: {
+                                            blank: "",
+                                            "blank-color": "#bac",
+                                            width: "64",
+                                            alt: "placeholder",
+                                          },
+                                        }),
+                                      ]
+                                    },
+                                    proxy: true,
+                                  },
+                                ]),
+                              },
+                              [
+                                _vm._v(" "),
+                                _c("h5", { staticClass: "mt-0 mb-1" }, [
+                                  _vm._v("List-based media object"),
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "mb-0" }, [
+                                  _vm._v(
+                                    "\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus\n                  scelerisque ante sollicitudin. Cras purus odio, vestibulum\n                  in vulputate at, tempus viverra turpis. Fusce condimentum\n                  nunc ac nisi vulputate fringilla. Donec lacinia congue felis\n                  in faucibus.\n                "
+                                  ),
+                                ]),
+                              ]
+                            ),
+                          ],
+                          1
+                        ),
+                      ]),
                     ]
                   },
                   proxy: true,
@@ -718,17 +792,6 @@ var render = function () {
                     return [
                       _vm._v(
                         "\n          " + _vm._s(_vm.code4.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
                       ),
                     ]
                   },
@@ -751,17 +814,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Modal.vue":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Media.vue":
 /*!*************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Modal.vue ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Media.vue ***!
   \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Modal_vue_vue_type_template_id_75a7528e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Modal.vue?vue&type=template&id=75a7528e& */ "./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=template&id=75a7528e&");
-/* harmony import */ var _Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modal.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Media_vue_vue_type_template_id_79274f20___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Media.vue?vue&type=template&id=79274f20& */ "./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=template&id=79274f20&");
+/* harmony import */ var _Media_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Media.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -771,9 +834,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Modal_vue_vue_type_template_id_75a7528e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Modal_vue_vue_type_template_id_75a7528e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Media_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Media_vue_vue_type_template_id_79274f20___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Media_vue_vue_type_template_id_79274f20___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -783,38 +846,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Modal.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Media.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=script&lang=js& ***!
   \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Media_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Media.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Media_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=template&id=75a7528e&":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=template&id=79274f20&":
 /*!********************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=template&id=75a7528e& ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=template&id=79274f20& ***!
   \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_75a7528e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=template&id=75a7528e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Modal.vue?vue&type=template&id=75a7528e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_75a7528e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Media_vue_vue_type_template_id_79274f20___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Media.vue?vue&type=template&id=79274f20& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Media.vue?vue&type=template&id=79274f20&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Media_vue_vue_type_template_id_79274f20___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_75a7528e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Media_vue_vue_type_template_id_79274f20___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

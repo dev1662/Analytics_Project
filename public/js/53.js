@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[53],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -211,47 +211,74 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<div>\n  <!-- Using props -->\n  <b-input-group size=\"lg\" prepend=\"$\" append=\".00\">\n    <b-form-input></b-form-input>\n  </b-input-group>\n\n  <!-- Using slots -->\n  <b-input-group class=\"mt-3\">\n    <template v-slot:append>\n      <b-input-group-text><strong class=\"text-danger\">!</strong></b-input-group-text>\n    </template>\n    <b-form-input></b-form-input>\n  </b-input-group>\n\n  <!-- Using components -->\n  <b-input-group prepend=\"Username\" class=\"mt-3\">\n    <b-form-input></b-form-input>\n    <b-input-group-append>\n      <b-button variant=\"outline-success\">Button</b-button>\n      <b-button variant=\"info\">Button</b-button>\n    </b-input-group-append>\n  </b-input-group>\n</div>"
+        html: "<div>\n  <b-img src=\"https://picsum.photos/1024/400/?image=41\" fluid alt=\"Responsive image\"></b-img>\n</div>"
       },
       code2: {
-        html: "<div>\n  <b-input-group prepend=\"$\" append=\".00\">\n    <b-form-input></b-form-input>\n  </b-input-group>\n\n  <b-input-group prepend=\"0\" append=\"100\" class=\"mt-3\">\n    <b-form-input type=\"range\" min=\"0\" max=\"100\"></b-form-input>\n  </b-input-group>\n</div>"
+        html: "<div>\n  <h5>Small image with <code>fluid</code>:</h5>\n  <b-img src=\"https://picsum.photos/300/150/?image=41\" fluid alt=\"Fluid image\"></b-img>\n\n  <h5 class=\"my-3\">Small image with <code>fluid-grow</code>:</h5>\n  <b-img src=\"https://picsum.photos/300/150/?image=41\" fluid-grow alt=\"Fluid-grow image\"></b-img>\n</div>"
       },
       code3: {
-        html: "<div>\n  <b-input-group>\n    <template v-slot:prepend>\n      <b-input-group-text >Username</b-input-group-text>\n    </template>\n    <b-form-input></b-form-input>\n\n    <template v-slot:append>\n      <b-dropdown text=\"Dropdown\" variant=\"success\">\n        <b-dropdown-item>Action A</b-dropdown-item>\n        <b-dropdown-item>Action B</b-dropdown-item>\n      </b-dropdown>\n    </template>\n  </b-input-group>\n</div>"
+        html: "<b-container fluid class=\"p-4 bg-dark\">\n  <b-row>\n    <b-col>\n      <b-img thumbnail fluid src=\"https://picsum.photos/250/250/?image=54\" alt=\"Image 1\"></b-img>\n    </b-col>\n    <b-col>\n      <b-img thumbnail fluid src=\"https://picsum.photos/250/250/?image=58\" alt=\"Image 2\"></b-img>\n    </b-col>\n    <b-col>\n      <b-img thumbnail fluid src=\"https://picsum.photos/250/250/?image=59\" alt=\"Image 3\"></b-img>\n    </b-col>\n  </b-row>\n</b-container>"
       },
       code4: {
-        html: "<div>\n  <b-input-group>\n    <b-input-group-prepend>\n      <b-button variant=\"outline-info\">Button</b-button>\n    </b-input-group-prepend>\n\n    <b-form-input type=\"number\" min=\"0.00\"></b-form-input>\n\n    <b-input-group-append>\n      <b-button variant=\"outline-secondary\">Button</b-button>\n      <b-button variant=\"outline-secondary\">Button</b-button>\n    </b-input-group-append>\n  </b-input-group>\n</div>"
+        html: "<div class=\"clearfix\">\n  <b-img left src=\"https://picsum.photos/125/125/?image=58\" alt=\"Left image\"></b-img>\n  <b-img right src=\"https://picsum.photos/125/125/?image=58\" alt=\"Right image\"></b-img>\n</div>"
       },
       code5: {
-        html: "<div>\n  <b-input-group class=\"mb-2\">\n    <b-input-group-prepend is-text>\n      <b-form-checkbox class=\"mr-n2\">\n        <span class=\"sr-only\">Checkbox for following text input</span>\n      </b-form-checkbox>\n    </b-input-group-prepend>\n    <b-form-input aria-label=\"Text input with checkbox\"></b-form-input>\n  </b-input-group>\n\n  <b-input-group class=\"mb-2\">\n    <b-input-group-prepend is-text>\n      <b-form-radio class=\"mr-n2\">\n        <span class=\"sr-only\">Radio for following text input</span>\n      </b-form-radio>\n    </b-input-group-prepend>\n    <b-form-input aria-label=\"Text input with radio input\"></b-form-input>\n  </b-input-group>\n\n  <b-input-group>\n    <b-input-group-prepend is-text>\n      <b-form-checkbox switch class=\"mr-n2\">\n        <span class=\"sr-only\">Switch for following text input</span>\n      </b-form-checkbox>\n    </b-input-group-prepend>\n    <b-form-input aria-label=\"Text input with switch\"></b-form-input>\n  </b-input-group>\n</div>"
+        html: "<div>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(80)\" alt=\"Image 1\"></b-img-lazy>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(82)\" alt=\"Image 2\"></b-img-lazy>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(84)\" alt=\"Image 3\"></b-img-lazy>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(85)\" alt=\"Image 4\"></b-img-lazy>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(88)\" alt=\"Image 5\"></b-img-lazy>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(90)\" alt=\"Image 6\"></b-img-lazy>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(92)\" alt=\"Image 7\"></b-img-lazy>\n    <b-img-lazy v-bind=\"mainProps\" :src=\"getImageUrl(94)\" alt=\"Image 8\"></b-img-lazy>\n  </div>",
+        js: "export default {\n" + "    data() {\n" + "      return {\n" + "        mainProps: {\n" + "          center: true,\n" + "          fluidGrow: true,\n" + "          blank: true,\n" + "          blankColor: '#bbb',\n" + "          width: 600,\n" + "          height: 400,\n" + "          class: 'my-5'\n" + "        }\n" + "      }\n" + "    },\n" + "    methods: {\n" + "      getImageUrl(imageId) {\n" + "        const { width, height } = this.mainProps\n" + "        return `https://picsum.photos/${width}/${height}/?image=${imageId}`\n" + "      }\n" + "    }\n" + "  }"
+      },
+      mainProps: {
+        center: true,
+        fluidGrow: true,
+        blank: true,
+        blankColor: "#bbb",
+        width: 600,
+        height: 400,
+        "class": "my-5"
       }
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  methods: {
+    getImageUrl: function getImageUrl(imageId) {
+      var _this$mainProps = this.mainProps,
+          width = _this$mainProps.width,
+          height = _this$mainProps.height;
+      return "https://picsum.photos/".concat(width, "/").concat(height, "/?image=").concat(imageId);
+    }
+  },
   mounted: function mounted() {
     this.$store.dispatch(_core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__["SET_BREADCRUMB"], [{
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Input Groups"
+      title: "Images"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=template&id=0f7ffe67&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=template&id=0f7ffe67& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -288,9 +315,9 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Input Groups")]),
+            _c("b", [_vm._v("Images")]),
             _vm._v(
-              " Easily extend form controls by adding text, buttons,\n      or button groups on either side of textual inputs.\n      "
+              " Documentation and examples for opting images (via\n      <b-img> component) into responsive behavior (so they never become\n      larger than their parent elements), optionally adding lightweight styles\n      to them — all via props.\n      "
             ),
             _c(
               "a",
@@ -310,86 +337,37 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-6" },
+          { staticClass: "col-md-12" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Input Groups" },
+              attrs: { title: "Responsive images" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Images in BootstrapVue can be made responsive with the\n            "
+                        ),
+                        _c("code", [_vm._v("fluid")]),
+                        _vm._v(" prop (which sets\n            "),
+                        _c("code", [_vm._v("max-width: 100%; height: auto;")]),
+                        _vm._v(
+                          " via CSS classes) so\n            that it scales with the parent element - up to the maximum native\n            width of the image.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "div",
                         [
-                          _c(
-                            "b-input-group",
-                            {
-                              attrs: {
-                                size: "lg",
-                                prepend: "$",
-                                append: ".00",
-                              },
+                          _c("b-img", {
+                            attrs: {
+                              src: "https://picsum.photos/1024/400/?image=41",
+                              fluid: "",
+                              alt: "Responsive image",
                             },
-                            [_c("b-form-input")],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-input-group",
-                            {
-                              staticClass: "mt-3",
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "append",
-                                  fn: function () {
-                                    return [
-                                      _c("b-input-group-text", [
-                                        _c(
-                                          "strong",
-                                          { staticClass: "text-danger" },
-                                          [_vm._v("!")]
-                                        ),
-                                      ]),
-                                    ]
-                                  },
-                                  proxy: true,
-                                },
-                              ]),
-                            },
-                            [_vm._v(" "), _c("b-form-input")],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-input-group",
-                            {
-                              staticClass: "mt-3",
-                              attrs: { prepend: "Username" },
-                            },
-                            [
-                              _c("b-form-input"),
-                              _vm._v(" "),
-                              _c(
-                                "b-input-group-append",
-                                [
-                                  _c(
-                                    "b-button",
-                                    { attrs: { variant: "outline-success" } },
-                                    [_vm._v("Button")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-button",
-                                    { attrs: { variant: "info" } },
-                                    [_vm._v("Button")]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
+                          }),
                         ],
                         1
                       ),
@@ -412,7 +390,7 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Using prepend and append props" },
+              attrs: { title: "Fluid grow" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -420,35 +398,44 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            Values will be internally wrapped by a\n            "
+                          "\n            To make a fluid image that will grow to fill the width of its\n            container, use the "
                         ),
-                        _c("code", [_vm._v("<b-input-group-text>")]),
-                        _vm._v(" to display correctly.\n          "),
+                        _c("code", [_vm._v("fluid-grow")]),
+                        _vm._v(
+                          " prop. Note this may\n            cause blurring on small bitmap images.\n          "
+                        ),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
                         [
-                          _c(
-                            "b-input-group",
-                            { attrs: { prepend: "$", append: ".00" } },
-                            [_c("b-form-input")],
-                            1
-                          ),
+                          _c("h5", [
+                            _vm._v("Small image with "),
+                            _c("code", [_vm._v("fluid")]),
+                            _vm._v(":"),
+                          ]),
                           _vm._v(" "),
-                          _c(
-                            "b-input-group",
-                            {
-                              staticClass: "mt-3",
-                              attrs: { prepend: "0", append: "100" },
+                          _c("b-img", {
+                            attrs: {
+                              src: "https://picsum.photos/300/150/?image=41",
+                              fluid: "",
+                              alt: "Fluid image",
                             },
-                            [
-                              _c("b-form-input", {
-                                attrs: { type: "range", min: "0", max: "100" },
-                              }),
-                            ],
-                            1
-                          ),
+                          }),
+                          _vm._v(" "),
+                          _c("h5", { staticClass: "my-3" }, [
+                            _vm._v("Small image with "),
+                            _c("code", [_vm._v("fluid-grow")]),
+                            _vm._v(":"),
+                          ]),
+                          _vm._v(" "),
+                          _c("b-img", {
+                            attrs: {
+                              src: "https://picsum.photos/300/150/?image=41",
+                              "fluid-grow": "",
+                              alt: "Fluid-grow image",
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -469,79 +456,74 @@ var render = function () {
                 },
               ]),
             }),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
+            _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Using named slots" },
+              attrs: { title: "Image thumbnails" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            You can use prop "),
+                        _c("code", [_vm._v("thumbnail")]),
                         _vm._v(
-                          "\n            if you want better control over addons, you can use\n            "
+                          " to give an image a rounded\n            light border appearance.\n          "
                         ),
-                        _c("code", [_vm._v("prepend")]),
-                        _vm._v(" and "),
-                        _c("code", [_vm._v("append")]),
-                        _vm._v(" slots instead.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "div",
+                        "b-container",
+                        { staticClass: "p-4 bg-dark", attrs: { fluid: "" } },
                         [
                           _c(
-                            "b-input-group",
-                            {
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "prepend",
-                                  fn: function () {
-                                    return [
-                                      _c("b-input-group-text", [
-                                        _vm._v("Username"),
-                                      ]),
-                                    ]
-                                  },
-                                  proxy: true,
-                                },
-                                {
-                                  key: "append",
-                                  fn: function () {
-                                    return [
-                                      _c(
-                                        "b-dropdown",
-                                        {
-                                          attrs: {
-                                            text: "Dropdown",
-                                            variant: "success",
-                                          },
-                                        },
-                                        [
-                                          _c("b-dropdown-item", [
-                                            _vm._v("Action A"),
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("b-dropdown-item", [
-                                            _vm._v("Action B"),
-                                          ]),
-                                        ],
-                                        1
-                                      ),
-                                    ]
-                                  },
-                                  proxy: true,
-                                },
-                              ]),
-                            },
-                            [_vm._v(" "), _c("b-form-input")],
+                            "b-row",
+                            [
+                              _c(
+                                "b-col",
+                                [
+                                  _c("b-img", {
+                                    attrs: {
+                                      thumbnail: "",
+                                      fluid: "",
+                                      src: "https://picsum.photos/250/250/?image=54",
+                                      alt: "Image 1",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                [
+                                  _c("b-img", {
+                                    attrs: {
+                                      thumbnail: "",
+                                      fluid: "",
+                                      src: "https://picsum.photos/250/250/?image=58",
+                                      alt: "Image 2",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                [
+                                  _c("b-img", {
+                                    attrs: {
+                                      thumbnail: "",
+                                      fluid: "",
+                                      src: "https://picsum.photos/250/250/?image=59",
+                                      alt: "Image 3",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                            ],
                             1
                           ),
                         ],
@@ -566,64 +548,47 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Using sub-components" },
+              attrs: { title: "Aligning images" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            Use the "),
-                        _c("code", [_vm._v("<b-input-group-prepend>")]),
-                        _vm._v(" or\n            "),
-                        _c("code", [_vm._v("<b-input-group-append>")]),
                         _vm._v(
-                          " to add arbitrary addons\n            wherever you like, and use these components to group buttons in\n            your input group. Single buttons must always be wrapped in these\n            components for proper styling.\n          "
+                          "\n            Align images with the boolean props "
                         ),
+                        _c("code", [_vm._v("left")]),
+                        _vm._v(" (floats\n            left) "),
+                        _c("code", [_vm._v("right")]),
+                        _vm._v(" (floats right), and\n            "),
+                        _c("code", [_vm._v("center")]),
+                        _vm._v(
+                          " (auto left+right margins). You can also center\n            images by placing them in a container that has the class\n            "
+                        ),
+                        _c("code", [_vm._v("text-center")]),
+                        _vm._v(".\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
+                        { staticClass: "clearfix" },
                         [
-                          _c(
-                            "b-input-group",
-                            [
-                              _c(
-                                "b-input-group-prepend",
-                                [
-                                  _c(
-                                    "b-button",
-                                    { attrs: { variant: "outline-info" } },
-                                    [_vm._v("Button")]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("b-form-input", {
-                                attrs: { type: "number", min: "0.00" },
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "b-input-group-append",
-                                [
-                                  _c(
-                                    "b-button",
-                                    { attrs: { variant: "outline-secondary" } },
-                                    [_vm._v("Button")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-button",
-                                    { attrs: { variant: "outline-secondary" } },
-                                    [_vm._v("Button")]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
+                          _c("b-img", {
+                            attrs: {
+                              left: "",
+                              src: "https://picsum.photos/125/125/?image=58",
+                              alt: "Left image",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("b-img", {
+                            attrs: {
+                              right: "",
+                              src: "https://picsum.photos/125/125/?image=58",
+                              alt: "Right image",
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -646,130 +611,145 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Custom radio, checkbox, and switch addons" },
+              attrs: { title: "Lazy loaded images" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            Using "),
-                        _c("code", [_vm._v("<b-form-checkbox>")]),
-                        _vm._v(" and\n            "),
-                        _c("code", [_vm._v("<b-form-radio>")]),
+                        _vm._v("\n            Use our complementary "),
+                        _c("code", [_vm._v("<b-img-lazy>")]),
+                        _vm._v(" image\n            component (based on "),
+                        _c("code", [_vm._v(" <b-img>")]),
                         _vm._v(
-                          " components as addons, using\n            Bootstrap\n            "
+                          ") to lazy load\n            images as they are scrolled into view (or within\n            "
                         ),
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              href: "https://bootstrap-vue.js.org/docs/reference/utility-classes",
-                              target: "_blank",
-                            },
-                          },
-                          [_vm._v("utility classes")]
-                        ),
-                        _vm._v(
-                          "\n            for additional styling to get them to\n            "
-                        ),
-                        _c("code", [_vm._v('"fit"')]),
-                        _vm._v(" in the addon:\n          "),
+                        _c("code", [_vm._v("offset")]),
+                        _vm._v(" pixels of the viewport).\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
                         [
                           _c(
-                            "b-input-group",
-                            { staticClass: "mb-2" },
-                            [
-                              _c(
-                                "b-input-group-prepend",
-                                { attrs: { "is-text": "" } },
-                                [
-                                  _c(
-                                    "b-form-checkbox",
-                                    { staticClass: "mr-n2" },
-                                    [
-                                      _c("span", { staticClass: "sr-only" }, [
-                                        _vm._v(
-                                          "\n                    Checkbox for following text input\n                  "
-                                        ),
-                                      ]),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("b-form-input", {
+                            "b-img-lazy",
+                            _vm._b(
+                              {
                                 attrs: {
-                                  "aria-label": "Text input with checkbox",
+                                  src: _vm.getImageUrl(80),
+                                  alt: "Image 1",
                                 },
-                              }),
-                            ],
-                            1
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-input-group",
-                            { staticClass: "mb-2" },
-                            [
-                              _c(
-                                "b-input-group-prepend",
-                                { attrs: { "is-text": "" } },
-                                [
-                                  _c("b-form-radio", { staticClass: "mr-n2" }, [
-                                    _c("span", { staticClass: "sr-only" }, [
-                                      _vm._v("Radio for following text input"),
-                                    ]),
-                                  ]),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("b-form-input", {
+                            "b-img-lazy",
+                            _vm._b(
+                              {
                                 attrs: {
-                                  "aria-label": "Text input with radio input",
+                                  src: _vm.getImageUrl(82),
+                                  alt: "Image 2",
                                 },
-                              }),
-                            ],
-                            1
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-input-group",
-                            [
-                              _c(
-                                "b-input-group-prepend",
-                                { attrs: { "is-text": "" } },
-                                [
-                                  _c(
-                                    "b-form-checkbox",
-                                    {
-                                      staticClass: "mr-n2",
-                                      attrs: { switch: "" },
-                                    },
-                                    [
-                                      _c("span", { staticClass: "sr-only" }, [
-                                        _vm._v(
-                                          "Switch for following text input"
-                                        ),
-                                      ]),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("b-form-input", {
+                            "b-img-lazy",
+                            _vm._b(
+                              {
                                 attrs: {
-                                  "aria-label": "Text input with switch",
+                                  src: _vm.getImageUrl(84),
+                                  alt: "Image 3",
                                 },
-                              }),
-                            ],
-                            1
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-img-lazy",
+                            _vm._b(
+                              {
+                                attrs: {
+                                  src: _vm.getImageUrl(85),
+                                  alt: "Image 4",
+                                },
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-img-lazy",
+                            _vm._b(
+                              {
+                                attrs: {
+                                  src: _vm.getImageUrl(88),
+                                  alt: "Image 5",
+                                },
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-img-lazy",
+                            _vm._b(
+                              {
+                                attrs: {
+                                  src: _vm.getImageUrl(90),
+                                  alt: "Image 6",
+                                },
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-img-lazy",
+                            _vm._b(
+                              {
+                                attrs: {
+                                  src: _vm.getImageUrl(92),
+                                  alt: "Image 7",
+                                },
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-img-lazy",
+                            _vm._b(
+                              {
+                                attrs: {
+                                  src: _vm.getImageUrl(94),
+                                  alt: "Image 8",
+                                },
+                              },
+                              "b-img-lazy",
+                              _vm.mainProps,
+                              false
+                            )
                           ),
                         ],
                         1
@@ -784,6 +764,17 @@ var render = function () {
                     return [
                       _vm._v(
                         "\n          " + _vm._s(_vm.code5.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code5.js) + "\n        "
                       ),
                     ]
                   },
@@ -806,17 +797,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue":
-/*!******************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue ***!
-  \******************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Image.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Image.vue ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputGroup.vue?vue&type=template&id=7ca04d79& */ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&");
-/* harmony import */ var _InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputGroup.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Image_vue_vue_type_template_id_0f7ffe67___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Image.vue?vue&type=template&id=0f7ffe67& */ "./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=template&id=0f7ffe67&");
+/* harmony import */ var _Image_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Image.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -826,9 +817,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Image_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Image_vue_vue_type_template_id_0f7ffe67___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Image_vue_vue_type_template_id_0f7ffe67___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -838,38 +829,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/InputGroup.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Image.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./InputGroup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Image_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Image.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Image_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79& ***!
-  \*************************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=template&id=0f7ffe67&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=template&id=0f7ffe67& ***!
+  \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./InputGroup.vue?vue&type=template&id=7ca04d79& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Image_vue_vue_type_template_id_0f7ffe67___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Image.vue?vue&type=template&id=0f7ffe67& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Image.vue?vue&type=template&id=0f7ffe67&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Image_vue_vue_type_template_id_0f7ffe67___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Image_vue_vue_type_template_id_0f7ffe67___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

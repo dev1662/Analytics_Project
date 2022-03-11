@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[68],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -233,81 +233,81 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<div class=\"p-3 bg-secondary progress-bar-striped\" style=\"min-height: 170px;\">\n    <b-button class=\"mb-2\" variant=\"primary\" @click=\"$bvToast.show('example-toast')\">\n      Show toast\n    </b-button>\n    <b-toast id=\"example-toast\" title=\"BootstrapVue\" static no-auto-hide>\n      Hello, world! This is a toast message.\n    </b-toast>\n  </div>"
+        html: "<div>\n  <b-tabs content-class=\"mt-3\">\n    <b-tab title=\"First\" active><p>I'm the first tab</p></b-tab>\n    <b-tab title=\"Second\"><p>I'm the second tab</p></b-tab>\n    <b-tab title=\"Disabled\" disabled><p>I'm a disabled tab!</p></b-tab>\n  </b-tabs>\n</div>"
       },
       code2: {
-        html: "<div>\n    <b-button @click=\"makeToast()\">Show Toast</b-button>\n    <b-button @click=\"makeToast(true)\">Show Toast (appended)</b-button>\n  </div>",
-        js: "export default {\n    data() {\n      return {\n        toastCount: 0\n      }\n    },\n    methods: {\n      makeToast(append = false) {\n        this.toastCount++\n        this.$bvToast.toast(`This is toast number ".concat(this.toastCount, "`, {\n          title: 'BootstrapVue Toast',\n          autoHideDelay: 5000,\n          appendToast: append\n        })\n      }\n    }\n  }")
+        html: "<div>\n  <b-card no-body>\n    <b-tabs card>\n      <b-tab no-body title=\"Picture 1\">\n        <b-card-img bottom src=\"https://picsum.photos/600/200/?image=21\"></b-card-img>\n        <b-card-footer>Picture 1 footer</b-card-footer>\n      </b-tab>\n\n      <b-tab no-body title=\"Picture 2\">\n        <b-card-img bottom src=\"https://picsum.photos/600/200/?image=25\"></b-card-img>\n        <b-card-footer>Picture 2 footer</b-card-footer>\n      </b-tab>\n\n      <b-tab no-body title=\"Picture 3\">\n        <b-card-img bottom src=\"https://picsum.photos/600/200/?image=26\"></b-card-img>\n        <b-card-footer>Picture 3 footer</b-card-footer>\n      </b-tab>\n\n      <b-tab title=\"Text\">\n        <b-card-title>This tab does not have the <code>no-body</code> prop set</b-card-title>\n        <b-card-text>\n          Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum\n          consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex\n          consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt\n          veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua\n          esse irure.\n        </b-card-text>\n      </b-tab>\n    </b-tabs>\n  </b-card>\n</div>"
       },
-      toastCount: 0,
       code3: {
-        html: "<div>\n    <b-button @click=\"makeToast()\" class=\"mb-2\">Default</b-button>\n    <b-button variant=\"primary\" @click=\"makeToast('primary')\" class=\"mb-2\">Primary</b-button>\n    <b-button variant=\"secondary\" @click=\"makeToast('secondary')\" class=\"mb-2\">Secondary</b-button>\n    <b-button variant=\"danger\" @click=\"makeToast('danger')\" class=\"mb-2\">Danger</b-button>\n    <b-button variant=\"warning\" @click=\"makeToast('warning')\" class=\"mb-2\">Warning</b-button>\n    <b-button variant=\"success\" @click=\"makeToast('success')\" class=\"mb-2\">Success</b-button>\n    <b-button variant=\"info\" @click=\"makeToast('info')\" class=\"mb-2\">Info</b-button>\n  </div>",
-        js: "export default {\n" + "    methods: {\n" + "      makeToast(variant = null) {\n" + "        this.$bvToast.toast('Toast body content', {\n" + "          title: `Variant ${variant || 'default'}`,\n" + "          variant: variant,\n" + "          solid: true\n" + "        })\n" + "      }\n" + "    }\n" + "  }"
+        html: "<div>\n  <b-card no-body>\n    <b-tabs pills card>\n      <b-tab title=\"Tab 1\" active><b-card-text>Tab Contents 1</b-card-text></b-tab>\n      <b-tab title=\"Tab 2\"><b-card-text>Tab Contents 2</b-card-text></b-tab>\n    </b-tabs>\n  </b-card>\n</div>"
       },
       code4: {
-        html: "<div>\n    <b-button @click=\"toast('b-toaster-top-right')\" class=\"mb-2\">b-toaster-top-right</b-button>\n    <b-button @click=\"toast('b-toaster-top-left')\" class=\"mb-2\">b-toaster-top-left</b-button>\n    <b-button @click=\"toast('b-toaster-top-center')\" class=\"mb-2\">b-toaster-top-center</b-button>\n    <b-button @click=\"toast('b-toaster-top-full')\" class=\"mb-2\">b-toaster-top-full</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-right', true)\" class=\"mb-2\">b-toaster-bottom-right</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-left', true)\" class=\"mb-2\">b-toaster-bottom-left</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-center', true)\" class=\"mb-2\">b-toaster-bottom-center</b-button>\n    <b-button @click=\"toast('b-toaster-bottom-full', true)\" class=\"mb-2\">b-toaster-bottom-full</b-button>\n  </div>",
-        js: "export default {\n" + "    data() {\n" + "      return {\n" + "        counter: 0\n" + "      }\n" + "    },\n" + "    methods: {\n" + "      toast(toaster, append = false) {\n" + "        this.counter++\n" + "        this.$bvToast.toast(`Toast ${this.counter} body content`, {\n" + "          title: `Toaster ${toaster}`,\n" + "          toaster: toaster,\n" + "          solid: true,\n" + "          appendToast: append\n" + "        })\n" + "      }\n" + "    }\n" + "  }"
+        html: "<div>\n  <b-tabs content-class=\"mt-3\" fill>\n    <b-tab title=\"First\" active><p>I'm the first tab</p></b-tab>\n    <b-tab title=\"Second\"><p>I'm the second tab</p></b-tab>\n    <b-tab title=\"Very, very long title\"><p>I'm the tab with the very, very long title</p></b-tab>\n    <b-tab title=\"Disabled\" disabled><p>I'm a disabled tab!</p></b-tab>\n  </b-tabs>\n</div>"
       },
-      counter: 0
+      code5: {
+        html: "<div>\n  <b-tabs content-class=\"mt-3\" justified>\n    <b-tab title=\"First\" active><p>I'm the first tab</p></b-tab>\n    <b-tab title=\"Second\"><p>I'm the second tab</p></b-tab>\n    <b-tab title=\"Very, very long title\"><p>I'm the tab with the very, very long title</p></b-tab>\n    <b-tab title=\"Disabled\" disabled><p>I'm a disabled tab!</p></b-tab>\n  </b-tabs>\n</div>"
+      },
+      code6: {
+        html: "<div>\n  <b-card no-body>\n    <b-tabs pills card vertical>\n      <b-tab title=\"Tab 1\" active><b-card-text>Tab Contents 1</b-card-text></b-tab>\n      <b-tab title=\"Tab 2\"><b-card-text>Tab Contents 2</b-card-text></b-tab>\n      <b-tab title=\"Tab 3\"><b-card-text>Tab Contents 3</b-card-text></b-tab>\n    </b-tabs>\n  </b-card>\n</div>"
+      },
+      code7: {
+        html: "<div>\n  <b-tabs>\n    <b-tab active>\n      <template v-slot:title>\n        <b-spinner type=\"grow\" small></b-spinner> I'm <i>Custom</i> <strong>Title</strong>\n      </template>\n      <p class=\"p-3\">Tab Contents 1</p>\n    </b-tab>\n\n    <b-tab>\n      <template v-slot:title>\n        <b-spinner type=\"border\" small></b-spinner> Tab 2\n      </template>\n      <p class=\"p-3\">Tab Contents 2</p>\n    </b-tab>\n  </b-tabs>\n</div>"
+      }
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  methods: {
-    makeToast: function makeToast() {
-      var append = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-      this.toastCount++;
-      this.$bvToast.toast("This is toast number ".concat(this.toastCount), {
-        title: "BootstrapVue Toast",
-        autoHideDelay: 5000,
-        appendToast: append
-      });
-    },
-    toast: function toast(toaster) {
-      var append = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-      this.counter++;
-      this.$bvToast.toast("Toast ".concat(this.counter, " body content"), {
-        title: "Toaster ".concat(toaster),
-        toaster: toaster,
-        solid: true,
-        appendToast: append
-      });
-    },
-    makeToastVariant: function makeToastVariant() {
-      var variant = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-      this.$bvToast.toast("Toast body content", {
-        title: "Variant ".concat(variant || "default"),
-        variant: variant,
-        solid: true
-      });
-    }
   },
   mounted: function mounted() {
     this.$store.dispatch(_core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__["SET_BREADCRUMB"], [{
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Notify",
-      route: "popover"
-    }, {
-      title: "Toasts"
+      title: ""
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250& ***!
-  \***************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc& ***!
+  \*************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -344,16 +344,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Toasts")]),
+            _c("b", [_vm._v("Tabs")]),
             _vm._v(
-              " Push notifications to your visitors with a <b-toast>\n      and <b-toaster>, lightweight components which are easily\n      customizable for generating alert messages.\n      "
+              " Create a widget of tabbable panes of local content. The tabs\n      component is built upon navs and cards internally, and provides full\n      keyboard navigation control of the tabs.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/toast",
+                  href: "https://bootstrap-vue.js.org/docs/components/tabs",
                   target: "_blank",
                 },
               },
@@ -366,61 +366,39 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-12" },
+          { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Toasts" },
+              attrs: { title: "Basic usage" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Toasts are slightly translucent, too, so they blend over whatever\n            they might appear over. For browsers that support the\n            "
-                        ),
-                        _c("code", [_vm._v("backdrop-filter")]),
-                        _vm._v(
-                          " CSS property, they also attempt to\n            blur the elements under the toast.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
                         "div",
-                        {
-                          staticClass: "p-3 bg-secondary progress-bar-striped",
-                          staticStyle: { "min-height": "170px" },
-                        },
                         [
                           _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2",
-                              attrs: { variant: "primary" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.$bvToast.show("example-toast")
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Show toast\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-toast",
-                            {
-                              attrs: {
-                                id: "example-toast",
-                                title: "BootstrapVue",
-                                static: "",
-                                "no-auto-hide": "",
-                              },
-                            },
+                            "b-tabs",
+                            { attrs: { "content-class": "mt-3" } },
                             [
-                              _vm._v(
-                                "\n              Hello, world! This is a toast message.\n            "
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "First", active: "" } },
+                                [_c("p", [_vm._v("I'm the first tab")])]
                               ),
-                            ]
+                              _vm._v(" "),
+                              _c("b-tab", { attrs: { title: "Second" } }, [
+                                _c("p", [_vm._v("I'm the second tab")]),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "Disabled", disabled: "" } },
+                                [_c("p", [_vm._v("I'm a disabled tab!")])]
+                              ),
+                            ],
+                            1
                           ),
                         ],
                         1
@@ -444,23 +422,21 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Toasts on demand" },
+              attrs: { title: "Pills variant" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            Tabs use the "),
+                        _c("code", [_vm._v("tabs")]),
+                        _vm._v(" styling by default. Just add\n            "),
+                        _c("code", [_vm._v("pills")]),
+                        _vm._v(" property to "),
+                        _c("code", [_vm._v("<b-tabs>")]),
                         _vm._v(
-                          "\n            Generate a dynamic toast from anywhere in your app via the\n            "
-                        ),
-                        _c("code", [_vm._v("this.$bvToast")]),
-                        _vm._v(
-                          " Vue component instance injection,\n            without the need to place a "
-                        ),
-                        _c("code", [_vm._v("<b-toast>")]),
-                        _vm._v(
-                          " component\n            in your app.\n          "
+                          " for the\n            pill style variant.\n          "
                         ),
                       ]),
                       _vm._v(" "),
@@ -468,188 +444,39 @@ var render = function () {
                         "div",
                         [
                           _c(
-                            "b-button",
-                            {
-                              staticClass: "mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToast()
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Show Toast\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToast(true)
-                                },
-                              },
-                            },
+                            "b-card",
+                            { attrs: { "no-body": "" } },
                             [
-                              _vm._v(
-                                "\n              Show Toast (appended)\n            "
+                              _c(
+                                "b-tabs",
+                                { attrs: { pills: "", card: "" } },
+                                [
+                                  _c(
+                                    "b-tab",
+                                    { attrs: { title: "Tab 1", active: "" } },
+                                    [
+                                      _c("b-card-text", [
+                                        _vm._v("Tab Contents 1"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-tab",
+                                    { attrs: { title: "Tab 2" } },
+                                    [
+                                      _c("b-card-text", [
+                                        _vm._v("Tab Contents 2"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
                               ),
-                            ]
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Variants" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            BootstrapVue toasts provide custom CSS to define color variants.\n            Variants follow the standard Bootstrap v4 variant names. If you\n            have custom SCSS defined Bootstrap color theme variants, the toast\n            custom SCSS will automatically create toast variants for you\n            (refer to the\n            "
-                        ),
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              href: "https://bootstrap-vue.js.org/docs/reference/theming",
-                              target: "_blank",
-                            },
-                          },
-                          [_vm._v("\n              Theming\n            ")]
-                        ),
-                        _vm._v("\n            reference section).\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        [
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToastVariant()
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Default\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              attrs: { variant: "primary" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToastVariant("primary")
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Primary\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              attrs: { variant: "secondary" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToastVariant("secondary")
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Secondary\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              attrs: { variant: "danger" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToastVariant("danger")
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Danger\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              attrs: { variant: "warning" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToastVariant("warning")
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Warning\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              attrs: { variant: "success" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToastVariant("success")
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Success\n            ")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2",
-                              attrs: { variant: "info" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.makeToastVariant("info")
-                                },
-                              },
-                            },
-                            [_vm._v("\n              Info\n            ")]
+                            ],
+                            1
                           ),
                         ],
                         1
@@ -669,22 +496,11 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Toaster target" },
+              attrs: { title: "Fill" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -692,7 +508,11 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            The below toasters place the toasts in a stacked (columnar\n            format), fixed within the viewport (meaning they will always be in\n            view regardless of viewport scroll position). If there are more\n            toasts than can fit on the viewport screen, some will be visually\n            hidden offscreen until other toasts are closed/hidden.\n          "
+                          "\n            To proportionately fill all available space with your tab\n            controls, set the "
+                        ),
+                        _c("code", [_vm._v("fill")]),
+                        _vm._v(
+                          " prop. Notice that all\n            horizontal space is occupied, but not every control has the same\n            width.\n          "
                         ),
                       ]),
                       _vm._v(" "),
@@ -700,151 +520,38 @@ var render = function () {
                         "div",
                         [
                           _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast("b-toaster-top-right")
-                                },
-                              },
-                            },
+                            "b-tabs",
+                            { attrs: { "content-class": "mt-3", fill: "" } },
                             [
-                              _vm._v(
-                                "\n              b-toaster-top-right\n            "
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "First", active: "" } },
+                                [_c("p", [_vm._v("I'm the first tab")])]
                               ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast("b-toaster-top-left")
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n              b-toaster-top-left\n            "
+                              _vm._v(" "),
+                              _c("b-tab", { attrs: { title: "Second" } }, [
+                                _c("p", [_vm._v("I'm the second tab")]),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "Very, very long title" } },
+                                [
+                                  _c("p", [
+                                    _vm._v(
+                                      "I'm the tab with the very, very long title"
+                                    ),
+                                  ]),
+                                ]
                               ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast("b-toaster-top-center")
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n              b-toaster-top-center\n            "
+                              _vm._v(" "),
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "Disabled", disabled: "" } },
+                                [_c("p", [_vm._v("I'm a disabled tab!")])]
                               ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast("b-toaster-top-full")
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n              b-toaster-top-full\n            "
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast(
-                                    "b-toaster-bottom-right",
-                                    true
-                                  )
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n              b-toaster-bottom-right\n            "
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast(
-                                    "b-toaster-bottom-left",
-                                    true
-                                  )
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n              b-toaster-bottom-left\n            "
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2 mr-3",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast(
-                                    "b-toaster-bottom-center",
-                                    true
-                                  )
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n              b-toaster-bottom-center\n            "
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "mb-2",
-                              on: {
-                                click: function ($event) {
-                                  return _vm.toast(
-                                    "b-toaster-bottom-full",
-                                    true
-                                  )
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n              b-toaster-bottom-full\n            "
-                              ),
-                            ]
+                            ],
+                            1
                           ),
                         ],
                         1
@@ -864,12 +571,447 @@ var render = function () {
                   },
                   proxy: true,
                 },
+              ]),
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("KTCodePreview", {
+              attrs: { title: "Justified" },
+              scopedSlots: _vm._u([
                 {
-                  key: "js",
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            For equal-width controls, use the "
+                        ),
+                        _c("code", [_vm._v("justified")]),
+                        _vm._v(
+                          " prop\n            instead. All horizontal space will be occupied by the controls,\n            but unlike using "
+                        ),
+                        _c("code", [_vm._v("fill")]),
+                        _vm._v(
+                          " above, every control will be\n            the same width.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-tabs",
+                            {
+                              attrs: { "content-class": "mt-3", justified: "" },
+                            },
+                            [
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "First", active: "" } },
+                                [_c("p", [_vm._v("I'm the first tab")])]
+                              ),
+                              _vm._v(" "),
+                              _c("b-tab", { attrs: { title: "Second" } }, [
+                                _c("p", [_vm._v("I'm the second tab")]),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "Very, very long title" } },
+                                [
+                                  _c("p", [
+                                    _vm._v(
+                                      "I'm the tab with the very, very long title"
+                                    ),
+                                  ]),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-tab",
+                                { attrs: { title: "Disabled", disabled: "" } },
+                                [_c("p", [_vm._v("I'm a disabled tab!")])]
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
                   fn: function () {
                     return [
                       _vm._v(
-                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Vertical tabs" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Have the tab controls placed on the lefthand side by setting the\n            "
+                        ),
+                        _c("code", [_vm._v("vertical")]),
+                        _vm._v(" prop to "),
+                        _c("code", [_vm._v("true")]),
+                        _vm._v(
+                          ". Vertical tabs\n            work with or without "
+                        ),
+                        _c("code", [_vm._v("card")]),
+                        _vm._v(" mode enabled.\n          "),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-card",
+                            { attrs: { "no-body": "" } },
+                            [
+                              _c(
+                                "b-tabs",
+                                {
+                                  attrs: { pills: "", card: "", vertical: "" },
+                                },
+                                [
+                                  _c(
+                                    "b-tab",
+                                    { attrs: { title: "Tab 1", active: "" } },
+                                    [
+                                      _c("b-card-text", [
+                                        _vm._v("Tab Contents 1"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-tab",
+                                    { attrs: { title: "Tab 2" } },
+                                    [
+                                      _c("b-card-text", [
+                                        _vm._v("Tab Contents 2"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-tab",
+                                    { attrs: { title: "Tab 3" } },
+                                    [
+                                      _c("b-card-text", [
+                                        _vm._v("Tab Contents 3"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Add custom content to tab title" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            If you want to add custom content to tab title, like HTML code,\n            icons, or another non-interactive Vue component, this possible by\n            using "
+                        ),
+                        _c("code", [_vm._v("title")]),
+                        _vm._v(" slot of "),
+                        _c("code", [_vm._v("<b-tab>")]),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-tabs",
+                            [
+                              _c(
+                                "b-tab",
+                                {
+                                  attrs: { active: "" },
+                                  scopedSlots: _vm._u([
+                                    {
+                                      key: "title",
+                                      fn: function () {
+                                        return [
+                                          _c("b-spinner", {
+                                            attrs: { type: "grow", small: "" },
+                                          }),
+                                          _vm._v(" I'm "),
+                                          _c("i", [_vm._v("Custom")]),
+                                          _vm._v(" "),
+                                          _c("strong", [_vm._v("Title")]),
+                                        ]
+                                      },
+                                      proxy: true,
+                                    },
+                                  ]),
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "p-3" }, [
+                                    _vm._v("Tab Contents 1"),
+                                  ]),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-tab",
+                                {
+                                  scopedSlots: _vm._u([
+                                    {
+                                      key: "title",
+                                      fn: function () {
+                                        return [
+                                          _c("b-spinner", {
+                                            attrs: {
+                                              type: "border",
+                                              small: "",
+                                            },
+                                          }),
+                                          _vm._v(" Tab 2\n                "),
+                                        ]
+                                      },
+                                      proxy: true,
+                                    },
+                                  ]),
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "p-3" }, [
+                                    _vm._v("Tab Contents 2"),
+                                  ]),
+                                ]
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code7.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-12" },
+          [
+            _c("KTCodePreview", {
+              attrs: { title: "Cards integration" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Tabs support integrating with Bootstrap cards. Just add the card\n            property to "
+                        ),
+                        _c("code", [_vm._v("<b-tabs>")]),
+                        _vm._v(" and place it inside a\n            "),
+                        _c("code", [_vm._v("<b-card>")]),
+                        _vm._v(
+                          " component. Note that you should add\n            the "
+                        ),
+                        _c("code", [_vm._v("no-body")]),
+                        _vm._v(" prop on the\n            "),
+                        _c("code", [_vm._v("<b-card>")]),
+                        _vm._v(
+                          " component in order to properly\n            decorate the card header and remove the extra padding introduced\n            by "
+                        ),
+                        _c("code", [_vm._v("card-body")]),
+                        _vm._v(".\n          "),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-card",
+                            { attrs: { "no-body": "" } },
+                            [
+                              _c(
+                                "b-tabs",
+                                { attrs: { card: "" } },
+                                [
+                                  _c(
+                                    "b-tab",
+                                    {
+                                      attrs: {
+                                        "no-body": "",
+                                        title: "Picture 1",
+                                      },
+                                    },
+                                    [
+                                      _c("b-card-img", {
+                                        attrs: {
+                                          bottom: "",
+                                          src: "https://picsum.photos/600/200/?image=21",
+                                        },
+                                      }),
+                                      _vm._v(" "),
+                                      _c("b-card-footer", [
+                                        _vm._v("Picture 1 footer"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-tab",
+                                    {
+                                      attrs: {
+                                        "no-body": "",
+                                        title: "Picture 2",
+                                      },
+                                    },
+                                    [
+                                      _c("b-card-img", {
+                                        attrs: {
+                                          bottom: "",
+                                          src: "https://picsum.photos/600/200/?image=25",
+                                        },
+                                      }),
+                                      _vm._v(" "),
+                                      _c("b-card-footer", [
+                                        _vm._v("Picture 2 footer"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-tab",
+                                    {
+                                      attrs: {
+                                        "no-body": "",
+                                        title: "Picture 3",
+                                      },
+                                    },
+                                    [
+                                      _c("b-card-img", {
+                                        attrs: {
+                                          bottom: "",
+                                          src: "https://picsum.photos/600/200/?image=26",
+                                        },
+                                      }),
+                                      _vm._v(" "),
+                                      _c("b-card-footer", [
+                                        _vm._v("Picture 3 footer"),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-tab",
+                                    { attrs: { title: "Text" } },
+                                    [
+                                      _c("b-card-title", [
+                                        _vm._v(
+                                          "\n                    This tab does not have the "
+                                        ),
+                                        _c("code", [_vm._v("no-body")]),
+                                        _vm._v(" prop set\n                  "),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-card-text", [
+                                        _vm._v(
+                                          "\n                    Quis magna Lorem anim amet ipsum do mollit sit cillum\n                    voluptate ex nulla tempor. Laborum consequat non elit enim\n                    exercitation cillum aliqua consequat id aliqua. Esse ex\n                    consectetur mollit voluptate est in duis laboris ad sit\n                    ipsum anim Lorem. Incididunt veniam velit elit elit veniam\n                    Lorem aliqua quis ullamco deserunt sit enim elit aliqua\n                    esse irure.\n                  "
+                                        ),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
                       ),
                     ]
                   },
@@ -892,17 +1034,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue":
-/*!**************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Toasts.vue ***!
-  \**************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Tabs.vue ***!
+  \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Toasts.vue?vue&type=template&id=203fa250& */ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&");
-/* harmony import */ var _Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Toasts.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tabs.vue?vue&type=template&id=c8e13ebc& */ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&");
+/* harmony import */ var _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tabs.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -912,9 +1054,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -924,38 +1066,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Toasts.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Tabs.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Toasts.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&":
-/*!*********************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250& ***!
-  \*********************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc& ***!
+  \*******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Toasts.vue?vue&type=template&id=203fa250& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Toasts.vue?vue&type=template&id=203fa250&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=template&id=c8e13ebc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Tabs.vue?vue&type=template&id=c8e13ebc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Toasts_vue_vue_type_template_id_203fa250___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_c8e13ebc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[80],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11,76 +11,18 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/view/content/CodePreview.vue */ "./resources/js/src/view/content/CodePreview.vue");
 /* harmony import */ var _core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/core/services/store/breadcrumbs.module */ "./resources/js/src/core/services/store/breadcrumbs.module.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 //
 //
 //
@@ -556,59 +498,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 
-var COLORS = ["info", "warning", "error", "success"];
-var ICONS = {
-  info: "mdi-information",
-  warning: "mdi-alert",
-  error: "mdi-alert-circle",
-  success: "mdi-check-circle"
-};
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<v-timeline :dense=\"$vuetify.breakpoint.smAndDown\">\n  <v-timeline-item\n    color=\"purple lighten-2\"\n    fill-dot\n    right\n  >\n    <v-card>\n      <v-card-title class=\"purple lighten-2\">\n        <v-icon\n          dark\n          size=\"42\"\n          class=\"mr-4\"\n        >\n          mdi-magnify\n        </v-icon>\n        <h2 class=\"display-1 white--text font-weight-light\">Title 1</h2>\n      </v-card-title>\n      <v-container>\n        <v-row>\n          <v-col cols=\"12\" md=\"10\">\n            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.\n          </v-col>\n          <v-col\n            class=\"hidden-sm-and-down text-right\"\n            md=\"2\"\n          >\n            <v-icon size=\"64\">mdi-calendar-text</v-icon>\n          </v-col>\n        </v-row>\n      </v-container>\n    </v-card>\n  </v-timeline-item>\n\n  <v-timeline-item\n    color=\"amber lighten-1\"\n    fill-dot\n    left\n    small\n  >\n    <v-card>\n      <v-card-title class=\"amber lighten-1 justify-end\">\n        <h2 class=\"display-1 mr-4 white--text font-weight-light\">Title 2</h2>\n        <v-icon\n          dark\n          size=\"42\"\n        >mdi-home-outline</v-icon>\n      </v-card-title>\n      <v-container>\n        <v-row>\n          <v-col cols=\"12\" md=\"8\">\n            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.\n          </v-col>\n          <v-col cols=\"12\" md=\"4\">\n            Lorem ipsum dolor sit amet, no nam oblique veritus.\n          </v-col>\n        </v-row>\n      </v-container>\n    </v-card>\n  </v-timeline-item>\n\n  <v-timeline-item\n    color=\"cyan lighten-1\"\n    fill-dot\n    right\n  >\n    <v-card>\n      <v-card-title class=\"cyan lighten-1\">\n        <v-icon\n          class=\"mr-4\"\n          dark\n          size=\"42\"\n        >\n          mdi-email-outline\n        </v-icon>\n        <h2 class=\"display-1 white--text font-weight-light\">Title 3</h2>\n      </v-card-title>\n      <v-container>\n        <v-row>\n          <v-col\n            v-for=\"n in 3\"\n            :key=\"n\"\n            cols=\"12\"\n            md=\"4\"\n          >\n            Lorem ipsum dolor sit amet, no nam oblique veritus no nam oblique.\n          </v-col>\n        </v-row>\n      </v-container>\n    </v-card>\n  </v-timeline-item>\n\n  <v-timeline-item\n    color=\"red lighten-1\"\n    fill-dot\n    left\n    small\n  >\n    <v-card>\n      <v-card-title class=\"red lighten-1 justify-end\">\n        <h2 class=\"display-1 mr-4 white--text font-weight-light\">Title 4</h2>\n        <v-icon\n          dark\n          size=\"42\"\n        >\n          mdi-account-multiple-outline\n        </v-icon>\n      </v-card-title>\n      <v-container>\n        <v-row>\n          <v-col class=\"hidden-sm-and-down\" md=\"2\">\n            <v-icon size=\"64\">mdi-server-network</v-icon>\n          </v-col>\n          <v-col cols=\"12\" md=\"10\">\n            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus.\n          </v-col>\n        </v-row>\n      </v-container>\n    </v-card>\n  </v-timeline-item>\n\n  <v-timeline-item\n    color=\"green lighten-1\"\n    fill-dot\n    right\n  >\n    <v-card>\n      <v-card-title class=\"green lighten-1\">\n        <v-icon\n          class=\"mr-4\"\n          dark\n          size=\"42\"\n        >\n          mdi-phone-in-talk\n        </v-icon>\n        <h2 class=\"display-1 white--text font-weight-light\">Title 5</h2>\n      </v-card-title>\n      <v-container>\n        <v-row>\n          <v-col>\n            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.\n          </v-col>\n        </v-row>\n      </v-container>\n    </v-card>\n  </v-timeline-item>\n</v-timeline>"
+        html: "<v-card>\n  <v-toolbar flat color=\"primary\" dark>\n    <v-toolbar-title>User Profile</v-toolbar-title>\n  </v-toolbar>\n  <v-tabs vertical>\n    <v-tab>\n      <v-icon left>mdi-account</v-icon>\n      Option 1\n    </v-tab>\n    <v-tab>\n      <v-icon left>mdi-lock</v-icon>\n      Option 2\n    </v-tab>\n    <v-tab>\n      <v-icon left>mdi-access-point</v-icon>\n      Option 3\n    </v-tab>\n\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          <p>\n            Sed aliquam ultrices mauris. Donec posuere vulputate arcu. Morbi ac felis. Etiam feugiat lorem non metus. Sed a libero.\n          </p>\n\n          <p>\n            Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Aliquam lobortis. Aliquam lobortis. Suspendisse non nisl sit amet velit hendrerit rutrum.\n          </p>\n\n          <p class=\"mb-0\">\n            Phasellus dolor. Fusce neque. Fusce fermentum odio nec arcu. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Phasellus blandit leo ut odio.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          <p>\n            Morbi nec metus. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Nunc sed turpis.\n          </p>\n\n          <p>\n            Suspendisse feugiat. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. In hac habitasse platea dictumst. Fusce ac felis sit amet ligula pharetra condimentum.\n          </p>\n\n          <p>\n            Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Nam commodo suscipit quam. In consectetuer turpis ut velit. Sed cursus turpis vitae tortor. Aliquam eu nunc.\n          </p>\n\n          <p>\n            Etiam ut purus mattis mauris sodales aliquam. Ut varius tincidunt libero. Aenean viverra rhoncus pede. Duis leo. Fusce fermentum odio nec arcu.\n          </p>\n\n          <p class=\"mb-0\">\n            Donec venenatis vulputate lorem. Aenean viverra rhoncus pede. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Fusce commodo aliquam arcu. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          <p>\n            Fusce a quam. Phasellus nec sem in justo pellentesque facilisis. Nam eget dui. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.\n          </p>\n\n          <p class=\"mb-0\">\n            Cras sagittis. Phasellus nec sem in justo pellentesque facilisis. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nam at tortor in tellus interdum sagittis.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs>\n</v-card>"
       },
       code2: {
-        html: "<v-timeline align-top :dense=\"$vuetify.breakpoint.smAndDown\">\n  <v-timeline-item\n    v-for=\"(item, i) in items\"\n    :key=\"i\"\n    :color=\"item.color\"\n    :icon=\"item.icon\"\n    fill-dot\n  >\n    <v-card\n      :color=\"item.color\"\n      dark\n    >\n      <v-card-title class=\"title\">Lorem Ipsum Dolor</v-card-title>\n      <v-card-text class=\"white text--primary\">\n        <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>\n        <v-btn\n          :color=\"item.color\"\n          class=\"mx-0\"\n          outlined\n        >\n          Button\n        </v-btn>\n      </v-card-text>\n    </v-card>\n  </v-timeline-item>\n</v-timeline>",
-        js: "export default {\n  data: () => ({\n    items: [\n      {\n        color: 'red lighten-2',\n        icon: 'mdi-star',\n      },\n      {\n        color: 'purple darken-1',\n        icon: 'mdi-book-variant',\n      },\n      {\n        color: 'green lighten-1',\n        icon: 'mdi-airballoon',\n      },\n      {\n        color: 'indigo',\n        icon: 'mdi-buffer',\n      },\n    ],\n  }),\n}",
-        items: [{
-          color: "red lighten-2",
-          icon: "mdi-star"
-        }, {
-          color: "purple darken-1",
-          icon: "mdi-book-variant"
-        }, {
-          color: "green lighten-1",
-          icon: "mdi-airballoon"
-        }, {
-          color: "indigo",
-          icon: "mdi-buffer"
-        }]
+        html: "<v-card>\n  <v-tabs\n    v-model=\"tab\"\n    background-color=\"deep-purple accent-4\"\n    centered\n    dark\n    icons-and-text\n  >\n    <v-tabs-slider></v-tabs-slider>\n\n    <v-tab href=\"#tab-1\">\n      Recents\n      <v-icon>mdi-phone</v-icon>\n    </v-tab>\n\n    <v-tab href=\"#tab-2\">\n      Favorites\n      <v-icon>mdi-heart</v-icon>\n    </v-tab>\n\n    <v-tab href=\"#tab-3\">\n      Nearby\n      <v-icon>mdi-account-box</v-icon>\n    </v-tab>\n  </v-tabs>\n\n  <v-tabs-items v-model=\"tab\">\n    <v-tab-item\n      v-for=\"i in 3\"\n      :key=\"i\"\n      :value=\"'tab-' + i\"\n    >\n      <v-card flat>\n        <v-card-text>{{ text }}</v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
+        js: "export default {\n    data () {\n      return {\n        tab: null,\n        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n      }\n    },\n  }",
+        tab: null,
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       code3: {
-        html: "<v-card\n  class=\"mx-auto\"\n  max-width=\"600\"\n>\n  <v-card-title\n    class=\"blue-grey white--text\"\n  >\n    <span class=\"title\">Logs</span>\n    <v-spacer></v-spacer>\n    <v-btn\n      :outlined=\"interval == null\"\n      :color=\"interval == null ? 'white' : 'primary'\"\n      dark\n      depressed\n      @click=\"interval == null ? start() : stop()\"\n    >\n      Realtime Logging\n    </v-btn>\n  </v-card-title>\n  <v-card-text class=\"py-0\">\n    <v-timeline dense>\n      <v-slide-x-reverse-transition\n        group\n        hide-on-leave\n      >\n        <v-timeline-item\n          v-for=\"item in items\"\n          :key=\"item.id\"\n          :color=\"item.color\"\n          small\n          fill-dot\n        >\n          <v-alert\n            :value=\"true\"\n            :color=\"item.color\"\n            :icon=\"item.icon\"\n            class=\"white--text\"\n          >\n            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.\n          </v-alert>\n        </v-timeline-item>\n      </v-slide-x-reverse-transition>\n    </v-timeline>\n  </v-card-text>\n</v-card>",
-        js: "const COLORS = [\n  'info',\n  'warning',\n  'error',\n  'success',\n]\nconst ICONS = {\n  info: 'mdi-information',\n  warning: 'mdi-alert',\n  error: 'mdi-alert-circle',\n  success: 'mdi-check-circle',\n}\n\nexport default {\n  data: () => ({\n    interval: null,\n    items: [\n      {\n        id: 1,\n        color: 'info',\n        icon: ICONS['info'],\n      },\n    ],\n    nonce: 2,\n  }),\n\n  beforeDestroy () {\n    this.stop()\n  },\n\n  methods: {\n    addEvent () {\n      let { color, icon } = this.genAlert()\n\n      const previousColor = this.items[0].color\n\n      while (previousColor === color) {\n        color = this.genColor()\n      }\n\n      this.items.unshift({\n        id: this.nonce++,\n        color,\n        icon,\n      })\n\n      if (this.nonce > 6) {\n        this.items.pop()\n      }\n    },\n    genAlert () {\n      const color = this.genColor()\n\n      return {\n        color,\n        icon: this.genIcon(color),\n      }\n    },\n    genColor () {\n      return COLORS[Math.floor(Math.random() * 3)]\n    },\n    genIcon (color) {\n      return ICONS[color]\n    },\n    start () {\n      this.interval = setInterval(this.addEvent, 3000)\n    },\n    stop () {\n      clearInterval(this.interval)\n      this.interval = null\n    },\n  },\n}"
+        html: "<v-card>\n  <v-tabs\n    background-color=\"white\"\n    color=\"deep-purple accent-4\"\n    right\n  >\n    <v-tab>Landscape</v-tab>\n    <v-tab>City</v-tab>\n    <v-tab>Abstract</v-tab>\n\n    <v-tab-item\n      v-for=\"n in 3\"\n      :key=\"n\"\n    >\n      <v-container fluid>\n        <v-row>\n          <v-col\n            v-for=\"i in 6\"\n            :key=\"i\"\n            cols=\"12\"\n            md=\"4\"\n          >\n            <v-img\n              :src=\"`https://picsum.photos/500/300?image=${i * n * 5 + 10}`\"\n              :lazy-src=\"`https://picsum.photos/10/6?image=${i * n * 5 + 10}`\"\n              aspect-ratio=\"1\"\n            ></v-img>\n          </v-col>\n        </v-row>\n      </v-container>\n    </v-tab-item>\n  </v-tabs>\n</v-card>"
       },
-      interval: null,
-      items: [{
-        id: 1,
-        color: "info",
-        icon: ICONS["info"]
-      }],
-      nonce: 2,
       code4: {
-        html: "<v-card\n  class=\"mx-auto\"\n  max-width=\"400\"\n>\n  <v-card\n    dark\n    flat\n  >\n    <v-btn\n      absolute\n      bottom\n      color=\"pink\"\n      right\n      fab\n    >\n      <v-icon>mdi-plus</v-icon>\n    </v-btn>\n    <v-card-title class=\"pa-2 purple lighten-3\">\n      <v-btn icon>\n        <v-icon>mdi-menu</v-icon>\n      </v-btn>\n      <h3 class=\"title font-weight-light text-center grow\">Timeline</h3>\n      <v-avatar>\n        <v-img src=\"https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light\"></v-img>\n      </v-avatar>\n    </v-card-title>\n    <v-img\n      src=\"media/stock-600x600/img-10.jpg\"\n      gradient=\"to top, rgba(0,0,0,.44), rgba(0,0,0,.44)\"\n    >\n      <v-container class=\"fill-height\">\n        <v-row align=\"center\">\n          <strong class=\"display-4 font-weight-regular mr-6\">8</strong>\n          <v-row justify=\"end\">\n            <div class=\"headline font-weight-light\">Monday</div>\n            <div class=\"text-uppercase font-weight-light\">February 2015</div>\n          </v-row>\n        </v-row>\n      </v-container>\n    </v-img>\n  </v-card>\n  <v-card-text class=\"py-0\">\n    <v-timeline\n      align-top\n      dense\n    >\n      <v-timeline-item\n        color=\"pink\"\n        small\n      >\n        <v-row class=\"pt-1\">\n          <v-col cols=\"3\">\n            <strong>5pm</strong>\n          </v-col>\n          <v-col>\n            <strong>New Icon</strong>\n            <div class=\"caption\">Mobile App</div>\n          </v-col>\n        </v-row>\n      </v-timeline-item>\n\n      <v-timeline-item\n        color=\"teal lighten-3\"\n        small\n      >\n        <v-row class=\"pt-1\">\n          <v-col cols=\"3\">\n            <strong>3-4pm</strong>\n          </v-col>\n          <v-col>\n            <strong>Design Stand Up</strong>\n            <div class=\"caption mb-2\">Hangouts</div>\n            <v-avatar>\n              <v-img\n                src=\"https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Kurt&hairColor=Red&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Skull&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Disbelief&skinColor=Brown\"\n              ></v-img>\n            </v-avatar>\n            <v-avatar>\n\n              <v-img\n                src=\"https://avataaars.io/?avatarStyle=Circle&topType=ShortHairFrizzle&accessoriesType=Prescription02&hairColor=Black&facialHairType=MoustacheMagnum&facialHairColor=BrownDark&clotheType=BlazerSweater&clotheColor=Black&eyeType=Default&eyebrowType=FlatNatural&mouthType=Default&skinColor=Tanned\"\n              ></v-img>\n            </v-avatar>\n            <v-avatar>\n              <v-img\n                src=\"https://avataaars.io/?avatarStyle=Circle&topType=LongHairMiaWallace&accessoriesType=Sunglasses&hairColor=BlondeGolden&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Surprised&eyebrowType=RaisedExcited&mouthType=Smile&skinColor=Pale\"\n              ></v-img>\n            </v-avatar>\n          </v-col>\n        </v-row>\n      </v-timeline-item>\n\n      <v-timeline-item\n        color=\"pink\"\n        small\n      >\n        <v-row class=\"pt-1\">\n          <v-col cols=\"3\">\n            <strong>12pm</strong>\n          </v-col>\n          <v-col>\n            <strong>Lunch break</strong>\n          </v-col>\n        </v-row>\n      </v-timeline-item>\n\n      <v-timeline-item\n        color=\"teal lighten-3\"\n        small\n      >\n        <v-row class=\"pt-1\">\n          <v-col cols=\"3\">\n            <strong>9-11am</strong>\n          </v-col>\n          <v-col>\n            <strong>Finish Home Screen</strong>\n            <div class=\"caption\">Web App</div>\n          </v-col>\n        </v-row>\n      </v-timeline-item>\n    </v-timeline>\n  </v-card-text>\n</v-card>"
+        html: "<v-card>\n  <v-toolbar\n    color=\"cyan\"\n    dark\n    flat\n  >\n    <v-app-bar-nav-icon></v-app-bar-nav-icon>\n\n    <v-toolbar-title>Page title</v-toolbar-title>\n\n    <v-spacer></v-spacer>\n\n    <v-btn icon>\n      <v-icon>mdi-magnify</v-icon>\n    </v-btn>\n\n    <v-btn icon>\n      <v-icon>mdi-dots-vertical</v-icon>\n    </v-btn>\n\n    <template v-slot:extension>\n      <v-tabs\n        v-model=\"model\"\n        centered\n        slider-color=\"yellow\"\n      >\n        <v-tab\n          v-for=\"i in 3\"\n          :key=\"i\"\n          :href=\"`#tab-${i}`\"\n        >\n          Item {{ i }}\n        </v-tab>\n      </v-tabs>\n    </template>\n  </v-toolbar>\n\n  <v-tabs-items v-model=\"model\">\n    <v-tab-item\n      v-for=\"i in 3\"\n      :key=\"i\"\n      :value=\"`tab-${i}`\"\n    >\n      <v-card flat>\n        <v-card-text v-text=\"text\"></v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
+        js: "export default {\n  data () {\n    return {\n      model: 'tab-2',\n      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n    }\n  },\n}",
+        model: "tab-2",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       code5: {
-        html: "<v-timeline>\n<v-timeline-item\nv-for=\"n in 4\"\n:key=\"n\"\nlarge\n>\n<template v-slot:icon>\n  <v-avatar>\n    <img src=\"http://i.pravatar.cc/64\">\n  </v-avatar>\n</template>\n<template v-slot:opposite>\n  <span>Tus eu perfecto</span>\n</template>\n<v-card class=\"elevation-2\">\n  <v-card-title class=\"headline\">Lorem ipsum</v-card-title>\n  <v-card-text>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</v-card-text>\n</v-card>\n</v-timeline-item>\n</v-timeline>"
+        html: "<v-card>\n  <v-toolbar\n    color=\"purple\"\n    dark\n    flat\n    prominent\n  >\n    <v-text-field\n      append-icon=\"mic\"\n      class=\"mx-4\"\n      flat\n      hide-details\n      label=\"Search\"\n      prepend-inner-icon=\"search\"\n      solo-inverted\n    ></v-text-field>\n\n    <template v-slot:extension>\n      <v-tabs\n        v-model=\"tabs\"\n        centered\n      >\n        <v-tab\n          v-for=\"n in 3\"\n          :key=\"n\"\n        >\n          Item {{ n }}\n        </v-tab>\n      </v-tabs>\n    </template>\n  </v-toolbar>\n\n  <v-tabs-items v-model=\"tabs\">\n    <v-tab-item>\n      <v-card flat>\n        <v-card-text>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-title class=\"headline\">An awesome title</v-card-title>\n        <v-card-text>\n          <p>\n            Duis lobortis massa imperdiet quam. Donec vitae orci sed dolor rutrum auctor. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Praesent congue erat at massa.\n          </p>\n\n          <p>\n            Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Etiam sit amet orci eget eros faucibus tincidunt. Donec sodales sagittis magna.\n          </p>\n\n          <p class=\"mb-0\">\n            Ut leo. Suspendisse potenti. Duis vel nibh at velit scelerisque suscipit. Fusce pharetra convallis urna.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n    <v-tab-item>\n      <v-card flat>\n        <v-card-title class=\"headline\">An even better title</v-card-title>\n        <v-card-text>\n          <p>\n            Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed hendrerit. Maecenas malesuada. Vestibulum ullamcorper mauris at ligula. Proin faucibus arcu quis ante.\n          </p>\n\n          <p class=\"mb-0\">\n            Etiam vitae tortor. Curabitur ullamcorper ultricies nisi. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Aliquam lobortis. Suspendisse potenti.\n          </p>\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
+        js: "export default {\n  data () {\n    return {\n      tabs: null,\n      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n    }\n  },\n}",
+        tabs: null,
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       code6: {
-        html: "<v-container style=\"max-width: 600px;\">\n  <v-timeline dense clipped>\n    <v-timeline-item\n      fill-dot\n      class=\"white--text mb-12\"\n      color=\"orange\"\n      large\n    >\n      <template v-slot:icon>\n        <span>JL</span>\n      </template>\n      <v-text-field\n        v-model=\"input\"\n        hide-details\n        flat\n        label=\"Leave a comment...\"\n        solo\n        @keydown.enter=\"comment\"\n      >\n        <template v-slot:append>\n          <v-btn\n            class=\"mx-0\"\n            depressed\n            @click=\"comment\"\n          >\n            Post\n          </v-btn>\n        </template>\n      </v-text-field>\n    </v-timeline-item>\n\n    <v-slide-x-transition\n      group\n    >\n      <v-timeline-item\n        v-for=\"event in timeline\"\n        :key=\"event.id\"\n        class=\"mb-4\"\n        color=\"pink\"\n        small\n      >\n        <v-row justify=\"space-between\">\n          <v-col cols=\"7\" v-text=\"event.text\"></v-col>\n          <v-col class=\"text-right\" cols=\"5\" v-text=\"event.time\"></v-col>\n        </v-row>\n      </v-timeline-item>\n    </v-slide-x-transition>\n\n    <v-timeline-item\n      class=\"mb-6\"\n      hide-dot\n    >\n      <span>TODAY</span>\n    </v-timeline-item>\n\n    <v-timeline-item\n      class=\"mb-4\"\n      color=\"grey\"\n      icon-color=\"grey lighten-2\"\n      small\n    >\n      <v-row justify=\"space-between\">\n        <v-col cols=\"7\">This order was archived.</v-col>\n        <v-col class=\"text-right\" cols=\"5\">15:26 EDT</v-col>\n      </v-row>\n    </v-timeline-item>\n\n    <v-timeline-item\n      class=\"mb-4\"\n      small\n    >\n      <v-row justify=\"space-between\">\n        <v-col cols=\"7\">\n          <v-chip\n            class=\"white--text ml-0\"\n            color=\"purple\"\n            label\n            small\n          >\n            APP\n          </v-chip>\n          Digital Downloads fulfilled 1 item.\n        </v-col>\n        <v-col class=\"text-right\" cols=\"5\">15:25 EDT</v-col>\n      </v-row>\n    </v-timeline-item>\n\n    <v-timeline-item\n      class=\"mb-4\"\n      color=\"grey\"\n      small\n    >\n      <v-row justify=\"space-between\">\n        <v-col cols=\"7\">\n          Order confirmation email was sent to Sean (support@keenthemes.com).\n        </v-col>\n        <v-col class=\"text-right\" cols=\"5\">15:25 EDT</v-col>\n      </v-row>\n    </v-timeline-item>\n\n    <v-timeline-item\n      class=\"mb-4\"\n      hide-dot\n    >\n      <v-btn\n        class=\"mx-0\"\n        color=\"white\"\n      >\n        Resend Email\n      </v-btn>\n    </v-timeline-item>\n\n    <v-timeline-item\n      class=\"mb-4\"\n      color=\"grey\"\n      small\n    >\n      <v-row justify=\"space-between\">\n        <v-col cols=\"7\">\n          A $15.00 USD payment was processed on PayPal Express Checkout\n        </v-col>\n        <v-col class=\"text-right\" cols=\"5\">15:25 EDT</v-col>\n      </v-row>\n    </v-timeline-item>\n\n    <v-timeline-item\n      color=\"grey\"\n      small\n    >\n      <v-row justify=\"space-between\">\n        <v-col cols=\"7\">\n          Sean Paul placed this order on Online Store (checkout #1937432132572).\n        </v-col>\n        <v-col class=\"text-right\" cols=\"5\">15:25 EDT</v-col>\n      </v-row>\n    </v-timeline-item>\n  </v-timeline>\n</v-container>",
-        js: "export default {\n  data: () => ({\n    events: [],\n    input: null,\n    nonce: 0,\n  }),\n\n  computed: {\n    timeline () {\n      return this.events.slice().reverse()\n    },\n  },\n\n  methods: {\n    comment () {\n      const time = (new Date()).toTimeString()\n      this.events.push({\n        id: this.nonce++,\n        text: this.input,\n        time: time.replace(/:\\d{2}\\sGMT-\\d{4}\\s\\((.*)\\)/, (match, contents, offset) => {\n          return ` ${contents.split(' ').map(v => v.charAt(0)).join('')}`\n        }),\n      })\n\n      this.input = null\n    },\n  },\n}"
+        html: "<v-card>\n  <v-toolbar\n    color=\"deep-purple accent-4\"\n    dark\n    flat\n  >\n    <v-app-bar-nav-icon></v-app-bar-nav-icon>\n\n    <v-toolbar-title>Page title</v-toolbar-title>\n\n    <v-spacer></v-spacer>\n\n    <v-btn icon>\n      <v-icon>mdi-magnify</v-icon>\n    </v-btn>\n\n    <v-btn icon>\n      <v-icon>mdi-dots-vertical</v-icon>\n    </v-btn>\n\n    <template v-slot:extension>\n      <v-tabs\n        v-model=\"currentItem\"\n        fixed-tabs\n        slider-color=\"white\"\n      >\n        <v-tab\n          v-for=\"item in items\"\n          :key=\"item\"\n          :href=\"'#tab-' + item\"\n        >\n          {{ item }}\n        </v-tab>\n\n        <v-menu\n          v-if=\"more.length\"\n          bottom\n          left\n        >\n          <template v-slot:activator=\"{ on }\">\n            <v-btn\n              text\n              class=\"align-self-center mr-4\"\n              v-on=\"on\"\n            >\n              more\n              <v-icon right>mdi-menu-down</v-icon>\n            </v-btn>\n          </template>\n\n          <v-list class=\"grey lighten-3\">\n            <v-list-item\n              v-for=\"item in more\"\n              :key=\"item\"\n              @click=\"addItem(item)\"\n            >\n              {{ item }}\n            </v-list-item>\n          </v-list>\n        </v-menu>\n      </v-tabs>\n    </template>\n  </v-toolbar>\n\n  <v-tabs-items v-model=\"currentItem\">\n    <v-tab-item\n      v-for=\"item in items.concat(more)\"\n      :key=\"item\"\n      :value=\"'tab-' + item\"\n    >\n      <v-card flat>\n        <v-card-text>\n          <h2>{{ item }}</h2>\n          {{ text }}\n        </v-card-text>\n      </v-card>\n    </v-tab-item>\n  </v-tabs-items>\n</v-card>",
+        js: "export default {\n  data: () => ({\n    currentItem: 'tab-Web',\n    items: [\n      'Web', 'Shopping', 'Videos', 'Images',\n    ],\n    more: [\n      'News', 'Maps', 'Books', 'Flights', 'Apps',\n    ],\n    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',\n  }),\n\n  methods: {\n    addItem (item) {\n      const removed = this.items.splice(0, 1)\n      this.items.push(\n        ...this.more.splice(this.more.indexOf(item), 1)\n      )\n      this.more.push(...removed)\n      this.$nextTick(() => { this.currentItem = 'tab-' + item })\n    },\n  },\n}"
       },
-      events: [],
-      input: null
+      currentItem: "tab-Web",
+      items: ["Web", "Shopping", "Videos", "Images"],
+      more: ["News", "Maps", "Books", "Flights", "Apps"],
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     };
   },
   components: {
@@ -619,81 +543,34 @@ var ICONS = {
       title: "Vuetify",
       route: "alerts"
     }, {
-      title: "Timelines"
+      title: "Tabs"
     }]);
   },
-  computed: {
-    timeline: function timeline() {
-      return this.events.slice().reverse();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    this.stop();
-  },
   methods: {
-    addEvent: function addEvent() {
-      var _this$genAlert = this.genAlert(),
-          color = _this$genAlert.color,
-          icon = _this$genAlert.icon;
+    addItem: function addItem(item) {
+      var _this$items,
+          _this$more,
+          _this = this;
 
-      var previousColor = this.items[0].color;
+      var removed = this.items.splice(0, 1);
 
-      while (previousColor === color) {
-        color = this.genColor();
-      }
+      (_this$items = this.items).push.apply(_this$items, _toConsumableArray(this.more.splice(this.more.indexOf(item), 1)));
 
-      this.items.unshift({
-        id: this.nonce++,
-        color: color,
-        icon: icon
+      (_this$more = this.more).push.apply(_this$more, _toConsumableArray(removed));
+
+      this.$nextTick(function () {
+        _this.currentItem = "tab-" + item;
       });
-
-      if (this.nonce > 6) {
-        this.items.pop();
-      }
-    },
-    genAlert: function genAlert() {
-      var color = this.genColor();
-      return {
-        color: color,
-        icon: this.genIcon(color)
-      };
-    },
-    genColor: function genColor() {
-      return COLORS[Math.floor(Math.random() * 3)];
-    },
-    genIcon: function genIcon(color) {
-      return ICONS[color];
-    },
-    start: function start() {
-      this.interval = setInterval(this.addEvent, 3000);
-    },
-    stop: function stop() {
-      clearInterval(this.interval);
-      this.interval = null;
-    },
-    comment: function comment() {
-      var time = new Date().toTimeString();
-      this.events.push({
-        id: this.nonce++,
-        text: this.input,
-        time: time.replace(/:\d{2}\sGMT-\d{4}\s\((.*)\)/, function (match, contents) {
-          return " ".concat(contents.split(" ").map(function (v) {
-            return v.charAt(0);
-          }).join(""));
-        })
-      });
-      this.input = null;
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=template&id=05016645&":
-/*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=template&id=05016645& ***!
-  \************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a& ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -730,18 +607,18 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Timelines")]),
+            _c("b", [_vm._v("Tabs")]),
             _vm._v(" The "),
-            _c("code", [_vm._v("v-timeline")]),
+            _c("code", [_vm._v("v-tabs")]),
             _vm._v(
-              " is useful for stylistically\n      displaying chronological information.\n      "
+              " component is used for hiding content\n      behind a selectable item. This can also be used as a pseudo-navigation\n      for a page, where the tabs are links and the tab-items are the content.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://vuetifyjs.com/en/components/timelines",
+                  href: "https://vuetifyjs.com/en/components/tabs",
                   target: "_blank",
                 },
               },
@@ -754,426 +631,176 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-12" },
+          { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Small dots" },
+              attrs: { title: "Vertical Tabs" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            The "),
-                        _c("code", [_vm._v("small")]),
                         _vm._v(
-                          " prop allows alternate styles to provide a\n            unique design.\n          "
+                          "\n            Tabs can be toggled to stack its "
+                        ),
+                        _c("code", [_vm._v("v-tab")]),
+                        _vm._v(
+                          " components\n            vertically.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-timeline",
-                        { attrs: { dense: _vm.$vuetify.breakpoint.smAndDown } },
+                        "v-card",
                         [
                           _c(
-                            "v-timeline-item",
-                            {
-                              attrs: {
-                                color: "purple lighten-2",
-                                "fill-dot": "",
-                                right: "",
-                              },
-                            },
+                            "v-toolbar",
+                            { attrs: { flat: "", color: "primary", dark: "" } },
+                            [_c("v-toolbar-title", [_vm._v("User Profile")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-tabs",
+                            { attrs: { vertical: "" } },
                             [
                               _c(
-                                "v-card",
+                                "v-tab",
+                                [
+                                  _c("v-icon", { attrs: { left: "" } }, [
+                                    _vm._v("mdi-account"),
+                                  ]),
+                                  _vm._v(
+                                    "\n                Option 1\n              "
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab",
+                                [
+                                  _c("v-icon", { attrs: { left: "" } }, [
+                                    _vm._v("mdi-lock"),
+                                  ]),
+                                  _vm._v(
+                                    "\n                Option 2\n              "
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab",
+                                [
+                                  _c("v-icon", { attrs: { left: "" } }, [
+                                    _vm._v("mdi-access-point"),
+                                  ]),
+                                  _vm._v(
+                                    "\n                Option 3\n              "
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab-item",
                                 [
                                   _c(
-                                    "v-card-title",
-                                    { staticClass: "purple lighten-2" },
+                                    "v-card",
+                                    { attrs: { flat: "" } },
                                     [
-                                      _c(
-                                        "v-icon",
-                                        {
-                                          staticClass: "mr-4",
-                                          attrs: { dark: "", size: "42" },
-                                        },
-                                        [
+                                      _c("v-card-text", [
+                                        _c("p", [
                                           _vm._v(
-                                            "\n                    mdi-magnify\n                  "
+                                            "\n                      Sed aliquam ultrices mauris. Donec posuere vulputate\n                      arcu. Morbi ac felis. Etiam feugiat lorem non metus. Sed\n                      a libero.\n                    "
                                           ),
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "h2",
-                                        {
-                                          staticClass:
-                                            "display-1 white--text font-weight-light",
-                                        },
-                                        [
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", [
                                           _vm._v(
-                                            "\n                    Title 1\n                  "
+                                            "\n                      Nam ipsum risus, rutrum vitae, vestibulum eu, molestie\n                      vel, lacus. Aenean tellus metus, bibendum sed, posuere\n                      ac, mattis non, nunc. Aliquam lobortis. Aliquam\n                      lobortis. Suspendisse non nisl sit amet velit hendrerit\n                      rutrum.\n                    "
                                           ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-container",
-                                    [
-                                      _c(
-                                        "v-row",
-                                        [
-                                          _c(
-                                            "v-col",
-                                            { attrs: { cols: "12", md: "10" } },
-                                            [
-                                              _vm._v(
-                                                "\n                      Lorem ipsum dolor sit amet, no nam oblique veritus.\n                      Commune scaevola imperdiet nec ut, sed euismod convenire\n                      principes at. Est et nobis iisque percipit.\n                    "
-                                              ),
-                                            ]
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", { staticClass: "mb-0" }, [
+                                          _vm._v(
+                                            "\n                      Phasellus dolor. Fusce neque. Fusce fermentum odio nec\n                      arcu. Pellentesque libero tortor, tincidunt et,\n                      tincidunt eget, semper nec, quam. Phasellus blandit leo\n                      ut odio.\n                    "
                                           ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-col",
-                                            {
-                                              staticClass:
-                                                "hidden-sm-and-down text-right",
-                                              attrs: { md: "2" },
-                                            },
-                                            [
-                                              _c(
-                                                "v-icon",
-                                                { attrs: { size: "64" } },
-                                                [_vm._v("mdi-calendar-text")]
-                                              ),
-                                            ],
-                                            1
-                                          ),
-                                        ],
-                                        1
-                                      ),
+                                        ]),
+                                      ]),
                                     ],
                                     1
                                   ),
                                 ],
                                 1
                               ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-timeline-item",
-                            {
-                              attrs: {
-                                color: "amber lighten-1",
-                                "fill-dot": "",
-                                left: "",
-                                small: "",
-                              },
-                            },
-                            [
+                              _vm._v(" "),
                               _c(
-                                "v-card",
+                                "v-tab-item",
                                 [
                                   _c(
-                                    "v-card-title",
-                                    {
-                                      staticClass:
-                                        "amber lighten-1 justify-end",
-                                    },
+                                    "v-card",
+                                    { attrs: { flat: "" } },
                                     [
-                                      _c(
-                                        "h2",
-                                        {
-                                          staticClass:
-                                            "display-1 mr-4 white--text font-weight-light",
-                                        },
-                                        [
+                                      _c("v-card-text", [
+                                        _c("p", [
                                           _vm._v(
-                                            "\n                    Title 2\n                  "
+                                            "\n                      Morbi nec metus. Suspendisse faucibus, nunc et\n                      pellentesque egestas, lacus ante convallis tellus, vitae\n                      iaculis lacus elit id tortor. Sed mollis, eros et\n                      ultrices tempus, mauris ipsum aliquam libero, non\n                      adipiscing dolor urna a orci. Curabitur ligula sapien,\n                      tincidunt non, euismod vitae, posuere imperdiet, leo.\n                      Nunc sed turpis.\n                    "
                                           ),
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-icon",
-                                        { attrs: { dark: "", size: "42" } },
-                                        [_vm._v("mdi-home-outline")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-container",
-                                    [
-                                      _c(
-                                        "v-row",
-                                        [
-                                          _c(
-                                            "v-col",
-                                            { attrs: { cols: "12", md: "8" } },
-                                            [
-                                              _vm._v(
-                                                "\n                      Lorem ipsum dolor sit amet, no nam oblique veritus.\n                      Commune scaevola imperdiet nec ut, sed euismod convenire\n                      principes at. Est et nobis iisque percipit.\n                    "
-                                              ),
-                                            ]
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", [
+                                          _vm._v(
+                                            "\n                      Suspendisse feugiat. Suspendisse faucibus, nunc et\n                      pellentesque egestas, lacus ante convallis tellus, vitae\n                      iaculis lacus elit id tortor. Proin viverra, ligula sit\n                      amet ultrices semper, ligula arcu tristique sapien, a\n                      accumsan nisi mauris ac eros. In hac habitasse platea\n                      dictumst. Fusce ac felis sit amet ligula pharetra\n                      condimentum.\n                    "
                                           ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-col",
-                                            { attrs: { cols: "12", md: "4" } },
-                                            [
-                                              _vm._v(
-                                                "\n                      Lorem ipsum dolor sit amet, no nam oblique veritus.\n                    "
-                                              ),
-                                            ]
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", [
+                                          _vm._v(
+                                            "\n                      Sed consequat, leo eget bibendum sodales, augue velit\n                      cursus nunc, quis gravida magna mi a libero. Nam commodo\n                      suscipit quam. In consectetuer turpis ut velit. Sed\n                      cursus turpis vitae tortor. Aliquam eu nunc.\n                    "
                                           ),
-                                        ],
-                                        1
-                                      ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", [
+                                          _vm._v(
+                                            "\n                      Etiam ut purus mattis mauris sodales aliquam. Ut varius\n                      tincidunt libero. Aenean viverra rhoncus pede. Duis leo.\n                      Fusce fermentum odio nec arcu.\n                    "
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", { staticClass: "mb-0" }, [
+                                          _vm._v(
+                                            "\n                      Donec venenatis vulputate lorem. Aenean viverra rhoncus\n                      pede. In dui magna, posuere eget, vestibulum et, tempor\n                      auctor, justo. Fusce commodo aliquam arcu. Suspendisse\n                      enim turpis, dictum sed, iaculis a, condimentum nec,\n                      nisi.\n                    "
+                                          ),
+                                        ]),
+                                      ]),
                                     ],
                                     1
                                   ),
                                 ],
                                 1
                               ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-timeline-item",
-                            {
-                              attrs: {
-                                color: "cyan lighten-1",
-                                "fill-dot": "",
-                                right: "",
-                              },
-                            },
-                            [
+                              _vm._v(" "),
                               _c(
-                                "v-card",
+                                "v-tab-item",
                                 [
                                   _c(
-                                    "v-card-title",
-                                    { staticClass: "cyan lighten-1" },
+                                    "v-card",
+                                    { attrs: { flat: "" } },
                                     [
-                                      _c(
-                                        "v-icon",
-                                        {
-                                          staticClass: "mr-4",
-                                          attrs: { dark: "", size: "42" },
-                                        },
-                                        [
+                                      _c("v-card-text", [
+                                        _c("p", [
                                           _vm._v(
-                                            "\n                    mdi-email-outline\n                  "
+                                            "\n                      Fusce a quam. Phasellus nec sem in justo pellentesque\n                      facilisis. Nam eget dui. Proin viverra, ligula sit amet\n                      ultrices semper, ligula arcu tristique sapien, a\n                      accumsan nisi mauris ac eros. In dui magna, posuere\n                      eget, vestibulum et, tempor auctor, justo.\n                    "
                                           ),
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "h2",
-                                        {
-                                          staticClass:
-                                            "display-1 white--text font-weight-light",
-                                        },
-                                        [
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", { staticClass: "mb-0" }, [
                                           _vm._v(
-                                            "\n                    Title 3\n                  "
+                                            "\n                      Cras sagittis. Phasellus nec sem in justo pellentesque\n                      facilisis. Proin sapien ipsum, porta a, auctor quis,\n                      euismod ut, mi. Donec quam felis, ultricies nec,\n                      pellentesque eu, pretium quis, sem. Nam at tortor in\n                      tellus interdum sagittis.\n                    "
                                           ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-container",
-                                    [
-                                      _c(
-                                        "v-row",
-                                        _vm._l(3, function (n) {
-                                          return _c(
-                                            "v-col",
-                                            {
-                                              key: n,
-                                              attrs: { cols: "12", md: "4" },
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                      Lorem ipsum dolor sit amet, no nam oblique veritus no\n                      nam oblique.\n                    "
-                                              ),
-                                            ]
-                                          )
-                                        }),
-                                        1
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-timeline-item",
-                            {
-                              attrs: {
-                                color: "red lighten-1",
-                                "fill-dot": "",
-                                left: "",
-                                small: "",
-                              },
-                            },
-                            [
-                              _c(
-                                "v-card",
-                                [
-                                  _c(
-                                    "v-card-title",
-                                    {
-                                      staticClass: "red lighten-1 justify-end",
-                                    },
-                                    [
-                                      _c(
-                                        "h2",
-                                        {
-                                          staticClass:
-                                            "display-1 mr-4 white--text font-weight-light",
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                    Title 4\n                  "
-                                          ),
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-icon",
-                                        { attrs: { dark: "", size: "42" } },
-                                        [
-                                          _vm._v(
-                                            "\n                    mdi-account-multiple-outline\n                  "
-                                          ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-container",
-                                    [
-                                      _c(
-                                        "v-row",
-                                        [
-                                          _c(
-                                            "v-col",
-                                            {
-                                              staticClass: "hidden-sm-and-down",
-                                              attrs: { md: "2" },
-                                            },
-                                            [
-                                              _c(
-                                                "v-icon",
-                                                { attrs: { size: "64" } },
-                                                [_vm._v("mdi-server-network")]
-                                              ),
-                                            ],
-                                            1
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-col",
-                                            { attrs: { cols: "12", md: "10" } },
-                                            [
-                                              _vm._v(
-                                                "\n                      Lorem ipsum dolor sit amet, no nam oblique veritus.\n                      Commune scaevola imperdiet nec ut, sed euismod convenire\n                      principes at. Est et nobis iisque percipit, an vim zril\n                      disputando voluptatibus.\n                    "
-                                              ),
-                                            ]
-                                          ),
-                                        ],
-                                        1
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-timeline-item",
-                            {
-                              attrs: {
-                                color: "green lighten-1",
-                                "fill-dot": "",
-                                right: "",
-                              },
-                            },
-                            [
-                              _c(
-                                "v-card",
-                                [
-                                  _c(
-                                    "v-card-title",
-                                    { staticClass: "green lighten-1" },
-                                    [
-                                      _c(
-                                        "v-icon",
-                                        {
-                                          staticClass: "mr-4",
-                                          attrs: { dark: "", size: "42" },
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                    mdi-phone-in-talk\n                  "
-                                          ),
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "h2",
-                                        {
-                                          staticClass:
-                                            "display-1 white--text font-weight-light",
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                    Title 5\n                  "
-                                          ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-container",
-                                    [
-                                      _c(
-                                        "v-row",
-                                        [
-                                          _c("v-col", [
-                                            _vm._v(
-                                              "\n                      Lorem ipsum dolor sit amet, no nam oblique veritus.\n                      Commune scaevola imperdiet nec ut, sed euismod convenire\n                      principes at. Est et nobis iisque percipit, an vim zril\n                      disputando voluptatibus, vix an salutandi sententiae.\n                    "
-                                            ),
-                                          ]),
-                                        ],
-                                        1
-                                      ),
+                                        ]),
+                                      ]),
                                     ],
                                     1
                                   ),
@@ -1205,570 +832,331 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Icon dots" },
+              attrs: { title: "Right aligned tabs" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v(
-                          "\n            Conditionally use icons within the "
-                        ),
-                        _c("code", [_vm._v("v-timeline-item")]),
-                        _vm._v(
-                          "'s\n            dot to provide additional context.\n          "
-                        ),
+                        _vm._v("The "),
+                        _c("strong", [_vm._v("right")]),
+                        _vm._v(" prop aligns the tabs to the right."),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-timeline",
-                        {
-                          attrs: {
-                            "align-top": "",
-                            dense: _vm.$vuetify.breakpoint.smAndDown,
-                          },
-                        },
-                        _vm._l(_vm.code2.items, function (item, i) {
-                          return _c(
-                            "v-timeline-item",
+                        "v-card",
+                        [
+                          _c(
+                            "v-tabs",
                             {
-                              key: i,
                               attrs: {
-                                color: item.color,
-                                icon: item.icon,
-                                "fill-dot": "",
+                                "background-color": "white",
+                                color: "deep-purple accent-4",
+                                right: "",
                               },
                             },
                             [
-                              _c(
-                                "v-card",
-                                { attrs: { color: item.color, dark: "" } },
-                                [
-                                  _c("v-card-title", { staticClass: "title" }, [
-                                    _vm._v("Lorem Ipsum Dolor"),
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-card-text",
-                                    { staticClass: "white text--primary" },
-                                    [
-                                      _c("p", [
-                                        _vm._v(
-                                          "\n                    Lorem ipsum dolor sit amet, no nam oblique veritus.\n                    Commune scaevola imperdiet nec ut, sed euismod convenire\n                    principes at. Est et nobis iisque percipit, an vim zril\n                    disputando voluptatibus, vix an salutandi sententiae.\n                  "
+                              _c("v-tab", [_vm._v("Landscape")]),
+                              _vm._v(" "),
+                              _c("v-tab", [_vm._v("City")]),
+                              _vm._v(" "),
+                              _c("v-tab", [_vm._v("Abstract")]),
+                              _vm._v(" "),
+                              _vm._l(3, function (n) {
+                                return _c(
+                                  "v-tab-item",
+                                  { key: n },
+                                  [
+                                    _c(
+                                      "v-container",
+                                      { attrs: { fluid: "" } },
+                                      [
+                                        _c(
+                                          "v-row",
+                                          _vm._l(6, function (i) {
+                                            return _c(
+                                              "v-col",
+                                              {
+                                                key: i,
+                                                attrs: { cols: "12", md: "4" },
+                                              },
+                                              [
+                                                _c("v-img", {
+                                                  attrs: {
+                                                    src:
+                                                      "https://picsum.photos/500/300?image=" +
+                                                      (i * n * 5 + 10),
+                                                    "lazy-src":
+                                                      "https://picsum.photos/10/6?image=" +
+                                                      (i * n * 5 + 10),
+                                                    "aspect-ratio": "1",
+                                                  },
+                                                }),
+                                              ],
+                                              1
+                                            )
+                                          }),
+                                          1
                                         ),
-                                      ]),
-                                      _vm._v(" "),
+                                      ],
+                                      1
+                                    ),
+                                  ],
+                                  1
+                                )
+                              }),
+                            ],
+                            2
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code3.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "With menu" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            You can use a menu to hold additional tabs, swapping them out on\n            the fly.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-toolbar",
+                            {
+                              attrs: {
+                                color: "deep-purple accent-4",
+                                dark: "",
+                                flat: "",
+                              },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "extension",
+                                  fn: function () {
+                                    return [
                                       _c(
-                                        "v-btn",
+                                        "v-tabs",
                                         {
-                                          staticClass: "mx-0",
                                           attrs: {
-                                            color: item.color,
-                                            outlined: "",
+                                            "fixed-tabs": "",
+                                            "slider-color": "white",
+                                          },
+                                          model: {
+                                            value: _vm.currentItem,
+                                            callback: function ($$v) {
+                                              _vm.currentItem = $$v
+                                            },
+                                            expression: "currentItem",
                                           },
                                         },
                                         [
-                                          _vm._v(
-                                            "\n                    Button\n                  "
-                                          ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          )
-                        }),
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Avatar dots" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Insert avatars into dots with use of the "
-                        ),
-                        _c("code", [_vm._v("icon")]),
-                        _vm._v(" slot\n            and "),
-                        _c("code", [_vm._v("v-avatar")]),
-                        _vm._v(".\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-timeline",
-                        _vm._l(4, function (n) {
-                          return _c(
-                            "v-timeline-item",
-                            {
-                              key: n,
-                              attrs: { large: "" },
-                              scopedSlots: _vm._u(
-                                [
-                                  {
-                                    key: "icon",
-                                    fn: function () {
-                                      return [
-                                        _c("v-avatar", [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "http://i.pravatar.cc/64",
-                                            },
-                                          }),
-                                        ]),
-                                      ]
-                                    },
-                                    proxy: true,
-                                  },
-                                  {
-                                    key: "opposite",
-                                    fn: function () {
-                                      return [
-                                        _c("span", [_vm._v("Tus eu perfecto")]),
-                                      ]
-                                    },
-                                    proxy: true,
-                                  },
-                                ],
-                                null,
-                                true
-                              ),
-                            },
-                            [
-                              _vm._v(" "),
-                              _vm._v(" "),
-                              _c(
-                                "v-card",
-                                { staticClass: "elevation-2" },
-                                [
-                                  _c(
-                                    "v-card-title",
-                                    { staticClass: "headline" },
-                                    [_vm._v("Lorem ipsum")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("v-card-text", [
-                                    _vm._v(
-                                      "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune\n                  scaevola imperdiet nec ut, sed euismod convenire principes\n                  at. Est et nobis iisque percipit, an vim zril disputando\n                  voluptatibus, vix an salutandi sententiae."
-                                    ),
-                                  ]),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          )
-                        }),
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Advanced" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            Modular components allow you to create highly customized solutions\n            that just work.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-container",
-                        { staticStyle: { "max-width": "600px" } },
-                        [
-                          _c(
-                            "v-timeline",
-                            { attrs: { dense: "", clipped: "" } },
-                            [
-                              _c(
-                                "v-timeline-item",
-                                {
-                                  staticClass: "white--text mb-12",
-                                  attrs: {
-                                    "fill-dot": "",
-                                    color: "orange",
-                                    large: "",
-                                  },
-                                  scopedSlots: _vm._u([
-                                    {
-                                      key: "icon",
-                                      fn: function () {
-                                        return [_c("span", [_vm._v("JL")])]
-                                      },
-                                      proxy: true,
-                                    },
-                                  ]),
-                                },
-                                [
-                                  _vm._v(" "),
-                                  _c("v-text-field", {
-                                    attrs: {
-                                      "hide-details": "",
-                                      flat: "",
-                                      label: "Leave a comment...",
-                                      solo: "",
-                                    },
-                                    on: {
-                                      keydown: function ($event) {
-                                        if (
-                                          !$event.type.indexOf("key") &&
-                                          _vm._k(
-                                            $event.keyCode,
-                                            "enter",
-                                            13,
-                                            $event.key,
-                                            "Enter"
-                                          )
-                                        ) {
-                                          return null
-                                        }
-                                        return _vm.comment.apply(
-                                          null,
-                                          arguments
-                                        )
-                                      },
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "append",
-                                        fn: function () {
-                                          return [
-                                            _c(
-                                              "v-btn",
+                                          _vm._l(_vm.items, function (item) {
+                                            return _c(
+                                              "v-tab",
                                               {
-                                                staticClass: "mx-0",
-                                                attrs: { depressed: "" },
-                                                on: { click: _vm.comment },
+                                                key: item,
+                                                attrs: { href: "#tab-" + item },
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                      Post\n                    "
+                                                  "\n                    " +
+                                                    _vm._s(item) +
+                                                    "\n                  "
                                                 ),
                                               ]
-                                            ),
-                                          ]
-                                        },
-                                        proxy: true,
-                                      },
-                                    ]),
-                                    model: {
-                                      value: _vm.input,
-                                      callback: function ($$v) {
-                                        _vm.input = $$v
-                                      },
-                                      expression: "input",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-slide-x-transition",
-                                { attrs: { group: "" } },
-                                _vm._l(_vm.timeline, function (event) {
-                                  return _c(
-                                    "v-timeline-item",
-                                    {
-                                      key: event.id,
-                                      staticClass: "mb-4",
-                                      attrs: { color: "pink", small: "" },
-                                    },
-                                    [
-                                      _c(
-                                        "v-row",
-                                        { attrs: { justify: "space-between" } },
-                                        [
-                                          _c("v-col", {
-                                            attrs: { cols: "7" },
-                                            domProps: {
-                                              textContent: _vm._s(event.text),
-                                            },
+                                            )
                                           }),
                                           _vm._v(" "),
-                                          _c("v-col", {
-                                            staticClass: "text-right",
-                                            attrs: { cols: "5" },
-                                            domProps: {
-                                              textContent: _vm._s(event.time),
-                                            },
-                                          }),
+                                          _vm.more.length
+                                            ? _c(
+                                                "v-menu",
+                                                {
+                                                  attrs: {
+                                                    bottom: "",
+                                                    left: "",
+                                                  },
+                                                  scopedSlots: _vm._u(
+                                                    [
+                                                      {
+                                                        key: "activator",
+                                                        fn: function (ref) {
+                                                          var on = ref.on
+                                                          return [
+                                                            _c(
+                                                              "v-btn",
+                                                              _vm._g(
+                                                                {
+                                                                  staticClass:
+                                                                    "align-self-center mr-4",
+                                                                  attrs: {
+                                                                    text: "",
+                                                                  },
+                                                                },
+                                                                on
+                                                              ),
+                                                              [
+                                                                _vm._v(
+                                                                  "\n                        more\n                        "
+                                                                ),
+                                                                _c(
+                                                                  "v-icon",
+                                                                  {
+                                                                    attrs: {
+                                                                      right: "",
+                                                                    },
+                                                                  },
+                                                                  [
+                                                                    _vm._v(
+                                                                      "mdi-menu-down"
+                                                                    ),
+                                                                  ]
+                                                                ),
+                                                              ],
+                                                              1
+                                                            ),
+                                                          ]
+                                                        },
+                                                      },
+                                                    ],
+                                                    null,
+                                                    false,
+                                                    2908075644
+                                                  ),
+                                                },
+                                                [
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-list",
+                                                    {
+                                                      staticClass:
+                                                        "grey lighten-3",
+                                                    },
+                                                    _vm._l(
+                                                      _vm.more,
+                                                      function (item) {
+                                                        return _c(
+                                                          "v-list-item",
+                                                          {
+                                                            key: item,
+                                                            on: {
+                                                              click: function (
+                                                                $event
+                                                              ) {
+                                                                return _vm.addItem(
+                                                                  item
+                                                                )
+                                                              },
+                                                            },
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "\n                        " +
+                                                                _vm._s(item) +
+                                                                "\n                      "
+                                                            ),
+                                                          ]
+                                                        )
+                                                      }
+                                                    ),
+                                                    1
+                                                  ),
+                                                ],
+                                                1
+                                              )
+                                            : _vm._e(),
                                         ],
-                                        1
-                                      ),
-                                    ],
-                                    1
-                                  )
-                                }),
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-timeline-item",
-                                {
-                                  staticClass: "mb-6",
-                                  attrs: { "hide-dot": "" },
-                                },
-                                [_c("span", [_vm._v("TODAY")])]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-timeline-item",
-                                {
-                                  staticClass: "mb-4",
-                                  attrs: {
-                                    color: "grey",
-                                    "icon-color": "grey lighten-2",
-                                    small: "",
-                                  },
-                                },
-                                [
-                                  _c(
-                                    "v-row",
-                                    { attrs: { justify: "space-between" } },
-                                    [
-                                      _c("v-col", { attrs: { cols: "7" } }, [
-                                        _vm._v("This order was archived."),
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        {
-                                          staticClass: "text-right",
-                                          attrs: { cols: "5" },
-                                        },
-                                        [_vm._v("15:26 EDT")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-timeline-item",
-                                { staticClass: "mb-4", attrs: { small: "" } },
-                                [
-                                  _c(
-                                    "v-row",
-                                    { attrs: { justify: "space-between" } },
-                                    [
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "7" } },
-                                        [
-                                          _c(
-                                            "v-chip",
-                                            {
-                                              staticClass: "white--text ml-0",
-                                              attrs: {
-                                                color: "purple",
-                                                label: "",
-                                                small: "",
-                                              },
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                      APP\n                    "
-                                              ),
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                    Digital Downloads fulfilled 1 item.\n                  "
-                                          ),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        {
-                                          staticClass: "text-right",
-                                          attrs: { cols: "5" },
-                                        },
-                                        [_vm._v("15:25 EDT")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-timeline-item",
-                                {
-                                  staticClass: "mb-4",
-                                  attrs: { color: "grey", small: "" },
-                                },
-                                [
-                                  _c(
-                                    "v-row",
-                                    { attrs: { justify: "space-between" } },
-                                    [
-                                      _c("v-col", { attrs: { cols: "7" } }, [
-                                        _vm._v(
-                                          "\n                    Order confirmation email was sent to Sean Paul\n                    (support@keenthemes.com).\n                  "
-                                        ),
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        {
-                                          staticClass: "text-right",
-                                          attrs: { cols: "5" },
-                                        },
-                                        [_vm._v("15:25 EDT")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-timeline-item",
-                                {
-                                  staticClass: "mb-4",
-                                  attrs: { "hide-dot": "" },
-                                },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      staticClass: "mx-0",
-                                      attrs: { color: "white" },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Resend Email\n                "
+                                        2
                                       ),
                                     ]
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-timeline-item",
-                                {
-                                  staticClass: "mb-4",
-                                  attrs: { color: "grey", small: "" },
+                                  },
+                                  proxy: true,
                                 },
-                                [
-                                  _c(
-                                    "v-row",
-                                    { attrs: { justify: "space-between" } },
-                                    [
-                                      _c("v-col", { attrs: { cols: "7" } }, [
-                                        _vm._v(
-                                          "\n                    A $15.00 USD payment was processed on PayPal Express\n                    Checkout\n                  "
-                                        ),
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        {
-                                          staticClass: "text-right",
-                                          attrs: { cols: "5" },
-                                        },
-                                        [_vm._v("15:25 EDT")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
+                              ]),
+                            },
+                            [
+                              _c("v-app-bar-nav-icon"),
+                              _vm._v(" "),
+                              _c("v-toolbar-title", [_vm._v("Page title")]),
+                              _vm._v(" "),
+                              _c("v-spacer"),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                { attrs: { icon: "" } },
+                                [_c("v-icon", [_vm._v("mdi-magnify")])],
                                 1
                               ),
                               _vm._v(" "),
                               _c(
-                                "v-timeline-item",
-                                { attrs: { color: "grey", small: "" } },
-                                [
-                                  _c(
-                                    "v-row",
-                                    { attrs: { justify: "space-between" } },
-                                    [
-                                      _c("v-col", { attrs: { cols: "7" } }, [
-                                        _vm._v(
-                                          "\n                    Sean Paul placed this order on Online Store (checkout\n                    #1937432132572).\n                  "
-                                        ),
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        {
-                                          staticClass: "text-right",
-                                          attrs: { cols: "5" },
-                                        },
-                                        [_vm._v("15:25 EDT")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
+                                "v-btn",
+                                { attrs: { icon: "" } },
+                                [_c("v-icon", [_vm._v("mdi-dots-vertical")])],
                                 1
                               ),
                             ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-tabs-items",
+                            {
+                              model: {
+                                value: _vm.currentItem,
+                                callback: function ($$v) {
+                                  _vm.currentItem = $$v
+                                },
+                                expression: "currentItem",
+                              },
+                            },
+                            _vm._l(_vm.items.concat(_vm.more), function (item) {
+                              return _c(
+                                "v-tab-item",
+                                { key: item, attrs: { value: "tab-" + item } },
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { flat: "" } },
+                                    [
+                                      _c("v-card-text", [
+                                        _c("h2", [_vm._v(_vm._s(item))]),
+                                        _vm._v(
+                                          "\n                    " +
+                                            _vm._s(_vm.text) +
+                                            "\n                  "
+                                        ),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              )
+                            }),
                             1
                           ),
                         ],
@@ -1806,534 +1194,530 @@ var render = function () {
           1
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col-md-6" },
-            [
-              _c("KTCodePreview", {
-                attrs: { title: "Colored dots" },
-                scopedSlots: _vm._u([
-                  {
-                    key: "preview",
-                    fn: function () {
-                      return [
-                        _c("p", [
-                          _vm._v(
-                            "\n              Colored dots create visual breakpoints that make your timelines\n              easier to read.\n            "
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("KTCodePreview", {
+              attrs: { title: "Icons and text" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _c("code", [_vm._v("v-tab")]),
+                        _vm._v(
+                          "'s can contain icons as well as text. This\n            increases the "
+                        ),
+                        _c("code", [_vm._v("v-tabs")]),
+                        _vm._v(" height to 72px.\n          "),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-tabs",
+                            {
+                              attrs: {
+                                "background-color": "deep-purple accent-4",
+                                centered: "",
+                                dark: "",
+                                "icons-and-text": "",
+                              },
+                              model: {
+                                value: _vm.code2.tab,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code2, "tab", $$v)
+                                },
+                                expression: "code2.tab",
+                              },
+                            },
+                            [
+                              _c("v-tabs-slider"),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab",
+                                { attrs: { href: "#tab-1" } },
+                                [
+                                  _vm._v(
+                                    "\n                Recents\n                "
+                                  ),
+                                  _c("v-icon", [_vm._v("mdi-phone")]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab",
+                                { attrs: { href: "#tab-2" } },
+                                [
+                                  _vm._v(
+                                    "\n                Favorites\n                "
+                                  ),
+                                  _c("v-icon", [_vm._v("mdi-heart")]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab",
+                                { attrs: { href: "#tab-3" } },
+                                [
+                                  _vm._v(
+                                    "\n                Nearby\n                "
+                                  ),
+                                  _c("v-icon", [_vm._v("mdi-account-box")]),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
                           ),
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "v-card",
-                          {
-                            staticClass: "mx-auto",
-                            attrs: { "max-width": "400" },
-                          },
-                          [
-                            _c(
-                              "v-card",
-                              { attrs: { dark: "", flat: "" } },
-                              [
-                                _c(
-                                  "v-btn",
-                                  {
-                                    attrs: {
-                                      absolute: "",
-                                      bottom: "",
-                                      color: "pink",
-                                      right: "",
-                                      fab: "",
-                                    },
-                                  },
-                                  [_c("v-icon", [_vm._v("mdi-plus")])],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "v-card-title",
-                                  { staticClass: "pa-2 purple lighten-3" },
-                                  [
-                                    _c(
-                                      "v-btn",
-                                      { attrs: { icon: "" } },
-                                      [_c("v-icon", [_vm._v("mdi-menu")])],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "h3",
-                                      {
-                                        staticClass:
-                                          "title font-weight-light text-center grow",
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                    Timeline\n                  "
-                                        ),
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "v-avatar",
-                                      [
-                                        _c("v-img", {
+                          _vm._v(" "),
+                          _c(
+                            "v-tabs-items",
+                            {
+                              model: {
+                                value: _vm.code2.tab,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code2, "tab", $$v)
+                                },
+                                expression: "code2.tab",
+                              },
+                            },
+                            _vm._l(3, function (i) {
+                              return _c(
+                                "v-tab-item",
+                                { key: i, attrs: { value: "tab-" + i } },
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { flat: "" } },
+                                    [
+                                      _c("v-card-text", [
+                                        _vm._v(_vm._s(_vm.code2.text)),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              )
+                            }),
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Content" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("\n            It is common to put "),
+                        _c("code", [_vm._v("v-tabs")]),
+                        _vm._v(" inside the\n            "),
+                        _c("strong", [_vm._v("extension")]),
+                        _vm._v(" slot of "),
+                        _c("code", [_vm._v("v-toolbar")]),
+                        _vm._v(". Using\n            "),
+                        _c("code", [_vm._v("v-toolbar")]),
+                        _vm._v("'s "),
+                        _c("strong", [_vm._v("tabs")]),
+                        _vm._v(
+                          " prop auto adjusts\n            its height to 48px to match "
+                        ),
+                        _c("code", [_vm._v("v-tabs")]),
+                        _vm._v(".\n          "),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-toolbar",
+                            {
+                              attrs: { color: "cyan", dark: "", flat: "" },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "extension",
+                                  fn: function () {
+                                    return [
+                                      _c(
+                                        "v-tabs",
+                                        {
                                           attrs: {
-                                            src: "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light",
+                                            centered: "",
+                                            "slider-color": "yellow",
                                           },
-                                        }),
-                                      ],
-                                      1
-                                    ),
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "v-img",
-                                  {
-                                    attrs: {
-                                      src: "media/stock-600x600/img-10.jpg",
-                                      gradient:
-                                        "to top, rgba(0,0,0,.44), rgba(0,0,0,.44)",
-                                    },
-                                  },
-                                  [
-                                    _c(
-                                      "v-container",
-                                      { staticClass: "fill-height" },
-                                      [
-                                        _c(
-                                          "v-row",
-                                          { attrs: { align: "center" } },
-                                          [
-                                            _c(
-                                              "strong",
-                                              {
-                                                staticClass:
-                                                  "display-4 font-weight-regular mr-6",
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                        8\n                      "
-                                                ),
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "v-row",
-                                              { attrs: { justify: "end" } },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "headline font-weight-light",
-                                                  },
-                                                  [_vm._v("Monday")]
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "text-uppercase font-weight-light",
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "\n                          February 2015\n                        "
-                                                    ),
-                                                  ]
-                                                ),
-                                              ]
-                                            ),
-                                          ],
-                                          1
-                                        ),
-                                      ],
-                                      1
-                                    ),
-                                  ],
-                                  1
-                                ),
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-text",
-                              { staticClass: "py-0" },
-                              [
-                                _c(
-                                  "v-timeline",
-                                  { attrs: { "align-top": "", dense: "" } },
-                                  [
-                                    _c(
-                                      "v-timeline-item",
-                                      { attrs: { color: "pink", small: "" } },
-                                      [
-                                        _c(
-                                          "v-row",
-                                          { staticClass: "pt-1" },
-                                          [
-                                            _c(
-                                              "v-col",
-                                              { attrs: { cols: "3" } },
-                                              [_c("strong", [_vm._v("5pm")])]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("v-col", [
-                                              _c("strong", [
-                                                _vm._v("New Icon"),
-                                              ]),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                { staticClass: "caption" },
-                                                [_vm._v("Mobile App")]
-                                              ),
-                                            ]),
-                                          ],
-                                          1
-                                        ),
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "v-timeline-item",
-                                      {
-                                        attrs: {
-                                          color: "teal lighten-3",
-                                          small: "",
-                                        },
-                                      },
-                                      [
-                                        _c(
-                                          "v-row",
-                                          { staticClass: "pt-1" },
-                                          [
-                                            _c(
-                                              "v-col",
-                                              { attrs: { cols: "3" } },
-                                              [_c("strong", [_vm._v("3-4pm")])]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "v-col",
-                                              [
-                                                _c("strong", [
-                                                  _vm._v("Design Stand Up"),
-                                                ]),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass: "caption mb-2",
-                                                  },
-                                                  [_vm._v("Hangouts")]
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "v-avatar",
-                                                  [
-                                                    _c("v-img", {
-                                                      attrs: {
-                                                        src: "https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Kurt&hairColor=Red&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Skull&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Disbelief&skinColor=Brown",
-                                                      },
-                                                    }),
-                                                  ],
-                                                  1
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "v-avatar",
-                                                  [
-                                                    _c("v-img", {
-                                                      attrs: {
-                                                        src: "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairFrizzle&accessoriesType=Prescription02&hairColor=Black&facialHairType=MoustacheMagnum&facialHairColor=BrownDark&clotheType=BlazerSweater&clotheColor=Black&eyeType=Default&eyebrowType=FlatNatural&mouthType=Default&skinColor=Tanned",
-                                                      },
-                                                    }),
-                                                  ],
-                                                  1
-                                                ),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "v-avatar",
-                                                  [
-                                                    _c("v-img", {
-                                                      attrs: {
-                                                        src: "https://avataaars.io/?avatarStyle=Circle&topType=LongHairMiaWallace&accessoriesType=Sunglasses&hairColor=BlondeGolden&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Surprised&eyebrowType=RaisedExcited&mouthType=Smile&skinColor=Pale",
-                                                      },
-                                                    }),
-                                                  ],
-                                                  1
-                                                ),
-                                              ],
-                                              1
-                                            ),
-                                          ],
-                                          1
-                                        ),
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "v-timeline-item",
-                                      { attrs: { color: "pink", small: "" } },
-                                      [
-                                        _c(
-                                          "v-row",
-                                          { staticClass: "pt-1" },
-                                          [
-                                            _c(
-                                              "v-col",
-                                              { attrs: { cols: "3" } },
-                                              [_c("strong", [_vm._v("12pm")])]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("v-col", [
-                                              _c("strong", [
-                                                _vm._v("Lunch break"),
-                                              ]),
-                                            ]),
-                                          ],
-                                          1
-                                        ),
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "v-timeline-item",
-                                      {
-                                        attrs: {
-                                          color: "teal lighten-3",
-                                          small: "",
-                                        },
-                                      },
-                                      [
-                                        _c(
-                                          "v-row",
-                                          { staticClass: "pt-1" },
-                                          [
-                                            _c(
-                                              "v-col",
-                                              { attrs: { cols: "3" } },
-                                              [_c("strong", [_vm._v("9-11am")])]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("v-col", [
-                                              _c("strong", [
-                                                _vm._v("Finish Home Screen"),
-                                              ]),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                { staticClass: "caption" },
-                                                [_vm._v("Web App")]
-                                              ),
-                                            ]),
-                                          ],
-                                          1
-                                        ),
-                                      ],
-                                      1
-                                    ),
-                                  ],
-                                  1
-                                ),
-                              ],
-                              1
-                            ),
-                          ],
-                          1
-                        ),
-                      ]
-                    },
-                    proxy: true,
-                  },
-                  {
-                    key: "html",
-                    fn: function () {
-                      return [
-                        _vm._v(
-                          "\n            " +
-                            _vm._s(_vm.code4.html) +
-                            "\n          "
-                        ),
-                      ]
-                    },
-                    proxy: true,
-                  },
-                ]),
-              }),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-md-6" },
-            [
-              _c("KTCodePreview", {
-                attrs: { title: "Dense alert" },
-                scopedSlots: _vm._u([
-                  {
-                    key: "preview",
-                    fn: function () {
-                      return [
-                        _c("p", [
-                          _c("code", [_vm._v("dense")]),
-                          _vm._v(
-                            " timelines position all content to the right.\n              In this example, "
-                          ),
-                          _c("code", [_vm._v("v-alert")]),
-                          _vm._v(
-                            " replaces the card to\n              provide a different design.\n            "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "v-card",
-                          { attrs: { "max-width": "600" } },
-                          [
-                            _c(
-                              "v-card-title",
-                              { staticClass: "blue-grey white--text" },
-                              [
-                                _c("span", { staticClass: "title" }, [
-                                  _vm._v("Logs"),
-                                ]),
-                                _vm._v(" "),
-                                _c("v-spacer"),
-                                _vm._v(" "),
-                                _c(
-                                  "v-btn",
-                                  {
-                                    attrs: {
-                                      outlined: _vm.interval == null,
-                                      color:
-                                        _vm.interval == null
-                                          ? "white"
-                                          : "primary",
-                                      dark: "",
-                                      depressed: "",
-                                    },
-                                    on: {
-                                      click: function ($event) {
-                                        _vm.interval == null
-                                          ? _vm.start()
-                                          : _vm.stop()
-                                      },
-                                    },
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                  Realtime Logging\n                "
-                                    ),
-                                  ]
-                                ),
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-text",
-                              { staticClass: "py-0" },
-                              [
-                                _c(
-                                  "v-timeline",
-                                  { attrs: { dense: "" } },
-                                  [
-                                    _c(
-                                      "v-slide-x-reverse-transition",
-                                      {
-                                        attrs: {
-                                          group: "",
-                                          "hide-on-leave": "",
-                                        },
-                                      },
-                                      _vm._l(_vm.items, function (item) {
-                                        return _c(
-                                          "v-timeline-item",
-                                          {
-                                            key: item.id,
-                                            attrs: {
-                                              color: item.color,
-                                              small: "",
-                                              "fill-dot": "",
+                                          model: {
+                                            value: _vm.code4.model,
+                                            callback: function ($$v) {
+                                              _vm.$set(_vm.code4, "model", $$v)
                                             },
+                                            expression: "code4.model",
                                           },
-                                          [
-                                            _c(
-                                              "v-alert",
-                                              {
-                                                staticClass: "white--text",
-                                                attrs: {
-                                                  value: true,
-                                                  color: item.color,
-                                                  icon: item.icon,
-                                                },
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                        Lorem ipsum dolor sit amet, no nam oblique veritus.\n                        Commune scaevola imperdiet nec ut, sed euismod\n                        convenire principes at. Est et nobis iisque percipit,\n                        an vim zril disputando voluptatibus, vix an salutandi\n                        sententiae.\n                      "
-                                                ),
-                                              ]
-                                            ),
-                                          ],
-                                          1
-                                        )
+                                        },
+                                        _vm._l(3, function (i) {
+                                          return _c(
+                                            "v-tab",
+                                            {
+                                              key: i,
+                                              attrs: { href: "#tab-" + i },
+                                            },
+                                            [
+                                              _vm._v(
+                                                "\n                    Item " +
+                                                  _vm._s(i) +
+                                                  "\n                  "
+                                              ),
+                                            ]
+                                          )
+                                        }),
+                                        1
+                                      ),
+                                    ]
+                                  },
+                                  proxy: true,
+                                },
+                              ]),
+                            },
+                            [
+                              _c("v-app-bar-nav-icon"),
+                              _vm._v(" "),
+                              _c("v-toolbar-title", [_vm._v("Page title")]),
+                              _vm._v(" "),
+                              _c("v-spacer"),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                { attrs: { icon: "" } },
+                                [_c("v-icon", [_vm._v("mdi-magnify")])],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                { attrs: { icon: "" } },
+                                [_c("v-icon", [_vm._v("mdi-dots-vertical")])],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-tabs-items",
+                            {
+                              model: {
+                                value: _vm.code4.model,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code4, "model", $$v)
+                                },
+                                expression: "code4.model",
+                              },
+                            },
+                            _vm._l(3, function (i) {
+                              return _c(
+                                "v-tab-item",
+                                { key: i, attrs: { value: "tab-" + i } },
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { flat: "" } },
+                                    [
+                                      _c("v-card-text", {
+                                        domProps: {
+                                          textContent: _vm._s(_vm.code4.text),
+                                        },
                                       }),
-                                      1
-                                    ),
-                                  ],
-                                  1
-                                ),
-                              ],
-                              1
-                            ),
-                          ],
-                          1
-                        ),
-                      ]
-                    },
-                    proxy: true,
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              )
+                            }),
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
                   },
-                  {
-                    key: "html",
-                    fn: function () {
-                      return [
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "With search" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("\n            When changing your "),
+                        _c("code", [_vm._v("v-tab-item")]),
                         _vm._v(
-                          "\n            " +
-                            _vm._s(_vm.code3.html) +
-                            "\n          "
+                          ", the content area will\n            smoothly scale to the new size.\n          "
                         ),
-                      ]
-                    },
-                    proxy: true,
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-toolbar",
+                            {
+                              attrs: {
+                                color: "purple",
+                                dark: "",
+                                flat: "",
+                                prominent: "",
+                              },
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "extension",
+                                  fn: function () {
+                                    return [
+                                      _c(
+                                        "v-tabs",
+                                        {
+                                          attrs: { centered: "" },
+                                          model: {
+                                            value: _vm.code4.tabs,
+                                            callback: function ($$v) {
+                                              _vm.$set(_vm.code4, "tabs", $$v)
+                                            },
+                                            expression: "code4.tabs",
+                                          },
+                                        },
+                                        _vm._l(3, function (n) {
+                                          return _c("v-tab", { key: n }, [
+                                            _vm._v(" Item " + _vm._s(n) + " "),
+                                          ])
+                                        }),
+                                        1
+                                      ),
+                                    ]
+                                  },
+                                  proxy: true,
+                                },
+                              ]),
+                            },
+                            [
+                              _c("v-text-field", {
+                                staticClass: "mx-4",
+                                attrs: {
+                                  "append-icon": "mic",
+                                  flat: "",
+                                  "hide-details": "",
+                                  label: "Search",
+                                  "prepend-inner-icon": "search",
+                                  "solo-inverted": "",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-tabs-items",
+                            {
+                              model: {
+                                value: _vm.code4.tabs,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code4, "tabs", $$v)
+                                },
+                                expression: "code4.tabs",
+                              },
+                            },
+                            [
+                              _c(
+                                "v-tab-item",
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { flat: "" } },
+                                    [
+                                      _c("v-card-text", [
+                                        _vm._v(
+                                          "\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n                    sed do eiusmod tempor incididunt ut labore et dolore magna\n                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n                    ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                  "
+                                        ),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab-item",
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { flat: "" } },
+                                    [
+                                      _c(
+                                        "v-card-title",
+                                        { staticClass: "headline" },
+                                        [_vm._v("An awesome title")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-card-text", [
+                                        _c("p", [
+                                          _vm._v(
+                                            "\n                      Duis lobortis massa imperdiet quam. Donec vitae orci sed\n                      dolor rutrum auctor. Vestibulum facilisis, purus nec\n                      pulvinar iaculis, ligula mi congue nunc, vitae euismod\n                      ligula urna in dolor. Praesent congue erat at massa.\n                    "
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", [
+                                          _vm._v(
+                                            "\n                      Aenean posuere, tortor sed cursus feugiat, nunc augue\n                      blandit nunc, eu sollicitudin urna dolor sagittis lacus.\n                      Pellentesque egestas, neque sit amet convallis pulvinar,\n                      justo nulla eleifend augue, ac auctor orci leo non est.\n                      Etiam sit amet orci eget eros faucibus tincidunt. Donec\n                      sodales sagittis magna.\n                    "
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", { staticClass: "mb-0" }, [
+                                          _vm._v(
+                                            "\n                      Ut leo. Suspendisse potenti. Duis vel nibh at velit\n                      scelerisque suscipit. Fusce pharetra convallis urna.\n                    "
+                                          ),
+                                        ]),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tab-item",
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { flat: "" } },
+                                    [
+                                      _c(
+                                        "v-card-title",
+                                        { staticClass: "headline" },
+                                        [_vm._v("An even better title")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-card-text", [
+                                        _c("p", [
+                                          _vm._v(
+                                            "\n                      Maecenas ullamcorper, dui et placerat feugiat, eros pede\n                      varius nisi, condimentum viverra felis nunc et lorem.\n                      Sed hendrerit. Maecenas malesuada. Vestibulum\n                      ullamcorper mauris at ligula. Proin faucibus arcu quis\n                      ante.\n                    "
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("p", { staticClass: "mb-0" }, [
+                                          _vm._v(
+                                            "\n                      Etiam vitae tortor. Curabitur ullamcorper ultricies\n                      nisi. Sed magna purus, fermentum eu, tincidunt eu,\n                      varius ut, felis. Aliquam lobortis. Suspendisse potenti.\n                    "
+                                          ),
+                                        ]),
+                                      ]),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
                   },
-                  {
-                    key: "js",
-                    fn: function () {
-                      return [
-                        _vm._v(
-                          "\n            " +
-                            _vm._s(_vm.code3.js) +
-                            "\n          "
-                        ),
-                      ]
-                    },
-                    proxy: true,
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
+                      ),
+                    ]
                   },
-                ]),
-              }),
-            ],
-            1
-          ),
-        ]),
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code5.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+          ],
+          1
+        ),
       ]),
     ],
     1
@@ -2346,17 +1730,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Timelines.vue":
-/*!***********************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Timelines.vue ***!
-  \***********************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Tabs.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Tabs.vue ***!
+  \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Timelines_vue_vue_type_template_id_05016645___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Timelines.vue?vue&type=template&id=05016645& */ "./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=template&id=05016645&");
-/* harmony import */ var _Timelines_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Timelines.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tabs.vue?vue&type=template&id=9d9b1c4a& */ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&");
+/* harmony import */ var _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tabs.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -2366,9 +1750,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Timelines_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Timelines_vue_vue_type_template_id_05016645___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Timelines_vue_vue_type_template_id_05016645___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2378,38 +1762,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vuetify/Timelines.vue"
+component.options.__file = "resources/js/src/view/pages/vuetify/Tabs.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=script&lang=js&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Timelines_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Timelines.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Timelines_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=template&id=05016645&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=template&id=05016645& ***!
-  \******************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a& ***!
+  \*************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Timelines_vue_vue_type_template_id_05016645___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Timelines.vue?vue&type=template&id=05016645& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Timelines.vue?vue&type=template&id=05016645&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Timelines_vue_vue_type_template_id_05016645___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=template&id=9d9b1c4a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/Tabs.vue?vue&type=template&id=9d9b1c4a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Timelines_vue_vue_type_template_id_05016645___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_9d9b1c4a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[87],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -347,68 +347,164 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<v-row align=\"center\">\n  <v-col cols=\"12\">\n    <v-select\n      :items=\"items\"\n      disabled\n      label=\"Disabled\"\n    ></v-select>\n  </v-col>\n</v-row>",
-        js: "export default {\n  data: () => ({\n    items: ['Foo', 'Bar', 'Fizz', 'Buzz'],\n  }),\n}",
-        items: ["Foo", "Bar", "Fizz", "Buzz"]
+        html: "<v-container fluid>\n  <v-checkbox v-model=\"code1.checkbox1\" :label=\"`Checkbox 1: ${code1.checkbox1.toString()}`\"></v-checkbox>\n  <v-checkbox v-model=\"code1.checkbox2\" :label=\"`Checkbox 2: ${code1.checkbox2.toString()}`\"></v-checkbox>\n</v-container>",
+        js: "export default {\n    data () {\n      return {\n        checkbox1: true,\n        checkbox2: false,\n      }\n    },\n  }",
+        checkbox1: true,
+        checkbox2: false
       },
       code2: {
-        html: "<v-container fluid>\n  <v-row align=\"center\">\n    <v-col cols=\"6\">\n      <v-subheader>Prepended icon</v-subheader>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-select\n        v-model=\"e1\"\n        :items=\"states\"\n        menu-props=\"auto\"\n        label=\"Select\"\n        hide-details\n        prepend-icon=\"map\"\n        single-line\n      ></v-select>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-subheader>Appended icon</v-subheader>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-select\n        v-model=\"e2\"\n        :items=\"states\"\n        append-outer-icon=\"map\"\n        menu-props=\"auto\"\n        hide-details\n        label=\"Select\"\n        single-line\n      ></v-select>\n    </v-col>\n  </v-row>\n</v-container>",
-        js: "export default {\n  data () {\n    return {\n      e1: 'Florida',\n      e2: 'Texas',\n      e3: null,\n      e4: null,\n      items: [\n        { text: 'State 1' },\n        { text: 'State 2' },\n        { text: 'State 3' },\n        { text: 'State 4' },\n        { text: 'State 5' },\n        { text: 'State 6' },\n        { text: 'State 7' },\n      ],\n      states: [\n        'Alabama', 'Alaska', 'American Samoa', 'Arizona',\n        'Arkansas', 'California', 'Colorado', 'Connecticut',\n        'Delaware', 'District of Columbia', 'Federated States of Micronesia',\n        'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho',\n        'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',\n        'Louisiana', 'Maine', 'Marshall Islands', 'Maryland',\n        'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',\n        'Missouri', 'Montana', 'Nebraska', 'Nevada',\n        'New Hampshire', 'New Jersey', 'New Mexico', 'New York',\n        'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio',\n        'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico',\n        'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee',\n        'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia',\n        'Washington', 'West Virginia', 'Wisconsin', 'Wyoming',\n      ],\n    }\n  },\n}",
-        e1: "Florida",
-        e2: "Texas",
-        e3: null,
-        e4: null,
-        items: [{
-          text: "State 1"
-        }, {
-          text: "State 2"
-        }, {
-          text: "State 3"
-        }, {
-          text: "State 4"
-        }, {
-          text: "State 5"
-        }, {
-          text: "State 6"
-        }, {
-          text: "State 7"
-        }],
-        states: ["Alabama", "Alaska", "American Samoa", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Federated States of Micronesia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Marshall Islands", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Northern Mariana Islands", "Ohio", "Oklahoma", "Oregon", "Palau", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virgin Island", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
+        html: "<v-container fluid>\n  <p>{{ selected }}</p>\n  <v-checkbox v-model=\"selected\" label=\"John\" value=\"John\"></v-checkbox>\n  <v-checkbox v-model=\"selected\" label=\"Jacob\" value=\"Jacob\"></v-checkbox>\n</v-container>",
+        js: "export default {\n  data () {\n    return {\n      selected: ['John'],\n    }\n  },\n}",
+        selected: ["John"]
       },
       code3: {
-        html: "<v-row align=\"center\">\n  <v-col cols=\"12\">\n    <v-select\n      :items=\"items\"\n      readonly\n      label=\"Read-only\"\n    ></v-select>\n  </v-col>\n</v-row>",
-        js: "export default {\n  data: () => ({\n    items: ['Foo', 'Bar', 'Fizz', 'Buzz'],\n  }),\n}",
-        items: ["Foo", "Bar", "Fizz", "Buzz"]
+        html: "<v-container fluid>\n  <p>{{ radios || 'null' }}</p>\n  <v-radio-group v-model=\"radios\" :mandatory=\"false\">\n    <v-radio label=\"Radio 1\" value=\"radio-1\"></v-radio>\n    <v-radio label=\"Radio 2\" value=\"radio-2\"></v-radio>\n  </v-radio-group>\n</v-container>",
+        js: "export default {\n    data () {\n      return {\n        radios: 'radio-1',\n      }\n    },\n  }",
+        radios: "radio-1"
       },
       code4: {
-        html: "<v-container fluid>\n  <v-row align=\"center\">\n    <v-col cols=\"12\" sm=\"6\">\n      <v-subheader v-text=\"'Multiple with persistent hint'\"></v-subheader>\n    </v-col>\n    <v-col cols=\"12\" sm=\"6\">\n      <v-select\n        v-model=\"e6\"\n        :items=\"states\"\n        :menu-props=\"{ maxHeight: '400' }\"\n        label=\"Select\"\n        multiple\n        hint=\"Pick your favorite states\"\n        persistent-hint\n      ></v-select>\n    </v-col>\n\n    <v-col cols=\"12\" sm=\"6\">\n      <v-subheader v-text=\"'Multiple (Chips) with persistent hint'\"></v-subheader>\n    </v-col>\n\n    <v-col cols=\"12\" sm=\"6\">\n      <v-select\n        v-model=\"e7\"\n        :items=\"states\"\n        label=\"Select\"\n        multiple\n        chips\n        hint=\"What are the target regions\"\n        persistent-hint\n      ></v-select>\n    </v-col>\n  </v-row>\n</v-container>",
-        js: "export default {\n  data () {\n    return {\n      e6: [],\n      e7: [],\n      states: [\n        'Alabama', 'Alaska', 'American Samoa', 'Arizona',\n        'Arkansas', 'California', 'Colorado', 'Connecticut',\n        'Delaware', 'District of Columbia', 'Federated States of Micronesia',\n        'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho',\n        'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',\n        'Louisiana', 'Maine', 'Marshall Islands', 'Maryland',\n        'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',\n        'Missouri', 'Montana', 'Nebraska', 'Nevada',\n        'New Hampshire', 'New Jersey', 'New Mexico', 'New York',\n        'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio',\n        'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico',\n        'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee',\n        'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia',\n        'Washington', 'West Virginia', 'Wisconsin', 'Wyoming',\n      ],\n    }\n  },\n}",
-        e6: [],
-        e7: [],
-        states: ["Alabama", "Alaska", "American Samoa", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Federated States of Micronesia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Marshall Islands", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Northern Mariana Islands", "Ohio", "Oklahoma", "Oregon", "Palau", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virgin Island", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
+        html: "<v-container fluid>\n  <v-switch v-model=\"switch1\" :label=\"`Switch 1: ${switch1.toString()}`\"></v-switch>\n  <v-switch v-model=\"switch2\" :label=\"`Switch 2: ${switch2.toString()}`\"></v-switch>\n</v-container>",
+        js: "export default {\n  data () {\n    return {\n      switch1: true,\n      switch2: false,\n    }\n  },\n}",
+        switch1: true,
+        switch2: false
       },
       code5: {
-        html: "<v-container fluid>\n  <v-row align=\"center\">\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        label=\"Standard\"\n        dense\n      ></v-select>\n    </v-col>\n\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        filled\n        label=\"Filled style\"\n        dense\n      ></v-select>\n    </v-col>\n\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        label=\"Outlined style\"\n        dense\n        outlined\n      ></v-select>\n    </v-col>\n\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        label=\"Solo field\"\n        dense\n        solo\n      ></v-select>\n    </v-col>\n  </v-row>\n</v-container>",
-        js: "export default {\n  data: () => ({\n    items: ['Foo', 'Bar', 'Fizz', 'Buzz'],\n  }),\n}",
-        items: ["Foo", "Bar", "Fizz", "Buzz"]
+        html: "<v-card flat>\n  <v-card-text>\n    <v-container fluid>\n      <v-row>\n        <v-col cols=\"12\" sm=\"6\" md=\"6\">\n          <v-radio-group v-model=\"ex7\" column>\n            <v-radio\n              label=\"red\"\n              color=\"red\"\n              value=\"red\"\n            ></v-radio>\n            <v-radio\n              label=\"red darken-3\"\n              color=\"red darken-3\"\n              value=\"red darken-3\"\n            ></v-radio>\n            <v-radio\n              label=\"indigo\"\n              color=\"indigo\"\n              value=\"indigo\"\n            ></v-radio>\n            <v-radio\n              label=\"indigo darken-3\"\n              color=\"indigo darken-3\"\n              value=\"indigo darken-3\"\n            ></v-radio>\n            <v-radio\n              label=\"orange\"\n              color=\"orange\"\n              value=\"orange\"\n            ></v-radio>\n            <v-radio\n              label=\"orange darken-3\"\n              color=\"orange darken-3\"\n              value=\"orange darken-3\"\n            ></v-radio>\n          </v-radio-group>\n        </v-col>\n        <v-col cols=\"12\" sm=\"6\" md=\"6\">\n          <v-radio-group v-model=\"ex8\" column>\n            <v-radio\n              label=\"primary\"\n              color=\"primary\"\n              value=\"primary\"\n            ></v-radio>\n            <v-radio\n              label=\"secondary\"\n              color=\"secondary\"\n              value=\"secondary\"\n            ></v-radio>\n            <v-radio\n              label=\"success\"\n              color=\"success\"\n              value=\"success\"\n            ></v-radio>\n            <v-radio\n              label=\"info\"\n              color=\"info\"\n              value=\"info\"\n            ></v-radio>\n            <v-radio\n              label=\"warning\"\n              color=\"warning\"\n              value=\"warning\"\n            ></v-radio>\n            <v-radio\n              label=\"error\"\n              color=\"error\"\n              value=\"error\"\n            ></v-radio>\n          </v-radio-group>\n        </v-col>\n      </v-row>\n    </v-container>\n  </v-card-text>",
+        js: "export default {\n  data () {\n    return {\n      ex7: 'red',\n      ex8: 'primary',\n    }\n  },\n}"
       },
       code6: {
-        html: "<v-container fluid>\n  <v-select\n    v-model=\"selectedFruits\"\n    :items=\"fruits\"\n    label=\"Favorite Fruits\"\n    multiple\n  >\n    <template v-slot:prepend-item>\n      <v-list-item\n        ripple\n        @click=\"toggle\"\n      >\n        <v-list-item-action>\n          <v-icon :color=\"selectedFruits.length > 0 ? 'indigo darken-4' : ''\">{{ icon }}</v-icon>\n        </v-list-item-action>\n        <v-list-item-content>\n          <v-list-item-title>Select All</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n      <v-divider class=\"mt-2\"></v-divider>\n    </template>\n    <template v-slot:append-item>\n      <v-divider class=\"mb-2\"></v-divider>\n      <v-list-item disabled>\n        <v-list-item-avatar color=\"grey lighten-3\">\n          <v-icon>mdi-food-apple</v-icon>\n        </v-list-item-avatar>\n\n        <v-list-item-content v-if=\"likesAllFruit\">\n          <v-list-item-title>Holy smokes, someone call the fruit police!</v-list-item-title>\n        </v-list-item-content>\n\n        <v-list-item-content v-else-if=\"likesSomeFruit\">\n          <v-list-item-title>Fruit Count</v-list-item-title>\n          <v-list-item-subtitle>{{ selectedFruits.length }}</v-list-item-subtitle>\n        </v-list-item-content>\n\n        <v-list-item-content v-else>\n          <v-list-item-title>\n            How could you not like fruit?\n          </v-list-item-title>\n          <v-list-item-subtitle>\n            Go ahead, make a selection above!\n          </v-list-item-subtitle>\n        </v-list-item-content>\n      </v-list-item>\n    </template>\n  </v-select>\n</v-container>",
-        js: "export default {\n  data: () => ({\n    fruits: [\n      'Apples',\n      'Apricots',\n      'Avocado',\n      'Bananas',\n      'Blueberries',\n      'Blackberries',\n      'Boysenberries',\n      'Bread fruit',\n      'Cantaloupes (cantalope)',\n      'Cherries',\n      'Cranberries',\n      'Cucumbers',\n      'Currants',\n      'Dates',\n      'Eggplant',\n      'Figs',\n      'Grapes',\n      'Grapefruit',\n      'Guava',\n      'Honeydew melons',\n      'Huckleberries',\n      'Kiwis',\n      'Kumquat',\n      'Lemons',\n      'Limes',\n      'Mangos',\n      'Mulberries',\n      'Muskmelon',\n      'Nectarines',\n      'Olives',\n      'Oranges',\n      'Papaya',\n      'Peaches',\n      'Pears',\n      'Persimmon',\n      'Pineapple',\n      'Plums',\n      'Pomegranate',\n      'Raspberries',\n      'Rose Apple',\n      'Starfruit',\n      'Strawberries',\n      'Tangerines',\n      'Tomatoes',\n      'Watermelons',\n      'Zucchini',\n    ],\n    selectedFruits: [],\n  }),\n\n  computed: {\n    likesAllFruit () {\n      return this.selectedFruits.length === this.fruits.length\n    },\n    likesSomeFruit () {\n      return this.selectedFruits.length > 0 && !this.likesAllFruit\n    },\n    icon () {\n      if (this.likesAllFruit) return 'mdi-close-box'\n      if (this.likesSomeFruit) return 'mdi-minus-box'\n      return 'mdi-checkbox-blank-outline'\n    },\n  },\n\n  methods: {\n    toggle () {\n      this.$nextTick(() => {\n        if (this.likesAllFruit) {\n          this.selectedFruits = []\n        } else {\n          this.selectedFruits = this.fruits.slice()\n        }\n      })\n    },\n  },\n}",
-        fruits: ["Apples", "Apricots", "Avocado", "Bananas", "Blueberries", "Blackberries", "Boysenberries", "Bread fruit", "Cantaloupes (cantalope)", "Cherries", "Cranberries", "Cucumbers", "Currants", "Dates", "Eggplant", "Figs", "Grapes", "Grapefruit", "Guava", "Honeydew melons", "Huckleberries", "Kiwis", "Kumquat", "Lemons", "Limes", "Mangos", "Mulberries", "Muskmelon", "Nectarines", "Olives", "Oranges", "Papaya", "Peaches", "Pears", "Persimmon", "Pineapple", "Plums", "Pomegranate", "Raspberries", "Rose Apple", "Starfruit", "Strawberries", "Tangerines", "Tomatoes", "Watermelons", "Zucchini"],
-        selectedFruits: []
+        html: "<v-container fluid>\n  <v-row class=\"dark--text\">\n    <v-col cols=\"6\">on</v-col>\n    <v-col cols=\"6\">off</v-col>\n  </v-row>\n  <v-row>\n    <v-col cols=\"6\">\n      <v-switch value input-value=\"true\"></v-switch>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-switch></v-switch>\n    </v-col>\n  </v-row>\n  <v-row class=\"dark--text\">\n    <v-col cols=\"6\">on disabled</v-col>\n    <v-col cols=\"6\">off disabled</v-col>\n  </v-row>\n  <v-row>\n    <v-col cols=\"6\">\n      <v-switch value input-value=\"true\" disabled></v-switch>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-switch disabled></v-switch>\n    </v-col>\n  </v-row>\n  <v-row class=\"dark--text\">\n    <v-col cols=\"6\">on loading</v-col>\n    <v-col cols=\"6\">off loading</v-col>\n  </v-row>\n  <v-row>\n    <v-col cols=\"6\">\n      <v-switch loading=\"warning\" value input-value=\"true\"></v-switch>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-switch loading=\"warning\"></v-switch>\n    </v-col>\n  </v-row>\n</v-container>"
       },
       code7: {
-        html: "<v-container fluid>\n    <v-select\n      v-model=\"value\"\n      :items=\"items\"\n      label=\"Select Item\"\n      multiple\n    >\n      <template v-slot:selection=\"{ item, index }\">\n        <v-chip v-if=\"index === 0\">\n          <span>{{ item }}</span>\n        </v-chip>\n        <span\n          v-if=\"index === 1\"\n          class=\"grey--text caption\"\n        >(+{{ value.length - 1 }} others)</span>\n      </template>\n    </v-select>\n</v-container>",
-        js: "export default {\n  data: () => ({\n    items: ['foo', 'bar', 'fizz', 'buzz', 'fizzbuzz', 'foobar'],\n    value: ['foo', 'bar', 'fizz'],\n  }),\n}",
-        items: ["foo", "bar", "fizz", "buzz", "fizzbuzz", "foobar"],
-        value: ["foo", "bar", "fizz"]
+        html: "<v-container fluid>\n  <v-checkbox v-model=\"checkbox\">\n    <template v-slot:label>\n      <div>\n        I agree that\n        <v-tooltip bottom>\n          <template v-slot:activator=\"{ on }\">\n            <a\n              target=\"_blank\"\n              href=\"http://vuetifyjs.com\"\n              @click.stop\n              v-on=\"on\"\n            >\n              Vuetify\n            </a>\n          </template>\n          Opens in new window\n        </v-tooltip>\n        is awesome\n      </div>\n    </template>\n  </v-checkbox>\n\n  <v-radio-group v-model=\"radios\">\n    <template v-slot:label>\n      <div>Your favourite <strong>search engine</strong></div>\n    </template>\n    <v-radio value=\"Google\">\n      <template v-slot:label>\n        <div>Of course it's <strong class=\"success--text\">Google</strong></div>\n      </template>\n    </v-radio>\n    <v-radio value=\"Duckduckgo\">\n      <template v-slot:label>\n        <div>Definitely <strong class=\"primary--text\">Duckduckgo</strong></div>\n      </template>\n    </v-radio>\n  </v-radio-group>\n\n  <v-switch v-model=\"switchMe\">\n    <template v-slot:label>\n      Turn on the progress: <v-progress-circular :indeterminate=\"switchMe\" :value=\"0\" size=\"24\" class=\"ml-2\"></v-progress-circular>\n    </template>\n  </v-switch>\n</v-container>",
+        js: "export default {\n  data () {\n    return {\n      checkbox: false,\n      radios: 'Duckduckgo',\n      switchMe: false,\n    }\n  },\n}",
+        checkbox: false,
+        radios: "Duckduckgo",
+        switchMe: false
+      },
+      code8: {
+        html: "<v-card flat>\n  <v-card-text>\n    <v-container fluid>\n      <v-row>\n        <v-col cols=\"12\" sm=\"4\" md=\"4\">\n          <v-switch\n            v-model=\"ex11\"\n            label=\"red\"\n            color=\"red\"\n            value=\"red\"\n            hide-details\n          ></v-switch>\n          <v-switch\n            v-model=\"ex11\"\n            label=\"red darken-3\"\n            color=\"red darken-3\"\n            value=\"red darken-3\"\n            hide-details\n          ></v-switch>\n        </v-col>\n        <v-col cols=\"12\" sm=\"4\" md=\"4\">\n          <v-switch\n            v-model=\"ex11\"\n            label=\"indigo\"\n            color=\"indigo\"\n            value=\"indigo\"\n            hide-details\n          ></v-switch>\n          <v-switch\n            v-model=\"ex11\"\n            label=\"indigo darken-3\"\n            color=\"indigo darken-3\"\n            value=\"indigo darken-3\"\n            hide-details\n          ></v-switch>\n        </v-col>\n        <v-col cols=\"12\" sm=\"4\" md=\"4\">\n          <v-switch\n            v-model=\"ex11\"\n            label=\"orange\"\n            color=\"orange\"\n            value=\"orange\"\n            hide-details\n          ></v-switch>\n          <v-switch\n            v-model=\"ex11\"\n            label=\"orange darken-3\"\n            color=\"orange darken-3\"\n            value=\"orange darken-3\"\n            hide-details\n          ></v-switch>\n        </v-col>\n      </v-row>\n\n      <v-row class=\"mt-12\">\n        <v-col cols=\"12\" sm=\"4\" md=\"4\">\n          <v-switch\n            v-model=\"ex11\"\n            label=\"primary\"\n            color=\"primary\"\n            value=\"primary\"\n            hide-details\n          ></v-switch>\n          <v-switch\n            v-model=\"ex11\"\n            label=\"secondary\"\n            color=\"secondary\"\n            value=\"secondary\"\n            hide-details\n          ></v-switch>\n        </v-col>\n        <v-col cols=\"12\" sm=\"4\" md=\"4\">\n          <v-switch\n            v-model=\"ex11\"\n            label=\"success\"\n            color=\"success\"\n            value=\"success\"\n            hide-details\n          ></v-switch>\n          <v-switch\n            v-model=\"ex11\"\n            label=\"info\"\n            color=\"info\"\n            value=\"info\"\n            hide-details\n          ></v-switch>\n        </v-col>\n        <v-col cols=\"12\" sm=\"4\" md=\"4\">\n          <v-switch\n            v-model=\"ex11\"\n            label=\"warning\"\n            color=\"warning\"\n            value=\"warning\"\n            hide-details\n          ></v-switch>\n          <v-switch\n            v-model=\"ex11\"\n            label=\"error\"\n            color=\"error\"\n            value=\"error\"\n            hide-details\n          ></v-switch>\n        </v-col>\n      </v-row>\n    </v-container>\n  </v-card-text>\n</v-card>",
+        js: "export default {\n  data () {\n    return {\n      ex11: ['red', 'indigo', 'orange', 'primary', 'secondary', 'success', 'info', 'warning', 'error', 'red darken-3', 'indigo darken-3', 'orange darken-3'],\n    }\n  },\n}",
+        ex11: ["red", "indigo", "orange", "primary", "secondary", "success", "info", "warning", "error", "red darken-3", "indigo darken-3", "orange darken-3"]
       }
     };
   },
@@ -423,45 +519,17 @@ __webpack_require__.r(__webpack_exports__);
       title: "Form Inputs & Control",
       route: "autocompletes"
     }, {
-      title: "Selects"
+      title: "Selection Controls"
     }]);
-  },
-  computed: {
-    // code6
-    likesAllFruit: function likesAllFruit() {
-      return this.code6.selectedFruits.length === this.code6.fruits.length;
-    },
-    likesSomeFruit: function likesSomeFruit() {
-      return this.code6.selectedFruits.length > 0 && !this.likesAllFruit;
-    },
-    icon: function icon() {
-      if (this.likesAllFruit) return "mdi-close-box";
-      if (this.likesSomeFruit) return "mdi-minus-box";
-      return "mdi-checkbox-blank-outline";
-    }
-  },
-  methods: {
-    // code6
-    toggle: function toggle() {
-      var _this = this;
-
-      this.$nextTick(function () {
-        if (_this.likesAllFruit) {
-          _this.code6.selectedFruits = [];
-        } else {
-          _this.code6.selectedFruits = _this.code6.fruits.slice();
-        }
-      });
-    }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a& ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=template&id=4ee01935&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=template&id=4ee01935& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -498,16 +566,20 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Selects")]),
+            _c("b", [_vm._v("Selection controls")]),
             _vm._v(
-              " Select fields components are used for collecting user\n      provided information from a list of options.\n      "
+              " Selection control components allow a user to\n      select options. These components "
             ),
+            _c("strong", [_vm._v("must")]),
+            _vm._v(" be used with the\n      "),
+            _c("code", [_vm._v("v-model")]),
+            _vm._v(" prop as they do not maintain their own state.\n      "),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://vuetifyjs.com/en/components/selects",
+                  href: "https://vuetifyjs.com/en/components/selection-controls",
                   target: "_blank",
                 },
               },
@@ -523,36 +595,43 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Disabled" },
+              attrs: { title: "Checkboxes - Boolean" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v("You cannot use disabled "),
-                        _c("code", [_vm._v("v-select")]),
-                        _vm._v("."),
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "v-row",
-                        { attrs: { align: "center" } },
+                        "v-container",
+                        { attrs: { fluid: "" } },
                         [
-                          _c(
-                            "v-col",
-                            { attrs: { cols: "12" } },
-                            [
-                              _c("v-select", {
-                                attrs: {
-                                  items: _vm.code1.items,
-                                  disabled: "",
-                                  label: "Disabled",
-                                },
-                              }),
-                            ],
-                            1
-                          ),
+                          _c("v-checkbox", {
+                            attrs: {
+                              label:
+                                "Checkbox 1: " + _vm.code1.checkbox1.toString(),
+                            },
+                            model: {
+                              value: _vm.code1.checkbox1,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code1, "checkbox1", $$v)
+                              },
+                              expression: "code1.checkbox1",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("v-checkbox", {
+                            attrs: {
+                              label:
+                                "Checkbox 2: " + _vm.code1.checkbox2.toString(),
+                            },
+                            model: {
+                              value: _vm.code1.checkbox2,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code1, "checkbox2", $$v)
+                              },
+                              expression: "code1.checkbox2",
+                            },
+                          }),
                         ],
                         1
                       ),
@@ -586,34 +665,37 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Read-only" },
+              attrs: { title: "Radios - Default" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v("\n            You cannot use read-only "),
-                        _c("code", [_vm._v("v-select")]),
-                        _vm._v(
-                          ", but it looks\n            default.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "v-row",
-                        { attrs: { align: "center" } },
+                        "v-container",
+                        { attrs: { fluid: "" } },
                         [
+                          _c("p", [_vm._v(_vm._s(_vm.code3.radios || "null"))]),
+                          _vm._v(" "),
                           _c(
-                            "v-col",
-                            { attrs: { cols: "12" } },
-                            [
-                              _c("v-select", {
-                                attrs: {
-                                  items: _vm.code3.items,
-                                  readonly: "",
-                                  label: "Read-only",
+                            "v-radio-group",
+                            {
+                              attrs: { mandatory: false },
+                              model: {
+                                value: _vm.code3.radios,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code3, "radios", $$v)
                                 },
+                                expression: "code3.radios",
+                              },
+                            },
+                            [
+                              _c("v-radio", {
+                                attrs: { label: "Radio 1", value: "radio-1" },
+                              }),
+                              _vm._v(" "),
+                              _c("v-radio", {
+                                attrs: { label: "Radio 2", value: "radio-2" },
                               }),
                             ],
                             1
@@ -651,99 +733,198 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Dense" },
+              attrs: { title: "Radios - Colors" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            You can use "),
-                        _c("code", [_vm._v("dense")]),
                         _vm._v(
-                          " prop to reduce the field height and\n            lower max height of list items.\n          "
+                          "\n            Radios can be colored by using any of the builtin colors and\n            contextual names using the "
                         ),
+                        _c("code", [_vm._v("color")]),
+                        _vm._v(" prop.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-container",
-                        { attrs: { fluid: "" } },
+                        "v-card",
+                        { attrs: { flat: "" } },
                         [
                           _c(
-                            "v-row",
-                            { attrs: { align: "center" } },
+                            "v-card-text",
                             [
                               _c(
-                                "v-col",
-                                {
-                                  staticClass: "d-flex",
-                                  attrs: { cols: "12", sm: "6" },
-                                },
+                                "v-container",
+                                { attrs: { fluid: "" } },
                                 [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code5.items,
-                                      label: "Standard",
-                                      dense: "",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                {
-                                  staticClass: "d-flex",
-                                  attrs: { cols: "12", sm: "6" },
-                                },
-                                [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code5.items,
-                                      filled: "",
-                                      label: "Filled style",
-                                      dense: "",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                {
-                                  staticClass: "d-flex",
-                                  attrs: { cols: "12", sm: "6" },
-                                },
-                                [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code5.items,
-                                      label: "Outlined style",
-                                      dense: "",
-                                      outlined: "",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                {
-                                  staticClass: "d-flex",
-                                  attrs: { cols: "12", sm: "6" },
-                                },
-                                [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code5.items,
-                                      label: "Solo field",
-                                      dense: "",
-                                      solo: "",
-                                    },
-                                  }),
+                                  _c(
+                                    "v-row",
+                                    [
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "6",
+                                            md: "6",
+                                          },
+                                        },
+                                        [
+                                          _c(
+                                            "v-radio-group",
+                                            {
+                                              attrs: { column: "" },
+                                              model: {
+                                                value: _vm.code5.ex7,
+                                                callback: function ($$v) {
+                                                  _vm.$set(
+                                                    _vm.code5,
+                                                    "ex7",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "code5.ex7",
+                                              },
+                                            },
+                                            [
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "red",
+                                                  color: "red",
+                                                  value: "red",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "red darken-3",
+                                                  color: "red darken-3",
+                                                  value: "red darken-3",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "indigo",
+                                                  color: "indigo",
+                                                  value: "indigo",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "indigo darken-3",
+                                                  color: "indigo darken-3",
+                                                  value: "indigo darken-3",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "orange",
+                                                  color: "orange",
+                                                  value: "orange",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "orange darken-3",
+                                                  color: "orange darken-3",
+                                                  value: "orange darken-3",
+                                                },
+                                              }),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "6",
+                                            md: "6",
+                                          },
+                                        },
+                                        [
+                                          _c(
+                                            "v-radio-group",
+                                            {
+                                              attrs: { column: "" },
+                                              model: {
+                                                value: _vm.code5.ex8,
+                                                callback: function ($$v) {
+                                                  _vm.$set(
+                                                    _vm.code5,
+                                                    "ex8",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "code5.ex8",
+                                              },
+                                            },
+                                            [
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "primary",
+                                                  color: "primary",
+                                                  value: "primary",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "secondary",
+                                                  color: "secondary",
+                                                  value: "secondary",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "success",
+                                                  color: "success",
+                                                  value: "success",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "info",
+                                                  color: "info",
+                                                  value: "info",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "warning",
+                                                  color: "warning",
+                                                  value: "warning",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("v-radio", {
+                                                attrs: {
+                                                  label: "error",
+                                                  color: "error",
+                                                  value: "error",
+                                                },
+                                              }),
+                                            ],
+                                            1
+                                          ),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
                                 ],
                                 1
                               ),
@@ -783,21 +964,668 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Change selection appearance" },
+              attrs: { title: "Switches - Colors" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            The "),
-                        _c("code", [_vm._v("selection")]),
                         _vm._v(
-                          " slot can be used to customize the way\n            selected values are shown in the input. This is great when you\n            want something like "
+                          "\n            Switches can be colored by using any of the builtin colors and\n            contextual names using the "
                         ),
-                        _c("code", [_vm._v("foo (+20 others)")]),
+                        _c("code", [_vm._v("color")]),
+                        _vm._v(" prop.\n          "),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-card",
+                        { attrs: { flat: "" } },
+                        [
+                          _c(
+                            "v-card-text",
+                            [
+                              _c(
+                                "v-container",
+                                { attrs: { fluid: "" } },
+                                [
+                                  _c(
+                                    "v-row",
+                                    [
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "4",
+                                            md: "4",
+                                          },
+                                        },
+                                        [
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "red",
+                                              color: "red",
+                                              value: "red",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "red darken-3",
+                                              color: "red darken-3",
+                                              value: "red darken-3",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "4",
+                                            md: "4",
+                                          },
+                                        },
+                                        [
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "indigo",
+                                              color: "indigo",
+                                              value: "indigo",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "indigo darken-3",
+                                              color: "indigo darken-3",
+                                              value: "indigo darken-3",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "4",
+                                            md: "4",
+                                          },
+                                        },
+                                        [
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "orange",
+                                              color: "orange",
+                                              value: "orange",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "orange darken-3",
+                                              color: "orange darken-3",
+                                              value: "orange darken-3",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-row",
+                                    { staticClass: "mt-12" },
+                                    [
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "4",
+                                            md: "4",
+                                          },
+                                        },
+                                        [
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "primary",
+                                              color: "primary",
+                                              value: "primary",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "secondary",
+                                              color: "secondary",
+                                              value: "secondary",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "4",
+                                            md: "4",
+                                          },
+                                        },
+                                        [
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "success",
+                                              color: "success",
+                                              value: "success",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "info",
+                                              color: "info",
+                                              value: "info",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        {
+                                          attrs: {
+                                            cols: "12",
+                                            sm: "4",
+                                            md: "4",
+                                          },
+                                        },
+                                        [
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "warning",
+                                              color: "warning",
+                                              value: "warning",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: {
+                                              label: "error",
+                                              color: "error",
+                                              value: "error",
+                                              "hide-details": "",
+                                            },
+                                            model: {
+                                              value: _vm.code8.ex11,
+                                              callback: function ($$v) {
+                                                _vm.$set(_vm.code8, "ex11", $$v)
+                                              },
+                                              expression: "code8.ex11",
+                                            },
+                                          }),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code8.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code8.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("KTCodePreview", {
+              attrs: { title: "Checkboxes - Array" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c(
+                        "v-container",
+                        { attrs: { fluid: "" } },
+                        [
+                          _c("p", [_vm._v(_vm._s(_vm.code2.selected))]),
+                          _vm._v(" "),
+                          _c("v-checkbox", {
+                            attrs: { label: "John", value: "John" },
+                            model: {
+                              value: _vm.code2.selected,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code2, "selected", $$v)
+                              },
+                              expression: "code2.selected",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("v-checkbox", {
+                            attrs: { label: "Jacob", value: "Jacob" },
+                            model: {
+                              value: _vm.code2.selected,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code2, "selected", $$v)
+                              },
+                              expression: "code2.selected",
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Switches - Boolean" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c(
+                        "v-container",
+                        { attrs: { fluid: "" } },
+                        [
+                          _c("v-switch", {
+                            attrs: {
+                              label:
+                                "Switch 1: " + _vm.code4.switch1.toString(),
+                            },
+                            model: {
+                              value: _vm.code4.switch1,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code4, "switch1", $$v)
+                              },
+                              expression: "code4.switch1",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("v-switch", {
+                            attrs: {
+                              label:
+                                "Switch 2: " + _vm.code4.switch2.toString(),
+                            },
+                            model: {
+                              value: _vm.code4.switch2,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code4, "switch2", $$v)
+                              },
+                              expression: "code4.switch2",
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Switches - States" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c(
+                        "v-container",
+                        { attrs: { fluid: "" } },
+                        [
+                          _c(
+                            "v-row",
+                            { staticClass: "dark--text" },
+                            [
+                              _c("v-col", { attrs: { cols: "6" } }, [
+                                _vm._v("on"),
+                              ]),
+                              _vm._v(" "),
+                              _c("v-col", { attrs: { cols: "6" } }, [
+                                _vm._v("off"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-row",
+                            [
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [
+                                  _c("v-switch", {
+                                    attrs: { value: "", "input-value": "true" },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [_c("v-switch")],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-row",
+                            { staticClass: "dark--text" },
+                            [
+                              _c("v-col", { attrs: { cols: "6" } }, [
+                                _vm._v("on disabled"),
+                              ]),
+                              _vm._v(" "),
+                              _c("v-col", { attrs: { cols: "6" } }, [
+                                _vm._v("off disabled"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-row",
+                            [
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [
+                                  _c("v-switch", {
+                                    attrs: {
+                                      value: "",
+                                      "input-value": "true",
+                                      disabled: "",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [_c("v-switch", { attrs: { disabled: "" } })],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-row",
+                            { staticClass: "dark--text" },
+                            [
+                              _c("v-col", { attrs: { cols: "6" } }, [
+                                _vm._v("on loading"),
+                              ]),
+                              _vm._v(" "),
+                              _c("v-col", { attrs: { cols: "6" } }, [
+                                _vm._v("off loading"),
+                              ]),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-row",
+                            [
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [
+                                  _c("v-switch", {
+                                    attrs: {
+                                      loading: "warning",
+                                      value: "",
+                                      "input-value": "true",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [
+                                  _c("v-switch", {
+                                    attrs: { loading: "warning" },
+                                  }),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Label slot" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
                         _vm._v(
-                          " or don't want\n            the selection to occupy multiple lines.\n          "
+                          "\n            Selection controls' labels can be defined in\n            "
+                        ),
+                        _c("code", [_vm._v("label")]),
+                        _vm._v(
+                          " slot - that will allow to use HTML content\n          "
                         ),
                       ]),
                       _vm._v(" "),
@@ -805,50 +1633,189 @@ var render = function () {
                         "v-container",
                         { attrs: { fluid: "" } },
                         [
-                          _c("v-select", {
-                            attrs: {
-                              items: _vm.code7.items,
-                              label: "Select Item",
-                              multiple: "",
-                            },
+                          _c("v-checkbox", {
                             scopedSlots: _vm._u([
                               {
-                                key: "selection",
-                                fn: function (ref) {
-                                  var item = ref.item
-                                  var index = ref.index
+                                key: "label",
+                                fn: function () {
                                   return [
-                                    index === 0
-                                      ? _c("v-chip", [
-                                          _c("span", [_vm._v(_vm._s(item))]),
-                                        ])
-                                      : _vm._e(),
-                                    _vm._v(" "),
-                                    index === 1
-                                      ? _c(
-                                          "span",
-                                          { staticClass: "grey--text caption" },
+                                    _c(
+                                      "div",
+                                      [
+                                        _vm._v(
+                                          "\n                  I agree that\n                  "
+                                        ),
+                                        _c(
+                                          "v-tooltip",
+                                          {
+                                            attrs: { bottom: "" },
+                                            scopedSlots: _vm._u([
+                                              {
+                                                key: "activator",
+                                                fn: function (ref) {
+                                                  var on = ref.on
+                                                  return [
+                                                    _c(
+                                                      "a",
+                                                      _vm._g(
+                                                        {
+                                                          attrs: {
+                                                            target: "_blank",
+                                                            href: "http://vuetifyjs.com",
+                                                          },
+                                                          on: {
+                                                            click: function (
+                                                              $event
+                                                            ) {
+                                                              $event.stopPropagation()
+                                                            },
+                                                          },
+                                                        },
+                                                        on
+                                                      ),
+                                                      [
+                                                        _vm._v(
+                                                          "\n                        Vuetify\n                      "
+                                                        ),
+                                                      ]
+                                                    ),
+                                                  ]
+                                                },
+                                              },
+                                            ]),
+                                          },
                                           [
                                             _vm._v(
-                                              "(+" +
-                                                _vm._s(
-                                                  _vm.code7.value.length - 1
-                                                ) +
-                                                " others)"
+                                              "\n                    Opens in new window\n                  "
                                             ),
                                           ]
-                                        )
-                                      : _vm._e(),
+                                        ),
+                                        _vm._v(
+                                          "\n                  is awesome\n                "
+                                        ),
+                                      ],
+                                      1
+                                    ),
                                   ]
                                 },
+                                proxy: true,
                               },
                             ]),
                             model: {
-                              value: _vm.code7.value,
+                              value: _vm.code7.checkbox,
                               callback: function ($$v) {
-                                _vm.$set(_vm.code7, "value", $$v)
+                                _vm.$set(_vm.code7, "checkbox", $$v)
                               },
-                              expression: "code7.value",
+                              expression: "code7.checkbox",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "v-radio-group",
+                            {
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "label",
+                                  fn: function () {
+                                    return [
+                                      _c("div", [
+                                        _vm._v("Your favourite "),
+                                        _c("strong", [_vm._v("search engine")]),
+                                      ]),
+                                    ]
+                                  },
+                                  proxy: true,
+                                },
+                              ]),
+                              model: {
+                                value: _vm.code7.radios,
+                                callback: function ($$v) {
+                                  _vm.$set(_vm.code7, "radios", $$v)
+                                },
+                                expression: "code7.radios",
+                              },
+                            },
+                            [
+                              _vm._v(" "),
+                              _c("v-radio", {
+                                attrs: { value: "Google" },
+                                scopedSlots: _vm._u([
+                                  {
+                                    key: "label",
+                                    fn: function () {
+                                      return [
+                                        _c("div", [
+                                          _vm._v(
+                                            "\n                    Of course it's\n                    "
+                                          ),
+                                          _c(
+                                            "strong",
+                                            { staticClass: "success--text" },
+                                            [_vm._v("Google")]
+                                          ),
+                                        ]),
+                                      ]
+                                    },
+                                    proxy: true,
+                                  },
+                                ]),
+                              }),
+                              _vm._v(" "),
+                              _c("v-radio", {
+                                attrs: { value: "Duckduckgo" },
+                                scopedSlots: _vm._u([
+                                  {
+                                    key: "label",
+                                    fn: function () {
+                                      return [
+                                        _c("div", [
+                                          _vm._v(
+                                            "\n                    Definitely\n                    "
+                                          ),
+                                          _c(
+                                            "strong",
+                                            { staticClass: "primary--text" },
+                                            [_vm._v("Duckduckgo")]
+                                          ),
+                                        ]),
+                                      ]
+                                    },
+                                    proxy: true,
+                                  },
+                                ]),
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("v-switch", {
+                            scopedSlots: _vm._u([
+                              {
+                                key: "label",
+                                fn: function () {
+                                  return [
+                                    _vm._v(
+                                      "\n                Turn on the progress:\n                "
+                                    ),
+                                    _c("v-progress-circular", {
+                                      staticClass: "ml-2",
+                                      attrs: {
+                                        indeterminate: _vm.code7.switchMe,
+                                        value: 0,
+                                        size: "24",
+                                      },
+                                    }),
+                                  ]
+                                },
+                                proxy: true,
+                              },
+                            ]),
+                            model: {
+                              value: _vm.code7.switchMe,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code7, "switchMe", $$v)
+                              },
+                              expression: "code7.switchMe",
                             },
                           }),
                         ],
@@ -885,463 +1852,6 @@ var render = function () {
           ],
           1
         ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
-            _c("KTCodePreview", {
-              attrs: { title: "Icons" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v("Use a custom prepended or appended icon."),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-container",
-                        { attrs: { fluid: "" } },
-                        [
-                          _c(
-                            "v-row",
-                            { attrs: { align: "center" } },
-                            [
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "6" } },
-                                [_c("v-subheader", [_vm._v("Prepended icon")])],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "6" } },
-                                [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code2.states,
-                                      "menu-props": "auto",
-                                      label: "Select",
-                                      "hide-details": "",
-                                      "prepend-icon": "map",
-                                      "single-line": "",
-                                    },
-                                    model: {
-                                      value: _vm.code2.e1,
-                                      callback: function ($$v) {
-                                        _vm.$set(_vm.code2, "e1", $$v)
-                                      },
-                                      expression: "code2.e1",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "6" } },
-                                [_c("v-subheader", [_vm._v("Appended icon")])],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "6" } },
-                                [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code2.states,
-                                      "append-outer-icon": "map",
-                                      "menu-props": "auto",
-                                      "hide-details": "",
-                                      label: "Select",
-                                      "single-line": "",
-                                    },
-                                    model: {
-                                      value: _vm.code2.e2,
-                                      callback: function ($$v) {
-                                        _vm.$set(_vm.code2, "e2", $$v)
-                                      },
-                                      expression: "code2.e2",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Multiple" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v("\n            A multi-select can utilize "),
-                        _c("code", [_vm._v("v-chip")]),
-                        _vm._v(
-                          " as the display for\n            selected items.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-container",
-                        { attrs: { fluid: "" } },
-                        [
-                          _c(
-                            "v-row",
-                            { attrs: { align: "center" } },
-                            [
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "12", sm: "6" } },
-                                [
-                                  _c("v-subheader", {
-                                    domProps: {
-                                      textContent: _vm._s(
-                                        "Multiple with persistent hint"
-                                      ),
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "12", sm: "6" } },
-                                [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code4.states,
-                                      "menu-props": { maxHeight: "400" },
-                                      label: "Select",
-                                      multiple: "",
-                                      hint: "Pick your favorite states",
-                                      "persistent-hint": "",
-                                    },
-                                    model: {
-                                      value: _vm.code4.e6,
-                                      callback: function ($$v) {
-                                        _vm.$set(_vm.code4, "e6", $$v)
-                                      },
-                                      expression: "code4.e6",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "12", sm: "6" } },
-                                [
-                                  _c("v-subheader", {
-                                    domProps: {
-                                      textContent: _vm._s(
-                                        "Multiple (Chips) with persistent hint"
-                                      ),
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                { attrs: { cols: "12", sm: "6" } },
-                                [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.code4.states,
-                                      label: "Select",
-                                      multiple: "",
-                                      chips: "",
-                                      hint: "What are the target regions",
-                                      "persistent-hint": "",
-                                    },
-                                    model: {
-                                      value: _vm.code4.e7,
-                                      callback: function ($$v) {
-                                        _vm.$set(_vm.code4, "e7", $$v)
-                                      },
-                                      expression: "code4.e7",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Prepend/Append item slots" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v("\n            The "),
-                        _c("code", [_vm._v("v-select")]),
-                        _vm._v(
-                          " components can be optionally expanded\n            with prepended and appended items. This is perfect for customized\n            "
-                        ),
-                        _c("strong", [_vm._v("select-all")]),
-                        _vm._v(" functionality.\n          "),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-container",
-                        { attrs: { fluid: "" } },
-                        [
-                          _c("v-select", {
-                            attrs: {
-                              items: _vm.code6.fruits,
-                              label: "Favorite Fruits",
-                              multiple: "",
-                            },
-                            scopedSlots: _vm._u([
-                              {
-                                key: "prepend-item",
-                                fn: function () {
-                                  return [
-                                    _c(
-                                      "v-list-item",
-                                      {
-                                        attrs: { ripple: "" },
-                                        on: { click: _vm.toggle },
-                                      },
-                                      [
-                                        _c(
-                                          "v-list-item-action",
-                                          [
-                                            _c(
-                                              "v-icon",
-                                              {
-                                                attrs: {
-                                                  color:
-                                                    _vm.code6.selectedFruits
-                                                      .length > 0
-                                                      ? "indigo darken-4"
-                                                      : "",
-                                                },
-                                              },
-                                              [_vm._v(_vm._s(_vm.icon))]
-                                            ),
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-list-item-content",
-                                          [
-                                            _c("v-list-item-title", [
-                                              _vm._v("Select All"),
-                                            ]),
-                                          ],
-                                          1
-                                        ),
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c("v-divider", { staticClass: "mt-2" }),
-                                  ]
-                                },
-                                proxy: true,
-                              },
-                              {
-                                key: "append-item",
-                                fn: function () {
-                                  return [
-                                    _c("v-divider", { staticClass: "mb-2" }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "v-list-item",
-                                      { attrs: { disabled: "" } },
-                                      [
-                                        _c(
-                                          "v-list-item-avatar",
-                                          {
-                                            attrs: { color: "grey lighten-3" },
-                                          },
-                                          [
-                                            _c("v-icon", [
-                                              _vm._v("mdi-food-apple"),
-                                            ]),
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _vm.likesAllFruit
-                                          ? _c(
-                                              "v-list-item-content",
-                                              [
-                                                _c("v-list-item-title", [
-                                                  _vm._v(
-                                                    "Holy smokes, someone call the fruit\n                      police!"
-                                                  ),
-                                                ]),
-                                              ],
-                                              1
-                                            )
-                                          : _vm.likesSomeFruit
-                                          ? _c(
-                                              "v-list-item-content",
-                                              [
-                                                _c("v-list-item-title", [
-                                                  _vm._v("Fruit Count"),
-                                                ]),
-                                                _vm._v(" "),
-                                                _c("v-list-item-subtitle", [
-                                                  _vm._v(
-                                                    _vm._s(
-                                                      _vm.code6.selectedFruits
-                                                        .length
-                                                    )
-                                                  ),
-                                                ]),
-                                              ],
-                                              1
-                                            )
-                                          : _c(
-                                              "v-list-item-content",
-                                              [
-                                                _c("v-list-item-title", [
-                                                  _vm._v(
-                                                    "\n                      How could you not like fruit?\n                    "
-                                                  ),
-                                                ]),
-                                                _vm._v(" "),
-                                                _c("v-list-item-subtitle", [
-                                                  _vm._v(
-                                                    "\n                      Go ahead, make a selection above!\n                    "
-                                                  ),
-                                                ]),
-                                              ],
-                                              1
-                                            ),
-                                      ],
-                                      1
-                                    ),
-                                  ]
-                                },
-                                proxy: true,
-                              },
-                            ]),
-                            model: {
-                              value: _vm.code6.selectedFruits,
-                              callback: function ($$v) {
-                                _vm.$set(_vm.code6, "selectedFruits", $$v)
-                              },
-                              expression: "code6.selectedFruits",
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code6.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code6.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-          ],
-          1
-        ),
       ]),
     ],
     1
@@ -1354,17 +1864,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/forms/Selects.vue":
-/*!***************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/forms/Selects.vue ***!
-  \***************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue":
+/*!*************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue ***!
+  \*************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Selects.vue?vue&type=template&id=6c081f0a& */ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&");
-/* harmony import */ var _Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Selects.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&");
+/* harmony import */ var _SelectionControls_vue_vue_type_template_id_4ee01935___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SelectionControls.vue?vue&type=template&id=4ee01935& */ "./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=template&id=4ee01935&");
+/* harmony import */ var _SelectionControls_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SelectionControls.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1374,9 +1884,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _SelectionControls_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SelectionControls_vue_vue_type_template_id_4ee01935___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SelectionControls_vue_vue_type_template_id_4ee01935___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1386,38 +1896,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vuetify/forms/Selects.vue"
+component.options.__file = "resources/js/src/view/pages/vuetify/forms/SelectionControls.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Selects.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SelectionControls_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./SelectionControls.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SelectionControls_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=template&id=4ee01935&":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=template&id=4ee01935& ***!
+  \********************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Selects.vue?vue&type=template&id=6c081f0a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SelectionControls_vue_vue_type_template_id_4ee01935___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./SelectionControls.vue?vue&type=template&id=4ee01935& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/SelectionControls.vue?vue&type=template&id=4ee01935&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SelectionControls_vue_vue_type_template_id_4ee01935___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SelectionControls_vue_vue_type_template_id_4ee01935___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

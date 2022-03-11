@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[48],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=script&lang=js& ***!
   \**************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -216,43 +216,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      html1: "<div>\n    <b-form-input v-model=\"text\" placeholder=\"Enter your name\"></b-form-input>\n    <div class=\"mt-2\">Value: {{ text }}</div>\n  </div>",
-      js1: "export default {\n    data() {\n      return {\n        text: ''\n      }\n    }\n  }",
-      text: "",
-      html2: "<b-container fluid>\n" + '    <b-row class="my-1" v-for="type in types" :key="type">\n' + '      <b-col sm="3">\n' + '        <label :for="`type-${type}`">Type {{ type }}:</label>\n' + "      </b-col>\n" + '      <b-col sm="9">\n' + '        <b-form-input :id="`type-${type}`" :type="type"></b-form-input>\n' + "      </b-col>\n" + "    </b-row>\n" + "  </b-container>",
-      js2: "export default {\n    data() {\n      return {\n        types: [\n          'text',\n          'password',\n          'email',\n          'number',\n          'url',\n          'tel',\n          'date',\n          `time`,\n          'range',\n          'color'\n        ]\n      }\n    }\n  }",
-      types: ["text", "password", "email", "number", "url", "tel", "date", "time", "range", "color"],
-      html3: "<b-container fluid>\n  <b-row class=\"my-1\">\n    <b-col sm=\"2\">\n      <label for=\"input-small\">Small:</label>\n    </b-col>\n    <b-col sm=\"10\">\n      <b-form-input id=\"input-small\" size=\"sm\" placeholder=\"Enter your name\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"2\">\n      <label for=\"input-default\">Default:</label>\n    </b-col>\n    <b-col sm=\"10\">\n      <b-form-input id=\"input-default\" placeholder=\"Enter your name\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"2\">\n      <label for=\"input-large\">Large:</label>\n    </b-col>\n    <b-col sm=\"10\">\n      <b-form-input id=\"input-large\" size=\"lg\" placeholder=\"Enter your name\"></b-form-input>\n    </b-col>\n  </b-row>\n</b-container>",
-      html4: "<b-container fluid>\n  <b-row class=\"my-1\">\n    <b-col sm=\"3\">\n      <label for=\"input-none\">No State:</label>\n    </b-col>\n    <b-col sm=\"9\">\n      <b-form-input id=\"input-none\" :state=\"null\" placeholder=\"No validation\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"3\">\n      <label for=\"input-valid\">Valid State:</label>\n    </b-col>\n    <b-col sm=\"9\">\n      <b-form-input id=\"input-valid\" :state=\"true\" placeholder=\"Valid input\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"3\">\n      <label for=\"input-invalid\">Invalid State:</label>\n    </b-col>\n    <b-col sm=\"9\">\n      <b-form-input id=\"input-invalid\" :state=\"false\" placeholder=\"Invalid input\"></b-form-input>\n    </b-col>\n  </b-row>\n</b-container>",
-      html5: "<div role=\"group\">\n    <label for=\"input-live\">Name:</label>\n    <b-form-input\n      id=\"input-live\"\n      v-model=\"name\"\n      :state=\"nameState\"\n      aria-describedby=\"input-live-help input-live-feedback\"\n      placeholder=\"Enter your name\"\n      trim\n    ></b-form-input>\n\n    <!-- This will only be shown if the preceding input has an invalid state -->\n    <b-form-invalid-feedback id=\"input-live-feedback\">\n      Enter at least 3 letters\n    </b-form-invalid-feedback>\n\n    <!-- This is a form text block (formerly known as help block) -->\n    <b-form-text id=\"input-live-help\">Your full name.</b-form-text>\n  </div>",
-      js5: "export default {\n    computed: {\n      nameState() {\n        return this.name.length > 2 ? true : false\n      }\n    },\n    data() {\n      return {\n        name: ''\n      }\n    }\n  }",
-      name: ""
+      html1: "<div>\n    <b-form-group\n      id=\"fieldset-1\"\n      description=\"Let us know your name.\"\n      label=\"Enter your name\"\n      label-for=\"input-1\"\n      :invalid-feedback=\"invalidFeedback\"\n      :valid-feedback=\"validFeedback\"\n      :state=\"state\"\n    >\n      <b-form-input id=\"input-1\" v-model=\"name\" :state=\"state\" trim></b-form-input>\n    </b-form-group>\n  </div>",
+      js1: "export default {\n    computed: {\n      state() {\n        return this.name.length >= 4 ? true : false\n      },\n      invalidFeedback() {\n        if (this.name.length > 4) {\n          return ''\n        } else if (this.name.length > 0) {\n          return 'Enter at least 4 characters'\n        } else {\n          return 'Please enter something'\n        }\n      },\n      validFeedback() {\n        return this.state === true ? 'Thank you' : ''\n      }\n    },\n    data() {\n      return {\n        name: ''\n      }\n    }\n  }",
+      name: "",
+      html2: "<div>\n    <b-form-group\n      id=\"fieldset-horizontal\"\n      label-cols-sm=\"4\"\n      label-cols-lg=\"3\"\n      description=\"Let us know your name.\"\n      label=\"Enter your name\"\n      label-for=\"input-horizontal\"\n    >\n      <b-form-input id=\"input-horizontal\"></b-form-input>\n    </b-form-group>\n  </div>",
+      html3: "<div>\n  <b-form-group label-cols=\"4\" label-cols-lg=\"2\" label-size=\"sm\" label=\"Small\" label-for=\"input-sm\">\n    <b-form-input id=\"input-sm\" size=\"sm\"></b-form-input>\n  </b-form-group>\n\n  <b-form-group label-cols=\"4\" label-cols-lg=\"2\" label=\"Default\" label-for=\"input-default\">\n    <b-form-input id=\"input-default\"></b-form-input>\n  </b-form-group>\n\n  <b-form-group label-cols=\"4\" label-cols-lg=\"2\" label-size=\"lg\" label=\"Large\" label-for=\"input-lg\">\n    <b-form-input id=\"input-lg\" size=\"lg\"></b-form-input>\n  </b-form-group>\n</div>",
+      html4: "<div>\n  <b-card bg-variant=\"light\">\n    <b-form-group\n      label-cols-lg=\"3\"\n      label=\"Shipping Address\"\n      label-size=\"lg\"\n      label-class=\"font-weight-bold pt-0\"\n      class=\"mb-0\"\n    >\n      <b-form-group\n        label-cols-sm=\"3\"\n        label=\"Street:\"\n        label-align-sm=\"right\"\n        label-for=\"nested-street\"\n      >\n        <b-form-input id=\"nested-street\"></b-form-input>\n      </b-form-group>\n\n      <b-form-group\n        label-cols-sm=\"3\"\n        label=\"City:\"\n        label-align-sm=\"right\"\n        label-for=\"nested-city\"\n      >\n        <b-form-input id=\"nested-city\"></b-form-input>\n      </b-form-group>\n\n      <b-form-group\n        label-cols-sm=\"3\"\n        label=\"State:\"\n        label-align-sm=\"right\"\n        label-for=\"nested-state\"\n      >\n        <b-form-input id=\"nested-state\"></b-form-input>\n      </b-form-group>\n\n      <b-form-group\n        label-cols-sm=\"3\"\n        label=\"Country:\"\n        label-align-sm=\"right\"\n        label-for=\"nested-country\"\n      >\n        <b-form-input id=\"nested-country\"></b-form-input>\n      </b-form-group>\n\n      <b-form-group\n        label-cols-sm=\"3\"\n        label=\"Ship via:\"\n        label-align-sm=\"right\" class=\"mb-0\"\n      >\n        <b-form-radio-group\n          class=\"pt-2\"\n          :options=\"['Air', 'Courier', 'Mail']\"\n        ></b-form-radio-group>\n      </b-form-group>\n    </b-form-group>\n  </b-card>\n</div>"
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   computed: {
-    nameState: function nameState() {
-      return this.name.length > 2;
+    state: function state() {
+      return this.name.length >= 4;
+    },
+    invalidFeedback: function invalidFeedback() {
+      if (this.name.length > 4) {
+        return "";
+      } else if (this.name.length > 0) {
+        return "Enter at least 4 characters";
+      } else {
+        return "Please enter something";
+      }
+    },
+    validFeedback: function validFeedback() {
+      return this.state === true ? "Thank you" : "";
     }
   },
   mounted: function mounted() {
@@ -260,16 +254,16 @@ __webpack_require__.r(__webpack_exports__);
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Form Input"
+      title: "Form Group"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=template&id=401fa1b2&":
 /*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=template&id=401fa1b2& ***!
   \******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -307,16 +301,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Textual and Value inputs")]),
+            _c("b", [_vm._v("Form group")]),
             _vm._v(
-              " Create various type inputs such as:\n      text, password, number, url, email, search, range, date and more.\n      "
+              " The <b-form-group> component is the easiest way\n      to add some structure to forms. Its purpose is to pair form controls\n      with a legend or label, and to provide help text and invalid/valid\n      feedback text, as well as visual (color) contextual state feedback.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/form-input",
+                  href: "https://bootstrap-vue.js.org/docs/components/form-group",
                   target: "_blank",
                 },
               },
@@ -332,7 +326,7 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Textual and Value inputs" },
+              attrs: { title: "Form group" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -341,20 +335,37 @@ var render = function () {
                       _c(
                         "div",
                         [
-                          _c("b-form-input", {
-                            attrs: { placeholder: "Enter your name" },
-                            model: {
-                              value: _vm.text,
-                              callback: function ($$v) {
-                                _vm.text = $$v
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                id: "fieldset-1",
+                                description: "Let us know your name.",
+                                label: "Enter your name",
+                                "label-for": "input-1",
+                                "invalid-feedback": _vm.invalidFeedback,
+                                "valid-feedback": _vm.validFeedback,
+                                state: _vm.state,
                               },
-                              expression: "text",
                             },
-                          }),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "mt-2" }, [
-                            _vm._v("Value: " + _vm._s(_vm.text)),
-                          ]),
+                            [
+                              _c("b-form-input", {
+                                attrs: {
+                                  id: "input-1",
+                                  state: _vm.state,
+                                  trim: "",
+                                },
+                                model: {
+                                  value: _vm.name,
+                                  callback: function ($$v) {
+                                    _vm.name = $$v
+                                  },
+                                  expression: "name",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
                         ],
                         1
                       ),
@@ -384,83 +395,41 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Input type" },
+              attrs: { title: "Horizontal layout" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _c("code", [_vm._v("<b-form-input>")]),
                         _vm._v(
-                          " defaults to a text input, but\n            you can set the "
+                          "\n            By default, the label appears above the input element(s), but you\n            may optionally render horizontal (label to the left of the input)\n            at the various standard Bootstrap breakpoints.\n          "
                         ),
-                        _c("code", [_vm._v("type")]),
-                        _vm._v(
-                          " prop to one of the supported\n            native browser HTML5 types: "
-                        ),
-                        _c("code", [_vm._v("text")]),
-                        _vm._v(",\n            "),
-                        _c("code", [_vm._v("password")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("email")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("number")]),
-                        _vm._v(",\n            "),
-                        _c("code", [_vm._v("url")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("tel")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("search")]),
-                        _vm._v(",\n            "),
-                        _c("code", [_vm._v("date")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("datetime")]),
-                        _vm._v(",\n            "),
-                        _c("code", [_vm._v("datetime-local")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("month")]),
-                        _vm._v(",\n            "),
-                        _c("code", [_vm._v("week")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("time")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("range")]),
-                        _vm._v(", or\n            "),
-                        _c("code", [_vm._v("color")]),
-                        _vm._v(".\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "b-container",
-                        { attrs: { fluid: "" } },
-                        _vm._l(_vm.types, function (type) {
-                          return _c(
-                            "b-row",
-                            { key: type, staticClass: "my-1" },
+                        "div",
+                        [
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                id: "fieldset-horizontal",
+                                "label-cols-sm": "4",
+                                "label-cols-lg": "3",
+                                description: "Let us know your name.",
+                                label: "Enter your name",
+                                "label-for": "input-horizontal",
+                              },
+                            },
                             [
-                              _c("b-col", { attrs: { sm: "3" } }, [
-                                _c(
-                                  "label",
-                                  { attrs: { for: "type-" + type } },
-                                  [_vm._v("Type " + _vm._s(type) + ":")]
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { attrs: { sm: "9" } },
-                                [
-                                  _c("b-form-input", {
-                                    attrs: { id: "type-" + type, type: type },
-                                  }),
-                                ],
-                                1
-                              ),
+                              _c("b-form-input", {
+                                attrs: { id: "input-horizontal" },
+                              }),
                             ],
                             1
-                          )
-                        }),
+                          ),
+                        ],
                         1
                       ),
                     ]
@@ -476,15 +445,6 @@ var render = function () {
                   },
                   proxy: true,
                 },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v("\n          " + _vm._s(_vm.js2) + "\n        "),
-                    ]
-                  },
-                  proxy: true,
-                },
               ]),
             }),
           ],
@@ -496,107 +456,81 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Control sizing" },
+              attrs: { title: "Label size" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            Set heights using the "),
-                        _c("code", [_vm._v("size")]),
-                        _vm._v(" prop to "),
+                        _vm._v(
+                          "\n            You can control the label text size match the size of your form\n            input(s) via the optional "
+                        ),
+                        _c("code", [_vm._v("label-size")]),
+                        _vm._v(" prop. Values can\n            be '"),
                         _c("code", [_vm._v("sm")]),
-                        _vm._v(" or\n            "),
+                        _vm._v("' or '"),
                         _c("code", [_vm._v("lg")]),
-                        _vm._v(" for small or large respectively.\n          "),
+                        _vm._v(
+                          "' for small or large\n            label, respectively. Sizes work for both horizontal and\n            non-horizontal form groups.\n          "
+                        ),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "b-container",
-                        { attrs: { fluid: "" } },
+                        "div",
                         [
                           _c(
-                            "b-row",
-                            { staticClass: "my-1" },
+                            "b-form-group",
+                            {
+                              attrs: {
+                                "label-cols": "4",
+                                "label-cols-lg": "2",
+                                "label-size": "sm",
+                                label: "Small",
+                                "label-for": "input-sm",
+                              },
+                            },
                             [
-                              _c("b-col", { attrs: { sm: "2" } }, [
-                                _c("label", { attrs: { for: "input-small" } }, [
-                                  _vm._v("Small:"),
-                                ]),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { attrs: { sm: "10" } },
-                                [
-                                  _c("b-form-input", {
-                                    attrs: {
-                                      id: "input-small",
-                                      size: "sm",
-                                      placeholder: "Enter your name",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
+                              _c("b-form-input", {
+                                attrs: { id: "input-sm", size: "sm" },
+                              }),
                             ],
                             1
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-row",
-                            { staticClass: "my-1" },
+                            "b-form-group",
+                            {
+                              attrs: {
+                                "label-cols": "4",
+                                "label-cols-lg": "2",
+                                label: "Default",
+                                "label-for": "input-default",
+                              },
+                            },
                             [
-                              _c("b-col", { attrs: { sm: "2" } }, [
-                                _c(
-                                  "label",
-                                  { attrs: { for: "input-default" } },
-                                  [_vm._v("Default:")]
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { attrs: { sm: "10" } },
-                                [
-                                  _c("b-form-input", {
-                                    attrs: {
-                                      id: "input-default",
-                                      placeholder: "Enter your name",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
+                              _c("b-form-input", {
+                                attrs: { id: "input-default" },
+                              }),
                             ],
                             1
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-row",
-                            { staticClass: "my-1" },
+                            "b-form-group",
+                            {
+                              attrs: {
+                                "label-cols": "4",
+                                "label-cols-lg": "2",
+                                "label-size": "lg",
+                                label: "Large",
+                                "label-for": "input-lg",
+                              },
+                            },
                             [
-                              _c("b-col", { attrs: { sm: "2" } }, [
-                                _c("label", { attrs: { for: "input-large" } }, [
-                                  _vm._v("Large:"),
-                                ]),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { attrs: { sm: "10" } },
-                                [
-                                  _c("b-form-input", {
-                                    attrs: {
-                                      id: "input-large",
-                                      size: "lg",
-                                      placeholder: "Enter your name",
-                                    },
-                                  }),
-                                ],
-                                1
-                              ),
+                              _c("b-form-input", {
+                                attrs: { id: "input-lg", size: "lg" },
+                              }),
                             ],
                             1
                           ),
@@ -620,105 +554,131 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Contextual states" },
+              attrs: { title: "Nested form groups" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            Feel free to nest "),
+                        _c("code", [_vm._v("<b-form-group>")]),
                         _vm._v(
-                          "\n            Bootstrap includes validation styles for "
+                          " components to\n            produce advanced form layouts and semantic grouping of related\n            form controls:\n          "
                         ),
-                        _c("code", [_vm._v("valid")]),
-                        _vm._v(" and\n            "),
-                        _c("code", [_vm._v("invalid")]),
-                        _vm._v(" states on most form controls.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "b-container",
-                        { attrs: { fluid: "" } },
+                        "div",
                         [
                           _c(
-                            "b-row",
-                            { staticClass: "my-1" },
+                            "b-card",
+                            { attrs: { "bg-variant": "light" } },
                             [
-                              _c("b-col", { attrs: { sm: "3" } }, [
-                                _c("label", { attrs: { for: "input-none" } }, [
-                                  _vm._v("No State:"),
-                                ]),
-                              ]),
-                              _vm._v(" "),
                               _c(
-                                "b-col",
-                                { attrs: { sm: "9" } },
+                                "b-form-group",
+                                {
+                                  staticClass: "mb-0",
+                                  attrs: {
+                                    "label-cols-lg": "3",
+                                    label: "Shipping Address",
+                                    "label-size": "lg",
+                                    "label-class": "font-weight-bold pt-0",
+                                  },
+                                },
                                 [
-                                  _c("b-form-input", {
-                                    attrs: {
-                                      id: "input-none",
-                                      state: null,
-                                      placeholder: "No validation",
+                                  _c(
+                                    "b-form-group",
+                                    {
+                                      attrs: {
+                                        "label-cols-sm": "3",
+                                        label: "Street:",
+                                        "label-align-sm": "right",
+                                        "label-for": "nested-street",
+                                      },
                                     },
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-row",
-                            { staticClass: "my-1" },
-                            [
-                              _c("b-col", { attrs: { sm: "3" } }, [
-                                _c("label", { attrs: { for: "input-valid" } }, [
-                                  _vm._v("Valid State:"),
-                                ]),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { attrs: { sm: "9" } },
-                                [
-                                  _c("b-form-input", {
-                                    attrs: {
-                                      id: "input-valid",
-                                      state: true,
-                                      placeholder: "Valid input",
+                                    [
+                                      _c("b-form-input", {
+                                        attrs: { id: "nested-street" },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-group",
+                                    {
+                                      attrs: {
+                                        "label-cols-sm": "3",
+                                        label: "City:",
+                                        "label-align-sm": "right",
+                                        "label-for": "nested-city",
+                                      },
                                     },
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-row",
-                            { staticClass: "my-1" },
-                            [
-                              _c("b-col", { attrs: { sm: "3" } }, [
-                                _c(
-                                  "label",
-                                  { attrs: { for: "input-invalid" } },
-                                  [_vm._v("Invalid State:")]
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-col",
-                                { attrs: { sm: "9" } },
-                                [
-                                  _c("b-form-input", {
-                                    attrs: {
-                                      id: "input-invalid",
-                                      state: false,
-                                      placeholder: "Invalid input",
+                                    [
+                                      _c("b-form-input", {
+                                        attrs: { id: "nested-city" },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-group",
+                                    {
+                                      attrs: {
+                                        "label-cols-sm": "3",
+                                        label: "State:",
+                                        "label-align-sm": "right",
+                                        "label-for": "nested-state",
+                                      },
                                     },
-                                  }),
+                                    [
+                                      _c("b-form-input", {
+                                        attrs: { id: "nested-state" },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-group",
+                                    {
+                                      attrs: {
+                                        "label-cols-sm": "3",
+                                        label: "Country:",
+                                        "label-align-sm": "right",
+                                        "label-for": "nested-country",
+                                      },
+                                    },
+                                    [
+                                      _c("b-form-input", {
+                                        attrs: { id: "nested-country" },
+                                      }),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-group",
+                                    {
+                                      staticClass: "mb-0",
+                                      attrs: {
+                                        "label-cols-sm": "3",
+                                        label: "Ship via:",
+                                        "label-align-sm": "right",
+                                      },
+                                    },
+                                    [
+                                      _c("b-form-radio-group", {
+                                        staticClass: "pt-2",
+                                        attrs: {
+                                          options: ["Air", "Courier", "Mail"],
+                                        },
+                                      }),
+                                    ],
+                                    1
+                                  ),
                                 ],
                                 1
                               ),
@@ -743,82 +703,6 @@ var render = function () {
                 },
               ]),
             }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Contextual states Live Example" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c(
-                        "div",
-                        { attrs: { role: "group" } },
-                        [
-                          _c("label", { attrs: { for: "input-live" } }, [
-                            _vm._v("Name:"),
-                          ]),
-                          _vm._v(" "),
-                          _c("b-form-input", {
-                            attrs: {
-                              id: "input-live",
-                              state: _vm.nameState,
-                              "aria-describedby":
-                                "input-live-help input-live-feedback",
-                              placeholder: "Enter your name",
-                              trim: "",
-                            },
-                            model: {
-                              value: _vm.name,
-                              callback: function ($$v) {
-                                _vm.name = $$v
-                              },
-                              expression: "name",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "b-form-invalid-feedback",
-                            { attrs: { id: "input-live-feedback" } },
-                            [
-                              _vm._v(
-                                "\n              Enter at least 3 letters\n            "
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-form-text",
-                            { attrs: { id: "input-live-help" } },
-                            [_vm._v("Your full name.")]
-                          ),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v("\n          " + _vm._s(_vm.html5) + "\n        "),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v("\n          " + _vm._s(_vm.js5) + "\n        "),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
           ],
           1
         ),
@@ -834,17 +718,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue":
 /*!*****************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormInput.vue ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue ***!
   \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormInput.vue?vue&type=template&id=c3da1a1c& */ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&");
-/* harmony import */ var _FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormInput.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&");
+/* harmony import */ var _FormGroup_vue_vue_type_template_id_401fa1b2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormGroup.vue?vue&type=template&id=401fa1b2& */ "./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=template&id=401fa1b2&");
+/* harmony import */ var _FormGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormGroup.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -854,9 +738,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _FormGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FormGroup_vue_vue_type_template_id_401fa1b2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FormGroup_vue_vue_type_template_id_401fa1b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -866,38 +750,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/FormInput.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/FormGroup.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=script&lang=js& ***!
   \******************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormInput.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormGroup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=template&id=401fa1b2&":
 /*!************************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c& ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=template&id=401fa1b2& ***!
   \************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormInput.vue?vue&type=template&id=c3da1a1c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormGroup_vue_vue_type_template_id_401fa1b2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormGroup.vue?vue&type=template&id=401fa1b2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormGroup.vue?vue&type=template&id=401fa1b2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormGroup_vue_vue_type_template_id_401fa1b2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormGroup_vue_vue_type_template_id_401fa1b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

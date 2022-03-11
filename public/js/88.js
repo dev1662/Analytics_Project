@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[88],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -347,187 +347,68 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
- // code6
 
-var defaultForm = Object.freeze({
-  first: "",
-  last: "",
-  bio: "",
-  favoriteAnimal: "",
-  age: null,
-  terms: false
-});
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<v-form>\n  <v-container>\n    <v-row>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          label=\"Regular\"\n          single-line\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          label=\"Solo\"\n          single-line\n          solo\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          label=\"Filled\"\n          single-line\n          filled\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          label=\"Outlined\"\n          single-line\n          outlined\n        ></v-text-field>\n      </v-col>\n\n    </v-row>\n  </v-container>\n</v-form>"
+        html: "<v-row align=\"center\">\n  <v-col cols=\"12\">\n    <v-select\n      :items=\"items\"\n      disabled\n      label=\"Disabled\"\n    ></v-select>\n  </v-col>\n</v-row>",
+        js: "export default {\n  data: () => ({\n    items: ['Foo', 'Bar', 'Fizz', 'Buzz'],\n  }),\n}",
+        items: ["Foo", "Bar", "Fizz", "Buzz"]
       },
       code2: {
-        html: "<v-form>\n  <v-container>\n    <v-row>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"message1\"\n          label=\"Regular\"\n          clearable\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"message2\"\n          solo\n          label=\"Solo\"\n          clearable\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"message3\"\n          filled\n          label=\"Filled\"\n          clearable\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"message4\"\n          label=\"Outlined\"\n          outlined\n          clearable\n        ></v-text-field>\n      </v-col>\n\n    </v-row>\n  </v-container>\n</v-form>",
-        js: "export default {\n  data () {\n    return {\n      message1: 'Hey!',\n      message2: 'Hey!',\n      message3: 'Hey!',\n      message4: 'Hey!',\n    }\n  },\n}",
-        message1: "Hey!",
-        message2: "Hey!",
-        message3: "Hey!",
-        message4: "Hey!"
+        html: "<v-container fluid>\n  <v-row align=\"center\">\n    <v-col cols=\"6\">\n      <v-subheader>Prepended icon</v-subheader>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-select\n        v-model=\"e1\"\n        :items=\"states\"\n        menu-props=\"auto\"\n        label=\"Select\"\n        hide-details\n        prepend-icon=\"map\"\n        single-line\n      ></v-select>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-subheader>Appended icon</v-subheader>\n    </v-col>\n    <v-col cols=\"6\">\n      <v-select\n        v-model=\"e2\"\n        :items=\"states\"\n        append-outer-icon=\"map\"\n        menu-props=\"auto\"\n        hide-details\n        label=\"Select\"\n        single-line\n      ></v-select>\n    </v-col>\n  </v-row>\n</v-container>",
+        js: "export default {\n  data () {\n    return {\n      e1: 'Florida',\n      e2: 'Texas',\n      e3: null,\n      e4: null,\n      items: [\n        { text: 'State 1' },\n        { text: 'State 2' },\n        { text: 'State 3' },\n        { text: 'State 4' },\n        { text: 'State 5' },\n        { text: 'State 6' },\n        { text: 'State 7' },\n      ],\n      states: [\n        'Alabama', 'Alaska', 'American Samoa', 'Arizona',\n        'Arkansas', 'California', 'Colorado', 'Connecticut',\n        'Delaware', 'District of Columbia', 'Federated States of Micronesia',\n        'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho',\n        'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',\n        'Louisiana', 'Maine', 'Marshall Islands', 'Maryland',\n        'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',\n        'Missouri', 'Montana', 'Nebraska', 'Nevada',\n        'New Hampshire', 'New Jersey', 'New Mexico', 'New York',\n        'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio',\n        'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico',\n        'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee',\n        'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia',\n        'Washington', 'West Virginia', 'Wisconsin', 'Wyoming',\n      ],\n    }\n  },\n}",
+        e1: "Florida",
+        e2: "Texas",
+        e3: null,
+        e4: null,
+        items: [{
+          text: "State 1"
+        }, {
+          text: "State 2"
+        }, {
+          text: "State 3"
+        }, {
+          text: "State 4"
+        }, {
+          text: "State 5"
+        }, {
+          text: "State 6"
+        }, {
+          text: "State 7"
+        }],
+        states: ["Alabama", "Alaska", "American Samoa", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Federated States of Micronesia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Marshall Islands", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Northern Mariana Islands", "Ohio", "Oklahoma", "Oregon", "Palau", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virgin Island", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
       },
       code3: {
-        html: "<v-form>\n  <v-container>\n    <v-row>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"title\"\n          :rules=\"rules\"\n          counter=\"25\"\n          hint=\"This field uses counter prop\"\n          label=\"Regular\"\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"description\"\n          :rules=\"rules\"\n          counter\n          maxlength=\"25\"\n          hint=\"This field uses maxlength attribute\"\n          label=\"Limit exceeded\"\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"title\"\n          :rules=\"rules\"\n          counter=\"25\"\n          filled\n          label=\"Filled\"\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"title\"\n          :rules=\"rules\"\n          counter=\"25\"\n          label=\"Outlined\"\n          outlined\n        ></v-text-field>\n      </v-col>\n\n    </v-row>\n  </v-container>\n</v-form>",
-        js: "export default {\n  data () {\n    return {\n      title: 'Preliminary report',\n      description: 'California is a state in the western United States',\n      rules: [v => v.length <= 25 || 'Max 25 characters'],\n    }\n  },\n}",
-        title: "Preliminary report",
-        description: "California is a state in the western United States",
-        rules: [function (v) {
-          return v.length <= 25 || "Max 25 characters";
-        }]
+        html: "<v-row align=\"center\">\n  <v-col cols=\"12\">\n    <v-select\n      :items=\"items\"\n      readonly\n      label=\"Read-only\"\n    ></v-select>\n  </v-col>\n</v-row>",
+        js: "export default {\n  data: () => ({\n    items: ['Foo', 'Bar', 'Fizz', 'Buzz'],\n  }),\n}",
+        items: ["Foo", "Bar", "Fizz", "Buzz"]
       },
       code4: {
-        html: "<div>\n  <v-text-field label=\"Main input\" :rules=\"rules\" hide-details=\"auto\"></v-text-field>\n  <v-text-field label=\"Another input\"></v-text-field>\n</div>",
-        js: "export default {\n  data: () => ({\n    rules: [\n      value => !!value || 'Required.',\n      value => (value && value.length >= 3) || 'Min 3 characters',\n    ],\n  }),\n}",
-        rules: [function (value) {
-          return !!value || "Required.";
-        }, function (value) {
-          return value && value.length >= 3 || "Min 3 characters";
-        }]
+        html: "<v-container fluid>\n  <v-row align=\"center\">\n    <v-col cols=\"12\" sm=\"6\">\n      <v-subheader v-text=\"'Multiple with persistent hint'\"></v-subheader>\n    </v-col>\n    <v-col cols=\"12\" sm=\"6\">\n      <v-select\n        v-model=\"e6\"\n        :items=\"states\"\n        :menu-props=\"{ maxHeight: '400' }\"\n        label=\"Select\"\n        multiple\n        hint=\"Pick your favorite states\"\n        persistent-hint\n      ></v-select>\n    </v-col>\n\n    <v-col cols=\"12\" sm=\"6\">\n      <v-subheader v-text=\"'Multiple (Chips) with persistent hint'\"></v-subheader>\n    </v-col>\n\n    <v-col cols=\"12\" sm=\"6\">\n      <v-select\n        v-model=\"e7\"\n        :items=\"states\"\n        label=\"Select\"\n        multiple\n        chips\n        hint=\"What are the target regions\"\n        persistent-hint\n      ></v-select>\n    </v-col>\n  </v-row>\n</v-container>",
+        js: "export default {\n  data () {\n    return {\n      e6: [],\n      e7: [],\n      states: [\n        'Alabama', 'Alaska', 'American Samoa', 'Arizona',\n        'Arkansas', 'California', 'Colorado', 'Connecticut',\n        'Delaware', 'District of Columbia', 'Federated States of Micronesia',\n        'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho',\n        'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',\n        'Louisiana', 'Maine', 'Marshall Islands', 'Maryland',\n        'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',\n        'Missouri', 'Montana', 'Nebraska', 'Nevada',\n        'New Hampshire', 'New Jersey', 'New Mexico', 'New York',\n        'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio',\n        'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico',\n        'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee',\n        'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia',\n        'Washington', 'West Virginia', 'Wisconsin', 'Wyoming',\n      ],\n    }\n  },\n}",
+        e6: [],
+        e7: [],
+        states: ["Alabama", "Alaska", "American Samoa", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Federated States of Micronesia", "Florida", "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Marshall Islands", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Northern Mariana Islands", "Ohio", "Oklahoma", "Oregon", "Palau", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virgin Island", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
       },
       code5: {
-        html: "<v-form>\n  <v-container fluid>\n    <v-row>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          v-model=\"password\"\n          :append-icon=\"show1 ? 'mdi-eye' : 'mdi-eye-off'\"\n          :rules=\"[rules.required, rules.min]\"\n          :type=\"show1 ? 'text' : 'password'\"\n          name=\"input-10-1\"\n          label=\"Normal with hint text\"\n          hint=\"At least 8 characters\"\n          counter\n          @click:append=\"show1 = !show1\"\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          :append-icon=\"show2 ? 'mdi-eye' : 'mdi-eye-off'\"\n          :rules=\"[rules.required, rules.min]\"\n          :type=\"show2 ? 'text' : 'password'\"\n          name=\"input-10-2\"\n          label=\"Visible\"\n          hint=\"At least 8 characters\"\n          value=\"wqfasds\"\n          class=\"input-group--focused\"\n          @click:append=\"show2 = !show2\"\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          :append-icon=\"show3 ? 'mdi-eye' : 'mdi-eye-off'\"\n          :rules=\"[rules.required, rules.min]\"\n          :type=\"show3 ? 'text' : 'password'\"\n          name=\"input-10-2\"\n          label=\"Not visible\"\n          hint=\"At least 8 characters\"\n          value=\"wqfasds\"\n          class=\"input-group--focused\"\n          @click:append=\"show3 = !show3\"\n        ></v-text-field>\n      </v-col>\n\n      <v-col cols=\"12\" sm=\"6\">\n        <v-text-field\n          :append-icon=\"show4 ? 'mdi-eye' : 'mdi-eye-off'\"\n          :rules=\"[rules.required, rules.emailMatch]\"\n          :type=\"show4 ? 'text' : 'password'\"\n          name=\"input-10-2\"\n          label=\"Error\"\n          hint=\"At least 8 characters\"\n          value=\"Pa\"\n          error\n          @click:append=\"show4 = !show4\"\n        ></v-text-field>\n      </v-col>\n\n    </v-row>\n  </v-container>\n</v-form>",
-        js: "export default {\n  data () {\n    return {\n      show1: false,\n      show2: true,\n      show3: false,\n      show4: false,\n      password: 'Password',\n      rules: {\n        required: value => !!value || 'Required.',\n        min: v => v.length >= 8 || 'Min 8 characters',\n        emailMatch: () => ('The email and password you entered don\\'t match'),\n      },\n    }\n  },\n}",
-        show1: false,
-        show2: true,
-        show3: false,
-        show4: false,
-        password: "Password",
-        rules: {
-          required: function required(value) {
-            return !!value || "Required.";
-          },
-          min: function min(v) {
-            return v.length >= 8 || "Min 8 characters";
-          },
-          emailMatch: function emailMatch() {
-            return "The email and password you entered don't match";
-          }
-        }
+        html: "<v-container fluid>\n  <v-row align=\"center\">\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        label=\"Standard\"\n        dense\n      ></v-select>\n    </v-col>\n\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        filled\n        label=\"Filled style\"\n        dense\n      ></v-select>\n    </v-col>\n\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        label=\"Outlined style\"\n        dense\n        outlined\n      ></v-select>\n    </v-col>\n\n    <v-col class=\"d-flex\" cols=\"12\" sm=\"6\">\n      <v-select\n        :items=\"items\"\n        label=\"Solo field\"\n        dense\n        solo\n      ></v-select>\n    </v-col>\n  </v-row>\n</v-container>",
+        js: "export default {\n  data: () => ({\n    items: ['Foo', 'Bar', 'Fizz', 'Buzz'],\n  }),\n}",
+        items: ["Foo", "Bar", "Fizz", "Buzz"]
       },
       code6: {
-        html: "<v-card flat>\n  <v-snackbar\n    v-model=\"snackbar\"\n    absolute\n    top\n    right\n    color=\"success\"\n  >\n    <span>Registration successful!</span>\n    <v-icon dark>mdi-checkbox-marked-circle</v-icon>\n  </v-snackbar>\n  <v-form ref=\"form\" @submit.prevent=\"submit\">\n    <v-container fluid>\n      <v-row>\n        <v-col cols=\"12\" sm=\"6\">\n          <v-text-field\n            v-model=\"form.first\"\n            :rules=\"rules.name\"\n            color=\"purple darken-2\"\n            label=\"First name\"\n            required\n          ></v-text-field>\n        </v-col>\n        <v-col cols=\"12\" sm=\"6\">\n          <v-text-field\n            v-model=\"form.last\"\n            :rules=\"rules.name\"\n            color=\"blue darken-2\"\n            label=\"Last name\"\n            required\n          ></v-text-field>\n        </v-col>\n        <v-col cols=\"12\">\n          <v-textarea\n            v-model=\"form.bio\"\n            color=\"teal\"\n          >\n            <template v-slot:label>\n              <div>\n                Bio <small>(optional)</small>\n              </div>\n            </template>\n          </v-textarea>\n        </v-col>\n        <v-col cols=\"12\" sm=\"6\">\n          <v-select\n            v-model=\"form.favoriteAnimal\"\n            :items=\"animals\"\n            :rules=\"rules.animal\"\n            color=\"pink\"\n            label=\"Favorite animal\"\n            required\n          ></v-select>\n        </v-col>\n        <v-col cols=\"12\" sm=\"6\">\n          <v-slider\n            v-model=\"form.age\"\n            :rules=\"rules.age\"\n            color=\"orange\"\n            label=\"Age\"\n            hint=\"Be honest\"\n            min=\"1\"\n            max=\"100\"\n            thumb-label\n          ></v-slider>\n        </v-col>\n        <v-col cols=\"12\">\n          <v-checkbox\n            v-model=\"form.terms\"\n            color=\"green\"\n          >\n            <template v-slot:label>\n              <div @click.stop=\"\">\n                Do you accept the\n                <a href=\"javascript:;\" @click.stop=\"terms = true\">terms</a>\n                and\n                <a href=\"javascript:;\" @click.stop=\"conditions = true\">conditions?</a>\n              </div>\n            </template>\n          </v-checkbox>\n        </v-col>\n      </v-row>\n    </v-container>\n    <v-card-actions>\n      <v-btn text @click=\"resetForm\">Cancel</v-btn>\n      <v-spacer></v-spacer>\n      <v-btn\n        :disabled=\"!formIsValid\"\n        text\n        color=\"primary\"\n        type=\"submit\"\n      >Register</v-btn>\n    </v-card-actions>\n  </v-form>\n  <v-dialog v-model=\"terms\" width=\"70%\">\n    <v-card>\n      <v-card-title class=\"title\">Terms</v-card-title>\n      <v-card-text v-for=\"n in 5\" :key=\"n\">\n        {{ content }}\n      </v-card-text>\n      <v-card-actions>\n        <v-spacer></v-spacer>\n        <v-btn\n          text\n          color=\"purple\"\n          @click=\"terms = false\"\n        >Ok</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"conditions\" width=\"70%\">\n    <v-card>\n      <v-card-title class=\"title\">Conditions</v-card-title>\n      <v-card-text v-for=\"n in 5\" :key=\"n\">\n        {{ content }}\n      </v-card-text>\n      <v-card-actions>\n        <v-spacer></v-spacer>\n        <v-btn\n          text\n          color=\"purple\"\n          @click=\"conditions = false\"\n        >Ok</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</v-card>",
-        js: "export default {\n  data () {\n    const defaultForm = Object.freeze({\n      first: '',\n      last: '',\n      bio: '',\n      favoriteAnimal: '',\n      age: null,\n      terms: false,\n    })\n\n    return {\n      form: Object.assign({}, defaultForm),\n      rules: {\n        age: [\n          val => val < 10 || `I don't believe you!`,\n        ],\n        animal: [val => (val || '').length > 0 || 'This field is required'],\n        name: [val => (val || '').length > 0 || 'This field is required'],\n      },\n      animals: ['Dog', 'Cat', 'Rabbit', 'Turtle', 'Snake'],\n      conditions: false,\n      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.\n      Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.\n      Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.`,\n      snackbar: false,\n      terms: false,\n      defaultForm,\n    }\n  },\n\n  computed: {\n    formIsValid () {\n      return (\n        this.form.first &&\n        this.form.last &&\n        this.form.favoriteAnimal &&\n        this.form.terms\n      )\n    },\n  },\n\n  methods: {\n    resetForm () {\n      this.form = Object.assign({}, this.defaultForm)\n      this.$refs.form.reset()\n    },\n    submit () {\n      this.snackbar = true\n      this.resetForm()\n    },\n  },\n}",
-        form: Object.assign({}, defaultForm),
-        rules: {
-          age: [function (val) {
-            return val < 10 || "I don't believe you!";
-          }],
-          animal: [function (val) {
-            return (val || "").length > 0 || "This field is required";
-          }],
-          name: [function (val) {
-            return (val || "").length > 0 || "This field is required";
-          }]
-        },
-        animals: ["Dog", "Cat", "Rabbit", "Turtle", "Snake"],
-        conditions: false,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.\n      Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.\n      Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.",
-        snackbar: false,
-        terms: false,
-        defaultForm: defaultForm
+        html: "<v-container fluid>\n  <v-select\n    v-model=\"selectedFruits\"\n    :items=\"fruits\"\n    label=\"Favorite Fruits\"\n    multiple\n  >\n    <template v-slot:prepend-item>\n      <v-list-item\n        ripple\n        @click=\"toggle\"\n      >\n        <v-list-item-action>\n          <v-icon :color=\"selectedFruits.length > 0 ? 'indigo darken-4' : ''\">{{ icon }}</v-icon>\n        </v-list-item-action>\n        <v-list-item-content>\n          <v-list-item-title>Select All</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n      <v-divider class=\"mt-2\"></v-divider>\n    </template>\n    <template v-slot:append-item>\n      <v-divider class=\"mb-2\"></v-divider>\n      <v-list-item disabled>\n        <v-list-item-avatar color=\"grey lighten-3\">\n          <v-icon>mdi-food-apple</v-icon>\n        </v-list-item-avatar>\n\n        <v-list-item-content v-if=\"likesAllFruit\">\n          <v-list-item-title>Holy smokes, someone call the fruit police!</v-list-item-title>\n        </v-list-item-content>\n\n        <v-list-item-content v-else-if=\"likesSomeFruit\">\n          <v-list-item-title>Fruit Count</v-list-item-title>\n          <v-list-item-subtitle>{{ selectedFruits.length }}</v-list-item-subtitle>\n        </v-list-item-content>\n\n        <v-list-item-content v-else>\n          <v-list-item-title>\n            How could you not like fruit?\n          </v-list-item-title>\n          <v-list-item-subtitle>\n            Go ahead, make a selection above!\n          </v-list-item-subtitle>\n        </v-list-item-content>\n      </v-list-item>\n    </template>\n  </v-select>\n</v-container>",
+        js: "export default {\n  data: () => ({\n    fruits: [\n      'Apples',\n      'Apricots',\n      'Avocado',\n      'Bananas',\n      'Blueberries',\n      'Blackberries',\n      'Boysenberries',\n      'Bread fruit',\n      'Cantaloupes (cantalope)',\n      'Cherries',\n      'Cranberries',\n      'Cucumbers',\n      'Currants',\n      'Dates',\n      'Eggplant',\n      'Figs',\n      'Grapes',\n      'Grapefruit',\n      'Guava',\n      'Honeydew melons',\n      'Huckleberries',\n      'Kiwis',\n      'Kumquat',\n      'Lemons',\n      'Limes',\n      'Mangos',\n      'Mulberries',\n      'Muskmelon',\n      'Nectarines',\n      'Olives',\n      'Oranges',\n      'Papaya',\n      'Peaches',\n      'Pears',\n      'Persimmon',\n      'Pineapple',\n      'Plums',\n      'Pomegranate',\n      'Raspberries',\n      'Rose Apple',\n      'Starfruit',\n      'Strawberries',\n      'Tangerines',\n      'Tomatoes',\n      'Watermelons',\n      'Zucchini',\n    ],\n    selectedFruits: [],\n  }),\n\n  computed: {\n    likesAllFruit () {\n      return this.selectedFruits.length === this.fruits.length\n    },\n    likesSomeFruit () {\n      return this.selectedFruits.length > 0 && !this.likesAllFruit\n    },\n    icon () {\n      if (this.likesAllFruit) return 'mdi-close-box'\n      if (this.likesSomeFruit) return 'mdi-minus-box'\n      return 'mdi-checkbox-blank-outline'\n    },\n  },\n\n  methods: {\n    toggle () {\n      this.$nextTick(() => {\n        if (this.likesAllFruit) {\n          this.selectedFruits = []\n        } else {\n          this.selectedFruits = this.fruits.slice()\n        }\n      })\n    },\n  },\n}",
+        fruits: ["Apples", "Apricots", "Avocado", "Bananas", "Blueberries", "Blackberries", "Boysenberries", "Bread fruit", "Cantaloupes (cantalope)", "Cherries", "Cranberries", "Cucumbers", "Currants", "Dates", "Eggplant", "Figs", "Grapes", "Grapefruit", "Guava", "Honeydew melons", "Huckleberries", "Kiwis", "Kumquat", "Lemons", "Limes", "Mangos", "Mulberries", "Muskmelon", "Nectarines", "Olives", "Oranges", "Papaya", "Peaches", "Pears", "Persimmon", "Pineapple", "Plums", "Pomegranate", "Raspberries", "Rose Apple", "Starfruit", "Strawberries", "Tangerines", "Tomatoes", "Watermelons", "Zucchini"],
+        selectedFruits: []
+      },
+      code7: {
+        html: "<v-container fluid>\n    <v-select\n      v-model=\"value\"\n      :items=\"items\"\n      label=\"Select Item\"\n      multiple\n    >\n      <template v-slot:selection=\"{ item, index }\">\n        <v-chip v-if=\"index === 0\">\n          <span>{{ item }}</span>\n        </v-chip>\n        <span\n          v-if=\"index === 1\"\n          class=\"grey--text caption\"\n        >(+{{ value.length - 1 }} others)</span>\n      </template>\n    </v-select>\n</v-container>",
+        js: "export default {\n  data: () => ({\n    items: ['foo', 'bar', 'fizz', 'buzz', 'fizzbuzz', 'foobar'],\n    value: ['foo', 'bar', 'fizz'],\n  }),\n}",
+        items: ["foo", "bar", "fizz", "buzz", "fizzbuzz", "foobar"],
+        value: ["foo", "bar", "fizz"]
       }
     };
   },
@@ -542,34 +423,45 @@ var defaultForm = Object.freeze({
       title: "Form Inputs & Control",
       route: "autocompletes"
     }, {
-      title: "Text Fields"
+      title: "Selects"
     }]);
   },
   computed: {
     // code6
-    formIsValid: function formIsValid() {
-      return this.code6.form.first && this.code6.form.last && this.code6.form.favoriteAnimal && this.code6.form.terms;
+    likesAllFruit: function likesAllFruit() {
+      return this.code6.selectedFruits.length === this.code6.fruits.length;
+    },
+    likesSomeFruit: function likesSomeFruit() {
+      return this.code6.selectedFruits.length > 0 && !this.likesAllFruit;
+    },
+    icon: function icon() {
+      if (this.likesAllFruit) return "mdi-close-box";
+      if (this.likesSomeFruit) return "mdi-minus-box";
+      return "mdi-checkbox-blank-outline";
     }
   },
   methods: {
     // code6
-    resetForm: function resetForm() {
-      this.code6.form = Object.assign({}, this.code6.defaultForm);
-      this.$refs.form.reset();
-    },
-    submit: function submit() {
-      this.code6.snackbar = true;
-      this.resetForm();
+    toggle: function toggle() {
+      var _this = this;
+
+      this.$nextTick(function () {
+        if (_this.likesAllFruit) {
+          _this.code6.selectedFruits = [];
+        } else {
+          _this.code6.selectedFruits = _this.code6.fruits.slice();
+        }
+      });
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=template&id=981e81fa&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=template&id=981e81fa& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -606,16 +498,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Text fields")]),
+            _c("b", [_vm._v("Selects")]),
             _vm._v(
-              " Text fields components are used for collecting user\n      provided information.\n      "
+              " Select fields components are used for collecting user\n      provided information from a list of options.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://vuetifyjs.com/en/components/text-fields",
+                  href: "https://vuetifyjs.com/en/components/selects",
                   target: "_blank",
                 },
               },
@@ -631,88 +523,33 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Single line" },
+              attrs: { title: "Disabled" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v(
-                          "\n            Single line text fields do not float their label on focus or with\n            data.\n          "
-                        ),
+                        _vm._v("You cannot use disabled "),
+                        _c("code", [_vm._v("v-select")]),
+                        _vm._v("."),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-form",
+                        "v-row",
+                        { attrs: { align: "center" } },
                         [
                           _c(
-                            "v-container",
+                            "v-col",
+                            { attrs: { cols: "12" } },
                             [
-                              _c(
-                                "v-row",
-                                [
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          label: "Regular",
-                                          "single-line": "",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          label: "Solo",
-                                          "single-line": "",
-                                          solo: "",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          label: "Filled",
-                                          "single-line": "",
-                                          filled: "",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          label: "Outlined",
-                                          "single-line": "",
-                                          outlined: "",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
+                              _c("v-select", {
+                                attrs: {
+                                  items: _vm.code1.items,
+                                  disabled: "",
+                                  label: "Disabled",
+                                },
+                              }),
                             ],
                             1
                           ),
@@ -734,132 +571,50 @@ var render = function () {
                   },
                   proxy: true,
                 },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
               ]),
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Character counter" },
+              attrs: { title: "Read-only" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            Use a "),
-                        _c("code", [_vm._v("counter")]),
+                        _vm._v("\n            You cannot use read-only "),
+                        _c("code", [_vm._v("v-select")]),
                         _vm._v(
-                          " prop to inform a user of the character\n            limit. The counter does not perform any validation by itself. You\n            will need to pair it with either the internal validation system,\n            or a 3rd party library. You can use it on regular, box or outlined\n            text fields.\n          "
+                          ", but it looks\n            default.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-form",
+                        "v-row",
+                        { attrs: { align: "center" } },
                         [
                           _c(
-                            "v-container",
+                            "v-col",
+                            { attrs: { cols: "12" } },
                             [
-                              _c(
-                                "v-row",
-                                [
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          rules: _vm.code3.rules,
-                                          counter: "25",
-                                          hint: "This field uses counter prop",
-                                          label: "Regular",
-                                        },
-                                        model: {
-                                          value: _vm.code3.title,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code3, "title", $$v)
-                                          },
-                                          expression: "code3.title",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          rules: _vm.code3.rules,
-                                          counter: "",
-                                          maxlength: "25",
-                                          hint: "This field uses maxlength attribute",
-                                          label: "Limit exceeded",
-                                        },
-                                        model: {
-                                          value: _vm.code3.description,
-                                          callback: function ($$v) {
-                                            _vm.$set(
-                                              _vm.code3,
-                                              "description",
-                                              $$v
-                                            )
-                                          },
-                                          expression: "code3.description",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          rules: _vm.code3.rules,
-                                          counter: "25",
-                                          filled: "",
-                                          label: "Filled",
-                                        },
-                                        model: {
-                                          value: _vm.code3.title,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code3, "title", $$v)
-                                          },
-                                          expression: "code3.title",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          rules: _vm.code3.rules,
-                                          counter: "25",
-                                          label: "Outlined",
-                                          outlined: "",
-                                        },
-                                        model: {
-                                          value: _vm.code3.title,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code3, "title", $$v)
-                                          },
-                                          expression: "code3.title",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
+                              _c("v-select", {
+                                attrs: {
+                                  items: _vm.code3.items,
+                                  readonly: "",
+                                  label: "Read-only",
+                                },
+                              }),
                             ],
                             1
                           ),
@@ -896,161 +651,99 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Password input" },
+              attrs: { title: "Dense" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            You can use "),
+                        _c("code", [_vm._v("dense")]),
                         _vm._v(
-                          "\n            A password input can be used with an appended icon and callback to\n            control the visibility.\n          "
+                          " prop to reduce the field height and\n            lower max height of list items.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-form",
+                        "v-container",
+                        { attrs: { fluid: "" } },
                         [
                           _c(
-                            "v-container",
-                            { attrs: { fluid: "" } },
+                            "v-row",
+                            { attrs: { align: "center" } },
                             [
                               _c(
-                                "v-row",
+                                "v-col",
+                                {
+                                  staticClass: "d-flex",
+                                  attrs: { cols: "12", sm: "6" },
+                                },
                                 [
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          "append-icon": _vm.code5.show1
-                                            ? "mdi-eye"
-                                            : "mdi-eye-off",
-                                          rules: [
-                                            _vm.code5.rules.required,
-                                            _vm.code5.rules.min,
-                                          ],
-                                          type: _vm.code5.show1
-                                            ? "text"
-                                            : "password",
-                                          name: "input-10-1",
-                                          label: "Normal with hint text",
-                                          hint: "At least 8 characters",
-                                          counter: "",
-                                        },
-                                        on: {
-                                          "click:append": function ($event) {
-                                            _vm.code5.show1 = !_vm.code5.show1
-                                          },
-                                        },
-                                        model: {
-                                          value: _vm.code5.password,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code5, "password", $$v)
-                                          },
-                                          expression: "code5.password",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        staticClass: "input-group--focused",
-                                        attrs: {
-                                          "append-icon": _vm.code5.show2
-                                            ? "mdi-eye"
-                                            : "mdi-eye-off",
-                                          rules: [
-                                            _vm.code5.rules.required,
-                                            _vm.code5.rules.min,
-                                          ],
-                                          type: _vm.code5.show2
-                                            ? "text"
-                                            : "password",
-                                          name: "input-10-2",
-                                          label: "Visible",
-                                          hint: "At least 8 characters",
-                                          value: "wqfasds",
-                                        },
-                                        on: {
-                                          "click:append": function ($event) {
-                                            _vm.code5.show2 = !_vm.code5.show2
-                                          },
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        staticClass: "input-group--focused",
-                                        attrs: {
-                                          "append-icon": _vm.code5.show3
-                                            ? "mdi-eye"
-                                            : "mdi-eye-off",
-                                          rules: [
-                                            _vm.code5.rules.required,
-                                            _vm.code5.rules.min,
-                                          ],
-                                          type: _vm.code5.show3
-                                            ? "text"
-                                            : "password",
-                                          name: "input-10-2",
-                                          label: "Not visible",
-                                          hint: "At least 8 characters",
-                                          value: "wqfasds",
-                                        },
-                                        on: {
-                                          "click:append": function ($event) {
-                                            _vm.code5.show3 = !_vm.code5.show3
-                                          },
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          "append-icon": _vm.code5.show4
-                                            ? "mdi-eye"
-                                            : "mdi-eye-off",
-                                          rules: [
-                                            _vm.code5.rules.required,
-                                            _vm.code5.rules.emailMatch,
-                                          ],
-                                          type: _vm.code5.show4
-                                            ? "text"
-                                            : "password",
-                                          name: "input-10-2",
-                                          label: "Error",
-                                          hint: "At least 8 characters",
-                                          value: "Pa",
-                                          error: "",
-                                        },
-                                        on: {
-                                          "click:append": function ($event) {
-                                            _vm.code5.show4 = !_vm.code5.show4
-                                          },
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code5.items,
+                                      label: "Standard",
+                                      dense: "",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                {
+                                  staticClass: "d-flex",
+                                  attrs: { cols: "12", sm: "6" },
+                                },
+                                [
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code5.items,
+                                      filled: "",
+                                      label: "Filled style",
+                                      dense: "",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                {
+                                  staticClass: "d-flex",
+                                  attrs: { cols: "12", sm: "6" },
+                                },
+                                [
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code5.items,
+                                      label: "Outlined style",
+                                      dense: "",
+                                      outlined: "",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                {
+                                  staticClass: "d-flex",
+                                  attrs: { cols: "12", sm: "6" },
+                                },
+                                [
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code5.items,
+                                      label: "Solo field",
+                                      dense: "",
+                                      solo: "",
+                                    },
+                                  }),
                                 ],
                                 1
                               ),
@@ -1088,6 +781,107 @@ var render = function () {
                 },
               ]),
             }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Change selection appearance" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("\n            The "),
+                        _c("code", [_vm._v("selection")]),
+                        _vm._v(
+                          " slot can be used to customize the way\n            selected values are shown in the input. This is great when you\n            want something like "
+                        ),
+                        _c("code", [_vm._v("foo (+20 others)")]),
+                        _vm._v(
+                          " or don't want\n            the selection to occupy multiple lines.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-container",
+                        { attrs: { fluid: "" } },
+                        [
+                          _c("v-select", {
+                            attrs: {
+                              items: _vm.code7.items,
+                              label: "Select Item",
+                              multiple: "",
+                            },
+                            scopedSlots: _vm._u([
+                              {
+                                key: "selection",
+                                fn: function (ref) {
+                                  var item = ref.item
+                                  var index = ref.index
+                                  return [
+                                    index === 0
+                                      ? _c("v-chip", [
+                                          _c("span", [_vm._v(_vm._s(item))]),
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    index === 1
+                                      ? _c(
+                                          "span",
+                                          { staticClass: "grey--text caption" },
+                                          [
+                                            _vm._v(
+                                              "(+" +
+                                                _vm._s(
+                                                  _vm.code7.value.length - 1
+                                                ) +
+                                                " others)"
+                                            ),
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                  ]
+                                },
+                              },
+                            ]),
+                            model: {
+                              value: _vm.code7.value,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code7, "value", $$v)
+                              },
+                              expression: "code7.value",
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code7.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "js",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code7.js) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
           ],
           1
         ),
@@ -1097,117 +891,84 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Clearable" },
+              attrs: { title: "Icons" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            When "),
-                        _c("code", [_vm._v("clearable")]),
-                        _vm._v(
-                          ", you can customize the clear icon with\n            "
-                        ),
-                        _c("code", [_vm._v("clear-icon")]),
-                        _vm._v(".\n          "),
+                        _vm._v("Use a custom prepended or appended icon."),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-form",
+                        "v-container",
+                        { attrs: { fluid: "" } },
                         [
                           _c(
-                            "v-container",
+                            "v-row",
+                            { attrs: { align: "center" } },
                             [
                               _c(
-                                "v-row",
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [_c("v-subheader", [_vm._v("Prepended icon")])],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
                                 [
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          label: "Regular",
-                                          clearable: "",
-                                        },
-                                        model: {
-                                          value: _vm.code2.message1,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code2, "message1", $$v)
-                                          },
-                                          expression: "code2.message1",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          solo: "",
-                                          label: "Solo",
-                                          clearable: "",
-                                        },
-                                        model: {
-                                          value: _vm.code2.message2,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code2, "message2", $$v)
-                                          },
-                                          expression: "code2.message2",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          filled: "",
-                                          label: "Filled",
-                                          clearable: "",
-                                        },
-                                        model: {
-                                          value: _vm.code2.message3,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code2, "message3", $$v)
-                                          },
-                                          expression: "code2.message3",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-col",
-                                    { attrs: { cols: "12", sm: "6" } },
-                                    [
-                                      _c("v-text-field", {
-                                        attrs: {
-                                          label: "Outlined",
-                                          outlined: "",
-                                          clearable: "",
-                                        },
-                                        model: {
-                                          value: _vm.code2.message4,
-                                          callback: function ($$v) {
-                                            _vm.$set(_vm.code2, "message4", $$v)
-                                          },
-                                          expression: "code2.message4",
-                                        },
-                                      }),
-                                    ],
-                                    1
-                                  ),
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code2.states,
+                                      "menu-props": "auto",
+                                      label: "Select",
+                                      "hide-details": "",
+                                      "prepend-icon": "map",
+                                      "single-line": "",
+                                    },
+                                    model: {
+                                      value: _vm.code2.e1,
+                                      callback: function ($$v) {
+                                        _vm.$set(_vm.code2, "e1", $$v)
+                                      },
+                                      expression: "code2.e1",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [_c("v-subheader", [_vm._v("Appended icon")])],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "6" } },
+                                [
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code2.states,
+                                      "append-outer-icon": "map",
+                                      "menu-props": "auto",
+                                      "hide-details": "",
+                                      label: "Select",
+                                      "single-line": "",
+                                    },
+                                    model: {
+                                      value: _vm.code2.e2,
+                                      callback: function ($$v) {
+                                        _vm.$set(_vm.code2, "e2", $$v)
+                                      },
+                                      expression: "code2.e2",
+                                    },
+                                  }),
                                 ],
                                 1
                               ),
@@ -1247,36 +1008,110 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Auto hiding details" },
+              attrs: { title: "Multiple" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            When "),
-                        _c("code", [_vm._v("hide-details")]),
-                        _vm._v(" is set to\n            "),
-                        _c("code", [_vm._v("auto")]),
+                        _vm._v("\n            A multi-select can utilize "),
+                        _c("code", [_vm._v("v-chip")]),
                         _vm._v(
-                          " messages will be rendered only if there's a\n            message (hint, error message, counter value etc) to display.\n          "
+                          " as the display for\n            selected items.\n          "
                         ),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "div",
+                        "v-container",
+                        { attrs: { fluid: "" } },
                         [
-                          _c("v-text-field", {
-                            attrs: {
-                              label: "Main input",
-                              rules: _vm.code4.rules,
-                              "hide-details": "auto",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("v-text-field", {
-                            attrs: { label: "Another input" },
-                          }),
+                          _c(
+                            "v-row",
+                            { attrs: { align: "center" } },
+                            [
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "12", sm: "6" } },
+                                [
+                                  _c("v-subheader", {
+                                    domProps: {
+                                      textContent: _vm._s(
+                                        "Multiple with persistent hint"
+                                      ),
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "12", sm: "6" } },
+                                [
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code4.states,
+                                      "menu-props": { maxHeight: "400" },
+                                      label: "Select",
+                                      multiple: "",
+                                      hint: "Pick your favorite states",
+                                      "persistent-hint": "",
+                                    },
+                                    model: {
+                                      value: _vm.code4.e6,
+                                      callback: function ($$v) {
+                                        _vm.$set(_vm.code4, "e6", $$v)
+                                      },
+                                      expression: "code4.e6",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "12", sm: "6" } },
+                                [
+                                  _c("v-subheader", {
+                                    domProps: {
+                                      textContent: _vm._s(
+                                        "Multiple (Chips) with persistent hint"
+                                      ),
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "12", sm: "6" } },
+                                [
+                                  _c("v-select", {
+                                    attrs: {
+                                      items: _vm.code4.states,
+                                      label: "Select",
+                                      multiple: "",
+                                      chips: "",
+                                      hint: "What are the target regions",
+                                      "persistent-hint": "",
+                                    },
+                                    model: {
+                                      value: _vm.code4.e7,
+                                      callback: function ($$v) {
+                                        _vm.$set(_vm.code4, "e7", $$v)
+                                      },
+                                      expression: "code4.e7",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
                         ],
                         1
                       ),
@@ -1310,462 +1145,169 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Custom colors" },
+              attrs: { title: "Prepend/Append item slots" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _vm._v("\n            The "),
+                        _c("code", [_vm._v("v-select")]),
                         _vm._v(
-                          "\n            You can optionally change a text field into any color in the\n            Material design palette. Below is an example implementation of a\n            custom form with validation.\n          "
+                          " components can be optionally expanded\n            with prepended and appended items. This is perfect for customized\n            "
                         ),
+                        _c("strong", [_vm._v("select-all")]),
+                        _vm._v(" functionality.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "v-card",
-                        { attrs: { flat: "" } },
+                        "v-container",
+                        { attrs: { fluid: "" } },
                         [
-                          _c(
-                            "v-snackbar",
-                            {
-                              attrs: {
-                                absolute: "",
-                                top: "",
-                                right: "",
-                                color: "success",
-                              },
-                              model: {
-                                value: _vm.code6.snackbar,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code6, "snackbar", $$v)
-                                },
-                                expression: "code6.snackbar",
-                              },
+                          _c("v-select", {
+                            attrs: {
+                              items: _vm.code6.fruits,
+                              label: "Favorite Fruits",
+                              multiple: "",
                             },
-                            [
-                              _c("span", [_vm._v("Registration successful!")]),
-                              _vm._v(" "),
-                              _c("v-icon", { attrs: { dark: "" } }, [
-                                _vm._v("mdi-checkbox-marked-circle"),
-                              ]),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-form",
-                            {
-                              ref: "form",
-                              on: {
-                                submit: function ($event) {
-                                  $event.preventDefault()
-                                  return _vm.submit.apply(null, arguments)
-                                },
-                              },
-                            },
-                            [
-                              _c(
-                                "v-container",
-                                { attrs: { fluid: "" } },
-                                [
-                                  _c(
-                                    "v-row",
-                                    [
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "12", sm: "6" } },
-                                        [
-                                          _c("v-text-field", {
-                                            attrs: {
-                                              rules: _vm.code6.rules.name,
-                                              color: "purple darken-2",
-                                              label: "First name",
-                                              required: "",
-                                            },
-                                            model: {
-                                              value: _vm.code6.form.first,
-                                              callback: function ($$v) {
-                                                _vm.$set(
-                                                  _vm.code6.form,
-                                                  "first",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "code6.form.first",
-                                            },
-                                          }),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "12", sm: "6" } },
-                                        [
-                                          _c("v-text-field", {
-                                            attrs: {
-                                              rules: _vm.code6.rules.name,
-                                              color: "blue darken-2",
-                                              label: "Last name",
-                                              required: "",
-                                            },
-                                            model: {
-                                              value: _vm.code6.form.last,
-                                              callback: function ($$v) {
-                                                _vm.$set(
-                                                  _vm.code6.form,
-                                                  "last",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "code6.form.last",
-                                            },
-                                          }),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "12" } },
-                                        [
-                                          _c("v-textarea", {
-                                            attrs: { color: "teal" },
-                                            scopedSlots: _vm._u([
-                                              {
-                                                key: "label",
-                                                fn: function () {
-                                                  return [
-                                                    _c("div", [
-                                                      _vm._v("Bio "),
-                                                      _c("small", [
-                                                        _vm._v("(optional)"),
-                                                      ]),
-                                                    ]),
-                                                  ]
-                                                },
-                                                proxy: true,
-                                              },
-                                            ]),
-                                            model: {
-                                              value: _vm.code6.form.bio,
-                                              callback: function ($$v) {
-                                                _vm.$set(
-                                                  _vm.code6.form,
-                                                  "bio",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "code6.form.bio",
-                                            },
-                                          }),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "12", sm: "6" } },
-                                        [
-                                          _c("v-select", {
-                                            attrs: {
-                                              items: _vm.code6.animals,
-                                              rules: _vm.code6.rules.animal,
-                                              color: "pink",
-                                              label: "Favorite animal",
-                                              required: "",
-                                            },
-                                            model: {
-                                              value:
-                                                _vm.code6.form.favoriteAnimal,
-                                              callback: function ($$v) {
-                                                _vm.$set(
-                                                  _vm.code6.form,
-                                                  "favoriteAnimal",
-                                                  $$v
-                                                )
-                                              },
-                                              expression:
-                                                "code6.form.favoriteAnimal",
-                                            },
-                                          }),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "12", sm: "6" } },
-                                        [
-                                          _c("v-slider", {
-                                            attrs: {
-                                              rules: _vm.code6.rules.age,
-                                              color: "orange",
-                                              label: "Age",
-                                              hint: "Be honest",
-                                              min: "1",
-                                              max: "100",
-                                              "thumb-label": "",
-                                            },
-                                            model: {
-                                              value: _vm.code6.form.age,
-                                              callback: function ($$v) {
-                                                _vm.$set(
-                                                  _vm.code6.form,
-                                                  "age",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "code6.form.age",
-                                            },
-                                          }),
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "12" } },
-                                        [
-                                          _c("v-checkbox", {
-                                            attrs: { color: "green" },
-                                            scopedSlots: _vm._u([
-                                              {
-                                                key: "label",
-                                                fn: function () {
-                                                  return [
-                                                    _c(
-                                                      "div",
-                                                      {
-                                                        on: {
-                                                          click: function (
-                                                            $event
-                                                          ) {
-                                                            $event.stopPropagation()
-                                                          },
-                                                        },
-                                                      },
-                                                      [
-                                                        _vm._v(
-                                                          "\n                          Do you accept the\n                          "
-                                                        ),
-                                                        _c(
-                                                          "a",
-                                                          {
-                                                            attrs: {
-                                                              href: "javascript:;",
-                                                            },
-                                                            on: {
-                                                              click: function (
-                                                                $event
-                                                              ) {
-                                                                $event.stopPropagation()
-                                                                _vm.code6.terms = true
-                                                              },
-                                                            },
-                                                          },
-                                                          [_vm._v("terms")]
-                                                        ),
-                                                        _vm._v(
-                                                          "\n                          and\n                          "
-                                                        ),
-                                                        _c(
-                                                          "a",
-                                                          {
-                                                            attrs: {
-                                                              href: "javascript:;",
-                                                            },
-                                                            on: {
-                                                              click: function (
-                                                                $event
-                                                              ) {
-                                                                $event.stopPropagation()
-                                                                _vm.code6.conditions = true
-                                                              },
-                                                            },
-                                                          },
-                                                          [
-                                                            _vm._v(
-                                                              "conditions?"
-                                                            ),
-                                                          ]
-                                                        ),
-                                                      ]
-                                                    ),
-                                                  ]
-                                                },
-                                                proxy: true,
-                                              },
-                                            ]),
-                                            model: {
-                                              value: _vm.code6.form.terms,
-                                              callback: function ($$v) {
-                                                _vm.$set(
-                                                  _vm.code6.form,
-                                                  "terms",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "code6.form.terms",
-                                            },
-                                          }),
-                                        ],
-                                        1
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-card-actions",
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: { text: "" },
-                                      on: { click: _vm.resetForm },
-                                    },
-                                    [_vm._v("Cancel")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("v-spacer"),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      attrs: {
-                                        disabled: !_vm.formIsValid,
-                                        text: "",
-                                        color: "primary",
-                                        type: "submit",
+                            scopedSlots: _vm._u([
+                              {
+                                key: "prepend-item",
+                                fn: function () {
+                                  return [
+                                    _c(
+                                      "v-list-item",
+                                      {
+                                        attrs: { ripple: "" },
+                                        on: { click: _vm.toggle },
                                       },
-                                    },
-                                    [_vm._v("Register")]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-dialog",
-                            {
-                              attrs: { width: "70%" },
-                              model: {
-                                value: _vm.code6.terms,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code6, "terms", $$v)
+                                      [
+                                        _c(
+                                          "v-list-item-action",
+                                          [
+                                            _c(
+                                              "v-icon",
+                                              {
+                                                attrs: {
+                                                  color:
+                                                    _vm.code6.selectedFruits
+                                                      .length > 0
+                                                      ? "indigo darken-4"
+                                                      : "",
+                                                },
+                                              },
+                                              [_vm._v(_vm._s(_vm.icon))]
+                                            ),
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-list-item-content",
+                                          [
+                                            _c("v-list-item-title", [
+                                              _vm._v("Select All"),
+                                            ]),
+                                          ],
+                                          1
+                                        ),
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c("v-divider", { staticClass: "mt-2" }),
+                                  ]
                                 },
-                                expression: "code6.terms",
+                                proxy: true,
                               },
-                            },
-                            [
-                              _c(
-                                "v-card",
-                                [
-                                  _c("v-card-title", { staticClass: "title" }, [
-                                    _vm._v("Terms"),
-                                  ]),
-                                  _vm._v(" "),
-                                  _vm._l(5, function (n) {
-                                    return _c("v-card-text", { key: n }, [
-                                      _vm._v(
-                                        "\n                  " +
-                                          _vm._s(_vm.code6.content) +
-                                          "\n                "
-                                      ),
-                                    ])
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-card-actions",
-                                    [
-                                      _c("v-spacer"),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          attrs: { text: "", color: "purple" },
-                                          on: {
-                                            click: function ($event) {
-                                              _vm.code6.terms = false
-                                            },
+                              {
+                                key: "append-item",
+                                fn: function () {
+                                  return [
+                                    _c("v-divider", { staticClass: "mb-2" }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-list-item",
+                                      { attrs: { disabled: "" } },
+                                      [
+                                        _c(
+                                          "v-list-item-avatar",
+                                          {
+                                            attrs: { color: "grey lighten-3" },
                                           },
-                                        },
-                                        [_vm._v("Ok")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                2
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-dialog",
-                            {
-                              attrs: { width: "70%" },
-                              model: {
-                                value: _vm.code6.conditions,
-                                callback: function ($$v) {
-                                  _vm.$set(_vm.code6, "conditions", $$v)
+                                          [
+                                            _c("v-icon", [
+                                              _vm._v("mdi-food-apple"),
+                                            ]),
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _vm.likesAllFruit
+                                          ? _c(
+                                              "v-list-item-content",
+                                              [
+                                                _c("v-list-item-title", [
+                                                  _vm._v(
+                                                    "Holy smokes, someone call the fruit\n                      police!"
+                                                  ),
+                                                ]),
+                                              ],
+                                              1
+                                            )
+                                          : _vm.likesSomeFruit
+                                          ? _c(
+                                              "v-list-item-content",
+                                              [
+                                                _c("v-list-item-title", [
+                                                  _vm._v("Fruit Count"),
+                                                ]),
+                                                _vm._v(" "),
+                                                _c("v-list-item-subtitle", [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      _vm.code6.selectedFruits
+                                                        .length
+                                                    )
+                                                  ),
+                                                ]),
+                                              ],
+                                              1
+                                            )
+                                          : _c(
+                                              "v-list-item-content",
+                                              [
+                                                _c("v-list-item-title", [
+                                                  _vm._v(
+                                                    "\n                      How could you not like fruit?\n                    "
+                                                  ),
+                                                ]),
+                                                _vm._v(" "),
+                                                _c("v-list-item-subtitle", [
+                                                  _vm._v(
+                                                    "\n                      Go ahead, make a selection above!\n                    "
+                                                  ),
+                                                ]),
+                                              ],
+                                              1
+                                            ),
+                                      ],
+                                      1
+                                    ),
+                                  ]
                                 },
-                                expression: "code6.conditions",
+                                proxy: true,
                               },
+                            ]),
+                            model: {
+                              value: _vm.code6.selectedFruits,
+                              callback: function ($$v) {
+                                _vm.$set(_vm.code6, "selectedFruits", $$v)
+                              },
+                              expression: "code6.selectedFruits",
                             },
-                            [
-                              _c(
-                                "v-card",
-                                [
-                                  _c("v-card-title", { staticClass: "title" }, [
-                                    _vm._v("Conditions"),
-                                  ]),
-                                  _vm._v(" "),
-                                  _vm._l(5, function (n) {
-                                    return _c("v-card-text", { key: n }, [
-                                      _vm._v(
-                                        "\n                  " +
-                                          _vm._s(_vm.code6.content) +
-                                          "\n                "
-                                      ),
-                                    ])
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-card-actions",
-                                    [
-                                      _c("v-spacer"),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          attrs: { text: "", color: "purple" },
-                                          on: {
-                                            click: function ($event) {
-                                              _vm.code6.conditions = false
-                                            },
-                                          },
-                                        },
-                                        [_vm._v("Ok")]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ],
-                                2
-                              ),
-                            ],
-                            1
-                          ),
+                          }),
                         ],
                         1
                       ),
@@ -1812,17 +1354,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/forms/TextFields.vue":
-/*!******************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/forms/TextFields.vue ***!
-  \******************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/forms/Selects.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/forms/Selects.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _TextFields_vue_vue_type_template_id_981e81fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TextFields.vue?vue&type=template&id=981e81fa& */ "./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=template&id=981e81fa&");
-/* harmony import */ var _TextFields_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TextFields.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Selects.vue?vue&type=template&id=6c081f0a& */ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&");
+/* harmony import */ var _Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Selects.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1832,9 +1374,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _TextFields_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _TextFields_vue_vue_type_template_id_981e81fa___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _TextFields_vue_vue_type_template_id_981e81fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1844,38 +1386,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vuetify/forms/TextFields.vue"
+component.options.__file = "resources/js/src/view/pages/vuetify/forms/Selects.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextFields_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TextFields.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextFields_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Selects.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=template&id=981e81fa&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=template&id=981e81fa& ***!
-  \*************************************************************************************************/
+/***/ "./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TextFields_vue_vue_type_template_id_981e81fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TextFields.vue?vue&type=template&id=981e81fa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/TextFields.vue?vue&type=template&id=981e81fa&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TextFields_vue_vue_type_template_id_981e81fa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Selects.vue?vue&type=template&id=6c081f0a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vuetify/forms/Selects.vue?vue&type=template&id=6c081f0a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TextFields_vue_vue_type_template_id_981e81fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Selects_vue_vue_type_template_id_6c081f0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

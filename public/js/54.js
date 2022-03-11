@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[54],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -139,19 +139,97 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       code1: {
-        html: "<div>\n  <b-jumbotron header=\"BootstrapVue\" lead=\"Bootstrap v4 Components for Vue.js 2\">\n    <p>For more information visit website</p>\n    <b-button variant=\"primary\" href=\"#\">More Info</b-button>\n  </b-jumbotron>\n</div>"
+        html: "<div>\n  <!-- Using props -->\n  <b-input-group size=\"lg\" prepend=\"$\" append=\".00\">\n    <b-form-input></b-form-input>\n  </b-input-group>\n\n  <!-- Using slots -->\n  <b-input-group class=\"mt-3\">\n    <template v-slot:append>\n      <b-input-group-text><strong class=\"text-danger\">!</strong></b-input-group-text>\n    </template>\n    <b-form-input></b-form-input>\n  </b-input-group>\n\n  <!-- Using components -->\n  <b-input-group prepend=\"Username\" class=\"mt-3\">\n    <b-form-input></b-form-input>\n    <b-input-group-append>\n      <b-button variant=\"outline-success\">Button</b-button>\n      <b-button variant=\"info\">Button</b-button>\n    </b-input-group-append>\n  </b-input-group>\n</div>"
       },
       code2: {
-        html: "<div>\n  <b-jumbotron>\n    <template v-slot:header>BootstrapVue</template>\n\n    <template v-slot:lead>\n      This is a simple hero unit, a simple jumbotron-style component for calling extra attention to\n      featured content or information.\n    </template>\n\n    <hr class=\"my-4\">\n\n    <p>\n      It uses utility classes for typography and spacing to space content out within the larger\n      container.\n    </p>\n\n    <b-button variant=\"primary\" href=\"#\">Do Something</b-button>\n    <b-button variant=\"success\" href=\"#\">Do Something Else</b-button>\n  </b-jumbotron>\n</div>"
+        html: "<div>\n  <b-input-group prepend=\"$\" append=\".00\">\n    <b-form-input></b-form-input>\n  </b-input-group>\n\n  <b-input-group prepend=\"0\" append=\"100\" class=\"mt-3\">\n    <b-form-input type=\"range\" min=\"0\" max=\"100\"></b-form-input>\n  </b-input-group>\n</div>"
       },
       code3: {
-        html: "<div>\n  <b-jumbotron bg-variant=\"info\" text-variant=\"white\" border-variant=\"dark\">\n    <template v-slot:header>BootstrapVue</template>\n\n    <template v-slot:lead>\n      This is a simple hero unit, a simple jumbotron-style component for calling extra attention to\n      featured content or information.\n    </template>\n\n    <hr class=\"my-4\">\n\n    <p>\n      It uses utility classes for typography and spacing to space content out within the larger\n      container.\n    </p>\n  </b-jumbotron>\n</div>"
+        html: "<div>\n  <b-input-group>\n    <template v-slot:prepend>\n      <b-input-group-text >Username</b-input-group-text>\n    </template>\n    <b-form-input></b-form-input>\n\n    <template v-slot:append>\n      <b-dropdown text=\"Dropdown\" variant=\"success\">\n        <b-dropdown-item>Action A</b-dropdown-item>\n        <b-dropdown-item>Action B</b-dropdown-item>\n      </b-dropdown>\n    </template>\n  </b-input-group>\n</div>"
+      },
+      code4: {
+        html: "<div>\n  <b-input-group>\n    <b-input-group-prepend>\n      <b-button variant=\"outline-info\">Button</b-button>\n    </b-input-group-prepend>\n\n    <b-form-input type=\"number\" min=\"0.00\"></b-form-input>\n\n    <b-input-group-append>\n      <b-button variant=\"outline-secondary\">Button</b-button>\n      <b-button variant=\"outline-secondary\">Button</b-button>\n    </b-input-group-append>\n  </b-input-group>\n</div>"
+      },
+      code5: {
+        html: "<div>\n  <b-input-group class=\"mb-2\">\n    <b-input-group-prepend is-text>\n      <b-form-checkbox class=\"mr-n2\">\n        <span class=\"sr-only\">Checkbox for following text input</span>\n      </b-form-checkbox>\n    </b-input-group-prepend>\n    <b-form-input aria-label=\"Text input with checkbox\"></b-form-input>\n  </b-input-group>\n\n  <b-input-group class=\"mb-2\">\n    <b-input-group-prepend is-text>\n      <b-form-radio class=\"mr-n2\">\n        <span class=\"sr-only\">Radio for following text input</span>\n      </b-form-radio>\n    </b-input-group-prepend>\n    <b-form-input aria-label=\"Text input with radio input\"></b-form-input>\n  </b-input-group>\n\n  <b-input-group>\n    <b-input-group-prepend is-text>\n      <b-form-checkbox switch class=\"mr-n2\">\n        <span class=\"sr-only\">Switch for following text input</span>\n      </b-form-checkbox>\n    </b-input-group-prepend>\n    <b-form-input aria-label=\"Text input with switch\"></b-form-input>\n  </b-input-group>\n</div>"
       }
     };
   },
@@ -163,17 +241,17 @@ __webpack_require__.r(__webpack_exports__);
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Jumbotron"
+      title: "Input Groups"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=template&id=21581f90&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=template&id=21581f90& ***!
-  \******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -210,16 +288,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Jumbotron")]),
+            _c("b", [_vm._v("Input Groups")]),
             _vm._v(
-              " A lightweight, flexible component that can optionally\n      extend the entire viewport to showcase key marketing messages on your\n      site.\n      "
+              " Easily extend form controls by adding text, buttons,\n      or button groups on either side of textual inputs.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/jumbotron",
+                  href: "https://bootstrap-vue.js.org/docs/components/form-textarea",
                   target: "_blank",
                 },
               },
@@ -232,51 +310,82 @@ var render = function () {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-12" },
+          { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Usage with props" },
+              attrs: { title: "Input Groups" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
-                      _c("p", [
-                        _vm._v(
-                          "\n            You can set the heading and lead text via the\n            "
-                        ),
-                        _c("code", [_vm._v("header")]),
-                        _vm._v(" and "),
-                        _c("code", [_vm._v("lead")]),
-                        _vm._v(" props, or use the named\n            slots "),
-                        _c("code", [_vm._v("header")]),
-                        _vm._v(" and "),
-                        _c("code", [_vm._v("lead")]),
-                        _vm._v(
-                          " if you need HTML\n            support.\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
                       _c(
                         "div",
                         [
                           _c(
-                            "b-jumbotron",
+                            "b-input-group",
                             {
                               attrs: {
-                                header: "BootstrapVue",
-                                lead: "Bootstrap v4 Components for Vue.js 2",
+                                size: "lg",
+                                prepend: "$",
+                                append: ".00",
                               },
                             },
-                            [
-                              _c("p", [
-                                _vm._v("For more information visit website"),
+                            [_c("b-form-input")],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-input-group",
+                            {
+                              staticClass: "mt-3",
+                              scopedSlots: _vm._u([
+                                {
+                                  key: "append",
+                                  fn: function () {
+                                    return [
+                                      _c("b-input-group-text", [
+                                        _c(
+                                          "strong",
+                                          { staticClass: "text-danger" },
+                                          [_vm._v("!")]
+                                        ),
+                                      ]),
+                                    ]
+                                  },
+                                  proxy: true,
+                                },
                               ]),
+                            },
+                            [_vm._v(" "), _c("b-form-input")],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-input-group",
+                            {
+                              staticClass: "mt-3",
+                              attrs: { prepend: "Username" },
+                            },
+                            [
+                              _c("b-form-input"),
                               _vm._v(" "),
                               _c(
-                                "b-button",
-                                { attrs: { variant: "primary", href: "#" } },
-                                [_vm._v("More Info")]
+                                "b-input-group-append",
+                                [
+                                  _c(
+                                    "b-button",
+                                    { attrs: { variant: "outline-success" } },
+                                    [_vm._v("Button")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-button",
+                                    { attrs: { variant: "info" } },
+                                    [_vm._v("Button")]
+                                  ),
+                                ],
+                                1
                               ),
                             ],
                             1
@@ -303,64 +412,40 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Usage with slots" },
+              attrs: { title: "Using prepend and append props" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
+                      _c("p", [
+                        _vm._v(
+                          "\n            Values will be internally wrapped by a\n            "
+                        ),
+                        _c("code", [_vm._v("<b-input-group-text>")]),
+                        _vm._v(" to display correctly.\n          "),
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "div",
                         [
                           _c(
-                            "b-jumbotron",
+                            "b-input-group",
+                            { attrs: { prepend: "$", append: ".00" } },
+                            [_c("b-form-input")],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-input-group",
                             {
-                              scopedSlots: _vm._u([
-                                {
-                                  key: "header",
-                                  fn: function () {
-                                    return [_vm._v("BootstrapVue")]
-                                  },
-                                  proxy: true,
-                                },
-                                {
-                                  key: "lead",
-                                  fn: function () {
-                                    return [
-                                      _vm._v(
-                                        "\n                This is a simple hero unit, a simple jumbotron-style component\n                for calling extra attention to featured content or\n                information.\n              "
-                                      ),
-                                    ]
-                                  },
-                                  proxy: true,
-                                },
-                              ]),
+                              staticClass: "mt-3",
+                              attrs: { prepend: "0", append: "100" },
                             },
                             [
-                              _vm._v(" "),
-                              _vm._v(" "),
-                              _c("hr", { staticClass: "my-4" }),
-                              _vm._v(" "),
-                              _c("p", [
-                                _vm._v(
-                                  "\n                It uses utility classes for typography and spacing to space\n                content out within the larger container.\n              "
-                                ),
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "mr-3",
-                                  attrs: { variant: "primary", href: "#" },
-                                },
-                                [_vm._v("Do Something")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-button",
-                                { attrs: { variant: "success", href: "#" } },
-                                [_vm._v("Do Something Else")]
-                              ),
+                              _c("b-form-input", {
+                                attrs: { type: "range", min: "0", max: "100" },
+                              }),
                             ],
                             1
                           ),
@@ -384,9 +469,16 @@ var render = function () {
                 },
               ]),
             }),
-            _vm._v(" "),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
             _c("KTCodePreview", {
-              attrs: { title: "Variants" },
+              attrs: { title: "Using named slots" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -394,62 +486,54 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            Control the overall background variant with the\n            "
+                          "\n            if you want better control over addons, you can use\n            "
                         ),
-                        _c("code", [_vm._v("bg-variant")]),
-                        _vm._v(" prop ( set to "),
-                        _c("code", [_vm._v("info")]),
-                        _vm._v(",\n            "),
-                        _c("code", [_vm._v("danger")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("warning")]),
-                        _vm._v(", "),
-                        _c("code", [_vm._v("light")]),
-                        _vm._v(",\n            "),
-                        _c("code", [_vm._v("dark")]),
-                        _vm._v(
-                          ", etc), the border variant with the\n            "
-                        ),
-                        _c("code", [_vm._v("border-variant")]),
-                        _vm._v(
-                          " prop, and the text variant with\n            "
-                        ),
-                        _c("code", [_vm._v("text-variant")]),
-                        _vm._v(
-                          " prop. All three props default to\n            "
-                        ),
-                        _c("code", [_vm._v("null")]),
-                        _vm._v(
-                          ", which will instruct the jumbotron to use the\n            default styling"
-                        ),
-                        _c("span", { staticClass: "code" }),
+                        _c("code", [_vm._v("prepend")]),
+                        _vm._v(" and "),
+                        _c("code", [_vm._v("append")]),
+                        _vm._v(" slots instead.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
                         "div",
                         [
                           _c(
-                            "b-jumbotron",
+                            "b-input-group",
                             {
-                              attrs: {
-                                "bg-variant": "info",
-                                "text-variant": "white",
-                                "border-variant": "dark",
-                              },
                               scopedSlots: _vm._u([
                                 {
-                                  key: "header",
+                                  key: "prepend",
                                   fn: function () {
-                                    return [_vm._v("BootstrapVue")]
+                                    return [
+                                      _c("b-input-group-text", [
+                                        _vm._v("Username"),
+                                      ]),
+                                    ]
                                   },
                                   proxy: true,
                                 },
                                 {
-                                  key: "lead",
+                                  key: "append",
                                   fn: function () {
                                     return [
-                                      _vm._v(
-                                        "\n                This is a simple hero unit, a simple jumbotron-style component\n                for calling extra attention to featured content or\n                information.\n              "
+                                      _c(
+                                        "b-dropdown",
+                                        {
+                                          attrs: {
+                                            text: "Dropdown",
+                                            variant: "success",
+                                          },
+                                        },
+                                        [
+                                          _c("b-dropdown-item", [
+                                            _vm._v("Action A"),
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("b-dropdown-item", [
+                                            _vm._v("Action B"),
+                                          ]),
+                                        ],
+                                        1
                                       ),
                                     ]
                                   },
@@ -457,17 +541,8 @@ var render = function () {
                                 },
                               ]),
                             },
-                            [
-                              _vm._v(" "),
-                              _vm._v(" "),
-                              _c("hr", { staticClass: "my-4" }),
-                              _vm._v(" "),
-                              _c("p", [
-                                _vm._v(
-                                  "\n                It uses utility classes for typography and spacing to space\n                content out within the larger container.\n              "
-                                ),
-                              ]),
-                            ]
+                            [_vm._v(" "), _c("b-form-input")],
+                            1
                           ),
                         ],
                         1
@@ -482,6 +557,233 @@ var render = function () {
                     return [
                       _vm._v(
                         "\n          " + _vm._s(_vm.code3.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Using sub-components" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("\n            Use the "),
+                        _c("code", [_vm._v("<b-input-group-prepend>")]),
+                        _vm._v(" or\n            "),
+                        _c("code", [_vm._v("<b-input-group-append>")]),
+                        _vm._v(
+                          " to add arbitrary addons\n            wherever you like, and use these components to group buttons in\n            your input group. Single buttons must always be wrapped in these\n            components for proper styling.\n          "
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-input-group",
+                            [
+                              _c(
+                                "b-input-group-prepend",
+                                [
+                                  _c(
+                                    "b-button",
+                                    { attrs: { variant: "outline-info" } },
+                                    [_vm._v("Button")]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("b-form-input", {
+                                attrs: { type: "number", min: "0.00" },
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "b-input-group-append",
+                                [
+                                  _c(
+                                    "b-button",
+                                    { attrs: { variant: "outline-secondary" } },
+                                    [_vm._v("Button")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-button",
+                                    { attrs: { variant: "outline-secondary" } },
+                                    [_vm._v("Button")]
+                                  ),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Custom radio, checkbox, and switch addons" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c("p", [
+                        _vm._v("\n            Using "),
+                        _c("code", [_vm._v("<b-form-checkbox>")]),
+                        _vm._v(" and\n            "),
+                        _c("code", [_vm._v("<b-form-radio>")]),
+                        _vm._v(
+                          " components as addons, using\n            Bootstrap\n            "
+                        ),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "https://bootstrap-vue.js.org/docs/reference/utility-classes",
+                              target: "_blank",
+                            },
+                          },
+                          [_vm._v("utility classes")]
+                        ),
+                        _vm._v(
+                          "\n            for additional styling to get them to\n            "
+                        ),
+                        _c("code", [_vm._v('"fit"')]),
+                        _vm._v(" in the addon:\n          "),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c(
+                            "b-input-group",
+                            { staticClass: "mb-2" },
+                            [
+                              _c(
+                                "b-input-group-prepend",
+                                { attrs: { "is-text": "" } },
+                                [
+                                  _c(
+                                    "b-form-checkbox",
+                                    { staticClass: "mr-n2" },
+                                    [
+                                      _c("span", { staticClass: "sr-only" }, [
+                                        _vm._v(
+                                          "\n                    Checkbox for following text input\n                  "
+                                        ),
+                                      ]),
+                                    ]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("b-form-input", {
+                                attrs: {
+                                  "aria-label": "Text input with checkbox",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-input-group",
+                            { staticClass: "mb-2" },
+                            [
+                              _c(
+                                "b-input-group-prepend",
+                                { attrs: { "is-text": "" } },
+                                [
+                                  _c("b-form-radio", { staticClass: "mr-n2" }, [
+                                    _c("span", { staticClass: "sr-only" }, [
+                                      _vm._v("Radio for following text input"),
+                                    ]),
+                                  ]),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("b-form-input", {
+                                attrs: {
+                                  "aria-label": "Text input with radio input",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-input-group",
+                            [
+                              _c(
+                                "b-input-group-prepend",
+                                { attrs: { "is-text": "" } },
+                                [
+                                  _c(
+                                    "b-form-checkbox",
+                                    {
+                                      staticClass: "mr-n2",
+                                      attrs: { switch: "" },
+                                    },
+                                    [
+                                      _c("span", { staticClass: "sr-only" }, [
+                                        _vm._v(
+                                          "Switch for following text input"
+                                        ),
+                                      ]),
+                                    ]
+                                  ),
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("b-form-input", {
+                                attrs: {
+                                  "aria-label": "Text input with switch",
+                                },
+                              }),
+                            ],
+                            1
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
                       ),
                     ]
                   },
@@ -504,17 +806,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue":
-/*!*****************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue ***!
-  \*****************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue":
+/*!******************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue ***!
+  \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Jumbotron_vue_vue_type_template_id_21581f90___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Jumbotron.vue?vue&type=template&id=21581f90& */ "./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=template&id=21581f90&");
-/* harmony import */ var _Jumbotron_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Jumbotron.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=script&lang=js&");
+/* harmony import */ var _InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputGroup.vue?vue&type=template&id=7ca04d79& */ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&");
+/* harmony import */ var _InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputGroup.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -524,9 +826,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Jumbotron_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Jumbotron_vue_vue_type_template_id_21581f90___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Jumbotron_vue_vue_type_template_id_21581f90___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -536,38 +838,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/InputGroup.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotron_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Jumbotron.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotron_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./InputGroup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=template&id=21581f90&":
-/*!************************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=template&id=21581f90& ***!
-  \************************************************************************************************/
+/***/ "./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79& ***!
+  \*************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotron_vue_vue_type_template_id_21581f90___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Jumbotron.vue?vue&type=template&id=21581f90& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/Jumbotron.vue?vue&type=template&id=21581f90&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotron_vue_vue_type_template_id_21581f90___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./InputGroup.vue?vue&type=template&id=7ca04d79& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/InputGroup.vue?vue&type=template&id=7ca04d79&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotron_vue_vue_type_template_id_21581f90___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputGroup_vue_vue_type_template_id_7ca04d79___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[49],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js& ***!
   \**************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -229,129 +229,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      code1: {
-        html: "<div>\n  <b-form-group label=\"Individual radios\">\n    <b-form-radio v-model=\"selected\" name=\"some-radios\" value=\"A\">Option A</b-form-radio>\n    <b-form-radio v-model=\"selected\" name=\"some-radios\" value=\"B\">Option B</b-form-radio>\n  </b-form-group>\n\n  <div class=\"mt-3\">Selected: <strong>{{ selected }}</strong></div>\n</div>",
-        js: "export default {\n  data() {\n    return {\n      selected: ''\n    }\n  }\n}",
-        selected: ""
-      },
-      code2: {
-        html: "<div>\n  <b-form-group label=\"Radios using options\">\n    <b-form-radio-group\n      id=\"radio-group-1\"\n      v-model=\"selected\"\n      :options=\"options\"\n      name=\"radio-options\"\n    ></b-form-radio-group>\n  </b-form-group>\n\n  <b-form-group label=\"Radios using sub-components\">\n    <b-form-radio-group id=\"radio-group-2\" v-model=\"selected\" name=\"radio-sub-component\">\n      <b-form-radio value=\"first\">Toggle this custom radio</b-form-radio>\n      <b-form-radio value=\"second\">Or toggle this other custom radio</b-form-radio>\n      <b-form-radio value=\"third\" disabled>This one is Disabled</b-form-radio>\n      <b-form-radio :value=\"{ fourth: 4 }\">This is the (fourth: 4) object radio</b-form-radio>\n    </b-form-radio-group>\n  </b-form-group>\n\n  <div class=\"mt-3\">Selected: <strong>{{ selected }}</strong></div>\n</div>",
-        js: "export default {\n  data() {\n    return {\n      selected: 'first',\n      options: [\n        { text: 'Toggle this custom radio', value: 'first' },\n        { text: 'Or toggle this other custom radio', value: 'second' },\n        { text: 'This one is Disabled', value: 'third', disabled: true },\n        { text: 'This is the (fourth: 4) object radio', value: { fourth: 4 } }\n      ]\n    }\n  }\n}",
-        selected1: "first",
-        selected2: "first",
-        options: [{
-          text: "Toggle this custom radio",
-          value: "first"
-        }, {
-          text: "Or toggle this other custom radio",
-          value: "second"
-        }, {
-          text: "This one is Disabled",
-          value: "third",
-          disabled: true
-        }, {
-          text: "This is the (fourth: 4) object radio",
-          value: {
-            fourth: 4
-          }
-        }]
-      },
-      code3: {
-        html3: "<div>\n  <b-form-group label=\"Inline radios (default)\">\n    <b-form-radio-group\n      v-model=\"selected\"\n      :options=\"options\"\n      name=\"radio-inline\"\n    ></b-form-radio-group>\n  </b-form-group>\n\n  <b-form-group label=\"Stacked radios\">\n    <b-form-radio-group\n      v-model=\"selected\"\n      :options=\"options\"\n      name=\"radios-stacked\"\n      stacked\n    ></b-form-radio-group>\n  </b-form-group>\n\n  <div class=\"mt-3\">Selected: <strong>{{ selected }}</strong></div>\n</div>",
-        js3: "export default {\n    data() {\n      return {\n        selected: 'first',\n        options: [\n          { text: 'First radio', value: 'first' },\n          { text: 'Second radio', value: 'second' },\n          { text: 'Third radio', value: 'third' }\n        ]\n      }\n    }\n  }",
-        selected1: "first",
-        selected2: "first",
-        options: [{
-          text: "First radio",
-          value: "first"
-        }, {
-          text: "Second radio",
-          value: "second"
-        }, {
-          text: "Third radio",
-          value: "third"
-        }]
-      },
-      code4: {
-        html: "<div>\n  <b-form-radio name=\"radio-size\" size=\"sm\">Small</b-form-radio>\n  <b-form-radio name=\"radio-size\">Default</b-form-radio>\n  <b-form-radio name=\"radio-size\" size=\"lg\">Large</b-form-radio>\n</div>"
-      },
-      code5: {
-        html5: "<div>\n  <b-form-group label=\"Button style radios\">\n    <b-form-radio-group\n      id=\"btn-radios-1\"\n      v-model=\"selected\"\n      :options=\"options\"\n      buttons\n      name=\"radios-btn-default\"\n    ></b-form-radio-group>\n  </b-form-group>\n\n  <b-form-group label=\"Button style radios with outline-primary variant and size lg\">\n    <b-form-radio-group\n      id=\"btn-radios-2\"\n      v-model=\"selected\"\n      :options=\"options\"\n      buttons\n      button-variant=\"outline-primary\"\n      size=\"lg\"\n      name=\"radio-btn-outline\"\n    ></b-form-radio-group>\n  </b-form-group>\n\n  <b-form-group label=\"Stacked button style radios\">\n    <b-form-radio-group\n      id=\"btn-radios-3\"\n      v-model=\"selected\"\n      :options=\"options\"\n      buttons\n      stacked\n      name=\"radio-btn-stacked\"\n    ></b-form-radio-group>\n  </b-form-group>\n</div>",
-        js5: "export default {\n    data() {\n      return {\n        selected: 'radio1',\n        options: [\n          { text: 'Radio 1', value: 'radio1' },\n          { text: 'Radio 3', value: 'radio2' },\n          { text: 'Radio 3 (disabled)', value: 'radio3', disabled: true },\n          { text: 'Radio 4', value: 'radio4' }\n        ]\n      }\n    }\n  }",
-        selected1: "radio1",
-        selected2: "radio1",
-        selected3: "radio1",
-        options: [{
-          text: "Radio 1",
-          value: "radio1"
-        }, {
-          text: "Radio 3",
-          value: "radio2"
-        }, {
-          text: "Radio 3 (disabled)",
-          value: "radio3",
-          disabled: true
-        }, {
-          text: "Radio 4",
-          value: "radio4"
-        }]
-      }
+      html1: "<div>\n    <b-form-input v-model=\"text\" placeholder=\"Enter your name\"></b-form-input>\n    <div class=\"mt-2\">Value: {{ text }}</div>\n  </div>",
+      js1: "export default {\n    data() {\n      return {\n        text: ''\n      }\n    }\n  }",
+      text: "",
+      html2: "<b-container fluid>\n" + '    <b-row class="my-1" v-for="type in types" :key="type">\n' + '      <b-col sm="3">\n' + '        <label :for="`type-${type}`">Type {{ type }}:</label>\n' + "      </b-col>\n" + '      <b-col sm="9">\n' + '        <b-form-input :id="`type-${type}`" :type="type"></b-form-input>\n' + "      </b-col>\n" + "    </b-row>\n" + "  </b-container>",
+      js2: "export default {\n    data() {\n      return {\n        types: [\n          'text',\n          'password',\n          'email',\n          'number',\n          'url',\n          'tel',\n          'date',\n          `time`,\n          'range',\n          'color'\n        ]\n      }\n    }\n  }",
+      types: ["text", "password", "email", "number", "url", "tel", "date", "time", "range", "color"],
+      html3: "<b-container fluid>\n  <b-row class=\"my-1\">\n    <b-col sm=\"2\">\n      <label for=\"input-small\">Small:</label>\n    </b-col>\n    <b-col sm=\"10\">\n      <b-form-input id=\"input-small\" size=\"sm\" placeholder=\"Enter your name\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"2\">\n      <label for=\"input-default\">Default:</label>\n    </b-col>\n    <b-col sm=\"10\">\n      <b-form-input id=\"input-default\" placeholder=\"Enter your name\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"2\">\n      <label for=\"input-large\">Large:</label>\n    </b-col>\n    <b-col sm=\"10\">\n      <b-form-input id=\"input-large\" size=\"lg\" placeholder=\"Enter your name\"></b-form-input>\n    </b-col>\n  </b-row>\n</b-container>",
+      html4: "<b-container fluid>\n  <b-row class=\"my-1\">\n    <b-col sm=\"3\">\n      <label for=\"input-none\">No State:</label>\n    </b-col>\n    <b-col sm=\"9\">\n      <b-form-input id=\"input-none\" :state=\"null\" placeholder=\"No validation\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"3\">\n      <label for=\"input-valid\">Valid State:</label>\n    </b-col>\n    <b-col sm=\"9\">\n      <b-form-input id=\"input-valid\" :state=\"true\" placeholder=\"Valid input\"></b-form-input>\n    </b-col>\n  </b-row>\n\n  <b-row class=\"my-1\">\n    <b-col sm=\"3\">\n      <label for=\"input-invalid\">Invalid State:</label>\n    </b-col>\n    <b-col sm=\"9\">\n      <b-form-input id=\"input-invalid\" :state=\"false\" placeholder=\"Invalid input\"></b-form-input>\n    </b-col>\n  </b-row>\n</b-container>",
+      html5: "<div role=\"group\">\n    <label for=\"input-live\">Name:</label>\n    <b-form-input\n      id=\"input-live\"\n      v-model=\"name\"\n      :state=\"nameState\"\n      aria-describedby=\"input-live-help input-live-feedback\"\n      placeholder=\"Enter your name\"\n      trim\n    ></b-form-input>\n\n    <!-- This will only be shown if the preceding input has an invalid state -->\n    <b-form-invalid-feedback id=\"input-live-feedback\">\n      Enter at least 3 letters\n    </b-form-invalid-feedback>\n\n    <!-- This is a form text block (formerly known as help block) -->\n    <b-form-text id=\"input-live-help\">Your full name.</b-form-text>\n  </div>",
+      js5: "export default {\n    computed: {\n      nameState() {\n        return this.name.length > 2 ? true : false\n      }\n    },\n    data() {\n      return {\n        name: ''\n      }\n    }\n  }",
+      name: ""
     };
   },
   components: {
     KTCodePreview: _view_content_CodePreview_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  computed: {
+    nameState: function nameState() {
+      return this.name.length > 2;
+    }
   },
   mounted: function mounted() {
     this.$store.dispatch(_core_services_store_breadcrumbs_module__WEBPACK_IMPORTED_MODULE_1__["SET_BREADCRUMB"], [{
       title: "Vue Bootstrap",
       route: "alert"
     }, {
-      title: "Form Radio"
+      title: "Form Input"
     }]);
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=template&id=02ffa2ba&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&":
 /*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=template&id=02ffa2ba& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c& ***!
   \******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -389,16 +307,16 @@ var render = function () {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "alert-text" }, [
-            _c("b", [_vm._v("Form Radio Inputs")]),
+            _c("b", [_vm._v("Textual and Value inputs")]),
             _vm._v(
-              " For cross browser consistency,\n      <b-form-radio-group> and <b-form-radio> uses Bootstrap's\n      custom radio input to replace the browser default radio input. It is\n      built on top of semantic and accessible markup, so it is a solid\n      replacement for the default radio input.\n      "
+              " Create various type inputs such as:\n      text, password, number, url, email, search, range, date and more.\n      "
             ),
             _c(
               "a",
               {
                 staticClass: "font-weight-bold",
                 attrs: {
-                  href: "https://bootstrap-vue.js.org/docs/components/form-radio",
+                  href: "https://bootstrap-vue.js.org/docs/components/form-input",
                   target: "_blank",
                 },
               },
@@ -414,7 +332,7 @@ var render = function () {
           { staticClass: "col-md-6" },
           [
             _c("KTCodePreview", {
-              attrs: { title: "Individual radios" },
+              attrs: { title: "Textual and Value inputs" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -423,54 +341,19 @@ var render = function () {
                       _c(
                         "div",
                         [
-                          _c(
-                            "b-form-group",
-                            { attrs: { label: "Individual radios" } },
-                            [
-                              _c(
-                                "b-form-radio",
-                                {
-                                  attrs: { name: "some-radios", value: "A" },
-                                  model: {
-                                    value: _vm.code1.selected,
-                                    callback: function ($$v) {
-                                      _vm.$set(_vm.code1, "selected", $$v)
-                                    },
-                                    expression: "code1.selected",
-                                  },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                Option A\n              "
-                                  ),
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-radio",
-                                {
-                                  attrs: { name: "some-radios", value: "B" },
-                                  model: {
-                                    value: _vm.code1.selected,
-                                    callback: function ($$v) {
-                                      _vm.$set(_vm.code1, "selected", $$v)
-                                    },
-                                    expression: "code1.selected",
-                                  },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                Option B\n              "
-                                  ),
-                                ]
-                              ),
-                            ],
-                            1
-                          ),
+                          _c("b-form-input", {
+                            attrs: { placeholder: "Enter your name" },
+                            model: {
+                              value: _vm.text,
+                              callback: function ($$v) {
+                                _vm.text = $$v
+                              },
+                              expression: "text",
+                            },
+                          }),
                           _vm._v(" "),
-                          _c("div", { staticClass: "mt-3" }, [
-                            _vm._v("\n              Selected: "),
-                            _c("strong", [_vm._v(_vm._s(_vm.code1.selected))]),
+                          _c("div", { staticClass: "mt-2" }, [
+                            _vm._v("Value: " + _vm._s(_vm.text)),
                           ]),
                         ],
                         1
@@ -483,9 +366,7 @@ var render = function () {
                   key: "html",
                   fn: function () {
                     return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code1.html) + "\n        "
-                      ),
+                      _vm._v("\n          " + _vm._s(_vm.html1) + "\n        "),
                     ]
                   },
                   proxy: true,
@@ -494,9 +375,7 @@ var render = function () {
                   key: "js",
                   fn: function () {
                     return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code1.js) + "\n        "
-                      ),
+                      _vm._v("\n          " + _vm._s(_vm.js1) + "\n        "),
                     ]
                   },
                   proxy: true,
@@ -505,134 +384,83 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Grouped radios" },
+              attrs: { title: "Input type" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
                   fn: function () {
                     return [
                       _c("p", [
+                        _c("code", [_vm._v("<b-form-input>")]),
                         _vm._v(
-                          "\n            The individual radio inputs in\n            "
+                          " defaults to a text input, but\n            you can set the "
                         ),
-                        _c("code", [_vm._v("<b-form-radio-group>")]),
+                        _c("code", [_vm._v("type")]),
                         _vm._v(
-                          " can be specified via the\n            options prop, or via manual placement of the\n            "
+                          " prop to one of the supported\n            native browser HTML5 types: "
                         ),
-                        _c("code", [_vm._v("<b-form-radio>")]),
-                        _vm._v(
-                          " sub component. When using\n            manually placed "
-                        ),
-                        _c("code", [_vm._v("<b-form-radio>")]),
-                        _vm._v(" components\n            within a "),
-                        _c("code", [_vm._v("<b-form-radio-group>")]),
-                        _vm._v(
-                          ", they will\n            inherit most props and the v-model from the\n            "
-                        ),
-                        _c("code", [_vm._v("<b-form-radio-group>")]),
+                        _c("code", [_vm._v("text")]),
+                        _vm._v(",\n            "),
+                        _c("code", [_vm._v("password")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("email")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("number")]),
+                        _vm._v(",\n            "),
+                        _c("code", [_vm._v("url")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("tel")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("search")]),
+                        _vm._v(",\n            "),
+                        _c("code", [_vm._v("date")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("datetime")]),
+                        _vm._v(",\n            "),
+                        _c("code", [_vm._v("datetime-local")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("month")]),
+                        _vm._v(",\n            "),
+                        _c("code", [_vm._v("week")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("time")]),
+                        _vm._v(", "),
+                        _c("code", [_vm._v("range")]),
+                        _vm._v(", or\n            "),
+                        _c("code", [_vm._v("color")]),
+                        _vm._v(".\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "div",
-                        [
-                          _c(
-                            "b-form-group",
-                            { attrs: { label: "Radios using options" } },
+                        "b-container",
+                        { attrs: { fluid: "" } },
+                        _vm._l(_vm.types, function (type) {
+                          return _c(
+                            "b-row",
+                            { key: type, staticClass: "my-1" },
                             [
-                              _c("b-form-radio-group", {
-                                attrs: {
-                                  id: "radio-group-1",
-                                  options: _vm.code2.options,
-                                  name: "radio-options",
-                                },
-                                model: {
-                                  value: _vm.code2.selected1,
-                                  callback: function ($$v) {
-                                    _vm.$set(_vm.code2, "selected1", $$v)
-                                  },
-                                  expression: "code2.selected1",
-                                },
-                              }),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "mt-3 mb-6" }, [
-                            _vm._v("\n              Selected: "),
-                            _c("strong", [_vm._v(_vm._s(_vm.code2.selected1))]),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "b-form-group",
-                            { attrs: { label: "Radios using sub-components" } },
-                            [
+                              _c("b-col", { attrs: { sm: "3" } }, [
+                                _c(
+                                  "label",
+                                  { attrs: { for: "type-" + type } },
+                                  [_vm._v("Type " + _vm._s(type) + ":")]
+                                ),
+                              ]),
+                              _vm._v(" "),
                               _c(
-                                "b-form-radio-group",
-                                {
-                                  attrs: {
-                                    id: "radio-group-2",
-                                    name: "radio-sub-component",
-                                  },
-                                  model: {
-                                    value: _vm.code2.selected2,
-                                    callback: function ($$v) {
-                                      _vm.$set(_vm.code2, "selected2", $$v)
-                                    },
-                                    expression: "code2.selected2",
-                                  },
-                                },
+                                "b-col",
+                                { attrs: { sm: "9" } },
                                 [
-                                  _c(
-                                    "b-form-radio",
-                                    { attrs: { value: "first" } },
-                                    [
-                                      _vm._v(
-                                        "\n                  Toggle this custom radio\n                "
-                                      ),
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-form-radio",
-                                    { attrs: { value: "second" } },
-                                    [
-                                      _vm._v(
-                                        "\n                  Or toggle this other custom radio\n                "
-                                      ),
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-form-radio",
-                                    { attrs: { value: "third", disabled: "" } },
-                                    [
-                                      _vm._v(
-                                        "\n                  This one is Disabled\n                "
-                                      ),
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "b-form-radio",
-                                    { attrs: { value: { fourth: 4 } } },
-                                    [
-                                      _vm._v(
-                                        "\n                  This is the (fourth: 4) object radio\n                "
-                                      ),
-                                    ]
-                                  ),
+                                  _c("b-form-input", {
+                                    attrs: { id: "type-" + type, type: type },
+                                  }),
                                 ],
                                 1
                               ),
                             ],
                             1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "mt-3" }, [
-                            _vm._v("\n              Selected: "),
-                            _c("strong", [_vm._v(_vm._s(_vm.code2.selected2))]),
-                          ]),
-                        ],
+                          )
+                        }),
                         1
                       ),
                     ]
@@ -643,9 +471,7 @@ var render = function () {
                   key: "html",
                   fn: function () {
                     return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.html) + "\n        "
-                      ),
+                      _vm._v("\n          " + _vm._s(_vm.html2) + "\n        "),
                     ]
                   },
                   proxy: true,
@@ -654,127 +480,7 @@ var render = function () {
                   key: "js",
                   fn: function () {
                     return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code2.js) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-              ]),
-            }),
-            _vm._v(" "),
-            _c("KTCodePreview", {
-              attrs: { title: "Inline or stacked radios" },
-              scopedSlots: _vm._u([
-                {
-                  key: "preview",
-                  fn: function () {
-                    return [
-                      _c("p", [
-                        _vm._v("\n            By default "),
-                        _c("code", [_vm._v("<b-form-radio-group>")]),
-                        _vm._v(
-                          " generates\n            inline radio inputs, while\n            "
-                        ),
-                        _c("code", [_vm._v("<b-form-radio>")]),
-                        _vm._v(
-                          " generates stacked radios. Set\n            the prop "
-                        ),
-                        _c("code", [_vm._v("stacked")]),
-                        _vm._v(" on\n            "),
-                        _c("code", [_vm._v("<b-form-radio-group>")]),
-                        _vm._v(
-                          " to make the radios appear\n            one over the other, or when using radios not in a group, set the\n            "
-                        ),
-                        _c("code", [_vm._v("inline")]),
-                        _vm._v(" prop on "),
-                        _c("code", [_vm._v("b-form-radio")]),
-                        _vm._v(
-                          " to true to\n            render them inline\n          "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        [
-                          _c(
-                            "b-form-group",
-                            { attrs: { label: "Inline radios (default)" } },
-                            [
-                              _c("b-form-radio-group", {
-                                attrs: {
-                                  options: _vm.code3.options,
-                                  name: "radio-inline",
-                                },
-                                model: {
-                                  value: _vm.code3.selected1,
-                                  callback: function ($$v) {
-                                    _vm.$set(_vm.code3, "selected1", $$v)
-                                  },
-                                  expression: "code3.selected1",
-                                },
-                              }),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "mt-3 mb-6" }, [
-                            _vm._v("\n              Selected: "),
-                            _c("strong", [_vm._v(_vm._s(_vm.code3.selected1))]),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "b-form-group",
-                            { attrs: { label: "Stacked radios" } },
-                            [
-                              _c("b-form-radio-group", {
-                                attrs: {
-                                  options: _vm.code3.options,
-                                  name: "radios-stacked",
-                                  stacked: "",
-                                },
-                                model: {
-                                  value: _vm.code3.selected2,
-                                  callback: function ($$v) {
-                                    _vm.$set(_vm.code3, "selected2", $$v)
-                                  },
-                                  expression: "code3.selected2",
-                                },
-                              }),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "mt-3" }, [
-                            _vm._v("\n              Selected: "),
-                            _c("strong", [_vm._v(_vm._s(_vm.code3.selected2))]),
-                          ]),
-                        ],
-                        1
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "html",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code3.html) + "\n        "
-                      ),
-                    ]
-                  },
-                  proxy: true,
-                },
-                {
-                  key: "js",
-                  fn: function () {
-                    return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code3.js) + "\n        "
-                      ),
+                      _vm._v("\n          " + _vm._s(_vm.js2) + "\n        "),
                     ]
                   },
                   proxy: true,
@@ -797,36 +503,102 @@ var render = function () {
                   fn: function () {
                     return [
                       _c("p", [
-                        _vm._v("\n            Use the "),
+                        _vm._v("\n            Set heights using the "),
                         _c("code", [_vm._v("size")]),
-                        _vm._v(
-                          " prop to control the size of the radio.\n            The default size is medium. Supported size values are\n            "
-                        ),
+                        _vm._v(" prop to "),
                         _c("code", [_vm._v("sm")]),
-                        _vm._v(" (small) and "),
+                        _vm._v(" or\n            "),
                         _c("code", [_vm._v("lg")]),
-                        _vm._v(" (large).\n          "),
+                        _vm._v(" for small or large respectively.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "div",
+                        "b-container",
+                        { attrs: { fluid: "" } },
                         [
                           _c(
-                            "b-form-radio",
-                            { attrs: { name: "radio-size", size: "sm" } },
-                            [_vm._v("Small")]
+                            "b-row",
+                            { staticClass: "my-1" },
+                            [
+                              _c("b-col", { attrs: { sm: "2" } }, [
+                                _c("label", { attrs: { for: "input-small" } }, [
+                                  _vm._v("Small:"),
+                                ]),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                { attrs: { sm: "10" } },
+                                [
+                                  _c("b-form-input", {
+                                    attrs: {
+                                      id: "input-small",
+                                      size: "sm",
+                                      placeholder: "Enter your name",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-form-radio",
-                            { attrs: { name: "radio-size" } },
-                            [_vm._v("Default")]
+                            "b-row",
+                            { staticClass: "my-1" },
+                            [
+                              _c("b-col", { attrs: { sm: "2" } }, [
+                                _c(
+                                  "label",
+                                  { attrs: { for: "input-default" } },
+                                  [_vm._v("Default:")]
+                                ),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                { attrs: { sm: "10" } },
+                                [
+                                  _c("b-form-input", {
+                                    attrs: {
+                                      id: "input-default",
+                                      placeholder: "Enter your name",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-form-radio",
-                            { attrs: { name: "radio-size", size: "lg" } },
-                            [_vm._v("Large")]
+                            "b-row",
+                            { staticClass: "my-1" },
+                            [
+                              _c("b-col", { attrs: { sm: "2" } }, [
+                                _c("label", { attrs: { for: "input-large" } }, [
+                                  _vm._v("Large:"),
+                                ]),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                { attrs: { sm: "10" } },
+                                [
+                                  _c("b-form-input", {
+                                    attrs: {
+                                      id: "input-large",
+                                      size: "lg",
+                                      placeholder: "Enter your name",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
                           ),
                         ],
                         1
@@ -839,9 +611,7 @@ var render = function () {
                   key: "html",
                   fn: function () {
                     return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code4.html) + "\n        "
-                      ),
+                      _vm._v("\n          " + _vm._s(_vm.html3) + "\n        "),
                     ]
                   },
                   proxy: true,
@@ -850,7 +620,7 @@ var render = function () {
             }),
             _vm._v(" "),
             _c("KTCodePreview", {
-              attrs: { title: "Button style radios" },
+              attrs: { title: "Contextual states" },
               scopedSlots: _vm._u([
                 {
                   key: "preview",
@@ -858,106 +628,100 @@ var render = function () {
                     return [
                       _c("p", [
                         _vm._v(
-                          "\n            Render radios with the look of buttons by setting the prop\n            "
+                          "\n            Bootstrap includes validation styles for "
                         ),
-                        _c("code", [_vm._v("buttons")]),
-                        _vm._v(" to "),
-                        _c("code", [_vm._v("true")]),
-                        _vm._v(" on\n            "),
-                        _c("code", [_vm._v("<b-form-radio-group>")]),
-                        _vm._v(
-                          ". Set the button variant by\n            setting the "
-                        ),
-                        _c("code", [_vm._v("button-variant")]),
-                        _vm._v(
-                          " prop to one of the\n            standard Bootstrap button variants (see\n            "
-                        ),
-                        _c("code", [_vm._v("<b-button>")]),
-                        _vm._v(
-                          " for supported variants). The default\n            "
-                        ),
-                        _c("code", [_vm._v("button-variant")]),
-                        _vm._v(" is "),
-                        _c("code", [_vm._v("secondary")]),
-                        _vm._v(".\n          "),
+                        _c("code", [_vm._v("valid")]),
+                        _vm._v(" and\n            "),
+                        _c("code", [_vm._v("invalid")]),
+                        _vm._v(" states on most form controls.\n          "),
                       ]),
                       _vm._v(" "),
                       _c(
-                        "div",
+                        "b-container",
+                        { attrs: { fluid: "" } },
                         [
                           _c(
-                            "b-form-group",
-                            { attrs: { label: "Button style radios" } },
+                            "b-row",
+                            { staticClass: "my-1" },
                             [
-                              _c("b-form-radio-group", {
-                                attrs: {
-                                  id: "btn-radios-1",
-                                  options: _vm.code5.options,
-                                  buttons: "",
-                                  name: "radios-btn-default",
-                                },
-                                model: {
-                                  value: _vm.code5.selected1,
-                                  callback: function ($$v) {
-                                    _vm.$set(_vm.code5, "selected1", $$v)
-                                  },
-                                  expression: "code5.selected1",
-                                },
-                              }),
+                              _c("b-col", { attrs: { sm: "3" } }, [
+                                _c("label", { attrs: { for: "input-none" } }, [
+                                  _vm._v("No State:"),
+                                ]),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                { attrs: { sm: "9" } },
+                                [
+                                  _c("b-form-input", {
+                                    attrs: {
+                                      id: "input-none",
+                                      state: null,
+                                      placeholder: "No validation",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
                             ],
                             1
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-form-group",
-                            {
-                              attrs: {
-                                label:
-                                  "Button style radios with outline-primary variant and size lg",
-                              },
-                            },
+                            "b-row",
+                            { staticClass: "my-1" },
                             [
-                              _c("b-form-radio-group", {
-                                attrs: {
-                                  id: "btn-radios-2",
-                                  options: _vm.code5.options,
-                                  buttons: "",
-                                  "button-variant": "outline-primary",
-                                  size: "lg",
-                                  name: "radio-btn-outline",
-                                },
-                                model: {
-                                  value: _vm.code5.selected2,
-                                  callback: function ($$v) {
-                                    _vm.$set(_vm.code5, "selected2", $$v)
-                                  },
-                                  expression: "code5.selected2",
-                                },
-                              }),
+                              _c("b-col", { attrs: { sm: "3" } }, [
+                                _c("label", { attrs: { for: "input-valid" } }, [
+                                  _vm._v("Valid State:"),
+                                ]),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                { attrs: { sm: "9" } },
+                                [
+                                  _c("b-form-input", {
+                                    attrs: {
+                                      id: "input-valid",
+                                      state: true,
+                                      placeholder: "Valid input",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
                             ],
                             1
                           ),
                           _vm._v(" "),
                           _c(
-                            "b-form-group",
-                            { attrs: { label: "Stacked button style radios" } },
+                            "b-row",
+                            { staticClass: "my-1" },
                             [
-                              _c("b-form-radio-group", {
-                                attrs: {
-                                  id: "btn-radios-3",
-                                  options: _vm.code5.options,
-                                  buttons: "",
-                                  stacked: "",
-                                  name: "radio-btn-stacked",
-                                },
-                                model: {
-                                  value: _vm.code5.selected3,
-                                  callback: function ($$v) {
-                                    _vm.$set(_vm.code5, "selected3", $$v)
-                                  },
-                                  expression: "code5.selected3",
-                                },
-                              }),
+                              _c("b-col", { attrs: { sm: "3" } }, [
+                                _c(
+                                  "label",
+                                  { attrs: { for: "input-invalid" } },
+                                  [_vm._v("Invalid State:")]
+                                ),
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "b-col",
+                                { attrs: { sm: "9" } },
+                                [
+                                  _c("b-form-input", {
+                                    attrs: {
+                                      id: "input-invalid",
+                                      state: false,
+                                      placeholder: "Invalid input",
+                                    },
+                                  }),
+                                ],
+                                1
+                              ),
                             ],
                             1
                           ),
@@ -972,9 +736,74 @@ var render = function () {
                   key: "html",
                   fn: function () {
                     return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code5.html) + "\n        "
+                      _vm._v("\n          " + _vm._s(_vm.html4) + "\n        "),
+                    ]
+                  },
+                  proxy: true,
+                },
+              ]),
+            }),
+            _vm._v(" "),
+            _c("KTCodePreview", {
+              attrs: { title: "Contextual states Live Example" },
+              scopedSlots: _vm._u([
+                {
+                  key: "preview",
+                  fn: function () {
+                    return [
+                      _c(
+                        "div",
+                        { attrs: { role: "group" } },
+                        [
+                          _c("label", { attrs: { for: "input-live" } }, [
+                            _vm._v("Name:"),
+                          ]),
+                          _vm._v(" "),
+                          _c("b-form-input", {
+                            attrs: {
+                              id: "input-live",
+                              state: _vm.nameState,
+                              "aria-describedby":
+                                "input-live-help input-live-feedback",
+                              placeholder: "Enter your name",
+                              trim: "",
+                            },
+                            model: {
+                              value: _vm.name,
+                              callback: function ($$v) {
+                                _vm.name = $$v
+                              },
+                              expression: "name",
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-invalid-feedback",
+                            { attrs: { id: "input-live-feedback" } },
+                            [
+                              _vm._v(
+                                "\n              Enter at least 3 letters\n            "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-text",
+                            { attrs: { id: "input-live-help" } },
+                            [_vm._v("Your full name.")]
+                          ),
+                        ],
+                        1
                       ),
+                    ]
+                  },
+                  proxy: true,
+                },
+                {
+                  key: "html",
+                  fn: function () {
+                    return [
+                      _vm._v("\n          " + _vm._s(_vm.html5) + "\n        "),
                     ]
                   },
                   proxy: true,
@@ -983,9 +812,7 @@ var render = function () {
                   key: "js",
                   fn: function () {
                     return [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.code5.js) + "\n        "
-                      ),
+                      _vm._v("\n          " + _vm._s(_vm.js5) + "\n        "),
                     ]
                   },
                   proxy: true,
@@ -1007,17 +834,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue":
 /*!*****************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormInput.vue ***!
   \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _FormRadio_vue_vue_type_template_id_02ffa2ba___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormRadio.vue?vue&type=template&id=02ffa2ba& */ "./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=template&id=02ffa2ba&");
-/* harmony import */ var _FormRadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormRadio.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=script&lang=js&");
+/* harmony import */ var _FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormInput.vue?vue&type=template&id=c3da1a1c& */ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&");
+/* harmony import */ var _FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FormInput.vue?vue&type=script&lang=js& */ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1027,9 +854,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _FormRadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _FormRadio_vue_vue_type_template_id_02ffa2ba___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _FormRadio_vue_vue_type_template_id_02ffa2ba___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1039,38 +866,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/view/pages/vue-bootstrap/FormRadio.vue"
+component.options.__file = "resources/js/src/view/pages/vue-bootstrap/FormInput.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js& ***!
   \******************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormRadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormRadio.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormRadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormInput.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=template&id=02ffa2ba&":
+/***/ "./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&":
 /*!************************************************************************************************!*\
-  !*** ./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=template&id=02ffa2ba& ***!
+  !*** ./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c& ***!
   \************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormRadio_vue_vue_type_template_id_02ffa2ba___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormRadio.vue?vue&type=template&id=02ffa2ba& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormRadio.vue?vue&type=template&id=02ffa2ba&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormRadio_vue_vue_type_template_id_02ffa2ba___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./FormInput.vue?vue&type=template&id=c3da1a1c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/view/pages/vue-bootstrap/FormInput.vue?vue&type=template&id=c3da1a1c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormRadio_vue_vue_type_template_id_02ffa2ba___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FormInput_vue_vue_type_template_id_c3da1a1c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
